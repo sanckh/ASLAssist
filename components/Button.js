@@ -23,10 +23,13 @@ const styles = StyleSheet.create({
     width: '100%',
     marginVertical: 10,
     paddingVertical: 2,
+
+    
   },
   text: {
     fontWeight: 'bold',
     fontSize: 15,
     lineHeight: 26,
+    color: theme.colors.text
   },
 })
