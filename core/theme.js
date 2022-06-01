@@ -7,7 +7,7 @@ export const theme = {
     ...DefaultTheme.colors,
     text: '#000000',
     primary: '#DDEDEA', //primary color for your app, usually your brand color.
-    accent: '#ecddfc', //secondary color for your app which complements the primary color.
+    accent: '#093f35', //secondary color for your app which complements the primary color.
     background: '#FCF4DD', //background color for pages, such as lists.
     surface: '#DDEDEA', //background color for elements containing content, such as cards.
     error: 'red',

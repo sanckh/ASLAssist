@@ -20,18 +20,18 @@ import Quizzes from './navigation/Quizzes';
 import Settings from './navigation/Settings';
 import HomeDash from './navigation/HomeDash';
 import Profile from './navigation/Profile';
-import QuizDash from './navigation/QuizDash';
 
 const Tab = createMaterialBottomTabNavigator();
-const fullScreenWidth = Dimensions.get('window').width;
-const bottomTab = createBottomTabNavigator();
+
 
 function Home() {
   return (
     <Provider theme = {theme}>
       <Tab.Navigator
+      activeColor= {theme.colors.accent}
+      inactiveColor="#414141"
       barStyle = {{
-        backgroundColor: theme.colors.accent,
+        backgroundColor: theme.colors.primary,
         padding: 10,
         
       }}
@@ -40,10 +40,10 @@ function Home() {
             let iconName;
             let rn = route.name;
 
-            if(rn == 'HomeDash'){
+            if(rn == 'Home'){
               iconName = focused ? 'home' : 'home-outline'
             }
-            else if(rn == 'QuizDash'){
+            else if(rn == 'Quizzes'){
               iconName = focused ? 'list' : 'list-outline'
             }
             else if(rn == 'Profile'){
@@ -55,15 +55,9 @@ function Home() {
             return <Ionicons name = {iconName} size = {25} color = {color}/>
           }
         })}
-        tabBarOptions={{
-          activeTintColor: "#230C46",
-          inactiveTintColor: "#414141",
-          labelStyle: {fontSize: 16},
-          style: {width: fullScreenWidth}
-        }}
-        >
-        <Tab.Screen name = 'HomeDash' component = {HomeDash}/>
-        <Tab.Screen name = 'QuizDash' component = {QuizDash}/>
+                >
+        <Tab.Screen name = 'Home' component = {HomeDash}/>
+        <Tab.Screen name = 'Quizzes' component = {Quizzes}/>
         <Tab.Screen name = 'Profile' component = {Profile}/>
         <Tab.Screen name = 'Settings' component = {Settings}/>
       </Tab.Navigator>
@@ -78,71 +72,20 @@ const App = () => {
     <Provider theme = {theme}>
       <NavigationContainer>
         <Stack.Navigator
-        initialRouteName='StartScreen'
+        initialRouteName='Home'
         screenOptions={{
           headerShown: false,
         }}>
           <Stack.Screen name="StartScreen" component={StartScreen} />
           <Stack.Screen name="LoginScreen" component={LoginScreen} />
           <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
-          <Stack.Screen name = 'Home' component = {Home}/>
-          <Stack.Screen name = "HomeDash" component={HomeDash}/>
-          <Stack.Screen name = "QuizDash" component={QuizDash}/>
-          <Stack.Screen name = "Profile" component={Profile}/>
-          <Stack.Screen name = "Settings" component={Settings}/>
+          <Stack.Screen name = "Home" component = {Home}/>
+          <Stack.Screen name = "Lessons" component = {Lessons}/>
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>
 
   );
 }
-
-// function HomeDashScreen(){
-//   return(
-//     <Stack.Navigator>
-//       <Stack.Screen name = "HomeDash" component={HomeDash}/>
-//     </Stack.Navigator>
-//   )
-// }
-// function QuizDashScreen(){
-//   return(
-//     <Stack.Navigator>
-//       <Stack.Screen name = "QuizDash" component={QuizDash}/>
-//     </Stack.Navigator>
-//   )
-// }
-// function ProfileScreen(){
-//   return(
-//     <Stack.Navigator>
-//       <Stack.Screen name = "Profile" component={Profile}/>
-//     </Stack.Navigator>
-//   )
-// }
-// function SettingScreen(){
-//   return(
-//     <Stack.Navigator>
-//       <Stack.Screen name = "Settings" component={Settings}/>
-//     </Stack.Navigator>
-//   )
-// }
-
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fffdf9',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: 10
-  },
-  text: {
-    fontWeight: 'bold',
-    alignItems: 'center',
-    fontSize: 36
-  },
-  tabBar: {
-    //backgroundColor: theme.colors.buttonPink,
-  }
-});
 
 export default App;

@@ -1,9 +1,12 @@
-import {StyleSheet, Text, View, ScrollView } from 'react-native';
+import React from 'react';
+import { SafeAreaView, Text} from 'react-native';
 
-export default function Quizzes(){
-    return(
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-            <Text>Quizzes</Text>
-        </View>
+const QuizDash = (props) => {
+    return (
+        <SafeAreaView style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+            <Text>Quiz Dashboard</Text>
+        </SafeAreaView>
     )
 }
+
+export default QuizDash;
