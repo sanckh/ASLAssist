@@ -1,12 +1,12 @@
 import React from 'react';
 import { SafeAreaView, Text} from 'react-native';
 
-const Settings = (props) => {
+const Profile = (props) => {
     return (
         <SafeAreaView style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-            <Text>Settings</Text>
+            <Text>Profile</Text>
         </SafeAreaView>
     )
 }
 
-export default Settings;
+export default Profile;
