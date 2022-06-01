@@ -22,8 +22,9 @@ export default function StartScreen({navigation}){
                 Login
             </Button>
             <Button
-            mode = "outlined"
+            mode = "contained"
             onPress = {() => navigation.navigate('RegisterScreen')}
+            style = {{backgroundColor: '#ecddfc'}}
             >
                 Sign Up
             </Button>
