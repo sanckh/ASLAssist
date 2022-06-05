@@ -1,5 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native';
-import {Colors, DefaultTheme, Provider} from 'react-native-paper'
+import {Provider} from 'react-native-paper'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -26,7 +25,6 @@ function Home() {
       barStyle = {{
         backgroundColor: theme.colors.accent,
         padding: 10,
-        
       }}
 
         
@@ -36,13 +34,13 @@ function Home() {
             let rn = route.name;
 
             if(rn == 'Lessons'){
-              iconName = focused ? 'list' : 'list-outline'
+              iconName = focused ? 'list' : 'fast-food'
             }
             else if(rn == 'Quizzes'){
               iconName = focused ? 'list' : 'list-outline'
             }
             else if(rn == 'Settings'){
-              iconName = focused ? 'list' : 'list-outline'
+              iconName = focused ? 'list' : 'settings-outline'
             }
             return <Ionicons name = {iconName} size = {25} color = {color}/>
           }
@@ -62,7 +60,7 @@ const App = () => {
     <Provider theme = {theme}>
       <NavigationContainer>
         <Stack.Navigator
-        initialRouteName='StartScreen'
+        initialRouteName='Home'
         screenOptions={{
           headerShown: false,
         }}>
@@ -76,23 +74,5 @@ const App = () => {
 
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fffdf9',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: 10
-  },
-  text: {
-    fontWeight: 'bold',
-    alignItems: 'center',
-    fontSize: 36
-  },
-  tabBar: {
-    //backgroundColor: theme.colors.buttonPink,
-  }
-});
 
 export default App;

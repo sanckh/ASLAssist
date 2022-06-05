@@ -5,13 +5,13 @@ export const theme = {
   ...DefaultTheme,
   colors: {
     ...DefaultTheme.colors,
-    text: '#000000',
+    text: 'black',
     primary: '#DDEDEA', //primary color for your app, usually your brand color.
     accent: '#ecddfc', //secondary color for your app which complements the primary color.
     background: '#FCF4DD', //background color for pages, such as lists.
     surface: '#DDEDEA', //background color for elements containing content, such as cards.
     error: 'red',
-    placeholder: '#fff',
+    placeholder: '#414141',
     backdrop: '#fff',
     onSurface: '#fff',
     notification: '#fff'
