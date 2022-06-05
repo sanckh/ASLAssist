@@ -33,15 +33,14 @@ function Home() {
       barStyle = {{
         backgroundColor: theme.colors.primary,
         padding: 10,
-        
       }}
         screenOptions = {({route}) => ({
           tabBarIcon: ({focused, color, size}) => {
             let iconName;
             let rn = route.name;
 
-            if(rn == 'Home'){
-              iconName = focused ? 'home' : 'home-outline'
+            if(rn == 'Lessons'){
+              iconName = focused ? 'list' : 'fast-food'
             }
             else if(rn == 'Quizzes'){
               iconName = focused ? 'list' : 'list-outline'
@@ -50,7 +49,7 @@ function Home() {
               iconName = focused ? 'person' : 'person-outline'
             }
             else if(rn == 'Settings'){
-              iconName = focused ? 'settings' : 'settings-outline'
+              iconName = focused ? 'list' : 'settings-outline'
             }
             return <Ionicons name = {iconName} size = {25} color = {color}/>
           }
