@@ -12,11 +12,15 @@ import {theme} from './core/theme'
 import StartScreen from './navigation/StartScreen';
 import LoginScreen from './navigation/LoginScreen';
 import RegisterScreen from './navigation/RegisterScreen';
-import Lessons from './navigation/Lessons';
 import Quizzes from './navigation/Quizzes';
 import Settings from './navigation/Settings';
 import HomeDash from './navigation/HomeDash';
 import Profile from './navigation/Profile';
+
+//lessons
+import LessonOne from './navigation/LessonOne';
+import LessonTwo from './navigation/LessonTwo';
+import LessonThree from './navigation/LessonThree';
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -48,6 +52,9 @@ function Home() {
             else if(rn == 'Settings'){
               iconName = focused ? 'list' : 'settings-outline'
             }
+            else if(rn == 'LoginScreen'){
+              iconName = focused ? 'list' : 'settings-outline'
+            }
             return <Ionicons name = {iconName} size = {25} color = {color}/>
           }
         })}
@@ -56,6 +63,7 @@ function Home() {
         <Tab.Screen name = 'Quizzes' component = {Quizzes}/>
         <Tab.Screen name = 'Profile' component = {Profile}/>
         <Tab.Screen name = 'Settings' component = {Settings}/>
+        <Tab.Screen name = 'LoginScreen' component = {LoginScreen}/>
       </Tab.Navigator>
     </Provider>
   )
@@ -68,7 +76,7 @@ const App = () => {
     <Provider theme = {theme}>
       <NavigationContainer>
         <Stack.Navigator
-        initialRouteName='StartScreen'
+        initialRouteName='Home'
         screenOptions={{
           headerShown: false,
         }}>
@@ -76,7 +84,9 @@ const App = () => {
           <Stack.Screen name="LoginScreen" component={LoginScreen} />
           <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
           <Stack.Screen name = "Home" component = {Home}/>
-          <Stack.Screen name = "Lessons" component = {Lessons}/>
+          <Stack.Screen name = "LessonOne" component = {LessonOne}/>
+          <Stack.Screen name = "LessonTwo" component = {LessonTwo}/>
+          <Stack.Screen name = "LessonThree" component = {LessonThree}/>
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>
