@@ -1,11 +1,8 @@
-import { StyleSheet, Text, View, Button, Linking, Dimensions } from 'react-native';
-import React, {useState, useEffect} from 'react';
-import {Colors, DefaultTheme, Provider} from 'react-native-paper'
+import {Provider} from 'react-native-paper'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import 'react-native-gesture-handler';
 
 //components
@@ -39,8 +36,8 @@ function Home() {
             let iconName;
             let rn = route.name;
 
-            if(rn == 'Lessons'){
-              iconName = focused ? 'list' : 'fast-food'
+            if(rn == 'HomeDash'){
+              iconName = focused ? 'home' : 'home-outline'
             }
             else if(rn == 'Quizzes'){
               iconName = focused ? 'list' : 'list-outline'
@@ -55,7 +52,7 @@ function Home() {
           }
         })}
                 >
-        <Tab.Screen name = 'Home' component = {HomeDash}/>
+        <Tab.Screen name = 'HomeDash' component = {HomeDash}/>
         <Tab.Screen name = 'Quizzes' component = {Quizzes}/>
         <Tab.Screen name = 'Profile' component = {Profile}/>
         <Tab.Screen name = 'Settings' component = {Settings}/>
