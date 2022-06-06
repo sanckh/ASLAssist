@@ -1,49 +1,38 @@
 import React, {useState} from 'react';
 import { SafeAreaView, Text, Button, StyleSheet, TouchableOpacity, View,} from 'react-native';
 
-
-// function circle(){
-//     const buttonClickedHandler = () => {
-//         console.log('Button has been clicked');
-//         // this is placeholder insert code to take user to the selected lesson
-
-//     };
-//     return (
-//         <View style = {styles.screen}>
-//             <TouchableOpacity
-//             onPress = {buttonClickedHandler}style={styles.circleButton}>
-//                 <Text>Emergency</Text>
-//             </TouchableOpacity>
-//         </View>
-//     )
-// }
-
-
 const HomeDash = (props) => {
     const buttonClickedHandler = () => {
         console.log('Button has been clicked');
         // this is placeholder insert code to take user to the selected lesson
 
     };
+    const buttonClickedAlert = () => {
+        Alert.alert('Button has been clicked');
+    };
+    const onPress = () => {
+        buttonClickedHandler();
+        buttonClickedAlert();
+    };
     return (
         <SafeAreaView style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
             {/* <Text>Home Dashboard</Text> */}
             <View style = {styles.screen}>
             <TouchableOpacity
-            onPress = {buttonClickedHandler}style={styles.circleButton}>
+            onPress = {onPress}style={styles.circleButton}>
                 <Text>Emergency</Text>
             </TouchableOpacity>
 
             <TouchableOpacity
-            onPress={buttonClickedHandler} style={styles.rectangleButton}>
+            onPress={onPress} style={styles.rectangleButton}>
                 <Text color='#414141'>Lesson 1</Text>
             </TouchableOpacity>
             <TouchableOpacity
-            onPress={buttonClickedHandler} style={styles.rectangleButton}>
+            onPress={onPress} style={styles.rectangleButton}>
                 <Text color='#414141'>Lesson 2</Text>
             </TouchableOpacity>
             <TouchableOpacity
-            onPress={buttonClickedHandler} style={styles.rectangleButton}>
+            onPress={onPress} style={styles.rectangleButton}>
                 <Text color='#414141'>Lesson 3</Text>
             </TouchableOpacity>
 
