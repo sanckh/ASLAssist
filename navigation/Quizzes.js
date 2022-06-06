@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, Text, Button, StyleSheet, TouchableOpacity, View,} from 'react-native';
+import { SafeAreaView, Text, Button, StyleSheet, Alert, TouchableOpacity, View, ScrollView} from 'react-native';
 
 const QuizDash = (props) => {
     const buttonClickedHandler = () => {
@@ -15,8 +15,9 @@ const QuizDash = (props) => {
         buttonClickedAlert();
     };
     return (
+        <ScrollView>
         <SafeAreaView style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-            <Text>Quiz Dashboard</Text>
+
             <View style = {styles.screen}>
                 <TouchableOpacity
                 onPress={onPress} style={styles.rectangleButton}>
@@ -36,6 +37,7 @@ const QuizDash = (props) => {
                 <Text color='#414141' style = {styles.text}>Previous Tests</Text>
             </View>
         </SafeAreaView>
+        </ScrollView>
     )
 }
 
@@ -44,6 +46,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+        marginTop: 40
     },
     rectangleButton:{
         width: 200,

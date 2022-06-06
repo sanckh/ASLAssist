@@ -1,5 +1,11 @@
 import React, {useState} from 'react';
-import { SafeAreaView, Text, Button, StyleSheet, TouchableOpacity, View,} from 'react-native';
+import { SafeAreaView, Text, Button, StyleSheet, Alert, TouchableOpacity, View, ScrollView} from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import 'react-native-gesture-handler';
+
+
+const Stack = createStackNavigator();
 
 const HomeDash = (props) => {
     const buttonClickedHandler = () => {
@@ -15,37 +21,52 @@ const HomeDash = (props) => {
         buttonClickedAlert();
     };
     return (
+        <ScrollView>
         <SafeAreaView style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
             {/* <Text>Home Dashboard</Text> */}
             <View style = {styles.screen}>
+            
             <TouchableOpacity
             onPress = {onPress}style={styles.circleButton}>
-                <Text>Emergency</Text>
+                <Text textAlign='center'>Emergency</Text>
             </TouchableOpacity>
 
             <TouchableOpacity
-            onPress={onPress} style={styles.rectangleButton}>
-                <Text color='#414141'>Lesson 1</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-            onPress={onPress} style={styles.rectangleButton}>
-                <Text color='#414141'>Lesson 2</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-            onPress={onPress} style={styles.rectangleButton}>
-                <Text color='#414141'>Lesson 3</Text>
+            onPress = {onPress}style={styles.circleButton}>
+                <Text textAlign='center'>  Alphabet</Text>
             </TouchableOpacity>
 
+            <TouchableOpacity
+            onPress = {onPress}style={styles.circleButton}>
+                <Text textAlign='center'>  Numbers</Text>
+            </TouchableOpacity>
+        </View>
+        <View>
+        <TouchableOpacity
+            onPress={onPress} style={styles.rectangleButton}>
+                <Text color='#414141' textAlign='center'>Lesson 1</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+            onPress={onPress} style={styles.rectangleButton}>
+                <Text color='#414141' textAlign='center'>Lesson 2</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+            onPress={onPress} style={styles.rectangleButton}>
+                <Text color='#414141' textAlign='center'>Lesson 3</Text>
+            </TouchableOpacity>
         </View>
         </SafeAreaView>
+        </ScrollView>
     )
 }
 
 const styles = StyleSheet.create({
     screen:{
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
+        justifyContent: 'space-around',
+        // alignItems: 'center',
+        flexDirection: 'row',
+        marginTop: 24
     },
     circleButton:{
         width: 100,
@@ -59,7 +80,9 @@ const styles = StyleSheet.create({
         borderWidth: 5,
         color: '#414141',
         textAlign: 'center',
-        marginBottom: 40,
+        marginBottom: 24,
+        marginTop: 24,
+        marginHorizontal: 10
     },
     rectangleButton:{
         width: 100,
@@ -68,7 +91,7 @@ const styles = StyleSheet.create({
         borderColor:'#57131b',
         borderRadius: 15,
         borderWidth: 5,
-        marginBottom: 40,
+        marginBottom: 24,
         padding: 10,
         justifyContent: 'center',
         alignItems: 'center',
