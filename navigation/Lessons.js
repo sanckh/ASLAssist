@@ -3,7 +3,7 @@ import {StyleSheet, Text, View, ScrollView } from 'react-native';
 export default function Lessons(){
     return(
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-            <Text>Settings</Text>
+            <Text>Lessons</Text>
         </View>
     )
 }
