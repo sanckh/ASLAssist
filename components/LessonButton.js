@@ -33,6 +33,6 @@ const styles = StyleSheet.create({
   },
   text: {
     color: '#414141',
-     textAlign: 'center'
+     textAlign: 'center',
    },
 })

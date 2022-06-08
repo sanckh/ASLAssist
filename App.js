@@ -21,6 +21,9 @@ import Profile from './navigation/Profile';
 import LessonOne from './navigation/LessonOne';
 import LessonTwo from './navigation/LessonTwo';
 import LessonThree from './navigation/LessonThree';
+import LessonFour from './navigation/LessonFour';
+import LessonFive from './navigation/LessonFive';
+import LessonSix from './navigation/LessonSix';
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -63,7 +66,7 @@ function Home() {
         <Tab.Screen name = 'Quizzes' component = {Quizzes}/>
         <Tab.Screen name = 'Profile' component = {Profile}/>
         <Tab.Screen name = 'Settings' component = {Settings}/>
-        <Tab.Screen name = 'LoginScreen' component = {LoginScreen}/>
+        {/* <Tab.Screen name = 'LoginScreen' component = {LoginScreen}/> */}
       </Tab.Navigator>
     </Provider>
   )
@@ -87,6 +90,9 @@ const App = () => {
           <Stack.Screen name = "LessonOne" component = {LessonOne}/>
           <Stack.Screen name = "LessonTwo" component = {LessonTwo}/>
           <Stack.Screen name = "LessonThree" component = {LessonThree}/>
+          <Stack.Screen name = "LessonFour" component = {LessonFour}/>
+          <Stack.Screen name = "LessonFive" component = {LessonFive}/>
+          <Stack.Screen name = "LessonSix" component = {LessonSix}/>
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>
