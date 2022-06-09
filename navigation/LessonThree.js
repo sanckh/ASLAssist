@@ -1,7 +1,7 @@
 import { Text, View, ScrollView, StyleSheet } from 'react-native';
 import Header from '../components/Header';
 
-export default function LessonOne(){
+export default function LessonThree(){
     return(
         <View style = {styles.header}>
                 <Header>Numbers</Header>

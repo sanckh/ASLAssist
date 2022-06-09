@@ -1,9 +1,13 @@
-import {Provider} from 'react-native-paper'
+import {Provider as PaperProvider, } from 'react-native-paper'
 import Ionicons from 'react-native-vector-icons/Ionicons'
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer,
+  DarkTheme as NavigationDarkTheme,
+  DefaultTheme as NavigationDefaultTheme, } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import 'react-native-gesture-handler';
+import merge from 'deepmerge'
+import React from 'react';
 
 //components
 import {theme} from './core/theme'
@@ -27,59 +31,72 @@ const Tab = createMaterialBottomTabNavigator();
 
 function Home() {
   return (
-    <Provider theme = {theme}>
       <Tab.Navigator
-      activeColor= {theme.colors.accent}
-      inactiveColor="#414141"
-      barStyle = {{
-        backgroundColor: theme.colors.primary,
-        padding: 10,
-      }}
-        screenOptions = {({route}) => ({
-          tabBarIcon: ({focused, color, size}) => {
-            let iconName;
-            let rn = route.name;
+      activeColor='#fff'
+      shifting = 'true'
+      barStyle= {{
 
-            if(rn == 'HomeDash'){
-              iconName = focused ? 'home' : 'home-outline'
-            }
-            else if(rn == 'Quizzes'){
-              iconName = focused ? 'list' : 'list-outline'
-            }
-            else if(rn == 'Profile'){
-              iconName = focused ? 'person' : 'person-outline'
-            }
-            else if(rn == 'Settings'){
-              iconName = focused ? 'list' : 'settings-outline'
-            }
-            else if(rn == 'LoginScreen'){
-              iconName = focused ? 'list' : 'settings-outline'
-            }
-            return <Ionicons name = {iconName} size = {25} color = {color}/>
-          }
-        })}
-                >
-        <Tab.Screen name = 'HomeDash' component = {HomeDash}/>
-        <Tab.Screen name = 'Quizzes' component = {Quizzes}/>
-        <Tab.Screen name = 'Profile' component = {Profile}/>
-        <Tab.Screen name = 'Settings' component = {Settings}/>
-        <Tab.Screen name = 'LoginScreen' component = {LoginScreen}/>
+    }}
+      >
+        <Tab.Screen 
+          name = 'HomeDash' 
+          component = {HomeDash}
+          options={{
+            tabBarLabel: 'Home',
+            tabBarColor: '#009387',
+            tabBarIcon: ({ color }) => (
+              <Ionicons name = 'home' color = {color} size = {26} /> 
+            ),
+          }}/>
+        <Tab.Screen 
+          name = 'Quizzes' 
+          component = {Quizzes}
+          options={{
+            tabBarLabel: 'Quizzes',
+            tabBarColor: '#1f65ff',
+            tabBarIcon: ({ color }) => (
+              <Ionicons name = 'list' color = {color} size = {26} /> 
+            ),
+          }}
+          />
+        <Tab.Screen 
+          name = 'Profile' 
+          component = {Profile}
+          options={{
+            tabBarLabel: 'Profile',
+            tabBarColor: '#d02860',
+            tabBarIcon: ({ color }) => (
+              <Ionicons name = 'person' color = {color} size = {26} /> 
+            ),
+          }}
+          />
+        <Tab.Screen 
+        name = 'Settings' 
+        component = {Settings}
+        options={{
+          tabBarLabel: 'Settings',
+          tabBarColor: '#009387',
+          tabBarIcon: ({ color }) => (
+            <Ionicons name = 'settings' color = {color} size = {26} /> 
+          ),
+        }}
+        />
       </Tab.Navigator>
-    </Provider>
   )
 }
 
 const Stack = createStackNavigator();
 
-const App = () => {
+export default function App() {
+
   return (
-    <Provider theme = {theme}>
-      <NavigationContainer>
+      <NavigationContainer theme={theme}>
         <Stack.Navigator
         initialRouteName='Home'
         screenOptions={{
           headerShown: false,
-        }}>
+        }}
+        >
           <Stack.Screen name="StartScreen" component={StartScreen} />
           <Stack.Screen name="LoginScreen" component={LoginScreen} />
           <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
@@ -89,9 +106,7 @@ const App = () => {
           <Stack.Screen name = "LessonThree" component = {LessonThree}/>
         </Stack.Navigator>
       </NavigationContainer>
-    </Provider>
 
   );
 }
 
-export default App;
