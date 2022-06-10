@@ -1,16 +1,26 @@
-import {Provider as PaperProvider, } from 'react-native-paper'
-import Ionicons from 'react-native-vector-icons/Ionicons'
-import { NavigationContainer,
-  DarkTheme as NavigationDarkTheme,
-  DefaultTheme as NavigationDefaultTheme, } from '@react-navigation/native';
+import { 
+  Provider as PaperProvider, 
+  DefaultTheme as PaperDefaultTheme,
+  DarkTheme as PaperDarkTheme 
+} from 'react-native-paper';
+
+import { 
+  NavigationContainer, 
+  DefaultTheme as NavigationDefaultTheme,
+  DarkTheme as NavigationDarkTheme
+} from '@react-navigation/native';
+
 import { createStackNavigator } from '@react-navigation/stack';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import 'react-native-gesture-handler';
 import merge from 'deepmerge'
 import React from 'react';
 
+import Ionicons from 'react-native-vector-icons/Ionicons'
+
 //components
-import {theme} from './core/theme'
+import {theme, CustomDarkTheme, CustomDefaultTheme} from './core/theme'
+import { AuthContext } from './components/context';
 
 //screens go here
 import StartScreen from './navigation/StartScreen';
@@ -81,6 +91,17 @@ function Home() {
           ),
         }}
         />
+        <Tab.Screen 
+        name = 'Login' 
+        component = {LoginScreen}
+        options={{
+          tabBarLabel: 'Login',
+          tabBarColor: '#000000',
+          tabBarIcon: ({ color }) => (
+            <Ionicons name = 'list' color = {color} size = {26} /> 
+          ),
+        }}
+        />
       </Tab.Navigator>
   )
 }
@@ -89,9 +110,21 @@ const Stack = createStackNavigator();
 
 export default function App() {
 
+  const [isDarkTheme, setIsDarkTheme] = React.useState(false);
+
+  const authContext = React.useMemo(() => ({
+    toggleTheme: () => {
+      setIsDarkTheme( isDarkTheme => !isDarkTheme );
+    }
+  }), []);
+
+  const theme = isDarkTheme ? CustomDarkTheme : CustomDefaultTheme;
+
   return (
+    <PaperProvider theme = {theme}>
+      <AuthContext.Provider value={authContext}>
       <NavigationContainer theme={theme}>
-        <Stack.Navigator
+        <Stack.Navigator 
         initialRouteName='Home'
         screenOptions={{
           headerShown: false,
@@ -106,6 +139,8 @@ export default function App() {
           <Stack.Screen name = "LessonThree" component = {LessonThree}/>
         </Stack.Navigator>
       </NavigationContainer>
+      </AuthContext.Provider>
+      </PaperProvider>
 
   );
 }

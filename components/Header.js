@@ -2,17 +2,19 @@ import React from 'react'
 import { StyleSheet } from 'react-native'
 import { Colors, Text } from 'react-native-paper'
 import { theme } from '../core/theme'
+import { useTheme } from '@react-navigation/native'
+
+
 
 export default function Header(props) {
-  return <Text style={styles.header} {...props} />
-}
 
-const styles = StyleSheet.create({
-  header: {
+  const {colors} = useTheme();
+
+  return <Text style={{
     fontSize: 21,
-    color: theme.colors.text,
+    color: colors.text,
     fontWeight: 'bold',
     fontSize: 25,
-    paddingVertical: 12,
-  },
-})
+    paddingVertical: 15
+  }} {...props} />
+}

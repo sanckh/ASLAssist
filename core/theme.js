@@ -1,5 +1,39 @@
 import { DefaultTheme } from '@react-navigation/native';
 
+import { 
+  Provider as PaperProvider, 
+  DefaultTheme as PaperDefaultTheme,
+  DarkTheme as PaperDarkTheme 
+} from 'react-native-paper';
+
+import { 
+  NavigationContainer, 
+  DefaultTheme as NavigationDefaultTheme,
+  DarkTheme as NavigationDarkTheme
+} from '@react-navigation/native';
+
+export const CustomDefaultTheme = { //default == light theme
+  ...NavigationDefaultTheme,
+  ...PaperDefaultTheme,
+  colors: {
+    ...NavigationDefaultTheme.colors,
+    ...PaperDefaultTheme.colors,
+    background: '#FCF4DD',
+    text: '#333333',
+    card: 'tomato'
+  }
+}
+
+export const CustomDarkTheme = {
+  ...NavigationDarkTheme,
+  ...PaperDarkTheme,
+  colors: {
+    ...NavigationDarkTheme.colors,
+    ...PaperDarkTheme.colors,
+    background: '#414141',
+    text: '#ffffff'
+  }
+}
 
 export const theme = {
   ...DefaultTheme,

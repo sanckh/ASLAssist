@@ -2,14 +2,18 @@ import React from 'react';
 import { SafeAreaView, View, StyleSheet, Component, Text, Image} from 'react-native';
 import Header from '../components/Header';
 import { theme } from '../core/theme';
-import SettingsList from 'react-native-settings-list';
-import Ionicons from 'react-native-vector-icons/Ionicons'
 import { TouchableRipple, Switch, useTheme, Divider } from 'react-native-paper';
+import {AuthContext} from '../components/context'
 
 import {List} from 'react-native-paper'
+import Button from '../components/Button';
 
 
 export default function Settings() {
+
+  const {toggleTheme} = React.useContext(AuthContext);
+  const paperTheme = useTheme();
+
         return (
           <View>
               <View style = {styles.header}>
@@ -20,13 +24,15 @@ export default function Settings() {
                 borderColor= 'black'
               >
                 <List.Subheader>General</List.Subheader>
+                <TouchableRipple onPress={() => {toggleTheme()}}>
                 <List.Item title = "Dark Mode" 
-                left = {() => <Ionicons style = {styles.iconStyle} name = 'moon' size = {28} />}
-                right = {() => <Switch/>}
+                left = {() => <List.Icon icon="folder" />}
+                right = {() => <Switch value = {paperTheme.dark}/>}
                 description = "Toggle Dark Mode" 
                 />
+                </TouchableRipple>
                 <List.Item title = "About" 
-                left = {() => <Ionicons style = {styles.iconStyle} name = 'list' size = {28} />} 
+                left = {() => <List.Icon icon="folder" />} 
                 />
               </List.Section>
               <Divider />
@@ -35,12 +41,12 @@ export default function Settings() {
               >
                 <List.Subheader>General</List.Subheader>
                 <List.Item title = "Dark Mode" 
-                left = {() => <Ionicons style = {styles.iconStyle} name = 'moon' size = {28} />}
+                left = {() => <List.Icon icon="folder" />}
                 right = {() => <Switch/>}
                 description = "Toggle Dark Mode" 
                 />
                 <List.Item title = "About" 
-                left = {() => <Ionicons style = {styles.iconStyle} name = 'list' size = {28} />} 
+                left = {() => <List.Icon icon="folder" />} 
                 />
               </List.Section>
               <Divider />

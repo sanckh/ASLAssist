@@ -5,10 +5,14 @@ import Header from '../components/Header';
 import { theme } from '../core/theme';
 import LessonButton from '../components/Button';
 import Button from '../components/Button';
+import { useTheme } from '@react-navigation/native';
 
 
 
 export default function HomeDash({navigation}) {
+
+    //for dark mode
+    const {colors} = useTheme();
 
     //FOR TESTING PURPOSES
     const buttonClickedHandler = () => {
@@ -33,19 +37,19 @@ export default function HomeDash({navigation}) {
             <TouchableOpacity 
             style={styles.circleButton}
             onPress = {() => navigation.navigate('LessonOne')}>
-                <Text textAlign='center'>Emergency</Text>
+                <Text textAlign='center' style ={{color: colors.text}}>Emergency</Text>
             </TouchableOpacity>
 
             <TouchableOpacity
             style={styles.circleButton}
             onPress = {() => navigation.navigate('LessonTwo')}>
-                <Text textAlign='center'>  Alphabet</Text>
+                <Text textAlign='center' style ={{color: colors.text}}>  Alphabet</Text>
             </TouchableOpacity>
 
             <TouchableOpacity
             style={styles.circleButton}
             onPress = {() => navigation.navigate('LessonThree')}>
-                <Text textAlign='center'>  Numbers</Text>
+                <Text textAlign='center' style ={{color: colors.text}}>  Numbers</Text>
             </TouchableOpacity>
         </View>
         <View>
