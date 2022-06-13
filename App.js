@@ -30,11 +30,14 @@ import Quizzes from './navigation/Quizzes';
 import Settings from './navigation/Settings';
 import HomeDash from './navigation/HomeDash';
 import Profile from './navigation/Profile';
+import ResetPasswordScreen from './navigation/ResetPasswordScreen';
+import AboutScreen from './navigation/AboutScreen';
 
 //lessons
 import LessonOne from './navigation/LessonOne';
 import LessonTwo from './navigation/LessonTwo';
 import LessonThree from './navigation/LessonThree';
+
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -91,9 +94,10 @@ function Home() {
           ),
         }}
         />
-        <Tab.Screen 
+        {/**This is a tab for the login screen for testing purposes */}
+        {/* <Tab.Screen 
         name = 'Login' 
-        component = {LoginScreen}
+        component = {StartScreen}
         options={{
           tabBarLabel: 'Login',
           tabBarColor: '#000000',
@@ -101,7 +105,7 @@ function Home() {
             <Ionicons name = 'list' color = {color} size = {26} /> 
           ),
         }}
-        />
+        /> */}
       </Tab.Navigator>
   )
 }
@@ -133,6 +137,8 @@ export default function App() {
           <Stack.Screen name="StartScreen" component={StartScreen} />
           <Stack.Screen name="LoginScreen" component={LoginScreen} />
           <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
+          <Stack.Screen name = "ResetPasswordScreen" component = {ResetPasswordScreen}/>
+          <Stack.Screen name = "AboutScreen" component = {AboutScreen} />
           <Stack.Screen name = "Home" component = {Home}/>
           <Stack.Screen name = "LessonOne" component = {LessonOne}/>
           <Stack.Screen name = "LessonTwo" component = {LessonTwo}/>

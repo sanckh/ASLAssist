@@ -2,8 +2,6 @@ import React from 'react'
 import { TouchableOpacity, Image, StyleSheet } from 'react-native'
 import { getStatusBarHeight } from 'react-native-status-bar-height'
 import { List } from 'react-native-paper'
-import { Button } from 'react-native-paper'
-import Ionicons from 'react-native-vector-icons/Ionicons'
 
 export default function BackButton({ goBack }) {
   return (

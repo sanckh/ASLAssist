@@ -7,9 +7,10 @@ import {AuthContext} from '../components/context'
 
 import {List} from 'react-native-paper'
 import Button from '../components/Button';
+import { NavigationContainer } from '@react-navigation/native';
 
 
-export default function Settings() {
+export default function Settings({navigation}) {
 
   const {toggleTheme} = React.useContext(AuthContext);
   const paperTheme = useTheme();
@@ -26,30 +27,41 @@ export default function Settings() {
                 <List.Subheader>General</List.Subheader>
                 <TouchableRipple onPress={() => {toggleTheme()}}>
                 <List.Item title = "Dark Mode" 
-                left = {() => <List.Icon icon="folder" />}
+                left = {() => <List.Icon icon="moon-waning-crescent" />}
                 right = {() => <Switch value = {paperTheme.dark}/>}
                 description = "Toggle Dark Mode" 
                 />
                 </TouchableRipple>
+                <TouchableRipple
+                  onPress = { () => navigation.navigate('AboutScreen')}>
                 <List.Item title = "About" 
-                left = {() => <List.Icon icon="folder" />} 
+                left = {() => <List.Icon icon="information" />} 
                 />
+                </TouchableRipple>
               </List.Section>
-              <Divider />
-              <List.Section
-                borderColor= 'black'
-              >
-                <List.Subheader>General</List.Subheader>
-                <List.Item title = "Dark Mode" 
-                left = {() => <List.Icon icon="folder" />}
-                right = {() => <Switch/>}
-                description = "Toggle Dark Mode" 
+              <Divider/>
+              <List.Section>
+                <List.Subheader>Account</List.Subheader>
+                <TouchableRipple
+                  onPress={() => navigation.navigate('ResetPasswordScreen')}
+                  >
+                <List.Item title = "Reset Password" 
+                left = {() => <List.Icon icon="lock-reset" />}
+                description = "" 
                 />
-                <List.Item title = "About" 
-                left = {() => <List.Icon icon="folder" />} 
+                </TouchableRipple>
+                <TouchableRipple
+                onPress = { () => {
+                  navigation.reset({
+                    routes: [{ name: 'StartScreen'}],
+                  })
+                }}>
+                <List.Item title = "Logout" 
+                left = {() => <List.Icon icon="logout" />} 
                 />
+                </TouchableRipple>
               </List.Section>
-              <Divider />
+              <Divider/>
             </View>
           </View>
         );
