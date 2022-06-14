@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { SafeAreaView, Text, StyleSheet, Alert, TouchableOpacity, View, ScrollView} from 'react-native';
 import 'react-native-gesture-handler';
 import Header from '../components/Header';
+import HotStreaks from '../components/HotStreaks';
 import { theme } from '../core/theme';
 import LessonButton from '../components/Button';
 import Button from '../components/Button';
@@ -129,7 +130,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
-
+        
     },
     // test: {
     //     backgroundColor:'#fce1e4',
