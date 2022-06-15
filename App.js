@@ -32,6 +32,7 @@ import HomeDash from './navigation/HomeDash';
 import Profile from './navigation/Profile';
 import ResetPasswordScreen from './navigation/ResetPasswordScreen';
 import AboutScreen from './navigation/AboutScreen';
+import Achievement from './navigation/Achievements';
 
 //lessons
 import LessonOne from './navigation/LessonOne';
@@ -149,6 +150,7 @@ export default function App() {
           <Stack.Screen name = "LessonFour" component = {LessonFour}/>
           <Stack.Screen name = "LessonFive" component = {LessonFive}/>
           <Stack.Screen name = "LessonSix" component = {LessonSix}/>
+          <Stack.Screen name = "Achievements" component = {Achievement}/>
         </Stack.Navigator>
       </NavigationContainer>
       </AuthContext.Provider>

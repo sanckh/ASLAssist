@@ -1,12 +1,8 @@
 import React from 'react';
 import { SafeAreaView, Text, Button, StyleSheet, Alert, TouchableOpacity, View, ScrollView} from 'react-native';
 import Header from '../components/Header';
-<<<<<<< HEAD
 import { useTheme } from '@react-navigation/native';
 import { theme, CustomDefaultTheme, CustomDarkTheme } from '../core/theme';
-=======
-
->>>>>>> buttonfunction
 const QuizDash = (props) => {
 
     const {colors} = useTheme();
@@ -25,17 +21,9 @@ const QuizDash = (props) => {
     };
     return (
         <ScrollView>
-<<<<<<< HEAD
-        <SafeAreaView style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-            <View>
-                <Header>
-                    Quizzes
-                </Header>
-=======
         <SafeAreaView style={styles.container}>
         <View style = {styles.header}>
                 <Header>Quizzes</Header>
->>>>>>> buttonfunction
             </View>
             <View style = {styles.screen}>
                 <TouchableOpacity
@@ -53,12 +41,8 @@ const QuizDash = (props) => {
                     <Text style = {{color: colors.text}}>Practice Quiz 3</Text>
                 </TouchableOpacity>
 
-<<<<<<< HEAD
-                <Text style = {{fontSize: 26, color: colors.text}}>Previous Tests</Text>
-=======
                 <Text color='#414141'
                 style = {styles.text}>Previous Tests</Text>
->>>>>>> buttonfunction
             </View>
         </SafeAreaView>
         </ScrollView>
@@ -90,8 +74,6 @@ const styles = StyleSheet.create({
         padding: 10,
         justifyContent: 'center',
         alignItems: 'center',
-<<<<<<< HEAD
-=======
         marginLeft: 20,
     },
     header: {
@@ -99,7 +81,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
->>>>>>> buttonfunction
     },
 })
 export default QuizDash;
