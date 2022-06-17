@@ -18,6 +18,7 @@ import React from 'react';
 
 import Ionicons from 'react-native-vector-icons/Ionicons'
 
+
 //components
 import {theme, CustomDarkTheme, CustomDefaultTheme} from './core/theme'
 import { AuthContext } from './components/context';
@@ -98,7 +99,7 @@ function Home() {
         }}
         />
         {/**This is a tab for the login screen for testing purposes */}
-        {/* <Tab.Screen 
+        <Tab.Screen 
         name = 'Login' 
         component = {StartScreen}
         options={{
@@ -108,7 +109,7 @@ function Home() {
             <Ionicons name = 'list' color = {color} size = {26} /> 
           ),
         }}
-        /> */}
+        />
       </Tab.Navigator>
   )
 }
