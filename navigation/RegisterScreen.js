@@ -53,7 +53,7 @@ export default function RegisterScreen({ navigation }) {
         error={!!password.error}
         errorText={password.error}
         secureTextEntry
-      />
+      />   
       <Button
         mode="contained"
         onPress={handleSignUp}

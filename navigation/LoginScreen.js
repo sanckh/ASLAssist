@@ -20,6 +20,8 @@ export default function LoginScreen({ navigation }) {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
+  //change this
+
   const handleLogin = () => {
       signInWithEmailAndPassword(auth, email, password)
       .then((userCredentials) => {
