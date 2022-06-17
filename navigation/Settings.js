@@ -8,6 +8,8 @@ import {AuthContext} from '../components/context'
 import {List} from 'react-native-paper'
 import Button from '../components/Button';
 import { NavigationContainer } from '@react-navigation/native';
+import { auth } from '../firebase';
+import { signOut } from 'firebase/auth';
 
 
 export default function Settings({navigation}) {
@@ -15,6 +17,15 @@ export default function Settings({navigation}) {
   const {toggleTheme} = React.useContext(AuthContext);
   const paperTheme = useTheme();
 
+  const handleSignOut = () => {
+    auth
+    signOut(auth)
+    .then(() => {
+      //status message here
+      navigation.navigate("LoginScreen")
+    })
+    .catch(error => alert(error.message))
+  }
         return (
           <View>
               <View style = {styles.header}>
@@ -33,7 +44,7 @@ export default function Settings({navigation}) {
                 />
                 </TouchableRipple>
                 <TouchableRipple
-                  onPress = { () => navigation.navigate('AboutScreen')}>
+                  onPress = { () => navigation.replace('AboutScreen')}>
                 <List.Item title = "About" 
                 left = {() => <List.Icon icon="information" />} 
                 />
@@ -51,11 +62,8 @@ export default function Settings({navigation}) {
                 />
                 </TouchableRipple>
                 <TouchableRipple
-                onPress = { () => {
-                  navigation.reset({
-                    routes: [{ name: 'StartScreen'}],
-                  })
-                }}>
+                onPress = {handleSignOut}
+                >
                 <List.Item title = "Logout" 
                 left = {() => <List.Icon icon="logout" />} 
                 />

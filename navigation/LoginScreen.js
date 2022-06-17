@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { TouchableOpacity, StyleSheet, View } from 'react-native'
 import { Text } from 'react-native-paper'
 import Background from '../components/Background'
@@ -6,10 +6,11 @@ import Logo from '../components/Logo'
 import Header from '../components/Header'
 import Button from '../components/Button'
 import TextInput from '../components/TextInput'
-import BackButton from '../components/BackButton'
 import { theme } from '../core/theme'
 import { emailValidator } from '../helpers/emailValidator'
 import { passwordValidator } from '../helpers/passwordValidator'
+import { getStatusBarHeight } from 'react-native-status-bar-height'
+import { List } from 'react-native-paper'
 
 import {  signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from '../firebase'
@@ -17,37 +18,39 @@ import { auth } from '../firebase'
 
 export default function LoginScreen({ navigation }) {
 
+  const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
-  //change this
+  useEffect(()=> {
+    const unsubscribe = auth.onAuthStateChanged(user => {
+      if(user) {
+        navigation.reset("Home")
+      }
+    })
+    return unsubscribe
+  }, [])
 
   const handleLogin = () => {
-      signInWithEmailAndPassword(auth, email, password)
-      .then((userCredentials) => {
-        const user = userCredentials.user;
-      })
-      navigation.navigate('Home')
-  }
-
-
-  const onLoginPressed = () => {
-    const emailError = emailValidator(email.value)
-    const passwordError = passwordValidator(password.value)
+    const emailError = emailValidator(email)
+    const passwordError = passwordValidator(password)
     if (emailError || passwordError) {
       setEmail({ ...email, error: emailError })
       setPassword({ ...password, error: passwordError })
       return
     }
-    navigation.reset({
-      index: 0,
-      routes: [{ name: 'Home' }],
-    })
+      signInWithEmailAndPassword(auth, email, password)
+      .then((userCredentials) => {
+        //status message here
+        const user = userCredentials.user;
+      })
   }
 
   return (
     <Background>
-      <BackButton goBack={navigation.goBack} />
+    <TouchableOpacity  onPress = { () => navigation.replace('StartScreen')} style={styles.iconContainer}>
+      <List.Icon icon="arrow-left" />
+    </TouchableOpacity>
       <Logo />
       <Header>Welcome back.</Header>
       <TextInput
@@ -108,5 +111,14 @@ const styles = StyleSheet.create({
   link: {
     fontWeight: 'bold',
     color: theme.colors.secondary,
+  },
+  iconContainer: {
+    position: 'absolute',
+    top: 10 + getStatusBarHeight(),
+    left: 4,
+  },
+  image: {
+    width: 24,
+    height: 24,
   },
 })

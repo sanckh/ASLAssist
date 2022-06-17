@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { View, StyleSheet, TouchableOpacity, Alert } from 'react-native'
 import { Text } from 'react-native-paper'
 import Background from '../components/Background'
@@ -20,8 +20,18 @@ export default function RegisterScreen({ navigation }) {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
+  useEffect(()=> {
+    const unsubscribe = auth.onAuthStateChanged(user => {
+      if(user) {
+        navigation.replace("LoginScreen")
+      }
+    })
+    return unsubscribe
+  }, [])
+
   const handleSignUp = () => {
       createUserWithEmailAndPassword(auth, email, password)
+      //status message here
       .then((userCredentials) => {
         const user = userCredentials.user;
       })

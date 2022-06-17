@@ -6,6 +6,7 @@ import { theme } from '../core/theme';
 import LessonButton from '../components/Button';
 import Button from '../components/Button';
 import { useTheme } from '@react-navigation/native';
+import { auth } from '../firebase';
 
 
 
@@ -32,7 +33,10 @@ export default function HomeDash({navigation}) {
         <SafeAreaView style={styles.container}>
             <View style = {styles.header}>
                 <Header justifyContent='center'
-            alignItems='center'>Home Page</Header>
+                 alignItems='center'>Home Page</Header>
+            </View>
+            <View>
+                <Text>Hello {auth.currentUser?.email}</Text>
             </View>
             <View style = {styles.screen}>
             
@@ -125,7 +129,7 @@ const styles = StyleSheet.create({
         marginLeft: 20,
     },
     header: {
-        padding: 20,
+        paddingTop: 10,
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
