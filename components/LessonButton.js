@@ -2,6 +2,7 @@ import React from 'react'
 import { StyleSheet } from 'react-native'
 import { Button as PaperButton } from 'react-native-paper'
 import { theme } from '../core/theme'
+import { useTheme } from '@react-navigation/native'
 
 export default function Button({ mode, style, ...props }) {
   return (
@@ -32,7 +33,7 @@ const styles = StyleSheet.create({
     
   },
   text: {
-    color: '#414141',
+    color: theme.colors.text,
      textAlign: 'center'
    },
 })

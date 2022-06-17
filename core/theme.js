@@ -19,7 +19,7 @@ export const CustomDefaultTheme = { //default == light theme
     ...NavigationDefaultTheme.colors,
     ...PaperDefaultTheme.colors,
     background: '#FCF4DD',
-    text: '#333333',
+    text: 'black',
     card: 'tomato'
   }
 }
@@ -30,7 +30,7 @@ export const CustomDarkTheme = {
   colors: {
     ...NavigationDarkTheme.colors,
     ...PaperDarkTheme.colors,
-    background: '#414141',
+    background: '#3f137b',
     text: '#ffffff'
   }
 }

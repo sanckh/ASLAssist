@@ -62,11 +62,11 @@ export default function HomeDash({navigation}) {
         </LessonButton>
             <TouchableOpacity
             onPress={onPress} style={styles.rectangleButton}>
-                <Text color='#414141' textAlign='center'>Lesson 2</Text>
+                <Text textAlign='center'  style={{color: colors.text}}>Lesson 2</Text>
             </TouchableOpacity>
             <TouchableOpacity
             onPress={onPress} style={styles.rectangleButton}>
-                <Text color='#414141' textAlign='center'>Lesson 3</Text>
+                <Text style={{color: colors.text}} textAlign='center'>Lesson 3</Text>
             </TouchableOpacity>
         </View>
         </SafeAreaView>

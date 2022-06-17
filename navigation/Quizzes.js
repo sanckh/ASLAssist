@@ -30,12 +30,12 @@ const QuizDash = (props) => {
             <View style = {styles.screen}>
                 <TouchableOpacity
                 onPress={onPress} style={styles.rectangleButton}>
-                    <Text color='#414141'>Practice Quiz 1</Text>
+                    <Text style={{color: colors.text}}>Practice Quiz 1</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity
                 onPress={onPress} style={styles.rectangleButton}>
-                    <Text color='#414141'>Practice Quiz 2</Text>
+                    <Text style={{color: colors.text}}>Practice Quiz 2</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity
