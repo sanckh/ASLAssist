@@ -3,7 +3,6 @@ import { SafeAreaView, Text, Button, StyleSheet, Alert, TouchableOpacity, View, 
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import { theme, CustomDefaultTheme, CustomDarkTheme } from '../core/theme';
-
 const QuizDash = (props) => {
 
     const {colors} = useTheme();
