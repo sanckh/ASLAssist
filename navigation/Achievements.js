@@ -1,5 +1,6 @@
 import { Text, View, ScrollView, StyleSheet, Alert, Linking } from 'react-native';
 import React, {useCallback} from 'react';
+import { List, Divider, TouchableRipple } from 'react-native-paper';
 import Header from '../components/Header';
 import BackButton from '../components/BackButton';
 import Background from '../components/Background';
@@ -11,7 +12,12 @@ import {List} from 'react-native-paper'
 import { NavigationContainer } from '@react-navigation/native';
 
 export default function Achievement({navigation}){
+
+  const getAchievements = () => {
+    //code to call firestore achievements master list
+  }
     return(
+
       <ScrollView>
       <View>
         <BackButton goBack = {navigation.goBack} />
@@ -84,5 +90,14 @@ const styles = StyleSheet.create({
       alignSelf: 'center', 
       padding: 5, 
       marginRight: 10
-    }
+    },
+    containerView: {
+      flex: 1,
+      padding: 10,
+      width: '100%',
+      maxWidth: 1000,
+      alignSelf: 'center',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
   });

@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 10,
     width: '100%',
-    maxWidth: 450,
+    maxWidth: 1000,
     alignSelf: 'center',
     alignItems: 'center',
     justifyContent: 'center',
