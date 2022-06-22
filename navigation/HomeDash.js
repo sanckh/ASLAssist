@@ -39,19 +39,19 @@ export default function HomeDash({navigation}) {
             <TouchableOpacity 
             style={styles.circleButton}
             onPress = {() => navigation.navigate('LessonOne')}>
-                <Text textAlign='center' style ={{color: colors.text}}>Emergency</Text>
+                <Text textAlign='center' color={theme.colors.text}>Emergency</Text>
             </TouchableOpacity>
 
             <TouchableOpacity
             style={styles.circleButton}
             onPress = {() => navigation.navigate('LessonTwo')}>
-                <Text textAlign='center' style ={{color: colors.text}}>  Alphabet</Text>
+                <Text textAlign='center' color={theme.colors.text}>  Alphabet</Text>
             </TouchableOpacity>
 
             <TouchableOpacity
             style={styles.circleButton}
             onPress = {() => navigation.navigate('LessonThree')}>
-                <Text textAlign='center' style ={{color: colors.text}}>  Numbers</Text>
+                <Text textAlign='center' color={theme.colors.text}>  Numbers</Text>
             </TouchableOpacity>
         </View>
         <View>
@@ -63,21 +63,80 @@ export default function HomeDash({navigation}) {
                 Lesson 1
         </LessonButton> */}
 
+        <View style={styles.screen}>
             <TouchableOpacity
             onPress={() => navigation.navigate('LessonFour')}
             style={styles.rectangleButton}>
-                <Text color='#414141' textAlign='center'>Lesson 1</Text>
+                <Text color={theme.colors.text} textAlign='center'>Lesson 1</Text>
             </TouchableOpacity>
+
             <TouchableOpacity
             onPress={() => navigation.navigate('LessonFive')}
             style={styles.rectangleButton}>
-                <Text color='#414141' textAlign='center'>Lesson 2</Text>
+                <Text color={theme.colors.text} textAlign='center'>Lesson 2</Text>
             </TouchableOpacity>
+            </View>
+
+            <View style={styles.screen}>
             <TouchableOpacity
             onPress={() => navigation.navigate('LessonSix')}
             style={styles.rectangleButton}>
-                <Text color='#414141' textAlign='center'>Lesson 3</Text>
+                <Text color={theme.colors.text} textAlign='center'>Lesson 3</Text>
             </TouchableOpacity>
+
+            <TouchableOpacity
+            // onPress={() => navigation.navigate('LessonSeven')}
+            style={styles.rectangleButton}>
+                <Text color={theme.colors.text} textAlign='center'>Lesson 4</Text>
+            </TouchableOpacity>
+
+            </View>
+
+            <View style={styles.screen}>
+            <TouchableOpacity
+            // onPress={() => navigation.navigate('LessonEight')}
+            style={styles.rectangleButton}>
+                <Text color={theme.colors.text} textAlign='center'>Lesson 5</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+            // onPress={() => navigation.navigate('LessonNine')}
+            style={styles.rectangleButton}>
+                <Text color={theme.colors.text} textAlign='center'>Lesson 6</Text>
+            </TouchableOpacity>
+
+            </View>
+
+            <View style={styles.screen}>
+            <TouchableOpacity
+            // onPress={() => navigation.navigate('LessonTen')}
+            style={styles.rectangleButton}>
+                <Text color={theme.colors.text} textAlign='center'>Lesson 7</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+            // onPress={() => navigation.navigate('LessonEleven')}
+            style={styles.rectangleButton}>
+                <Text color={theme.colors.text} textAlign='center'>Lesson 8</Text>
+            </TouchableOpacity>
+
+            </View>
+
+            <View style={styles.screen}>
+            <TouchableOpacity
+            // onPress={() => navigation.navigate('LessonTwelve')}
+            style={styles.rectangleButton}>
+                <Text color={theme.colors.text} textAlign='center'>Lesson 9</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+            // onPress={() => navigation.navigate('LessonThirteen')}
+            style={styles.rectangleButton}>
+                <Text color={theme.colors.text} textAlign='center'>Lesson 10</Text>
+            </TouchableOpacity>
+
+            </View>
+
         </View>
         </SafeAreaView>
         </ScrollView>
@@ -118,11 +177,12 @@ const styles = StyleSheet.create({
         borderColor:'#57131b',
         borderRadius: 15,
         borderWidth: 5,
-        marginBottom: 24,
+        marginBottom: 20,
         padding: 10,
         justifyContent: 'center',
         alignItems: 'center',
         marginLeft: 20,
+        marginRight: 20,
     },
     header: {
         padding: 20,

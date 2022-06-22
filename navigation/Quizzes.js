@@ -3,6 +3,7 @@ import { SafeAreaView, Text, Button, StyleSheet, Alert, TouchableOpacity, View, 
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import { theme, CustomDefaultTheme, CustomDarkTheme } from '../core/theme';
+import Paragraph from '../components/Paragraph';
 const QuizDash = (props) => {
 
     const {colors} = useTheme();
@@ -28,21 +29,22 @@ const QuizDash = (props) => {
             <View style = {styles.screen}>
                 <TouchableOpacity
                 onPress={onPress} style={styles.rectangleButton}>
-                    <Text color='#414141'>Practice Quiz 1</Text>
+                    <Text color={theme.colors.text}>Practice Quiz 1</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity
                 onPress={onPress} style={styles.rectangleButton}>
-                    <Text color='#414141'>Practice Quiz 2</Text>
+                    <Text color={theme.colors.text}>Practice Quiz 2</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity
                 onPress={onPress} style={styles.rectangleButton}>
-                    <Text style = {{color: colors.text}}>Practice Quiz 3</Text>
+                    <Text color={theme.colors.text}>Practice Quiz 3</Text>
                 </TouchableOpacity>
 
-                <Text color='#414141'
+                <Text color={theme.colors.text}
                 style = {styles.text}>Previous Tests</Text>
+                <Paragraph>This is where the quizzes that the user has already completed will be displayed.</Paragraph>
             </View>
         </SafeAreaView>
         </ScrollView>
@@ -57,7 +59,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: 40
+        marginTop: 24
     },
     text:{
         fontSize: 26,
@@ -66,11 +68,11 @@ const styles = StyleSheet.create({
     rectangleButton:{
         width: 150,
         height: 50,
-        backgroundColor: theme.colors.card,
+        backgroundColor: '#DAEAF6',
         borderColor:'#0a2941',
         borderRadius: 15,
         borderWidth: 5,
-        marginBottom: 24,
+        marginBottom: 20,
         padding: 10,
         justifyContent: 'center',
         alignItems: 'center',
