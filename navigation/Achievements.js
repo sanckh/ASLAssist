@@ -8,46 +8,64 @@ import Logo from '../components/Logo';
 import Paragraph from '../components/Paragraph';
 import Button from '../components/Button';
 
+import {List} from 'react-native-paper'
+import { NavigationContainer } from '@react-navigation/native';
+
 export default function Achievement({navigation}){
 
   const getAchievements = () => {
     //code to call firestore achievements master list
   }
     return(
-        <View style = {styles.containerView}>
-          <BackButton goBack = {navigation.goBack} />
-          <View>
-          <Logo/>
-          <Header>Achievements</Header>
-          
+
+      <ScrollView>
+      <View>
+        <BackButton goBack = {navigation.goBack} />
           <View style = {styles.header}>
-            <Header>Profile</Header>
+          <Header>Achievements</Header>
           </View>
+        <View>
+          <List.Section
+            borderColor= 'black'
+          >
+            <List.Subheader>All Achievements</List.Subheader>
+            <List.Item title = "Placeholder: Consistency"
+            left = {() => <List.Icon icon="trophy" />}
+            description = "Logged in 7 days in a row"
+            />
+            <List.Item title = "Placeholder: Getting Started"
+            left = {() => <List.Icon icon="trophy" />}
+            description = "Completed Lesson One"
+            />
+            <List.Item title = "Placeholder: Baby Steps"
+            left = {() => <List.Icon icon="trophy" />}
+            description = "Completed three lessons"
+            />
+            <List.Item title = "Placeholder: Scholar"
+            left = {() => <List.Icon icon="trophy" />}
+            description = "Completed Lesson One Quiz"
+            />
+            <List.Item title = "Placeholder: Genius"
+            left = {() => <List.Icon icon="trophy" />}
+            description = "Completed three quizzes"
+            />
+            <List.Item title = "Placeholder: Practice Makes Perfect"
+            left = {() => <List.Icon icon="trophy" />}
+            description = "Completed one Practice Quiz"
+            />
+            <List.Item title = "Placeholder"
+            left = {() => <List.Icon icon="trophy" />}
+            description = "Placeholder"
+            />
+            <List.Item title = "Placeholder"
+            left = {() => <List.Icon icon="trophy" />}
+            description = "Placeholder"
+            />
 
-        </View>
-            <View>
-              {/* display getAchievements */}
-            </View>
-
-            <View>
-            <List.Section
-              borderColor= 'black'
-            >
-              <List.Subheader>Recent Achievements</List.Subheader>
-              <List.Item title = "Achievement placeholder"
-              //make aa check mark for completed
-              left = {() => <List.Icon icon="check-decagram" />}
-              />
-
-            </List.Section>
-            <Divider/>
-            <List.Section>
-              <List.Subheader>Upcoming Achievements</List.Subheader>
-            </List.Section>
-            <Divider/>
-          </View>
-
-          </View>
+          </List.Section>
+    </View>
+  </View>
+  </ScrollView>
     )
 }
 
@@ -60,12 +78,14 @@ const styles = StyleSheet.create({
       height:24,
       justifyContent:'center'
     },
-    header:{
+    header: {
+      marginTop: 20,
+      marginLeft: 40,
       padding: 20,
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'space-between',
-    },
+  },
     iconStyle: {
       alignSelf: 'center', 
       padding: 5, 
