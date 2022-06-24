@@ -4,14 +4,14 @@ import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
 import { NavigationContainer } from '@react-navigation/native';
 
-export default function LessonFour({navigation}){
+export default function LessonSix({navigation}){
     const {colors} = useTheme();
 
     return(
         <View>
             <BackButton goBack = {navigation.goBack} />
             <View style = {styles.header}>
-                <Header>Lesson 1</Header>
+                <Header>Section Two</Header>
             </View>
             {/* <View>
                 <Text style = {{color: colors.text}}> hello this is a test</Text>

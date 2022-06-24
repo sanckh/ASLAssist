@@ -9,15 +9,19 @@ import Button from '../components/Button';
 import Background from '../components/Background';
 import { getStatusBarHeight } from 'react-native-status-bar-height'
 
-export default function LessonTwo({navigation}){
+export default function Alphabet({navigation}){
     const {colors} = useTheme();
+    const[url, setUrl ] = useState();
 
     return(
         <Background>
             <TouchableOpacity  onPress = { () => navigation.replace('Home')} style={styles.iconContainer}>
                 <List.Icon icon="arrow-left" />
             </TouchableOpacity>
-             <Header style = {styles.header}>Lesson One</Header>
+             <View style = {{flexDirection: 'row'}}>
+                
+                <Header>Emergency</Header>
+            </View>
             
             <View style = {{flexDirection: 'row', marginTop: 10}}>
                 <View style = {styles.imagePlacement}>
@@ -77,17 +81,14 @@ export default function LessonTwo({navigation}){
                     <Text>C</Text>
                 </View>
             </View>
-            <View>
-                
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"blue"} />
-                <Text > Lesson Progress: 0%</Text>
+            <View style = {{marginLeft: 20}}>
+                <Text style={[styles.text, {color: colors.text, marginLeft: 30}]}> Lesson Progress: 50%</Text>
+                <ProgressBar style = {{marginLeft: 30, marginRight: 30}} progress={0.5} color={"blue"} />
             </View>
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('lessonOnePageTwo')}
-            style = {{backgroundColor: '#ecddfc', 
-                width: 250,
-                height: 50,}}
+            onPress = {() => navigation.navigate('RegisterScreen')}
+            style = {{backgroundColor: '#ecddfc'}}
             >
                 Next Section
             </Button>
@@ -101,11 +102,7 @@ const styles = StyleSheet.create({
 
     },
     header: {
-        position: 'absolute',
-        top: 20 + getStatusBarHeight(),
-        fontSize: 21,
-        fontWeight: 'bold',
-        fontSize: 25,
+        flexDirection: 'row'
     },
     image: {
         width: 115,

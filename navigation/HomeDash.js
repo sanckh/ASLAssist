@@ -42,19 +42,19 @@ export default function HomeDash({navigation}) {
             
             <TouchableOpacity 
             style={styles.circleButton}
-            onPress = {() => navigation.navigate('LessonOne')}>
+            onPress = {() => navigation.navigate('Emergency')}>
                 <Text textAlign='center' color={theme.colors.text}>Emergency</Text>
             </TouchableOpacity>
 
             <TouchableOpacity
             style={styles.circleButton}
-            onPress = {() => navigation.navigate('LessonTwo')}>
+            onPress = {() => navigation.navigate('Alphabet')}>
                 <Text textAlign='center' color={theme.colors.text}>  Alphabet</Text>
             </TouchableOpacity>
 
             <TouchableOpacity
             style={styles.circleButton}
-            onPress = {() => navigation.navigate('LessonThree')}>
+            onPress = {() => navigation.navigate('Numbers')}>
                 <Text textAlign='center' color={theme.colors.text}>  Numbers</Text>
             </TouchableOpacity>
         </View>
@@ -69,13 +69,13 @@ export default function HomeDash({navigation}) {
 
         <View style={styles.screen}>
             <TouchableOpacity
-            onPress={() => navigation.navigate('LessonFour')}
+            onPress={() => navigation.navigate('LessonOne')}
             style={styles.rectangleButton}>
                 <Text color={theme.colors.text} textAlign='center'>Lesson 1</Text>
             </TouchableOpacity>
 
             <TouchableOpacity
-            onPress={() => navigation.navigate('LessonFive')}
+            onPress={() => navigation.navigate('LessonTwo')}
             style={styles.rectangleButton}>
                 <Text color={theme.colors.text} textAlign='center'>Lesson 2</Text>
             </TouchableOpacity>

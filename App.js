@@ -36,12 +36,15 @@ import AboutScreen from './navigation/AboutScreen';
 import Achievement from './navigation/Achievements';
 
 //lessons
+import Emergency from './navigation/Emergency';
+import Alphabet from './navigation/Alphabet';
+import Numbers from './navigation/Numbers';
 import LessonOne from './navigation/LessonOne';
 import LessonTwo from './navigation/LessonTwo';
 import LessonThree from './navigation/LessonThree';
-import LessonFour from './navigation/LessonFour';
-import LessonFive from './navigation/LessonFive';
-import LessonSix from './navigation/LessonSix';
+
+//lessoncontent
+import lessonOnePageTwo from './LessonContent/lessonOnePageTwo'
 
 
 const Tab = createMaterialBottomTabNavigator();
@@ -145,13 +148,15 @@ export default function App() {
           <Stack.Screen name = "ResetPasswordScreen" component = {ResetPasswordScreen}/>
           <Stack.Screen name = "AboutScreen" component = {AboutScreen} />
           <Stack.Screen name = "Home" component = {Home}/>
+          <Stack.Screen name = "Emergency" component = {Emergency}/>
+          <Stack.Screen name = "Alphabet" component = {Alphabet}/>
+          <Stack.Screen name = "Numbers" component = {Numbers}/>
           <Stack.Screen name = "LessonOne" component = {LessonOne}/>
           <Stack.Screen name = "LessonTwo" component = {LessonTwo}/>
           <Stack.Screen name = "LessonThree" component = {LessonThree}/>
-          <Stack.Screen name = "LessonFour" component = {LessonFour}/>
-          <Stack.Screen name = "LessonFive" component = {LessonFive}/>
-          <Stack.Screen name = "LessonSix" component = {LessonSix}/>
           <Stack.Screen name = "Achievements" component = {Achievement}/>
+
+          <Stack.Screen name = "lessonOnePageTwo" component = {lessonOnePageTwo}/>
         </Stack.Navigator>
       </NavigationContainer>
       </AuthContext.Provider>

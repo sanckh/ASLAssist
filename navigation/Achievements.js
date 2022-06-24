@@ -7,8 +7,6 @@ import Background from '../components/Background';
 import Logo from '../components/Logo';
 import Paragraph from '../components/Paragraph';
 import Button from '../components/Button';
-
-import {List} from 'react-native-paper'
 import { NavigationContainer } from '@react-navigation/native';
 
 export default function Achievement({navigation}){
