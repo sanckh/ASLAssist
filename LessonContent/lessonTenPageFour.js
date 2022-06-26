@@ -13,24 +13,15 @@ export default function LessonSix({navigation}){
 
     return(
         <Background>
-            <TouchableOpacity  onPress = { () => navigation.replace('Home')} style={styles.iconContainer}>
+            <TouchableOpacity  onPress = { () => navigation.replace('lessonTenPageThree')} style={styles.iconContainer}>
                 <List.Icon icon="arrow-left" />
             </TouchableOpacity>
             
-            <Header style = {styles.header}>Lesson Three</Header>
+            <Header style = {styles.header}>Section Four</Header>
             {/* lesson content */}
             <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"darkgreen"} />
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={1.00} color={"darkgreen"} />
             </View>
-            <Button
-            mode = "contained"
-            onPress = {() => navigation.navigate('lessonThreePageTwo')}
-            style = {{backgroundColor: '#ecddfc', 
-                width: 250,
-                height: 50,}}
-            >
-                Next Section
-            </Button>
         </Background>
         
         

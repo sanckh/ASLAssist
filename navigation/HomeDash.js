@@ -89,7 +89,7 @@ export default function HomeDash({navigation}) {
             </TouchableOpacity>
 
             <TouchableOpacity
-            // onPress={() => navigation.navigate('LessonFour')}
+            onPress={() => navigation.navigate('LessonFour')}
             style={styles.rectangleButton}>
                 <Text color={theme.colors.text} textAlign='center'>Lesson 4</Text>
             </TouchableOpacity>
@@ -98,13 +98,13 @@ export default function HomeDash({navigation}) {
 
             <View style={styles.screen}>
             <TouchableOpacity
-            // onPress={() => navigation.navigate('LessonFive')}
+            onPress={() => navigation.navigate('LessonFive')}
             style={styles.rectangleButton}>
                 <Text color={theme.colors.text} textAlign='center'>Lesson 5</Text>
             </TouchableOpacity>
 
             <TouchableOpacity
-            // onPress={() => navigation.navigate('LessonSix')}
+            onPress={() => navigation.navigate('LessonSix')}
             style={styles.rectangleButton}>
                 <Text color={theme.colors.text} textAlign='center'>Lesson 6</Text>
             </TouchableOpacity>
@@ -113,13 +113,13 @@ export default function HomeDash({navigation}) {
 
             <View style={styles.screen}>
             <TouchableOpacity
-            // onPress={() => navigation.navigate('LessonSeven')}
+            onPress={() => navigation.navigate('LessonSeven')}
             style={styles.rectangleButton}>
                 <Text color={theme.colors.text} textAlign='center'>Lesson 7</Text>
             </TouchableOpacity>
 
             <TouchableOpacity
-            // onPress={() => navigation.navigate('LessonEight')}
+            onPress={() => navigation.navigate('LessonEight')}
             style={styles.rectangleButton}>
                 <Text color={theme.colors.text} textAlign='center'>Lesson 8</Text>
             </TouchableOpacity>
@@ -128,13 +128,13 @@ export default function HomeDash({navigation}) {
 
             <View style={styles.screen}>
             <TouchableOpacity
-            // onPress={() => navigation.navigate('LessonNine')}
+            onPress={() => navigation.navigate('LessonNine')}
             style={styles.rectangleButton}>
                 <Text color={theme.colors.text} textAlign='center'>Lesson 9</Text>
             </TouchableOpacity>
 
             <TouchableOpacity
-            // onPress={() => navigation.navigate('LessonTen')}
+            onPress={() => navigation.navigate('LessonTen')}
             style={styles.rectangleButton}>
                 <Text color={theme.colors.text} textAlign='center'>Lesson 10</Text>
             </TouchableOpacity>

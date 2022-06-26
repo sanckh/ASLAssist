@@ -17,14 +17,14 @@ export default function LessonSix({navigation}){
                 <List.Icon icon="arrow-left" />
             </TouchableOpacity>
             
-            <Header style = {styles.header}>Lesson Three</Header>
+            <Header style = {styles.header}>Lesson Nine</Header>
             {/* lesson content */}
             <View>
                 <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"darkgreen"} />
             </View>
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('lessonThreePageTwo')}
+            onPress = {() => navigation.navigate('lessonNinePageTwo')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}
