@@ -45,6 +45,8 @@ import LessonThree from './navigation/LessonThree';
 
 //lessoncontent
 import lessonOnePageTwo from './LessonContent/lessonOnePageTwo'
+import lessonOnePageThree from './LessonContent/lessonOnePageThree'
+import lessonOnePageFour from './LessonContent/lessonOnePageFour'
 
 
 const Tab = createMaterialBottomTabNavigator();
@@ -157,6 +159,8 @@ export default function App() {
           <Stack.Screen name = "Achievements" component = {Achievement}/>
 
           <Stack.Screen name = "lessonOnePageTwo" component = {lessonOnePageTwo}/>
+          <Stack.Screen name = "lessonOnePageThree" component = {lessonOnePageThree}/>
+          <Stack.Screen name = "lessonOnePageFour" component = {lessonOnePageFour}/>
         </Stack.Navigator>
       </NavigationContainer>
       </AuthContext.Provider>
