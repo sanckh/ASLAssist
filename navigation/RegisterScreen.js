@@ -20,22 +20,29 @@ export default function RegisterScreen({ navigation }) {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
-  useEffect(()=> {
-    const unsubscribe = auth.onAuthStateChanged(user => {
-      if(user) {
-        navigation.replace("LoginScreen")
-      }
-    })
-    return unsubscribe
-  }, [])
+  // useEffect(()=> {
+  //   const unsubscribe = auth.onAuthStateChanged(user => {
+  //     if(user) {
+  //       navigation.replace("LoginScreen")
+  //     }
+  //   })
+  //   return unsubscribe
+  // }, [])
 
   const handleSignUp = () => {
+    const emailError = emailValidator(email)
+    const passwordError = passwordValidator(password)
+    if (emailError || passwordError) {
+      setEmail({ ...email, error: emailError })
+      setPassword({ ...password, error: passwordError })
+      return
+    }
       createUserWithEmailAndPassword(auth, email, password)
       //status message here
       .then((userCredentials) => {
         const user = userCredentials.user;
       })
-      // navigation.navigate('LoginScreen')
+      navigation.navigate('Home')
   }
 
   return (

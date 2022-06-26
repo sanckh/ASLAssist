@@ -22,14 +22,14 @@ export default function LoginScreen({ navigation }) {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
-  useEffect(()=> {
-    const unsubscribe = auth.onAuthStateChanged(user => {
-      if(user) {
-        navigation.reset("Home")
-      }
-    })
-    return unsubscribe
-  }, [])
+  // useEffect(()=> {
+  //   const unsubscribe = auth.onAuthStateChanged(user => {
+  //     if(user) {
+  //       navigation.reset("Home")
+  //     }
+  //   })
+  //   return unsubscribe
+  // }, [])
 
   const handleLogin = () => {
     const emailError = emailValidator(email)
@@ -42,7 +42,13 @@ export default function LoginScreen({ navigation }) {
       signInWithEmailAndPassword(auth, email, password)
       .then((userCredentials) => {
         //status message here
+        console.log(email)
+      console.log(password)
         const user = userCredentials.user;
+        navigation.navigate("Home")
+      })
+      .catch((error) => {
+        console.log(error.message)
       })
   }
 
