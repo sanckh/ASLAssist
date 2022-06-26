@@ -18,6 +18,7 @@ export default function LessonSix({navigation}){
                 <List.Icon icon="arrow-left" />
             </TouchableOpacity>
             <Header style = {styles.header}>Section Three</Header>
+            {/* lesson content */}
             <View>
                 <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.66}
                 color={"darkgreen"} alignItems={"center"} />

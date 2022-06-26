@@ -22,11 +22,9 @@ export default function LessonSix({navigation}){
             <View>
                 <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"darkgreen"} />
             </View>
-            {/* still need to make lesson three extra pages so I left it at lesson one
-            so there wouldn't be an error*/}
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('lessonOnePageTwo')}
+            onPress = {() => navigation.navigate('lessonThreePageTwo')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}

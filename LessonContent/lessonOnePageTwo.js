@@ -17,6 +17,7 @@ export default function LessonSix({navigation}){
                 <List.Icon icon="arrow-left" />
             </TouchableOpacity>
             <Header style = {styles.header}>Section Two</Header>
+            {/* lesson content */}
             <View>
                 <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.34}
                 color={"darkgreen"} alignItems={"center"} />
@@ -34,19 +35,6 @@ export default function LessonSix({navigation}){
         
     )
 }
-
-// const styles = StyleSheet.create({
-//     header: {
-//         marginTop: 20,
-//         marginLeft: 40,
-//         padding: 20,
-//         flexDirection: 'row',
-//         alignItems: 'center',
-//         justifyContent: 'space-between',
-//     },
-//     text:{
-//         alignContent: 'center'
-//     }
 const styles = StyleSheet.create({
     container: {
         flex: 1,

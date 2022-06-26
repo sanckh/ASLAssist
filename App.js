@@ -47,6 +47,12 @@ import LessonThree from './navigation/LessonThree';
 import lessonOnePageTwo from './LessonContent/lessonOnePageTwo'
 import lessonOnePageThree from './LessonContent/lessonOnePageThree'
 import lessonOnePageFour from './LessonContent/lessonOnePageFour'
+import lessonTwoPageTwo from './LessonContent/lessonTwoPageTwo'
+import lessonTwoPageThree from './LessonContent/lessonTwoPageThree'
+import lessonTwoPageFour from './LessonContent/lessonTwoPageFour'
+import lessonThreePageTwo from './LessonContent/lessonThreePageTwo'
+import lessonThreePageThree from './LessonContent/lessonThreePageThree'
+import lessonThreePageFour from './LessonContent/lessonThreePageFour'
 
 
 const Tab = createMaterialBottomTabNavigator();
@@ -161,6 +167,14 @@ export default function App() {
           <Stack.Screen name = "lessonOnePageTwo" component = {lessonOnePageTwo}/>
           <Stack.Screen name = "lessonOnePageThree" component = {lessonOnePageThree}/>
           <Stack.Screen name = "lessonOnePageFour" component = {lessonOnePageFour}/>
+
+          <Stack.Screen name = "lessonTwoPageTwo" component = {lessonTwoPageTwo}/>
+          <Stack.Screen name = "lessonTwoPageThree" component = {lessonTwoPageThree}/>
+          <Stack.Screen name = "lessonTwoPageFour" component = {lessonTwoPageFour}/>
+
+          <Stack.Screen name = "lessonThreePageTwo" component = {lessonThreePageTwo}/>
+          <Stack.Screen name = "lessonThreePageThree" component = {lessonThreePageThree}/>
+          <Stack.Screen name = "lessonThreePageFour" component = {lessonThreePageFour}/>
         </Stack.Navigator>
       </NavigationContainer>
       </AuthContext.Provider>
