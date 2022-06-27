@@ -4,7 +4,7 @@ import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
 import { NavigationContainer } from '@react-navigation/native';
 
-export default function LessonSix({navigation}){
+export default function LessonOnePageThree({navigation}){
     const {colors} = useTheme();
 
     return(
