@@ -1,129 +1,372 @@
-import { Text, View, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import { Text, View, ScrollView, StyleSheet, Image } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
 import React, {useState, useEffect} from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { ProgressBar, List } from 'react-native-paper';
-import Button from '../components/Button';
-import Background from '../components/Background';
-import { getStatusBarHeight } from 'react-native-status-bar-height'
 
-export default function Alphabet({navigation}){
+export default function LessonTwo({navigation}){
     const {colors} = useTheme();
     const[url, setUrl ] = useState();
 
+
     return(
-        <Background>
-            <TouchableOpacity  onPress = { () => navigation.replace('Home')} style={styles.iconContainer}>
-                <List.Icon icon="arrow-left" />
-            </TouchableOpacity>
-             <View style = {{flexDirection: 'row'}}>
-                
-                <Header>Emergency</Header>
+        <ScrollView style={styles.scrollView}>
+            <BackButton goBack = {navigation.goBack} />
+            <View style = {styles.header}>
+                <Header>Alphabet</Header>
             </View>
-            
-            <View style = {{flexDirection: 'row', marginTop: 10}}>
-                <View style = {styles.imagePlacement}>
-                    <Image
-                    style = {styles.image}
-                    source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/a.png?alt=media&token=86dc2271-6d76-49be-860c-1f016f0b4e3b'
-                    }}>
-                    </Image>
-                    <Text>A</Text>
-                </View>
-                <View style = {styles.imagePlacement}>
-                    <Image
-                    style = {styles.image}
-                    source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/b.png?alt=media&token=4e42d531-dbcb-4a04-b209-da5f51b18015'
-                    }}>
-                    </Image>
-                    <Text>B</Text>
-                </View>
-                <View style = {styles.imagePlacement}>
-                    <Image
-                    style = {styles.image}
-                    source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/c.png?alt=media&token=3605cb26-7e7b-4fd8-8f62-2703f88b0819'
-                    }}>
-                    </Image>
-                    <Text>C</Text>
-                </View>
+            <View>
+                <Image
+                style = {styles.image}
+                source = {{
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/a.png?alt=media&token=86dc2271-6d76-49be-860c-1f016f0b4e3b'
+                }}>
+
+                </Image>
             </View>
-            <View style = {{flexDirection: 'row'}}>
-                <View style = {styles.imagePlacement}>
-                    <Image
-                    style = {styles.image}
-                    source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/a.png?alt=media&token=86dc2271-6d76-49be-860c-1f016f0b4e3b'
-                    }}>
-                    </Image>
-                    <Text>A</Text>
-                </View>
-                <View style = {styles.imagePlacement}>
-                    <Image
-                    style = {styles.image}
-                    source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/b.png?alt=media&token=4e42d531-dbcb-4a04-b209-da5f51b18015'
-                    }}>
-                    </Image>
-                    <Text>B</Text>
-                </View>
-                <View style = {styles.imagePlacement}>
-                    <Image
-                    style = {styles.image}
-                    source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/c.png?alt=media&token=3605cb26-7e7b-4fd8-8f62-2703f88b0819'
-                    }}>
-                    </Image>
-                    <Text>C</Text>
-                </View>
+                <View style = {styles.text}>
+                <Text>The letter A is signed by holding up your dominant hand in a fist, facing outward, with the thumb sticking up to the side of the fist.</Text>
             </View>
-            <View style = {{marginLeft: 20}}>
-                <Text style={[styles.text, {color: colors.text, marginLeft: 30}]}> Lesson Progress: 50%</Text>
-                <ProgressBar style = {{marginLeft: 30, marginRight: 30}} progress={0.5} color={"blue"} />
+            <View>
+                <Image
+                style = {styles.image}
+                source = {{
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2Fb.png?alt=media&token=e3472f2b-98e3-48f5-aede-32f449840cb0'
+                }}>
+
+                </Image>
             </View>
-            <Button
-            mode = "contained"
-            onPress = {() => navigation.navigate('RegisterScreen')}
-            style = {{backgroundColor: '#ecddfc'}}
-            >
-                Next Section
-            </Button>
-        </Background>
+                <View style = {styles.text}>
+                <Text>The letter B is signed by holding up your dominant hand open, with palm facing out and all 4 fingers standing straight and kept together, while tucking your thumb into your palm.</Text>
+            </View>
+            <View>
+                <Image
+                style = {styles.image}
+                source = {{
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2Fc.png?alt=media&token=5ef5bcf9-cfae-4dfd-9d41-737817761fca'
+                }}>
+
+                </Image>
+            </View>
+                <View style = {styles.text}>
+                <Text>The letter C is signed by curving your open, dominant hand just like the letter 'C', where the top 4 fingers held together make up the top curve, and the thumb makes up the bottom curve.</Text>
+            </View>
+            <View>
+                <Image
+                style = {styles.image}
+                source = {{
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2Fd.png?alt=media&token=a9915327-f253-4850-8dd6-f914b87bddf5'
+                }}>
+
+                </Image>
+            </View>
+                <View style = {styles.text}>
+                <Text>The letter D is signed by holding up your dominant hand, curving your middle, ring, and pinkie fingers together and touching them to your thumb, while only your index finger is standing upright.</Text>
+            </View>
+            <View>
+                <Image
+                style = {styles.image}
+                source = {{
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2Fe.png?alt=media&token=62801ac5-fa49-4162-b9f6-744c654d944f'
+                }}>
+
+                </Image>
+            </View>
+                <View style = {styles.text}>
+                <Text>Touch your nose and then sign "OPPOSITE." Do most of the movement with your dominant hand. The non-dominant hand doesn't move much.</Text>
+            </View>
+            <View>
+                <Image
+                style = {styles.image}
+                source = {{
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/a.png?alt=media&token=86dc2271-6d76-49be-860c-1f016f0b4e3b'
+                }}>
+
+                </Image>
+            </View>
+                <View style = {styles.text}>
+                <Text>Touch your nose and then sign "OPPOSITE." Do most of the movement with your dominant hand. The non-dominant hand doesn't move much.</Text>
+            </View>
+            <View>
+                <Image
+                style = {styles.image}
+                source = {{
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/a.png?alt=media&token=86dc2271-6d76-49be-860c-1f016f0b4e3b'
+                }}>
+
+                </Image>
+            </View>
+                <View style = {styles.text}>
+                <Text>Touch your nose and then sign "OPPOSITE." Do most of the movement with your dominant hand. The non-dominant hand doesn't move much.</Text>
+            </View>
+            <View>
+                <Image
+                style = {styles.image}
+                source = {{
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/a.png?alt=media&token=86dc2271-6d76-49be-860c-1f016f0b4e3b'
+                }}>
+
+                </Image>
+            </View>
+                <View style = {styles.text}>
+                <Text>Touch your nose and then sign "OPPOSITE." Do most of the movement with your dominant hand. The non-dominant hand doesn't move much.</Text>
+            </View>
+            <View>
+                <Image
+                style = {styles.image}
+                source = {{
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/a.png?alt=media&token=86dc2271-6d76-49be-860c-1f016f0b4e3b'
+                }}>
+
+                </Image>
+            </View>
+                <View style = {styles.text}>
+                <Text>Touch your nose and then sign "OPPOSITE." Do most of the movement with your dominant hand. The non-dominant hand doesn't move much.</Text>
+            </View>
+            <View>
+                <Image
+                style = {styles.image}
+                source = {{
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/a.png?alt=media&token=86dc2271-6d76-49be-860c-1f016f0b4e3b'
+                }}>
+
+                </Image>
+            </View>
+                <View style = {styles.text}>
+                <Text>Touch your nose and then sign "OPPOSITE." Do most of the movement with your dominant hand. The non-dominant hand doesn't move much.</Text>
+            </View>
+            <View>
+                <Image
+                style = {styles.image}
+                source = {{
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/a.png?alt=media&token=86dc2271-6d76-49be-860c-1f016f0b4e3b'
+                }}>
+
+                </Image>
+            </View>
+                <View style = {styles.text}>
+                <Text>Touch your nose and then sign "OPPOSITE." Do most of the movement with your dominant hand. The non-dominant hand doesn't move much.</Text>
+            </View>
+            <View>
+                <Image
+                style = {styles.image}
+                source = {{
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/a.png?alt=media&token=86dc2271-6d76-49be-860c-1f016f0b4e3b'
+                }}>
+
+                </Image>
+            </View>
+                <View style = {styles.text}>
+                <Text>Touch your nose and then sign "OPPOSITE." Do most of the movement with your dominant hand. The non-dominant hand doesn't move much.</Text>
+            </View>
+            <View>
+                <Image
+                style = {styles.image}
+                source = {{
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/a.png?alt=media&token=86dc2271-6d76-49be-860c-1f016f0b4e3b'
+                }}>
+
+                </Image>
+            </View>
+                <View style = {styles.text}>
+                <Text>Touch your nose and then sign "OPPOSITE." Do most of the movement with your dominant hand. The non-dominant hand doesn't move much.</Text>
+            </View>
+            <View>
+                <Image
+                style = {styles.image}
+                source = {{
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/a.png?alt=media&token=86dc2271-6d76-49be-860c-1f016f0b4e3b'
+                }}>
+
+                </Image>
+            </View>
+                <View style = {styles.text}>
+                <Text>Touch your nose and then sign "OPPOSITE." Do most of the movement with your dominant hand. The non-dominant hand doesn't move much.</Text>
+            </View>
+            <View>
+                <Image
+                style = {styles.image}
+                source = {{
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/a.png?alt=media&token=86dc2271-6d76-49be-860c-1f016f0b4e3b'
+                }}>
+
+                </Image>
+            </View>
+                <View style = {styles.text}>
+                <Text>Touch your nose and then sign "OPPOSITE." Do most of the movement with your dominant hand. The non-dominant hand doesn't move much.</Text>
+            </View>
+            <View>
+                <Image
+                style = {styles.image}
+                source = {{
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/a.png?alt=media&token=86dc2271-6d76-49be-860c-1f016f0b4e3b'
+                }}>
+
+                </Image>
+            </View>
+                <View style = {styles.text}>
+                <Text>Touch your nose and then sign "OPPOSITE." Do most of the movement with your dominant hand. The non-dominant hand doesn't move much.</Text>
+            </View>
+            <View>
+                <Image
+                style = {styles.image}
+                source = {{
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/a.png?alt=media&token=86dc2271-6d76-49be-860c-1f016f0b4e3b'
+                }}>
+
+                </Image>
+            </View>
+                <View style = {styles.text}>
+                <Text>Touch your nose and then sign "OPPOSITE." Do most of the movement with your dominant hand. The non-dominant hand doesn't move much.</Text>
+            </View>
+            <View>
+                <Image
+                style = {styles.image}
+                source = {{
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/a.png?alt=media&token=86dc2271-6d76-49be-860c-1f016f0b4e3b'
+                }}>
+
+                </Image>
+            </View>
+                <View style = {styles.text}>
+                <Text>Touch your nose and then sign "OPPOSITE." Do most of the movement with your dominant hand. The non-dominant hand doesn't move much.</Text>
+            </View>
+            <View>
+                <Image
+                style = {styles.image}
+                source = {{
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/a.png?alt=media&token=86dc2271-6d76-49be-860c-1f016f0b4e3b'
+                }}>
+
+                </Image>
+            </View>
+                <View style = {styles.text}>
+                <Text>Touch your nose and then sign "OPPOSITE." Do most of the movement with your dominant hand. The non-dominant hand doesn't move much.</Text>
+            </View>
+            <View>
+                <Image
+                style = {styles.image}
+                source = {{
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/a.png?alt=media&token=86dc2271-6d76-49be-860c-1f016f0b4e3b'
+                }}>
+
+                </Image>
+            </View>
+                <View style = {styles.text}>
+                <Text>Touch your nose and then sign "OPPOSITE." Do most of the movement with your dominant hand. The non-dominant hand doesn't move much.</Text>
+            </View>
+            <View>
+                <Image
+                style = {styles.image}
+                source = {{
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/a.png?alt=media&token=86dc2271-6d76-49be-860c-1f016f0b4e3b'
+                }}>
+
+                </Image>
+            </View>
+                <View style = {styles.text}>
+                <Text>Touch your nose and then sign "OPPOSITE." Do most of the movement with your dominant hand. The non-dominant hand doesn't move much.</Text>
+            </View>
+            <View>
+                <Image
+                style = {styles.image}
+                source = {{
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/a.png?alt=media&token=86dc2271-6d76-49be-860c-1f016f0b4e3b'
+                }}>
+
+                </Image>
+            </View>
+                <View style = {styles.text}>
+                <Text>Touch your nose and then sign "OPPOSITE." Do most of the movement with your dominant hand. The non-dominant hand doesn't move much.</Text>
+            </View>
+            <View>
+                <Image
+                style = {styles.image}
+                source = {{
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/a.png?alt=media&token=86dc2271-6d76-49be-860c-1f016f0b4e3b'
+                }}>
+
+                </Image>
+            </View>
+                <View style = {styles.text}>
+                <Text>Touch your nose and then sign "OPPOSITE." Do most of the movement with your dominant hand. The non-dominant hand doesn't move much.</Text>
+            </View>
+            <View>
+                <Image
+                style = {styles.image}
+                source = {{
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/a.png?alt=media&token=86dc2271-6d76-49be-860c-1f016f0b4e3b'
+                }}>
+
+                </Image>
+            </View>
+                <View style = {styles.text}>
+                <Text>Touch your nose and then sign "OPPOSITE." Do most of the movement with your dominant hand. The non-dominant hand doesn't move much.</Text>
+            </View>
+            <View>
+                <Image
+                style = {styles.image}
+                source = {{
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/a.png?alt=media&token=86dc2271-6d76-49be-860c-1f016f0b4e3b'
+                }}>
+
+                </Image>
+            </View>
+                <View style = {styles.text}>
+                <Text>Touch your nose and then sign "OPPOSITE." Do most of the movement with your dominant hand. The non-dominant hand doesn't move much.</Text>
+            </View>
+            <View>
+                <Image
+                style = {styles.image}
+                source = {{
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/a.png?alt=media&token=86dc2271-6d76-49be-860c-1f016f0b4e3b'
+                }}>
+
+                </Image>
+            </View>
+                <View style = {styles.text}>
+                <Text>Touch your nose and then sign "OPPOSITE." Do most of the movement with your dominant hand. The non-dominant hand doesn't move much.</Text>
+            </View>
+            <View style={{flex: 1, backgroundColor: '#123456', alignItems: 'center', justifyContent:'center'}}>
+            <Image style={{height: 200, width: 200}}
+             source={{uri: url}} />
+            </View>
+
+        </ScrollView>
+        
+        
     )
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-
-    },
     header: {
-        flexDirection: 'row'
+        marginTop: 20,
+        marginLeft: 50,
+        marginRight: 50,
+        padding: 20,
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between',
     },
     image: {
-        width: 115,
-        height: 115,
+        width: 300,
+        height: 300,
+        marginTop: 10,
+        marginLeft: 50,
+        marginRight: 50,
+        alignItems: 'center',
+        padding: 20,
         resizeMode: 'contain',
-        borderRadius: 30,
-        margin: 10,
-
+        borderRadius: 30
     },
     text: {
-        marginTop: 15,
-        fontSize: 15,
+        //marginBottom: 15,
+        fontWeight: 'bold',
+        fontSize: 30,
+        marginLeft: 50,
+        marginRight: 50,
+        
+        
     },
-    imagePlacement: {
-        flexDirection: 'column', 
-        justifyContent: 'center',
-        alignItems: 'center'
-    },
-    iconContainer: {
-        position: 'absolute',
-        top: 10 + getStatusBarHeight(),
-        left: 4,
-      },
 })
