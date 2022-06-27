@@ -22,13 +22,4 @@ export default function LessonFive({navigation}){
     )
 }
 
-const styles = StyleSheet.create({
-    header: {
-        marginTop: 20,
-        marginLeft: 40,
-        padding: 20,
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-    }
-})
+
