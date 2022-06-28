@@ -42,9 +42,45 @@ import Numbers from './navigation/Numbers';
 import LessonOne from './navigation/LessonOne';
 import LessonTwo from './navigation/LessonTwo';
 import LessonThree from './navigation/LessonThree';
+import LessonFour from './navigation/LessonFour';
+import LessonFive from './navigation/LessonFive';
+import LessonSix from './navigation/LessonSix';
+import LessonSeven from './navigation/LessonSeven';
+import LessonEight from './navigation/LessonEight';
+import LessonNine from './navigation/LessonNine';
+import LessonTen from './navigation/LessonTen';
 
 //lessoncontent
 import lessonOnePageTwo from './LessonContent/lessonOnePageTwo'
+import lessonOnePageThree from './LessonContent/lessonOnePageThree'
+import lessonOnePageFour from './LessonContent/lessonOnePageFour'
+import lessonTwoPageTwo from './LessonContent/lessonTwoPageTwo'
+import lessonTwoPageThree from './LessonContent/lessonTwoPageThree'
+import lessonTwoPageFour from './LessonContent/lessonTwoPageFour'
+import lessonThreePageTwo from './LessonContent/lessonThreePageTwo'
+import lessonThreePageThree from './LessonContent/lessonThreePageThree'
+import lessonThreePageFour from './LessonContent/lessonThreePageFour'
+import lessonFourPageTwo from './LessonContent/lessonFourPageTwo'
+import lessonFourPageThree from './LessonContent/lessonFourPageThree'
+import lessonFourPageFour from './LessonContent/lessonFourPageFour'
+import lessonFivePageTwo from './LessonContent/lessonFivePageTwo'
+import lessonFivePageThree from './LessonContent/lessonFivePageThree'
+import lessonFivePageFour from './LessonContent/lessonFivePageFour'
+import lessonSixPageTwo from './LessonContent/lessonSixPageTwo'
+import lessonSixPageThree from './LessonContent/lessonSixPageThree'
+import lessonSixPageFour from './LessonContent/lessonSixPageFour'
+import lessonSevenPageTwo from './LessonContent/lessonSevenPageTwo'
+import lessonSevenPageThree from './LessonContent/lessonSevenPageThree'
+import lessonSevenPageFour from './LessonContent/lessonSevenPageFour'
+import lessonEightPageTwo from './LessonContent/lessonEightPageTwo'
+import lessonEightPageThree from './LessonContent/lessonEightPageThree'
+import lessonEightPageFour from './LessonContent/lessonEightPageFour'
+import lessonNinePageTwo from './LessonContent/lessonNinePageTwo'
+import lessonNinePageThree from './LessonContent/lessonNinePageThree'
+import lessonNinePageFour from './LessonContent/lessonNinePageFour'
+import lessonTenPageTwo from './LessonContent/lessonTenPageTwo'
+import lessonTenPageThree from './LessonContent/lessonTenPageThree'
+import lessonTenPageFour from './LessonContent/lessonTenPageFour'
 
 
 const Tab = createMaterialBottomTabNavigator();
@@ -154,9 +190,55 @@ export default function App() {
           <Stack.Screen name = "LessonOne" component = {LessonOne}/>
           <Stack.Screen name = "LessonTwo" component = {LessonTwo}/>
           <Stack.Screen name = "LessonThree" component = {LessonThree}/>
+          <Stack.Screen name = "LessonFour" component = {LessonFour}/>
+          <Stack.Screen name = "LessonFive" component = {LessonFive}/>
+          <Stack.Screen name = "LessonSix" component = {LessonSix}/>
+          <Stack.Screen name = "LessonSeven" component = {LessonSeven}/>
+          <Stack.Screen name = "LessonEight" component = {LessonEight}/>
+          <Stack.Screen name = "LessonNine" component = {LessonNine}/>
+          <Stack.Screen name = "LessonTen" component = {LessonTen}/>
+
           <Stack.Screen name = "Achievements" component = {Achievement}/>
 
           <Stack.Screen name = "lessonOnePageTwo" component = {lessonOnePageTwo}/>
+          <Stack.Screen name = "lessonOnePageThree" component = {lessonOnePageThree}/>
+          <Stack.Screen name = "lessonOnePageFour" component = {lessonOnePageFour}/>
+
+          <Stack.Screen name = "lessonTwoPageTwo" component = {lessonTwoPageTwo}/>
+          <Stack.Screen name = "lessonTwoPageThree" component = {lessonTwoPageThree}/>
+          <Stack.Screen name = "lessonTwoPageFour" component = {lessonTwoPageFour}/>
+
+          <Stack.Screen name = "lessonThreePageTwo" component = {lessonThreePageTwo}/>
+          <Stack.Screen name = "lessonThreePageThree" component = {lessonThreePageThree}/>
+          <Stack.Screen name = "lessonThreePageFour" component = {lessonThreePageFour}/>
+
+          <Stack.Screen name = "lessonFourPageTwo" component = {lessonFourPageTwo}/>
+          <Stack.Screen name = "lessonFourPageThree" component = {lessonFourPageThree}/>
+          <Stack.Screen name = "lessonFourPageFour" component = {lessonFourPageFour}/>
+
+          <Stack.Screen name = "lessonFivePageTwo" component = {lessonFivePageTwo}/>
+          <Stack.Screen name = "lessonFivePageThree" component = {lessonFivePageThree}/>
+          <Stack.Screen name = "lessonFivePageFour" component = {lessonFivePageFour}/>
+
+          <Stack.Screen name = "lessonSixPageTwo" component = {lessonSixPageTwo}/>
+          <Stack.Screen name = "lessonSixPageThree" component = {lessonSixPageThree}/>
+          <Stack.Screen name = "lessonSixPageFour" component = {lessonSixPageFour}/>
+
+          <Stack.Screen name = "lessonSevenPageTwo" component = {lessonSevenPageTwo}/>
+          <Stack.Screen name = "lessonSevenPageThree" component = {lessonSevenPageThree}/>
+          <Stack.Screen name = "lessonSevenPageFour" component = {lessonSevenPageFour}/>
+
+          <Stack.Screen name = "lessonEightPageTwo" component = {lessonEightPageTwo}/>
+          <Stack.Screen name = "lessonEightPageThree" component = {lessonEightPageThree}/>
+          <Stack.Screen name = "lessonEightPageFour" component = {lessonEightPageFour}/>
+
+          <Stack.Screen name = "lessonNinePageTwo" component ={lessonNinePageTwo}/>
+          <Stack.Screen name = "lessonNinePageThree" component = {lessonNinePageThree}/>
+          <Stack.Screen name = "lessonNinePageFour" component = {lessonNinePageFour}/>
+
+          <Stack.Screen name = "lessonTenPageTwo" component = {lessonTenPageTwo}/>
+          <Stack.Screen name = "lessonTenPageThree" component = {lessonTenPageThree}/>
+          <Stack.Screen name = "lessonTenPageFour" component = {lessonTenPageFour}/>
         </Stack.Navigator>
       </NavigationContainer>
       </AuthContext.Provider>
