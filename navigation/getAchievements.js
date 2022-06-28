@@ -12,3 +12,16 @@
 //     })
 //     achRet(ach)
 // }
+import { firebase, collection } from 'firebase/firestore';
+
+export async function getAch(achRetrieved){
+    var achList = []
+    var snapshot = await firebase.firestore()
+    .collection('Achievements')
+    .get()
+
+    snapshot.forEach((doc)=>{
+        achList.push(doc.data())
+    })
+    achRetrieved(achList)
+}

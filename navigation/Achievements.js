@@ -9,7 +9,8 @@ import Paragraph from '../components/Paragraph';
 import Button from '../components/Button';
 import { NavigationContainer } from '@react-navigation/native';
 import { getAdditionalUserInfo } from 'firebase/auth';
-import { deleteDoc, doc, getDoc, setDoc, docs, collection } from 'firebase/firestore';import { getAchievements } from './getAchievements';
+import { deleteDoc, doc, getDoc, setDoc, docs, collection, getDocs } from 'firebase/firestore';
+import { getAch } from './getAchievements';
 import {db} from '../firebase'
 
 export default function Achievement({navigation}){
@@ -35,53 +36,45 @@ export default function Achievement({navigation}){
 
   
 //READ 
-      const Read = () => {
+      async function Read(){
         // MARK: Reading Doc
         // You can read what ever document by changing the collection and document path here
         //top colref is for all achievements, bottom reads one at a time
-        //const colRef = collection(db, 'Achievements')
-        const colRef = doc(db, 'Achievements', 'GNJ4nawtVzv8uT7pIJLH')
+        // const colRef = collection(db, 'Achievements')
+        // const colRef = doc(db, 'Achievements', 'GNJ4nawtVzv8uT7pIJLH')
     
-        getDoc(colRef)
-          // Handling Promises
-          .then((snapshot) => {
-            // MARK: Success
-            if (snapshot.exists) {
-              setUserDoc(snapshot.data())
-              let achieve = []
-              // snapshot.docs.forEach((doc) => {
-              //   achieve.push({...docs.data(), id: doc.id})
-              // })
-            }
-            else {
-              alert("No Doc Found")
-            }
-          })
-          .catch((error) => {
-            // MARK: Failure
-            alert(error.message)
-          })
+        // getDoc(colRef)
+        //   // Handling Promises
+        //   .then((snapshot) => {
+        //     // MARK: Success
+        //     if (snapshot.exists) {
+        //       let achieve = []
+        //       // snapshot.docs.forEach((doc) => {
+        //       //   achieve.push({...docs.data(), id: doc.id})
+        //       // })
+        //     }
+        //     else {
+        //       alert("No Doc Found")
+        //     }
+        //   })
+        //   .catch((error) => {
+        //     // MARK: Failure
+        //     alert(error.message)
+        //   })
+        //prints to console
+        const querySnapshot = await getDocs(collection(db, "Achievements"))
+        querySnapshot.forEach((doc)=>{
+          console.log(doc.id, "=>", doc.data())
+        })
     
       }
-
   return(
     <View>
-      <Button title='Read Doc' onPress={Read}>Read</Button>
+      <Button title='Read Doc' onPress={Read} style={styles.buttons}>Achievements</Button>
       {
         userDoc != null &&
         <Text>Title: {userDoc.title}</Text>
       }
-      {
-        userDoc != null &&
-        <Text>Description: {userDoc.description}</Text>
-      }
-      {/* <FlatList style ={styles.flatlist}
-      data = {ach}
-      iD = {(item)=>item.id}
-      renderItem={({item})=><List.Item item = {item}
-      left = {()=> <List.Icon icon ="trophy"/>}
-      />}
-      /> */}
     </View>
   )
 }
