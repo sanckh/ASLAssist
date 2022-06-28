@@ -7,12 +7,14 @@ import { getFirestore, collection, getDocs } from 'firebase/firestore'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDmuiN_oWQsMYtHmlMZzDJKFLx2muLS_ec",
-  authDomain: "asl-assist.firebaseapp.com",
-  projectId: "asl-assist",
-  storageBucket: "asl-assist.appspot.com",
-  messagingSenderId: "149243013990",
-  appId: "1:149243013990:web:7f117842ec0a235a2df6a7"
+  apiKey: "AIzaSyA1zo9ci0RXQYBNUooGtSK2b29OPxOC0GE",
+  authDomain: "aslassistfinal.firebaseapp.com",
+  databaseURL: "https://aslassistfinal-default-rtdb.firebaseio.com",
+  projectId: "aslassistfinal",
+  storageBucket: "aslassistfinal.appspot.com",
+  messagingSenderId: "380652280816",
+  appId: "1:380652280816:web:5f49bf6df4977cdb401b35",
+  measurementId: "G-TYX10C1CBE"
 };
 
 // Initialize Firebase
