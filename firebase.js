@@ -3,6 +3,7 @@ import * as firebase from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
+import {firestore, collection, getDocs, getFirestore} from 'firebase/firestore';
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -23,6 +24,15 @@ const firebaseConfig = {
 // Initialize Firebase
 
 const app = initializeApp(firebaseConfig);
+
+const db = getFirestore()
+const colRef = collection(db, 'Achievements')
+getDocs(colRef).then((snapshot)=>{
+  let achieve = []
+  snapshot.docs.forEach((doc)=>{
+    achieve.push({...doc.data(), id: doc.id})
+  })
+}) 
 
 const auth = getAuth(app);
 

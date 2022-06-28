@@ -1,5 +1,5 @@
-import { Text, View, ScrollView, StyleSheet, Alert, Linking } from 'react-native';
-import React, {useCallback} from 'react';
+import { Text, View, ScrollView, StyleSheet, Alert, Linking, FlatList } from 'react-native';
+import React, {useCallback, useEffect, useState} from 'react';
 import { List, Divider, TouchableRipple } from 'react-native-paper';
 import Header from '../components/Header';
 import BackButton from '../components/BackButton';
@@ -8,62 +8,37 @@ import Logo from '../components/Logo';
 import Paragraph from '../components/Paragraph';
 import Button from '../components/Button';
 import { NavigationContainer } from '@react-navigation/native';
+import { getAdditionalUserInfo } from 'firebase/auth';
+import { getAchievements } from './getAchievements';
 
 export default function Achievement({navigation}){
 
-  const getAchievements = () => {
-    //code to call firestore achievements master list
+  // const getAchievements = () => {
+  //   //code to call firestore achievements master list
+  // }
+  const [ach, setAch] = useState()
+
+  useEffect(()=>{
+    getData()
+  })
+
+  function getData(){
+    getAchievements(achRet)
   }
+  function achRet(ach){
+    setAch(ach)
+  }
+
     return(
-
-      <ScrollView>
       <View>
-        <BackButton goBack = {navigation.goBack} />
-          <View style = {styles.header}>
-          <Header>Achievements</Header>
-          </View>
-        <View>
-          <List.Section
-            borderColor= 'black'
-          >
-            <List.Subheader>All Achievements</List.Subheader>
-            <List.Item title = "Placeholder: Consistency"
-            left = {() => <List.Icon icon="trophy" />}
-            description = "Logged in 7 days in a row"
-            />
-            <List.Item title = "Placeholder: Getting Started"
-            left = {() => <List.Icon icon="trophy" />}
-            description = "Completed Lesson One"
-            />
-            <List.Item title = "Placeholder: Baby Steps"
-            left = {() => <List.Icon icon="trophy" />}
-            description = "Completed three lessons"
-            />
-            <List.Item title = "Placeholder: Scholar"
-            left = {() => <List.Icon icon="trophy" />}
-            description = "Completed Lesson One Quiz"
-            />
-            <List.Item title = "Placeholder: Genius"
-            left = {() => <List.Icon icon="trophy" />}
-            description = "Completed three quizzes"
-            />
-            <List.Item title = "Placeholder: Practice Makes Perfect"
-            left = {() => <List.Icon icon="trophy" />}
-            description = "Completed one Practice Quiz"
-            />
-            <List.Item title = "Placeholder"
-            left = {() => <List.Icon icon="trophy" />}
-            description = "Placeholder"
-            />
-            <List.Item title = "Placeholder"
-            left = {() => <List.Icon icon="trophy" />}
-            description = "Placeholder"
-            />
-
-          </List.Section>
-    </View>
-  </View>
-  </ScrollView>
+        <FlatList style ={styles.flatlist}
+        data = {ach}
+        iD = {(item)=>item.id}
+        renderItem={({item})=><List.Item item = {item}
+        left = {()=> <List.Icon icon ="trophy"/>}
+        />}
+        />
+      </View>
     )
 }
 
