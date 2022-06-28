@@ -9,37 +9,81 @@ import Paragraph from '../components/Paragraph';
 import Button from '../components/Button';
 import { NavigationContainer } from '@react-navigation/native';
 import { getAdditionalUserInfo } from 'firebase/auth';
-import { getAchievements } from './getAchievements';
+import { deleteDoc, doc, getDoc, setDoc, docs, collection } from 'firebase/firestore';import { getAchievements } from './getAchievements';
+import {db} from '../firebase'
 
 export default function Achievement({navigation}){
+
+    // Storing User Data
+    const [userDoc, setUserDoc] = useState(null)
 
   // const getAchievements = () => {
   //   //code to call firestore achievements master list
   // }
-  const [ach, setAch] = useState()
+  // const [ach, setAch] = useState()
 
-  useEffect(()=>{
-    getData()
-  })
+  // useEffect(()=>{
+  //   getData()
+  // })
 
-  function getData(){
-    getAchievements(achRet)
-  }
-  function achRet(ach){
-    setAch(ach)
-  }
+  // function getData(){
+  //   getAchievements(achRet)
+  // }
+  // function achRet(ach){
+  //   setAch(ach)
+  // }
 
-    return(
-      <View>
-        <FlatList style ={styles.flatlist}
-        data = {ach}
-        iD = {(item)=>item.id}
-        renderItem={({item})=><List.Item item = {item}
-        left = {()=> <List.Icon icon ="trophy"/>}
-        />}
-        />
-      </View>
-    )
+  
+//READ 
+      const Read = () => {
+        // MARK: Reading Doc
+        // You can read what ever document by changing the collection and document path here
+        //top colref is for all achievements, bottom reads one at a time
+        //const colRef = collection(db, 'Achievements')
+        const colRef = doc(db, 'Achievements', 'GNJ4nawtVzv8uT7pIJLH')
+    
+        getDoc(colRef)
+          // Handling Promises
+          .then((snapshot) => {
+            // MARK: Success
+            if (snapshot.exists) {
+              setUserDoc(snapshot.data())
+              let achieve = []
+              // snapshot.docs.forEach((doc) => {
+              //   achieve.push({...docs.data(), id: doc.id})
+              // })
+            }
+            else {
+              alert("No Doc Found")
+            }
+          })
+          .catch((error) => {
+            // MARK: Failure
+            alert(error.message)
+          })
+    
+      }
+
+  return(
+    <View>
+      <Button title='Read Doc' onPress={Read}>Read</Button>
+      {
+        userDoc != null &&
+        <Text>Title: {userDoc.title}</Text>
+      }
+      {
+        userDoc != null &&
+        <Text>Description: {userDoc.description}</Text>
+      }
+      {/* <FlatList style ={styles.flatlist}
+      data = {ach}
+      iD = {(item)=>item.id}
+      renderItem={({item})=><List.Item item = {item}
+      left = {()=> <List.Icon icon ="trophy"/>}
+      />}
+      /> */}
+    </View>
+  )
 }
 
 const styles = StyleSheet.create({
@@ -74,3 +118,5 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
     },
   });
+
+
