@@ -23,7 +23,7 @@ export default function PracticeOne({navigation}){
             </View>
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('Quizzes')}
+            onPress = {() => navigation.navigate('QuizCompletion')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}

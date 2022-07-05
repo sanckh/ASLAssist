@@ -7,23 +7,30 @@ import { ProgressBar, List } from 'react-native-paper';
 import Background from '../components/Background';
 import { getStatusBarHeight } from 'react-native-status-bar-height'
 import Button from '../components/Button';
+import Paragraph from '../components/Paragraph';
+import Icon from 'react-native-vector-icons/FontAwesome5'
+import Ionicon from 'react-native-vector-icons/Ionicons'
+import { theme, CustomDefaultTheme, CustomDarkTheme } from '../core/theme';
 
-export default function LessonSix({navigation}){
+export default function PracticeOne({navigation}){
     const {colors} = useTheme();
 
     return(
         <Background>
-            <BackButton goBack = {navigation.goBack} />
             
-            <Header style = {styles.header}>Practice Quiz</Header>
+            {/* <Header style = {styles.header}>Pratice Quiz</Header> */}
             {/* lesson content */}
-            <Text>Quiz Content</Text>
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={1.00} color={"lightgreen"} />
-            </View>
+            <Icon name="medal" size={200} color={'purple'}/>
+
+            <Text color={theme.colors.text}
+                style = {styles.text}>Congratulations</Text>
+                <Paragraph>You have completed the quiz</Paragraph>
+            {/* <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
+            </View> */}
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('QuizCompletion')}
+            onPress = {() => navigation.navigate('Quizzes')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}
@@ -35,7 +42,6 @@ export default function LessonSix({navigation}){
         
     )
 }
-
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -54,11 +60,12 @@ const styles = StyleSheet.create({
         resizeMode: 'contain',
         borderRadius: 30,
         margin: 10,
-
     },
     text: {
         marginTop: 15,
         fontSize: 15,
+        fontSize: 26,
+        fontWeight: 'bold'
     },
     imagePlacement: {
         flexDirection: 'column', 

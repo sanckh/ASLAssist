@@ -88,6 +88,8 @@ import PracticeQuizOne from './navigation/practiceQuizOne';
 import PracticeQuizTwo from './navigation/practiceQuizTwo';
 import PracticeQuizThree from './navigation/practiceQuizThree';
 
+import QuizCompletion from './navigation/QuizCompletion'
+
 import pqOnePageTwo from './QuizContent/pqOnePageTwo'
 import pqOnePageThree from './QuizContent/pqOnePageThree'
 import pqOnePageFour from './QuizContent/pqOnePageFour'
@@ -217,6 +219,8 @@ export default function App() {
           <Stack.Screen name = "PracticeQuizOne" component = {PracticeQuizOne}/>
           <Stack.Screen name = "PracticeQuizTwo" component = {PracticeQuizTwo}/>
           <Stack.Screen name = "PracticeQuizThree" component = {PracticeQuizThree}/>
+
+          <Stack.Screen name = "QuizCompletion" component = {QuizCompletion}/>
 
           <Stack.Screen name = "pqOnePageTwo" component = {pqOnePageTwo}/>
           <Stack.Screen name = "pqOnePageThree" component = {pqOnePageThree}/>
