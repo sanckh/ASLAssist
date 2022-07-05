@@ -165,6 +165,45 @@ export default function Achievement({navigation}){
           })
 
       }
+
+      // const [loading, setLoading]=useState(true)
+      // const [ach, setAch] = useState([])
+      // const ReadAll=()=>{
+        
+      //   useEffect(()=>{
+      //     const getAch = []
+      //     const sub = db.collection("Achievements")
+      //     .onSnapshot((querySnapshot)=>{
+      //       querySnapshot.docs().forEach((doc)=>{
+      //         getAch.push({
+      //           ...doc.data(),
+      //           key: doc.id,
+      //         })
+      //       })
+      //       setAch(getAch)
+      //       setLoading(false)
+      //     })
+      //     return()=>sub()
+      //   }, [])
+      //   if(loading){
+      //     return <Text>Loading...</Text>
+      //   }
+      // }
+      const [allDocs, setAllDocs]=useState([])
+      function Fetch(e){
+        e.preventDefault()
+        db.collection("Achievements")
+        .get().then((snapshot)=>{
+          if(snapshot.docs.length>0){
+            snapshot.docs.forEach((doc)=>{
+              setAllDocs((prev)=>{
+                return[...prev, doc.data()]
+              })
+            })
+          }
+        })
+        console.log(allDocs)
+      }
   return(
     <ScrollView>
       <SafeAreaView style={styles.container}>
@@ -173,7 +212,22 @@ export default function Achievement({navigation}){
           <View style = {styles.header}>
               <Header>Achievements</Header>
               </View>
-          <Button title='Read Doc' onPress={Consistency} style={styles.buttons}>Achievements</Button>
+
+              <Divider>
+                <Button title='Read' onPress={Fetch}
+                style={styles.buttons}> All Acievements</Button>
+                {
+                  allDocs.map((doc)=>{
+                    return(
+                      <Divider>
+                      <Text>{doc.title}</Text>
+                      <Text>{doc.description}</Text>
+                      </Divider>
+                    )
+                  })
+                }
+              </Divider>
+          {/* <Button title='Read Doc' onPress={Consistency} style={styles.buttons}>Achievements</Button>
           {
             userCon != null &&
             <List.Item title= {userCon.title}
@@ -214,7 +268,7 @@ export default function Achievement({navigation}){
             <List.Item title= {userDoc.title}
             left= {()=><List.Icon icon="trophy"/>}
             description= {userDoc.description}/>
-          }
+          } */}
         </View>
       </SafeAreaView>
     </ScrollView>

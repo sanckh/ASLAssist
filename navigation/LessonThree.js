@@ -1,6 +1,6 @@
 
-import { StatusBar } from 'expo-status-bar';
-import { deleteDoc, doc, getDoc, setDoc } from 'firebase/firestore';
+// import { StatusBar } from 'expo-status-bar';
+// import { deleteDoc, doc, getDoc, setDoc } from 'firebase/firestore';
 
 // import { Text, View, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
 // import Header from '../components/Header';
