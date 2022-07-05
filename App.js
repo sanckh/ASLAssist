@@ -83,6 +83,21 @@ import lessonTenPageThree from './LessonContent/lessonTenPageThree'
 import lessonTenPageFour from './LessonContent/lessonTenPageFour'
 
 
+//practice quizzes
+import PracticeQuizOne from './navigation/practiceQuizOne';
+import PracticeQuizTwo from './navigation/practiceQuizTwo';
+import PracticeQuizThree from './navigation/practiceQuizThree';
+
+import pqOnePageTwo from './QuizContent/pqOnePageTwo'
+import pqOnePageThree from './QuizContent/pqOnePageThree'
+import pqOnePageFour from './QuizContent/pqOnePageFour'
+import pqTwoPageTwo from './QuizContent/pqTwoPageTwo'
+import pqTwoPageThree from './QuizContent/pqTwoPageThree'
+import pqTwoPageFour from './QuizContent/pqTwoPageFour'
+import pqThreePageTwo from './QuizContent/pqThreePageTwo'
+import pqThreePageThree from './QuizContent/pqThreePageThree'
+import pqThreePageFour from './QuizContent/pqThreePageFour'
+
 const Tab = createMaterialBottomTabNavigator();
 
 
@@ -184,6 +199,7 @@ export default function App() {
           <Stack.Screen name = "ResetPasswordScreen" component = {ResetPasswordScreen}/>
           <Stack.Screen name = "AboutScreen" component = {AboutScreen} />
           <Stack.Screen name = "Home" component = {Home}/>
+          <Stack.Screen name = "Quizzes" component = {Quizzes}/>
           <Stack.Screen name = "Emergency" component = {Emergency}/>
           <Stack.Screen name = "Alphabet" component = {Alphabet}/>
           <Stack.Screen name = "Numbers" component = {Numbers}/>
@@ -197,6 +213,22 @@ export default function App() {
           <Stack.Screen name = "LessonEight" component = {LessonEight}/>
           <Stack.Screen name = "LessonNine" component = {LessonNine}/>
           <Stack.Screen name = "LessonTen" component = {LessonTen}/>
+
+          <Stack.Screen name = "PracticeQuizOne" component = {PracticeQuizOne}/>
+          <Stack.Screen name = "PracticeQuizTwo" component = {PracticeQuizTwo}/>
+          <Stack.Screen name = "PracticeQuizThree" component = {PracticeQuizThree}/>
+
+          <Stack.Screen name = "pqOnePageTwo" component = {pqOnePageTwo}/>
+          <Stack.Screen name = "pqOnePageThree" component = {pqOnePageThree}/>
+          <Stack.Screen name = "pqOnePageFour" component = {pqOnePageFour}/>
+
+          <Stack.Screen name = "pqTwoPageTwo" component = {pqTwoPageTwo}/>
+          <Stack.Screen name = "pqTwoPageThree" component = {pqTwoPageThree}/>
+          <Stack.Screen name = "pqTwoPageFour" component = {pqTwoPageFour}/>
+
+          <Stack.Screen name = "pqThreePageTwo" component = {pqThreePageTwo}/>
+          <Stack.Screen name = "pqThreePageThree" component = {pqThreePageThree}/>
+          <Stack.Screen name = "pqThreePageFour" component = {pqThreePageFour}/>
 
           <Stack.Screen name = "Achievements" component = {Achievement}/>
 
