@@ -20,7 +20,7 @@ export default function LessonSix({navigation}){
             <Header style = {styles.header}>Lesson Five</Header>
             {/* lesson content */}
             <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"darkgreen"} />
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
             </View>
             <Button
             mode = "contained"

@@ -21,7 +21,7 @@ export default function LessonSix({navigation}){
             {/* lesson content */}
             <View>
                 <ProgressBar style = {{width: 200, marginTop: 15}} progress={1.00}
-                color={"darkgreen"} alignItems={"center"} />
+                color={"lightgreen"} alignItems={"center"} />
             </View>
         </Background>
         
