@@ -78,9 +78,7 @@ export default function LessonTwo({navigation}){
                 </View>
             </View>
             <View>
-                
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"blue"} />
-                <Text > Lesson Progress: 0%</Text>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
             </View>
             <Button
             mode = "contained"

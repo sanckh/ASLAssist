@@ -7,24 +7,30 @@ import { ProgressBar, List } from 'react-native-paper';
 import Background from '../components/Background';
 import { getStatusBarHeight } from 'react-native-status-bar-height'
 import Button from '../components/Button';
+import Paragraph from '../components/Paragraph';
+import Icon from 'react-native-vector-icons/FontAwesome5'
+import Ionicon from 'react-native-vector-icons/Ionicons'
+import { theme, CustomDefaultTheme, CustomDarkTheme } from '../core/theme';
 
-export default function LessonFive({navigation}){
+export default function PracticeOne({navigation}){
     const {colors} = useTheme();
 
     return(
         <Background>
-            <TouchableOpacity  onPress = { () => navigation.replace('Home')} style={styles.iconContainer}>
-                <List.Icon icon="arrow-left" />
-            </TouchableOpacity>
             
-            <Header style = {styles.header}>Lesson Two</Header>
+            {/* <Header style = {styles.header}>Pratice Quiz</Header> */}
+            {/* lesson content */}
+            <Icon name="medal" size={200} color={'purple'}/>
 
-            <View>
+            <Text color={theme.colors.text}
+                style = {styles.text}>Congratulations</Text>
+                <Paragraph>You have completed the quiz</Paragraph>
+            {/* <View>
                 <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
-            </View>
+            </View> */}
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('lessonTwoPageTwo')}
+            onPress = {() => navigation.navigate('Quizzes')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}
@@ -36,7 +42,6 @@ export default function LessonFive({navigation}){
         
     )
 }
-
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -55,11 +60,12 @@ const styles = StyleSheet.create({
         resizeMode: 'contain',
         borderRadius: 30,
         margin: 10,
-
     },
     text: {
         marginTop: 15,
         fontSize: 15,
+        fontSize: 26,
+        fontWeight: 'bold'
     },
     imagePlacement: {
         flexDirection: 'column', 
@@ -72,4 +78,3 @@ const styles = StyleSheet.create({
         left: 4,
       },
 })
-

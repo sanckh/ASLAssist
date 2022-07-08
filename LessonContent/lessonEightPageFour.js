@@ -8,29 +8,20 @@ import Background from '../components/Background';
 import { getStatusBarHeight } from 'react-native-status-bar-height'
 import Button from '../components/Button';
 
-export default function LessonFive({navigation}){
+export default function LessonSix({navigation}){
     const {colors} = useTheme();
 
     return(
         <Background>
-            <TouchableOpacity  onPress = { () => navigation.replace('Home')} style={styles.iconContainer}>
+            <TouchableOpacity  onPress = { () => navigation.replace('lessonEightPageThree')} style={styles.iconContainer}>
                 <List.Icon icon="arrow-left" />
             </TouchableOpacity>
             
-            <Header style = {styles.header}>Lesson Two</Header>
-
+            <Header style = {styles.header}>Section Four</Header>
+            {/* lesson content */}
             <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={1.00} color={"lightgreen"} />
             </View>
-            <Button
-            mode = "contained"
-            onPress = {() => navigation.navigate('lessonTwoPageTwo')}
-            style = {{backgroundColor: '#ecddfc', 
-                width: 250,
-                height: 50,}}
-            >
-                Next Section
-            </Button>
         </Background>
         
         
@@ -72,4 +63,3 @@ const styles = StyleSheet.create({
         left: 4,
       },
 })
-
