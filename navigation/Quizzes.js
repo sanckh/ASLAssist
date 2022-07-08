@@ -4,22 +4,23 @@ import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import { theme, CustomDefaultTheme, CustomDarkTheme } from '../core/theme';
 import Paragraph from '../components/Paragraph';
-const QuizDash = (props) => {
+
+export default function Quizzes({navigation}){
 
     const {colors} = useTheme();
 
-    const buttonClickedHandler = () => {
-        console.log('Button will take user to selected quiz');
-        // this is placeholder insert code to take user to the selected lesson
+    // const buttonClickedHandler = () => {
+    //     console.log('Button will take user to selected quiz');
+    //     // this is placeholder insert code to take user to the selected lesson
 
-    };
-    const buttonClickedAlert = () => {
-        Alert.alert('Button will take user to selected quiz');
-    };
-    const onPress = () => {
-        buttonClickedHandler();
-        buttonClickedAlert();
-    };
+    // };
+    // const buttonClickedAlert = () => {
+    //     Alert.alert('Button will take user to selected quiz');
+    // };
+    // const onPress = () => {
+    //     buttonClickedHandler();
+    //     buttonClickedAlert();
+    // };
     return (
         <ScrollView>
         <SafeAreaView style={styles.container}>
@@ -28,17 +29,17 @@ const QuizDash = (props) => {
             </View>
             <View style = {styles.screen}>
                 <TouchableOpacity
-                onPress={onPress} style={styles.rectangleButton}>
+                onPress = {() => navigation.navigate('PracticeQuizOne')} style={styles.rectangleButton}>
                     <Text color={theme.colors.text}>Practice Quiz 1</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity
-                onPress={onPress} style={styles.rectangleButton}>
+                onPress = {() => navigation.navigate('PracticeQuizTwo')} style={styles.rectangleButton}>
                     <Text color={theme.colors.text}>Practice Quiz 2</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity
-                onPress={onPress} style={styles.rectangleButton}>
+                onPress = {() => navigation.navigate('PracticeQuizThree')} style={styles.rectangleButton}>
                     <Text color={theme.colors.text}>Practice Quiz 3</Text>
                 </TouchableOpacity>
 
@@ -85,4 +86,3 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
     },
 })
-export default QuizDash;
