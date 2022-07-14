@@ -7,8 +7,9 @@ import Background from '../components/Background';
 import { getStatusBarHeight } from 'react-native-status-bar-height'
 
 export default function Alphabet({navigation}){
+
+    //for dark mode
     const {colors} = useTheme();
-    const[url, setUrl ] = useState();
 
     return(
         <Background>
@@ -23,7 +24,6 @@ export default function Alphabet({navigation}){
                             source = {{
                                 uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/a.png?alt=media&token=86dc2271-6d76-49be-860c-1f016f0b4e3b'
                             }}>
-
                             </Image>
                             <Text style = {[styles.text, {color: colors.text}]}>The letter A is signed by holding up your dominant hand in a fist, facing outward, with the thumb sticking up to the side of the fist.</Text>
                         </View>
@@ -315,7 +315,6 @@ const styles = StyleSheet.create({
         width: 110,
         height: 110,
         resizeMode: 'contain',
-        //borderRadius: 30,
         margin: 10,
     },
     text: {
