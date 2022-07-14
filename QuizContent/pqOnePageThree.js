@@ -13,18 +13,17 @@ export default function LessonSix({navigation}){
 
     return(
         <Background>
-            <TouchableOpacity  onPress = { () => navigation.replace('Home')} style={styles.iconContainer}>
-                <List.Icon icon="arrow-left" />
-            </TouchableOpacity>
+            <BackButton goBack = {navigation.goBack} />
             
-            <Header style = {styles.header}>Lesson Six</Header>
+            <Header style = {styles.header}>Practice Quiz</Header>
             {/* lesson content */}
+            <Text>Quiz Content</Text>
             <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.66} color={"lightgreen"} />
             </View>
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('lessonSixPageTwo')}
+            onPress = {() => navigation.navigate('pqOnePageFour')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}

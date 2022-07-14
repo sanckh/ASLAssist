@@ -21,7 +21,7 @@ export default function LessonSix({navigation}){
             <Header style = {styles.header}>Section Four</Header>
             {/* lesson content */}
             <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={1.00} color={"darkgreen"} />
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={1.00} color={"lightgreen"} />
             </View>
         </Background>
         

@@ -1,3 +1,7 @@
+
+// import { StatusBar } from 'expo-status-bar';
+// import { deleteDoc, doc, getDoc, setDoc } from 'firebase/firestore';
+
 // import { Text, View, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
 // import Header from '../components/Header';
 // import { useTheme } from '@react-navigation/native';
@@ -20,7 +24,7 @@
 //             <Header style = {styles.header}>Lesson Three</Header>
 //             {/* lesson content */}
 //             <View>
-//                 <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"darkgreen"} />
+//                 <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
 //             </View>
 //             <Button
 //             mode = "contained"
@@ -80,9 +84,10 @@ import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
 // Using DB Reference
 import { db } from '../firebase'
 
-export default function LessonSix({navigation}){
+export default function LessonThree() {
 
-      // Storing User Data
+  // Storing User Data
+
   const [userDoc, setUserDoc] = useState(null)
   // Update Text
   const [text, setText] = useState("")
@@ -114,7 +119,8 @@ export default function LessonSix({navigation}){
   const Read = () => {
     // MARK: Reading Doc
     // You can read what ever document by changing the collection and document path here
-    const myDoc = doc(db, "MyCollection", "MyDocument")
+    const myDoc = doc(db, "Achievements", "AT8209EgNPmecgIRB0RP")
+
 
     getDoc(myDoc)
       // Handling Promises
@@ -169,39 +175,41 @@ export default function LessonSix({navigation}){
 
   }
 
-    return (
-        <View style={styles.container}>
-          <Button title='Create New Doc' onPress={Create}></Button>
-          <Button title='Read Doc' onPress={Read}></Button>
-          {
-            userDoc != null &&
-            <Text>Bio: {userDoc.bio}</Text>
-          }
-          <TextInput style={{
-            width: '95%',
-            fontSize: 18,
-            padding: 12,
-            borderColor: 'gray',
-            borderWidth: 0.2,
-            borderRadius: 10,
-            marginVertical: 20
-          }} placeholder='Type Here' onChangeText={(text) => { setText(text) }} value={text}></TextInput>
-    
-          <Button title='Update Doc' onPress={() => {
-            Update({
-              "bio": text
-            }, true)
-          }} disabled={text == ""}></Button>
-          <Button title='Delete Doc' onPress={Delete}></Button>
-        </View>
-      );
-    }
-    
-    const styles = StyleSheet.create({
-      container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-      },
-    });
+
+  return (
+    <View style={styles.container}>
+      <Button title='Create New Doc' onPress={Create}></Button>
+      <Button title='Read Doc' onPress={Read}></Button>
+      {
+        userDoc != null &&
+        <Text>Title: {userDoc.title}</Text>
+      }
+      <TextInput style={{
+        width: '95%',
+        fontSize: 18,
+        padding: 12,
+        borderColor: 'gray',
+        borderWidth: 0.2,
+        borderRadius: 10,
+        marginVertical: 20
+      }} placeholder='Type Here' onChangeText={(text) => { setText(text) }} value={text}></TextInput>
+
+      <Button title='Update Doc' onPress={() => {
+        Update({
+          "bio": text
+        }, true)
+      }} disabled={text == ""}></Button>
+      <Button title='Delete Doc' onPress={Delete}></Button>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
+

@@ -8,23 +8,22 @@ import Background from '../components/Background';
 import { getStatusBarHeight } from 'react-native-status-bar-height'
 import Button from '../components/Button';
 
-export default function LessonSix({navigation}){
+export default function PracticeOne({navigation}){
     const {colors} = useTheme();
 
     return(
         <Background>
-            <TouchableOpacity  onPress = { () => navigation.replace('Home')} style={styles.iconContainer}>
-                <List.Icon icon="arrow-left" />
-            </TouchableOpacity>
+            <BackButton goBack = {navigation.goBack} />
             
-            <Header style = {styles.header}>Lesson Six</Header>
+            <Header style = {styles.header}>Pratice Quiz</Header>
             {/* lesson content */}
+            <Text>Quiz Content</Text>
             <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.66} color={"lightgreen"} />
             </View>
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('lessonSixPageTwo')}
+            onPress = {() => navigation.navigate('pqTwoPageFour')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}
@@ -36,7 +35,6 @@ export default function LessonSix({navigation}){
         
     )
 }
-
 const styles = StyleSheet.create({
     container: {
         flex: 1,
