@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
+import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
@@ -7,6 +7,7 @@ import { ProgressBar, List } from 'react-native-paper';
 import Background from '../components/Background';
 import { getStatusBarHeight } from 'react-native-status-bar-height'
 import Button from '../components/Button';
+import { theme } from '../core/theme';
 
 export default function PracticeOne({navigation}){
     const {colors} = useTheme();
@@ -17,7 +18,67 @@ export default function PracticeOne({navigation}){
             
             <Header style = {styles.header}>Pratice Quiz</Header>
             {/* lesson content */}
-            <Text>Quiz Content</Text>
+            <Image
+                style = {styles.image}
+                source = {{
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/blind.gif?alt=media&token=5ec65abc-01fd-4bbd-a9c6-e803198d254a'
+                }}>
+                </Image>
+                <Text style={styles.text}>What sign is this?</Text>
+                <View style={styles.screen}>
+            <Button
+            mode = "contained"
+            style = {{backgroundColor: '#daeaf6', 
+                width: 150,
+                height: 60,
+                borderWidth: 5,
+                borderRadius: 15,
+                borderColor: '#0a2941',
+                marginRight: 40,
+                marginLeft: 10}}>
+                <Text color={theme.colors.text} textAlign='center'>Blind</Text>
+            </Button>
+
+            <Button
+            mode = "contained"
+            style = {{backgroundColor: '#daeaf6', 
+                width: 150,
+                height: 60,
+                borderWidth: 5,
+                borderRadius: 15,
+                borderColor: '#0a2941',
+                marginRight: 10,}}>
+                <Text color={theme.colors.text} textAlign='center'>Asthma</Text>
+            </Button>
+            </View>
+            <View style={styles.screen}>
+            <Button
+            mode = "contained"
+            style = {{backgroundColor: '#daeaf6', 
+                width: 150,
+                height: 60,
+                borderWidth: 5,
+                borderRadius: 15,
+                borderColor: '#0a2941',
+                marginRight: 40,
+                marginLeft: 10}}>
+                <Text color={theme.colors.text} textAlign='center'>Deer</Text>
+            </Button>
+
+            <Button
+            mode = "contained"
+            style = {{backgroundColor: '#daeaf6', 
+                width: 150,
+                height: 60,
+                borderWidth: 5,
+                borderRadius: 15,
+                borderColor: '#0a2941',
+                marginRight: 10,}}>
+                <Text color={theme.colors.text} textAlign='center'>Nurse</Text>
+            </Button>
+
+            </View>
+
             <View>
                 <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
             </View>
@@ -40,6 +101,14 @@ const styles = StyleSheet.create({
         flex: 1,
 
     },
+    screen:{
+        flex: 1,
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        flexDirection: 'row',
+        marginTop: 24,
+        
+    },
     header: {
         position: 'absolute',
         top: 20 + getStatusBarHeight(),
@@ -48,16 +117,19 @@ const styles = StyleSheet.create({
         fontSize: 25,
     },
     image: {
-        width: 115,
-        height: 115,
+        width: 300,
+        height: 300,
+        marginTop: 10,
+        marginLeft: 50,
+        marginRight: 50,
+        alignItems: 'center',
+        padding: 20,
         resizeMode: 'contain',
-        borderRadius: 30,
-        margin: 10,
-
+        borderRadius: 30
     },
     text: {
-        marginTop: 15,
-        fontSize: 15,
+        // marginTop: 15,
+        fontSize: 25,
     },
     imagePlacement: {
         flexDirection: 'column', 

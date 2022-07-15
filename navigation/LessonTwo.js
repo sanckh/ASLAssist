@@ -36,7 +36,6 @@ export default function LessonFive({navigation}){
         
     )
 }
-
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -72,4 +71,3 @@ const styles = StyleSheet.create({
         left: 4,
       },
 })
-
