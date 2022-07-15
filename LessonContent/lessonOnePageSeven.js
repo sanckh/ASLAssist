@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, Image, StyleSheet, TouchableOpacity, } from 'react-native';
+import { Text, View, ScrollView, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
@@ -8,24 +8,25 @@ import Button from '../components/Button';
 import Background from '../components/Background';
 import { getStatusBarHeight } from 'react-native-status-bar-height'
 
-export default function LessonOnePageTwo({navigation}){
+export default function LessonSix({navigation}){
     const {colors} = useTheme();
 
     return(
         <Background>
-            <TouchableOpacity  onPress = { () => navigation.replace('LessonOne')} style={styles.iconContainer}>
+            <TouchableOpacity  onPress = { () => 
+                navigation.replace('lessonOnePageThree')} style={styles.iconContainer}>
                 <List.Icon icon="arrow-left" />
             </TouchableOpacity>
-            <Header style = {styles.header}>Section Two</Header>
+            <Header style = {styles.header}>Section Seven</Header>
             <View style = {{flexDirection: 'row', marginTop: 10}}>
                 <View style = {styles.imagePlacement}>
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Fduck.gif?alt=media&token=6f05ab56-2819-4fc3-95d4-3863ecc0f8a9'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Fspider.gif?alt=media&token=a81253ed-639c-46ba-867e-9c8a7120c196'
                     }}>
                     </Image>
-                    <Text>taking your index and middle fingers together and touching them to and separating them from your thumb, holding them in front of your mouth</Text>
+                    <Text>You sign spider by crossing your open hands at the wrist. Wiggle your fingers around, as if they're the legs of a spider, and at the same time, move your hands to make the spider move forward.</Text>
                 </View>
                 
             </View>
@@ -35,20 +36,20 @@ export default function LessonOnePageTwo({navigation}){
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Felephant.gif?alt=media&token=7a6dd1e4-7c8f-4e47-ad94-fd72c482ec89'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Ftiger.gif?alt=media&token=470f1e34-74f1-4429-acae-5659a972d18c'
                     }}>
                     </Image>
-                    <Text>uses a flat hand to show the trunk. Start near your nose and then move downward and outward</Text>
+                    <Text>start with both hands with fingers and thumb extended, and spread them out as if they were tiger claws. Start with your hands in front of your face, then pull them apart.</Text>
                 </View>
                 
             </View>
             <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.34}
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.66}
                 color={"lightgreen"} alignItems={"center"} />
             </View>
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('lessonOnePageThree')}
+            onPress = {() => navigation.navigate('lessonOnePageEight')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}
@@ -57,8 +58,10 @@ export default function LessonOnePageTwo({navigation}){
             </Button>
         </Background>
         
+        
     )
 }
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -79,8 +82,6 @@ const styles = StyleSheet.create({
         margin: 10,
 
     },
-
-
     text: {
         marginTop: 15,
         fontSize: 15,

@@ -1,31 +1,33 @@
-import { Text, View, ScrollView, Image, StyleSheet, TouchableOpacity, } from 'react-native';
+import { Text, View, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
+import React, {useState, useEffect} from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { ProgressBar, List } from 'react-native-paper';
 import Button from '../components/Button';
 import Background from '../components/Background';
 import { getStatusBarHeight } from 'react-native-status-bar-height'
 
-export default function LessonOnePageTwo({navigation}){
+export default function LessonTwo({navigation}){
     const {colors} = useTheme();
 
     return(
         <Background>
-            <TouchableOpacity  onPress = { () => navigation.replace('LessonOne')} style={styles.iconContainer}>
+            <TouchableOpacity  onPress = { () => navigation.replace('Home')} style={styles.iconContainer}>
                 <List.Icon icon="arrow-left" />
             </TouchableOpacity>
-            <Header style = {styles.header}>Section Two</Header>
+             <Header style = {styles.header}>Final Section</Header>
+            
             <View style = {{flexDirection: 'row', marginTop: 10}}>
                 <View style = {styles.imagePlacement}>
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Fduck.gif?alt=media&token=6f05ab56-2819-4fc3-95d4-3863ecc0f8a9'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Fwhite.gif?alt=media&token=f6cc7116-824f-4abb-ba2c-ea55cc4426a5'
                     }}>
                     </Image>
-                    <Text>taking your index and middle fingers together and touching them to and separating them from your thumb, holding them in front of your mouth</Text>
+                    <Text>To sign white, place your hand on your upper chest, with fingers extended. Move your hand away from the chest while pulling all fingers together, so that you have all your fingertips touching.</Text>
                 </View>
                 
             </View>
@@ -35,30 +37,31 @@ export default function LessonOnePageTwo({navigation}){
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Felephant.gif?alt=media&token=7a6dd1e4-7c8f-4e47-ad94-fd72c482ec89'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Fyellow.gif?alt=media&token=544fa357-4c1a-4b64-84bb-5dc19954a8c6'
                     }}>
                     </Image>
-                    <Text>uses a flat hand to show the trunk. Start near your nose and then move downward and outward</Text>
+                    <Text>To sign yellow, make a fist with the thumb and pinkie finger extended (the ASL sign for 'Y'), then position your hand by the side of your body and twist the hand back and forth.</Text>
                 </View>
                 
             </View>
             <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.34}
-                color={"lightgreen"} alignItems={"center"} />
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
             </View>
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('lessonOnePageThree')}
+            onPress = {() => navigation.navigate('HomeDash')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}
             >
-                Next Section
+                Lesson One Quiz!
             </Button>
+
+            
         </Background>
-        
     )
 }
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -79,8 +82,6 @@ const styles = StyleSheet.create({
         margin: 10,
 
     },
-
-
     text: {
         marginTop: 15,
         fontSize: 15,
