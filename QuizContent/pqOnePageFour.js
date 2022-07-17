@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native';
+import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image, Alert } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
@@ -11,6 +11,10 @@ import { theme } from '../core/theme';
 
 export default function LessonSix({navigation}){
     const {colors} = useTheme();
+
+    const wrongAnswer = () => {
+        Alert.alert('This answer is incorrect. \nPlease try again');
+    };
 
     return(
         <Background>
@@ -27,6 +31,7 @@ export default function LessonSix({navigation}){
                 <Text style={styles.text}>What sign is this?</Text>
                 <View style={styles.screen}>
             <Button
+            onPress={()=>wrongAnswer()}
             mode = "contained"
             style = {{backgroundColor: '#daeaf6', 
                 width: 150,
@@ -40,6 +45,7 @@ export default function LessonSix({navigation}){
             </Button>
 
             <Button
+            onPress = {() => navigation.navigate('QuizCompletion')}
             mode = "contained"
             style = {{backgroundColor: '#daeaf6', 
                 width: 150,
@@ -53,6 +59,7 @@ export default function LessonSix({navigation}){
             </View>
             <View style={styles.screen}>
             <Button
+            onPress={()=>wrongAnswer()}
             mode = "contained"
             style = {{backgroundColor: '#daeaf6', 
                 width: 150,
@@ -66,6 +73,7 @@ export default function LessonSix({navigation}){
             </Button>
 
             <Button
+            onPress={()=>wrongAnswer()}
             mode = "contained"
             style = {{backgroundColor: '#daeaf6', 
                 width: 150,
@@ -81,7 +89,7 @@ export default function LessonSix({navigation}){
             <View>
                 <ProgressBar style = {{width: 200, marginTop: 15}} progress={1.00} color={"lightgreen"} />
             </View>
-            <Button
+            {/* <Button
             mode = "contained"
             onPress = {() => navigation.navigate('QuizCompletion')}
             style = {{backgroundColor: '#ecddfc', 
@@ -89,7 +97,7 @@ export default function LessonSix({navigation}){
                 height: 50,}}
             >
                 Next Section
-            </Button>
+            </Button> */}
         </Background>
         
         
