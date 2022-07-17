@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
 import { NavigationContainer } from '@react-navigation/native';
-import { ProgressBar, List } from 'react-native-paper';
+import { ProgressBar, List, Divider } from 'react-native-paper';
 import Background from '../components/Background';
 import { getStatusBarHeight } from 'react-native-status-bar-height'
 import Button from '../components/Button';
@@ -30,7 +30,7 @@ export default function PracticeOne({navigation}){
             </View> */}
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('Quizzes')}
+            onPress = {() => navigation.navigate('HomeDash')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}

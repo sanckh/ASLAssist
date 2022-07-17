@@ -14,7 +14,7 @@ export default function LessonSix({navigation}){
     return(
         <Background>
             <TouchableOpacity  onPress = { () => 
-                navigation.replace('lessonOnePageThree')} style={styles.iconContainer}>
+                navigation.replace('lessonOnePageSix')} style={styles.iconContainer}>
                 <List.Icon icon="arrow-left" />
             </TouchableOpacity>
             <Header style = {styles.header}>Section Seven</Header>
@@ -75,8 +75,8 @@ const styles = StyleSheet.create({
         fontSize: 25,
     },
     image: {
-        width: 250,
-        height: 150,
+        width: 200,
+        height: 100,
         resizeMode: 'contain',
         borderRadius: 30,
         margin: 10,

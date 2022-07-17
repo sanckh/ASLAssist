@@ -20,7 +20,7 @@ export default function LessonSix({navigation}){
                 <List.Icon icon="arrow-left" />
             </TouchableOpacity>
             <Header style = {styles.header}>Section Five</Header>
-            <View style = {{flexDirection: 'row', marginTop: 10}}>
+            <View style = {{flexDirection: 'row'}}>
                 <View style = {styles.imagePlacement}>
                     <Image
                     style = {styles.image}
@@ -77,12 +77,12 @@ const styles = StyleSheet.create({
         fontSize: 25,
     },
     image: {
-        width: 250,
-        height: 150,
+        width: 200,
+        height: 100,
         resizeMode: 'contain',
         borderRadius: 30,
         margin: 10,
-
+        paddingTop: 24
     },
     text: {
         marginTop: 15,

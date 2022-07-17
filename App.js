@@ -54,17 +54,6 @@ import LessonTen from './navigation/LessonTen';
 import lessonOnePageTwo from './LessonContent/lessonOnePageTwo'
 import lessonOnePageThree from './LessonContent/lessonOnePageThree'
 import lessonOnePageFour from './LessonContent/lessonOnePageFour'
-import lessonOnePageFive from './LessonContent/lessonOnePageFive'
-import lessonOnePageSix from './LessonContent/lessonOnePageSix'
-import lessonOnePageSeven from './LessonContent/lessonOnePageSeven'
-import lessonOnePageEight from './LessonContent/lessonOnePageEight'
-import lessonOnePageNine from './LessonContent/lessonOnePageNine'
-import lessonOnePageTen from './LessonContent/lessonOnePageTen'
-import lessonOnePageEleven from './LessonContent/lessonOnePageEleven'
-import lessonOnePageTwelve from './LessonContent/lessonOnePageTwelve'
-import lessonOnePageThirteen from './LessonContent/lessonOnePageThirteen'
-import lessonOnePageFourteen from './LessonContent/lessonOnePageFourteen'
-import lessonOnePageFiftheen from './LessonContent/lessonOnePageFiftheen'
 import lessonTwoPageTwo from './LessonContent/lessonTwoPageTwo'
 import lessonTwoPageThree from './LessonContent/lessonTwoPageThree'
 import lessonTwoPageFour from './LessonContent/lessonTwoPageFour'
@@ -93,6 +82,17 @@ import lessonTenPageTwo from './LessonContent/lessonTenPageTwo'
 import lessonTenPageThree from './LessonContent/lessonTenPageThree'
 import lessonTenPageFour from './LessonContent/lessonTenPageFour'
 
+import lessonOnePageFive from './LessonContent/lessonOnePageFive'
+import lessonOnePageSix from './LessonContent/lessonOnePageSix'
+import lessonOnePageSeven from './LessonContent/lessonOnePageSeven'
+import lessonOnePageEight from './LessonContent/lessonOnePageEight'
+import lessonOnePageNine from './LessonContent/lessonOnePageNine'
+import lessonOnePageTen from './LessonContent/lessonOnePageTen'
+import lessonOnePageEleven from './LessonContent/lessonOnePageEleven'
+import lessonOnePageTwelve from './LessonContent/lessonOnePageTwelve'
+import lessonOnePageThirteen from './LessonContent/lessonOnePageThirteen'
+import lessonOnePageFourteen from './LessonContent/lessonOnePageFourteen'
+import lessonOnePageFiftheen from './LessonContent/lessonOnePageFiftheen'
 
 //practice quizzes
 import PracticeQuizOne from './navigation/practiceQuizOne';
@@ -244,6 +244,7 @@ export default function App() {
           <Stack.Screen name = "pqThreePageTwo" component = {pqThreePageTwo}/>
           <Stack.Screen name = "pqThreePageThree" component = {pqThreePageThree}/>
           <Stack.Screen name = "pqThreePageFour" component = {pqThreePageFour}/>
+
           <Stack.Screen name = "Achievements" component = {Achievement}/>
 
           <Stack.Screen name = "lessonOnePageTwo" component = {lessonOnePageTwo}/>
@@ -260,7 +261,6 @@ export default function App() {
           <Stack.Screen name = "lessonOnePageThirteen" component = {lessonOnePageThirteen}/>
           <Stack.Screen name = "lessonOnePageFourteen" component = {lessonOnePageFourteen}/>
           <Stack.Screen name = "lessonOnePageFiftheen" component = {lessonOnePageFiftheen}/>
-
 
           <Stack.Screen name = "lessonTwoPageTwo" component = {lessonTwoPageTwo}/>
           <Stack.Screen name = "lessonTwoPageThree" component = {lessonTwoPageThree}/>
