@@ -28,6 +28,9 @@ export default function PracticeOne({navigation}){
                     uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Emergency%2Fasthma.gif?alt=media&token=96305886-e903-4dc5-80f2-26dd59454955'
                 }}>
                 </Image>
+                <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
+                </View>
                 <Text style={styles.text}>What sign is this?</Text>
                 <View style={styles.screen}>
             <Button
@@ -87,9 +90,9 @@ export default function PracticeOne({navigation}){
 
             </View>
 
-            <View>
+            {/* <View>
                 <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
-            </View>
+            </View> */}
             {/* <Button
             mode = "contained"
             onPress = {() => navigation.navigate('pqOnePageTwo')}

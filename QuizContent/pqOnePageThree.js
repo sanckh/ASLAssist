@@ -28,6 +28,9 @@ export default function LessonSix({navigation}){
                     uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/c.png?alt=media&token=3605cb26-7e7b-4fd8-8f62-2703f88b0819'
                 }}>
                 </Image>
+                <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.66} color={"lightgreen"} />
+                </View>
                 <Text style={styles.text}>What sign is this?</Text>
                 <View style={styles.screen}>
             <Button
@@ -86,9 +89,9 @@ export default function LessonSix({navigation}){
             </Button>
 
             </View>
-            <View>
+            {/* <View>
                 <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.66} color={"lightgreen"} />
-            </View>
+            </View> */}
             {/* <Button
             mode = "contained"
             onPress = {() => navigation.navigate('pqOnePageFour')}
