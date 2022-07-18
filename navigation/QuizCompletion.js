@@ -35,7 +35,7 @@ export default function PracticeOne({navigation}){
                 width: 250,
                 height: 50,}}
             >
-                Next Section
+                Go To Lessons
             </Button>
         </Background>
         
