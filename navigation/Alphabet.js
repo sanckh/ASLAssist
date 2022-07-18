@@ -312,14 +312,14 @@ const styles = StyleSheet.create({
         fontSize: 25,
     },
     image: {
-        width: 110,
-        height: 110,
+        width: 85,
+        height: 85,
         resizeMode: 'contain',
         margin: 10,
     },
     text: {
         flex:1,
-        width: 115,
+        width: 110,
         textAlign: 'center'
     },
     scrollview: {

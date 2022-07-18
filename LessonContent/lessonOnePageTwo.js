@@ -18,7 +18,7 @@ export default function LessonOnePageTwo({navigation}){
             </TouchableOpacity>
             <Header style = {styles.header}>Section Two</Header>
             <View style = {{flexDirection: 'row', marginTop: 10}}>
-                <View style = {styles.imagePlacement}>
+                <View style = {styles.imagePlacement} marginTop={0}>
                     <Image
                     style = {styles.image}
                     source = {{
