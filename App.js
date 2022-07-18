@@ -213,6 +213,8 @@ export default function App() {
           <Stack.Screen name = "AboutScreen" component = {AboutScreen} />
           <Stack.Screen name = "Home" component = {Home}/>
           <Stack.Screen name = "Quizzes" component = {Quizzes}/>
+          <Stack.Screen name = "Profile" component = {Profile}/>
+          <Stack.Screen name = "Settings" component = {Settings}/>
           <Stack.Screen name = "Emergency" component = {Emergency}/>
           <Stack.Screen name = "Alphabet" component = {Alphabet}/>
           <Stack.Screen name = "Numbers" component = {Numbers}/>

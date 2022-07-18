@@ -319,7 +319,7 @@ const styles = StyleSheet.create({
     },
     text: {
         flex:1,
-        width: 110,
+        width: 100,
         textAlign: 'center'
     },
     scrollview: {
