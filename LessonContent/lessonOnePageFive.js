@@ -1,4 +1,4 @@
-import { Text, View, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import { Text, View, StyleSheet, Image, TouchableOpacity, SafeAreaView } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
@@ -14,14 +14,12 @@ export default function LessonSix({navigation}){
     const {colors} = useTheme();
 
     return(
+        <SafeAreaView style={styles.container}>
         <Background>
-            <TouchableOpacity  onPress = { () => 
-                navigation.replace('lessonOnePageFour')} style={styles.iconContainer}>
-                <List.Icon icon="arrow-left" />
-            </TouchableOpacity>
+        <BackButton goBack = {navigation.goBack} />
             <Header style = {styles.header}>Section Five</Header>
             <View style = {{flexDirection: 'row', marginTop: 10}}>
-                <View style = {styles.imagePlacement}>
+                <View style = {styles.imagePlacement} marginTop={30}>
                     <Image
                     style = {styles.image}
                     source = {{
@@ -58,8 +56,9 @@ export default function LessonSix({navigation}){
             >
                 Next Section
             </Button>
+            
         </Background>
-        
+        </SafeAreaView>
         
     )
 }
@@ -77,12 +76,12 @@ const styles = StyleSheet.create({
         fontSize: 25,
     },
     image: {
-        width: 250,
-        height: 150,
+        width: 200,
+        height: 100,
         resizeMode: 'contain',
         borderRadius: 30,
         margin: 10,
-
+        paddingTop: 24
     },
     text: {
         marginTop: 15,
@@ -91,7 +90,7 @@ const styles = StyleSheet.create({
     imagePlacement: {
         flexDirection: 'column', 
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
     },
     iconContainer: {
         position: 'absolute',

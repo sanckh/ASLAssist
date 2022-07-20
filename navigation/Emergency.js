@@ -18,7 +18,7 @@ export default function LessonOne({navigation}){
     return(
         <Background>
             <BackButton goBack = {navigation.goBack} />
-            <Header style = {styles.header}>Alphabet</Header>
+            <Header style = {styles.header}>Emergency</Header>
                 <View style = {styles.container}>
                         <ScrollView style={styles.scrollView}>
                         <Text style = {{color: colors.text, textAlign: 'center', width: 350, marginTop: 10}}> Here are some important phrases to learn when learning ASL </Text>

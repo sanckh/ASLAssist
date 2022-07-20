@@ -13,12 +13,10 @@ export default function LessonOnePageTwo({navigation}){
 
     return(
         <Background>
-            <TouchableOpacity  onPress = { () => navigation.replace('LessonOne')} style={styles.iconContainer}>
-                <List.Icon icon="arrow-left" />
-            </TouchableOpacity>
+            <BackButton goBack = {navigation.goBack} />
             <Header style = {styles.header}>Section Two</Header>
             <View style = {{flexDirection: 'row', marginTop: 10}}>
-                <View style = {styles.imagePlacement}>
+                <View style = {styles.imagePlacement} marginTop={0}>
                     <Image
                     style = {styles.image}
                     source = {{
@@ -72,8 +70,8 @@ const styles = StyleSheet.create({
         fontSize: 25,
     },
     image: {
-        width: 250,
-        height: 150,
+        width: 200,
+        height: 100,
         resizeMode: 'contain',
         borderRadius: 30,
         margin: 10,
