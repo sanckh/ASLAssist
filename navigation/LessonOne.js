@@ -14,9 +14,7 @@ export default function LessonTwo({navigation}){
 
     return(
         <Background>
-            <TouchableOpacity  onPress = { () => navigation.replace('Home')} style={styles.iconContainer}>
-                <List.Icon icon="arrow-left" />
-            </TouchableOpacity>
+            <BackButton goBack = {navigation.goBack} />
              <Header style = {styles.header}>Lesson One</Header>
             
             <View style = {{flexDirection: 'row', marginTop: 10}}>

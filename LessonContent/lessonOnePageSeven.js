@@ -13,10 +13,7 @@ export default function LessonSix({navigation}){
 
     return(
         <Background>
-            <TouchableOpacity  onPress = { () => 
-                navigation.replace('lessonOnePageSix')} style={styles.iconContainer}>
-                <List.Icon icon="arrow-left" />
-            </TouchableOpacity>
+            <BackButton goBack = {navigation.goBack} />
             <Header style = {styles.header}>Section Seven</Header>
             <View style = {{flexDirection: 'row', marginTop: 10}}>
                 <View style = {styles.imagePlacement}>
