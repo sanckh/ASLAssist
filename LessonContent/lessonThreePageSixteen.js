@@ -9,7 +9,7 @@ import Button from '../components/Button';
 import Background from '../components/Background';
 import { getStatusBarHeight } from 'react-native-status-bar-height'
 
-export default function LessonTwo({navigation}){
+export default function LessonThree({navigation}){
     const {colors} = useTheme();
 
     return(
@@ -17,21 +17,17 @@ export default function LessonTwo({navigation}){
             <TouchableOpacity  onPress = { () => navigation.replace('Home')} style={styles.iconContainer}>
                 <List.Icon icon="arrow-left" />
             </TouchableOpacity>
-
-             <Header style = {styles.header}>Section Three</Header>
-
+             <Header style = {styles.header}>Last Section</Header>
             
             <View style = {{flexDirection: 'row', marginTop: 10}}>
                 <View style = {styles.imagePlacement}>
                     <Image
                     style = {styles.image}
                     source = {{
-
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fburn.gif?alt=media&token=9ab3c725-ed44-4af5-9d79-495474ba175a'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fweather.gif?alt=media&token=bf5a1d97-4306-442a-bfc3-a62afa0a5200'
                     }}>
                     </Image>
-                    <Text>All fingers together touching, while moving in a upward motion open palm up to body</Text>
-
+                    <Text>form both hands into the ASL letter W sign as you make them face each other in front of you and shimmy them down a few inches in alternating directions.</Text>
                 </View>
                 
             </View>
@@ -41,12 +37,10 @@ export default function LessonTwo({navigation}){
                     <Image
                     style = {styles.image}
                     source = {{
-
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fchoking.gif?alt=media&token=3e630138-45c1-4003-bc37-7e592f7ff4b0'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fwindy.gif?alt=media&token=f604b430-36ba-4bac-80a6-718886886dab'
                     }}>
                     </Image>
-                    <Text>The universal sign for choking is hands clutched to the throat. </Text>
-
+                    <Text>ld out both your open, flat hands in front of you, one hand slightly higher than the other, then sway them in tandem back and forth</Text>
                 </View>
                 
             </View>
@@ -55,14 +49,12 @@ export default function LessonTwo({navigation}){
             </View>
             <Button
             mode = "contained"
-
-            onPress = {() => navigation.navigate('lessonThreePageFive')}
-
+            onPress = {() => navigation.navigate('HomeDash')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}
             >
-                Next Section
+                Quiz Three!
             </Button>
 
             

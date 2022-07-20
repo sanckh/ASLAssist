@@ -17,21 +17,17 @@ export default function LessonTwo({navigation}){
             <TouchableOpacity  onPress = { () => navigation.replace('Home')} style={styles.iconContainer}>
                 <List.Icon icon="arrow-left" />
             </TouchableOpacity>
-
-             <Header style = {styles.header}>Section Three</Header>
-
+             <Header style = {styles.header}>Section Four</Header>
             
             <View style = {{flexDirection: 'row', marginTop: 10}}>
                 <View style = {styles.imagePlacement}>
                     <Image
                     style = {styles.image}
                     source = {{
-
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fburn.gif?alt=media&token=9ab3c725-ed44-4af5-9d79-495474ba175a'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fsnow.gif?alt=media&token=60bf06ab-2661-4109-bfb1-b56f9f42fd71'
                     }}>
                     </Image>
-                    <Text>All fingers together touching, while moving in a upward motion open palm up to body</Text>
-
+                    <Text>your fingers flutter down as if they were snow flakes drifting down from the sky. </Text>
                 </View>
                 
             </View>
@@ -41,12 +37,10 @@ export default function LessonTwo({navigation}){
                     <Image
                     style = {styles.image}
                     source = {{
-
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fchoking.gif?alt=media&token=3e630138-45c1-4003-bc37-7e592f7ff4b0'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fstorm.gif?alt=media&token=ea41e4a4-8b92-4fca-aeb0-2ebec10ca97d'
                     }}>
                     </Image>
-                    <Text>The universal sign for choking is hands clutched to the throat. </Text>
-
+                    <Text> I point to the ear then I use a firm converse double movement with two hands using "handshape: S" on each hand.</Text>
                 </View>
                 
             </View>
@@ -55,9 +49,7 @@ export default function LessonTwo({navigation}){
             </View>
             <Button
             mode = "contained"
-
-            onPress = {() => navigation.navigate('lessonThreePageFive')}
-
+            onPress = {() => navigation.navigate('lessonThreePageFiftheen')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}

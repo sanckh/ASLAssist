@@ -17,21 +17,17 @@ export default function LessonTwo({navigation}){
             <TouchableOpacity  onPress = { () => navigation.replace('Home')} style={styles.iconContainer}>
                 <List.Icon icon="arrow-left" />
             </TouchableOpacity>
-
-             <Header style = {styles.header}>Section Three</Header>
-
+             <Header style = {styles.header}>Section Eight</Header>
             
             <View style = {{flexDirection: 'row', marginTop: 10}}>
                 <View style = {styles.imagePlacement}>
                     <Image
                     style = {styles.image}
                     source = {{
-
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fburn.gif?alt=media&token=9ab3c725-ed44-4af5-9d79-495474ba175a'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fswollen.gif?alt=media&token=e5f61ec3-bcad-4319-be62-e18e7fbb9020'
                     }}>
                     </Image>
-                    <Text>All fingers together touching, while moving in a upward motion open palm up to body</Text>
-
+                    <Text>Stick the tip of your thumb on your chest and wiggle the fingers.</Text>
                 </View>
                 
             </View>
@@ -41,12 +37,10 @@ export default function LessonTwo({navigation}){
                     <Image
                     style = {styles.image}
                     source = {{
-
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fchoking.gif?alt=media&token=3e630138-45c1-4003-bc37-7e592f7ff4b0'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fxray.gif?alt=media&token=eb34acf9-3ce0-4f04-9598-7eb1d55cefc9'
                     }}>
                     </Image>
-                    <Text>The universal sign for choking is hands clutched to the throat. </Text>
-
+                    <Text>make the ASL sign for the letter 'X' with your dominant hand at your opposite shoulder, then bring it to your chest a short diagonal distance down. </Text>
                 </View>
                 
             </View>
@@ -55,9 +49,7 @@ export default function LessonTwo({navigation}){
             </View>
             <Button
             mode = "contained"
-
-            onPress = {() => navigation.navigate('lessonThreePageFive')}
-
+            onPress = {() => navigation.navigate('lessonThreePageTen')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}

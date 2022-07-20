@@ -17,21 +17,17 @@ export default function LessonTwo({navigation}){
             <TouchableOpacity  onPress = { () => navigation.replace('Home')} style={styles.iconContainer}>
                 <List.Icon icon="arrow-left" />
             </TouchableOpacity>
-
-             <Header style = {styles.header}>Section Three</Header>
-
+             <Header style = {styles.header}>Section Four</Header>
             
             <View style = {{flexDirection: 'row', marginTop: 10}}>
                 <View style = {styles.imagePlacement}>
                     <Image
                     style = {styles.image}
                     source = {{
-
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fburn.gif?alt=media&token=9ab3c725-ed44-4af5-9d79-495474ba175a'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fcough.gif?alt=media&token=9997e3e5-0233-43bd-9dfa-8b0dc7a7e5df'
                     }}>
                     </Image>
-                    <Text>All fingers together touching, while moving in a upward motion open palm up to body</Text>
-
+                    <Text>A fist hitting your chest, repeatedly</Text>
                 </View>
                 
             </View>
@@ -41,12 +37,10 @@ export default function LessonTwo({navigation}){
                     <Image
                     style = {styles.image}
                     source = {{
-
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fchoking.gif?alt=media&token=3e630138-45c1-4003-bc37-7e592f7ff4b0'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fcpr.gif?alt=media&token=1c619a24-8ca6-43ab-8c88-9c8881b0230e'
                     }}>
                     </Image>
-                    <Text>The universal sign for choking is hands clutched to the throat. </Text>
-
+                    <Text>CPR is usually spelled out but you can use pumping air with both hands too</Text>
                 </View>
                 
             </View>
@@ -55,9 +49,7 @@ export default function LessonTwo({navigation}){
             </View>
             <Button
             mode = "contained"
-
-            onPress = {() => navigation.navigate('lessonThreePageFive')}
-
+            onPress = {() => navigation.navigate('lessonThreePageSix')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}

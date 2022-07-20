@@ -17,21 +17,17 @@ export default function LessonTwo({navigation}){
             <TouchableOpacity  onPress = { () => navigation.replace('Home')} style={styles.iconContainer}>
                 <List.Icon icon="arrow-left" />
             </TouchableOpacity>
-
-             <Header style = {styles.header}>Section Three</Header>
-
+             <Header style = {styles.header}>Section Two</Header>
             
             <View style = {{flexDirection: 'row', marginTop: 10}}>
                 <View style = {styles.imagePlacement}>
                     <Image
                     style = {styles.image}
                     source = {{
-
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fburn.gif?alt=media&token=9ab3c725-ed44-4af5-9d79-495474ba175a'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fflood.gif?alt=media&token=c6d9075b-79ea-41b9-8a26-fe4d4c8349db'
                     }}>
                     </Image>
-                    <Text>All fingers together touching, while moving in a upward motion open palm up to body</Text>
-
+                    <Text>Hands face down while moving upward showing water rising</Text>
                 </View>
                 
             </View>
@@ -41,12 +37,10 @@ export default function LessonTwo({navigation}){
                     <Image
                     style = {styles.image}
                     source = {{
-
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fchoking.gif?alt=media&token=3e630138-45c1-4003-bc37-7e592f7ff4b0'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fhot.gif?alt=media&token=ed5d7170-0923-4332-8563-dcb5a468dc29'
                     }}>
                     </Image>
-                    <Text>The universal sign for choking is hands clutched to the throat. </Text>
-
+                    <Text>taking your fingers and thumb into a claw shape. Now starting with your claw hand over your mouth, move the hand away from your mouth and rotate it so that you end the sign with your palm facing outward. Flatten out your leading hand.</Text>
                 </View>
                 
             </View>
@@ -55,9 +49,7 @@ export default function LessonTwo({navigation}){
             </View>
             <Button
             mode = "contained"
-
-            onPress = {() => navigation.navigate('lessonThreePageFive')}
-
+            onPress = {() => navigation.navigate('lessonThreePageThirteen')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}
