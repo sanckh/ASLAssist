@@ -65,9 +65,25 @@ import lessonOnePageTwelve from './LessonContent/lessonOnePageTwelve'
 import lessonOnePageThirteen from './LessonContent/lessonOnePageThirteen'
 import lessonOnePageFourteen from './LessonContent/lessonOnePageFourteen'
 import lessonOnePageFiftheen from './LessonContent/lessonOnePageFiftheen'
+
 import lessonTwoPageTwo from './LessonContent/lessonTwoPageTwo'
 import lessonTwoPageThree from './LessonContent/lessonTwoPageThree'
 import lessonTwoPageFour from './LessonContent/lessonTwoPageFour'
+import lessonTwoPageFive from './LessonContent/lessonTwoPageFive'
+import lessonTwoPageSix from './LessonContent/lessonTwoPageSix'
+import lessonTwoPageSeven from './LessonContent/lessonTwoPageSeven'
+import lessonTwoPageEight from './LessonContent/lessonTwoPageEight'
+import lessonTwoPageNine from './LessonContent/lessonTwoPageNine'
+import lessonTwoPageTen from './LessonContent/lessonTwoPageTen'
+import lessonTwoPageEleven from './LessonContent/lessonTwoPageEleven'
+import lessonTwoPageTwelve from './LessonContent/lessonTwoPageTwelve'
+import lessonTwoPageThirteen from './LessonContent/lessonTwoPageThirteen'
+import lessonTwoPageFourteen from './LessonContent/lessonTwoPageFourteen'
+import lessonTwoPageFiftheen from './LessonContent/lessonTwoPageFiftheen'
+import lessonTwoPageSixteen from './LessonContent/lessonTwoPageSixteen'
+import lessonTwoPageSeventeen from './LessonContent/lessonTwoPageSeventeen'
+import lessonTwoPageEighteen from './LessonContent/lessonTwoPageEighteen'
+
 
 import lessonThreePageTwo from './LessonContent/lessonThreePageTwo'
 import lessonThreePageThree from './LessonContent/lessonThreePageThree'
@@ -279,6 +295,20 @@ export default function App() {
           <Stack.Screen name = "lessonTwoPageTwo" component = {lessonTwoPageTwo}/>
           <Stack.Screen name = "lessonTwoPageThree" component = {lessonTwoPageThree}/>
           <Stack.Screen name = "lessonTwoPageFour" component = {lessonTwoPageFour}/>
+          <Stack.Screen name = "lessonTwoPageFive" component = {lessonTwoPageFive}/>
+          <Stack.Screen name = "lessonTwoPageSix" component = {lessonTwoPageSix}/>
+          <Stack.Screen name = "lessonTwoPageSeven" component = {lessonTwoPageSeven}/>
+          <Stack.Screen name = "lessonTwoPageEight" component = {lessonTwoPageEight}/>
+          <Stack.Screen name = "lessonTwoPageNine" component = {lessonTwoPageNine}/>
+          <Stack.Screen name = "lessonTwoPageTen" component = {lessonTwoPageTen}/>
+          <Stack.Screen name = "lessonTwoPageEleven" component = {lessonTwoPageEleven}/>
+          <Stack.Screen name = "lessonTwoPageTwelve" component = {lessonTwoPageTwelve}/>
+          <Stack.Screen name = "lessonTwoPageThirteen" component = {lessonTwoPageThirteen}/>
+          <Stack.Screen name = "lessonTwoPageFourteen" component = {lessonTwoPageFourteen}/>
+          <Stack.Screen name = "lessonTwoPageFiftheen" component = {lessonTwoPageFiftheen}/>
+          <Stack.Screen name = "lessonTwoPageSixteen" component = {lessonTwoPageSixteen}/>
+          <Stack.Screen name = "lessonTwoPageSeventeen" component = {lessonTwoPageSeventeen}/>
+          <Stack.Screen name = "lessonTwoPageEighteen" component = {lessonTwoPageEighteen}/>
 
           <Stack.Screen name = "lessonThreePageTwo" component = {lessonThreePageTwo}/>
           <Stack.Screen name = "lessonThreePageThree" component = {lessonThreePageThree}/>
