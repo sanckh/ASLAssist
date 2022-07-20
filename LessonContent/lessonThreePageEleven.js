@@ -1,7 +1,8 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity, } from 'react-native';
+import { Text, View, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
+import React, {useState, useEffect} from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { ProgressBar, List } from 'react-native-paper';
 import Button from '../components/Button';
@@ -16,17 +17,17 @@ export default function LessonTwo({navigation}){
             <TouchableOpacity  onPress = { () => navigation.replace('Home')} style={styles.iconContainer}>
                 <List.Icon icon="arrow-left" />
             </TouchableOpacity>
-             <Header style = {styles.header}>Section Three</Header>
+             <Header style = {styles.header}>Section One</Header>
             
             <View style = {{flexDirection: 'row', marginTop: 10}}>
                 <View style = {styles.imagePlacement}>
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fburn.gif?alt=media&token=9ab3c725-ed44-4af5-9d79-495474ba175a'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fcold.gif?alt=media&token=631563b6-a162-44ca-9e77-f71b81f88845'
                     }}>
                     </Image>
-                    <Text>All fingers together touching, while moving in a upward motion open palm up to body</Text>
+                    <Text>take both hands and make them into fists with thumbs up. Pull your upper arms into your sides, stiffen your forearms, and shake your fists back and forth</Text>
                 </View>
                 
             </View>
@@ -36,10 +37,10 @@ export default function LessonTwo({navigation}){
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fchoking.gif?alt=media&token=3e630138-45c1-4003-bc37-7e592f7ff4b0'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fearthquake.gif?alt=media&token=9ba6e141-fa87-4ac2-af65-72a6100fcd3d'
                     }}>
                     </Image>
-                    <Text>The universal sign for choking is hands clutched to the throat. </Text>
+                    <Text>To sign earthquake, first sign Earth, then sign shake: close both fists and shake them back and forth</Text>
                 </View>
                 
             </View>
@@ -48,7 +49,7 @@ export default function LessonTwo({navigation}){
             </View>
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('lessonThreePageFive')}
+            onPress = {() => navigation.navigate('lessonThreePageTwelve')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}
@@ -60,7 +61,7 @@ export default function LessonTwo({navigation}){
         </Background>
     )
 }
-8
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -74,8 +75,8 @@ const styles = StyleSheet.create({
         fontSize: 25,
     },
     image: {
-        width: 115,
-        height: 115,
+        width: 250,
+        height: 150,
         resizeMode: 'contain',
         borderRadius: 30,
         margin: 10,

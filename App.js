@@ -68,9 +68,23 @@ import lessonOnePageFiftheen from './LessonContent/lessonOnePageFiftheen'
 import lessonTwoPageTwo from './LessonContent/lessonTwoPageTwo'
 import lessonTwoPageThree from './LessonContent/lessonTwoPageThree'
 import lessonTwoPageFour from './LessonContent/lessonTwoPageFour'
+
 import lessonThreePageTwo from './LessonContent/lessonThreePageTwo'
 import lessonThreePageThree from './LessonContent/lessonThreePageThree'
 import lessonThreePageFour from './LessonContent/lessonThreePageFour'
+import lessonThreePageFive from './LessonContent/lessonThreePageFive'
+import lessonThreePageSix from './LessonContent/lessonThreePageSix'
+import lessonThreePageSeven from './LessonContent/lessonThreePageSeven'
+import lessonThreePageEight from './LessonContent/lessonThreePageEight'
+import lessonThreePageNine from './LessonContent/lessonThreePageNine'
+import lessonThreePageTen from './LessonContent/lessonThreePageTen'
+import lessonThreePageEleven from './LessonContent/lessonThreePageEleven'
+import lessonThreePageTwelve from './LessonContent/lessonThreePageTwelve'
+import lessonThreePageThirteen from './LessonContent/lessonThreePageThirteen'
+import lessonThreePageFourteen from './LessonContent/lessonThreePageFourteen'
+import lessonThreePageFiftheen from './LessonContent/lessonThreePageFiftheen'
+import lessonThreePageSixteen from './LessonContent/lessonThreePageSixteen'
+
 import lessonFourPageTwo from './LessonContent/lessonFourPageTwo'
 import lessonFourPageThree from './LessonContent/lessonFourPageThree'
 import lessonFourPageFour from './LessonContent/lessonFourPageFour'
@@ -269,6 +283,18 @@ export default function App() {
           <Stack.Screen name = "lessonThreePageTwo" component = {lessonThreePageTwo}/>
           <Stack.Screen name = "lessonThreePageThree" component = {lessonThreePageThree}/>
           <Stack.Screen name = "lessonThreePageFour" component = {lessonThreePageFour}/>
+          <Stack.Screen name = "lessonThreePageFive" component = {lessonThreePageFive}/>
+          <Stack.Screen name = "lessonThreePageSix" component = {lessonThreePageSix}/>
+          <Stack.Screen name = "lessonThreePageSeven" component = {lessonThreePageSeven}/>
+          <Stack.Screen name = "lessonThreePageEight" component = {lessonThreePageEight}/>
+          <Stack.Screen name = "lessonThreePageNine" component = {lessonThreePageNine}/>
+          <Stack.Screen name = "lessonThreePageTen" component = {lessonThreePageTen}/>
+          <Stack.Screen name = "lessonThreePageEleven" component = {lessonThreePageEleven}/>
+          <Stack.Screen name = "lessonThreePageTwelve" component = {lessonThreePageTwelve}/>
+          <Stack.Screen name = "lessonThreePageThirteen" component = {lessonThreePageThirteen}/>
+          <Stack.Screen name = "lessonThreePageFourteen" component = {lessonThreePageFourteen}/>
+          <Stack.Screen name = "lessonThreePageFiftheen" component = {lessonThreePageFiftheen}/>
+          <Stack.Screen name = "lessonThreePageSixteen" component = {lessonThreePageSixteen}/>
 
           <Stack.Screen name = "lessonFourPageTwo" component = {lessonFourPageTwo}/>
           <Stack.Screen name = "lessonFourPageThree" component = {lessonFourPageThree}/>

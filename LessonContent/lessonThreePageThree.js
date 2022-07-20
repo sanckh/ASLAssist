@@ -8,33 +8,59 @@ import Button from '../components/Button';
 import Background from '../components/Background';
 import { getStatusBarHeight } from 'react-native-status-bar-height'
 
-export default function LessonSix({navigation}){
+export default function LessonTwo({navigation}){
     const {colors} = useTheme();
 
     return(
         <Background>
-            <TouchableOpacity  onPress = { () => navigation.replace('LessonTwo')} style={styles.iconContainer}>
+            <TouchableOpacity  onPress = { () => navigation.replace('Home')} style={styles.iconContainer}>
                 <List.Icon icon="arrow-left" />
             </TouchableOpacity>
-            <Header style = {styles.header}>Section Three</Header>
-            {/* lesson content */}
+             <Header style = {styles.header}>Section Two</Header>
+            
+            <View style = {{flexDirection: 'row', marginTop: 10}}>
+                <View style = {styles.imagePlacement}>
+                    <Image
+                    style = {styles.image}
+                    source = {{
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fbone.gif?alt=media&token=4636ca68-21fb-48bf-87c4-36eaa99bf2f3'
+                    }}>
+                    </Image>
+                    <Text>bend your dominant hand's index and middle fingers (like a bent V hand) and brush them up against one side of your jaw.</Text>
+                </View>
+                
+            </View>
+
+            <View style = {{flexDirection: 'row', marginTop: 10}}>
+                <View style = {styles.imagePlacement}>
+                    <Image
+                    style = {styles.image}
+                    source = {{
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fbreathing.gif?alt=media&token=b441d7d9-4b7f-40d1-97b3-7cc24c3d4f97'
+                    }}>
+                    </Image>
+                    <Text>Both hands use "5"-hands. The hands move forward away from the chest, and then back to the chest</Text>
+                </View>
+                
+            </View>
             <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.66}
-                color={"lightgreen"} alignItems={"center"} />
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
             </View>
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('lessonTwoPageThree')}
+            onPress = {() => navigation.navigate('lessonThreePageFour')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}
             >
                 Next Section
             </Button>
+
+            
         </Background>
-        
     )
 }
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,
