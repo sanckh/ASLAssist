@@ -17,17 +17,17 @@ export default function LessonTwo({navigation}){
             <TouchableOpacity  onPress = { () => navigation.replace('Home')} style={styles.iconContainer}>
                 <List.Icon icon="arrow-left" />
             </TouchableOpacity>
-             <Header style = {styles.header}>Section Three</Header>
+             <Header style = {styles.header}>Section Eight</Header>
             
             <View style = {{flexDirection: 'row', marginTop: 10}}>
                 <View style = {styles.imagePlacement}>
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Fexcited.gif?alt=media&token=02440b28-81e6-431f-aece-972bc5fce341'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Fscary.gif?alt=media&token=f2edb510-662a-48e6-ad33-a29dc31e84a1'
                     }}>
                     </Image>
-                    <Text>open both hands with your middle fingers forward a little more than the rest. Tap your fingers around the center of your chest repeatedly</Text>
+                    <Text>Scared starts with your open hands (or closed fists) by your sides,Then you bring your hands inward, in front of your body</Text>
                 </View>
                 
             </View>
@@ -37,10 +37,10 @@ export default function LessonTwo({navigation}){
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Fexhaust.gif?alt=media&token=9cac8f89-1dbd-4126-aef2-f16f926331eb'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Fshy.gif?alt=media&token=48d69af9-099b-47d9-a553-bd0bef40d573'
                     }}>
                     </Image>
-                    <Text>Start with your fingers touching either side of your chest, with your elbows up. Then drop your elbows and shoulders</Text>
+                    <Text>your dominant hand slides - with fingers bent together and palm facing outward - from the ear to the mouth</Text>
                 </View>
                 
             </View>
@@ -49,7 +49,7 @@ export default function LessonTwo({navigation}){
             </View>
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('lessonTwoPageFour')}
+            onPress = {() => navigation.navigate('lessonTwoPageNine')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}

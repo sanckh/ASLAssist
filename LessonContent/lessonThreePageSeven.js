@@ -17,17 +17,17 @@ export default function LessonTwo({navigation}){
             <TouchableOpacity  onPress = { () => navigation.replace('Home')} style={styles.iconContainer}>
                 <List.Icon icon="arrow-left" />
             </TouchableOpacity>
-             <Header style = {styles.header}>Section Three</Header>
+             <Header style = {styles.header}>Section Six</Header>
             
             <View style = {{flexDirection: 'row', marginTop: 10}}>
                 <View style = {styles.imagePlacement}>
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Fexcited.gif?alt=media&token=02440b28-81e6-431f-aece-972bc5fce341'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fheimlichmaneuver.gif?alt=media&token=73c8e322-1aa9-45f6-aadd-c6862ad23eb0'
                     }}>
                     </Image>
-                    <Text>open both hands with your middle fingers forward a little more than the rest. Tap your fingers around the center of your chest repeatedly</Text>
+                    <Text> heimlich maneuver</Text>
                 </View>
                 
             </View>
@@ -37,10 +37,10 @@ export default function LessonTwo({navigation}){
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Fexhaust.gif?alt=media&token=9cac8f89-1dbd-4126-aef2-f16f926331eb'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fmouthtomouth.gif?alt=media&token=f775e567-9b46-4065-bcec-64e12d7ebad5'
                     }}>
                     </Image>
-                    <Text>Start with your fingers touching either side of your chest, with your elbows up. Then drop your elbows and shoulders</Text>
+                    <Text>Mouth to Mouth Resuscitation</Text>
                 </View>
                 
             </View>
@@ -49,7 +49,7 @@ export default function LessonTwo({navigation}){
             </View>
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('lessonTwoPageFour')}
+            onPress = {() => navigation.navigate('lessonThreePageEight')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}

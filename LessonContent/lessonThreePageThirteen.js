@@ -24,10 +24,10 @@ export default function LessonTwo({navigation}){
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Fexcited.gif?alt=media&token=02440b28-81e6-431f-aece-972bc5fce341'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fhurricane.gif?alt=media&token=97be4fc2-5d5c-4fd0-ab58-5395bcd8e9da'
                     }}>
                     </Image>
-                    <Text>open both hands with your middle fingers forward a little more than the rest. Tap your fingers around the center of your chest repeatedly</Text>
+                    <Text> the index fingers circle and bend in one place</Text>
                 </View>
                 
             </View>
@@ -37,10 +37,10 @@ export default function LessonTwo({navigation}){
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Fexhaust.gif?alt=media&token=9cac8f89-1dbd-4126-aef2-f16f926331eb'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Flightening.gif?alt=media&token=be2b16eb-a2fb-401a-b2ed-e39d406691e2'
                     }}>
                     </Image>
-                    <Text>Start with your fingers touching either side of your chest, with your elbows up. Then drop your elbows and shoulders</Text>
+                    <Text>Index finger is a swift wiggly moment downwards. </Text>
                 </View>
                 
             </View>
@@ -49,7 +49,7 @@ export default function LessonTwo({navigation}){
             </View>
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('lessonTwoPageFour')}
+            onPress = {() => navigation.navigate('lessonThreePageFourteen')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}

@@ -17,17 +17,17 @@ export default function LessonTwo({navigation}){
             <TouchableOpacity  onPress = { () => navigation.replace('Home')} style={styles.iconContainer}>
                 <List.Icon icon="arrow-left" />
             </TouchableOpacity>
-             <Header style = {styles.header}>Section Three</Header>
+             <Header style = {styles.header}>Section Five</Header>
             
             <View style = {{flexDirection: 'row', marginTop: 10}}>
                 <View style = {styles.imagePlacement}>
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Fexcited.gif?alt=media&token=02440b28-81e6-431f-aece-972bc5fce341'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fdead.gif?alt=media&token=80db24c3-9b09-4d51-97a9-0fb21b0f1628'
                     }}>
                     </Image>
-                    <Text>open both hands with your middle fingers forward a little more than the rest. Tap your fingers around the center of your chest repeatedly</Text>
+                    <Text>One hand facing upward and one hand facing downward, simultaneously flipping both hands</Text>
                 </View>
                 
             </View>
@@ -37,10 +37,10 @@ export default function LessonTwo({navigation}){
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Fexhaust.gif?alt=media&token=9cac8f89-1dbd-4126-aef2-f16f926331eb'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fhealth.gif?alt=media&token=5a663028-1208-4e55-8d4b-d456c274d58e'
                     }}>
                     </Image>
-                    <Text>Start with your fingers touching either side of your chest, with your elbows up. Then drop your elbows and shoulders</Text>
+                    <Text> Both open hands start on chest. Both hands move forward while closing with thumbs extended.</Text>
                 </View>
                 
             </View>
@@ -49,7 +49,7 @@ export default function LessonTwo({navigation}){
             </View>
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('lessonTwoPageFour')}
+            onPress = {() => navigation.navigate('lessonThreePageSeven')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}

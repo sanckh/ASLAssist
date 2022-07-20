@@ -17,17 +17,17 @@ export default function LessonTwo({navigation}){
             <TouchableOpacity  onPress = { () => navigation.replace('Home')} style={styles.iconContainer}>
                 <List.Icon icon="arrow-left" />
             </TouchableOpacity>
-             <Header style = {styles.header}>Section Three</Header>
+             <Header style = {styles.header}>Section Two</Header>
             
             <View style = {{flexDirection: 'row', marginTop: 10}}>
                 <View style = {styles.imagePlacement}>
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Fexcited.gif?alt=media&token=02440b28-81e6-431f-aece-972bc5fce341'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fflood.gif?alt=media&token=c6d9075b-79ea-41b9-8a26-fe4d4c8349db'
                     }}>
                     </Image>
-                    <Text>open both hands with your middle fingers forward a little more than the rest. Tap your fingers around the center of your chest repeatedly</Text>
+                    <Text>Hands face down while moving upward showing water rising</Text>
                 </View>
                 
             </View>
@@ -37,10 +37,10 @@ export default function LessonTwo({navigation}){
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Fexhaust.gif?alt=media&token=9cac8f89-1dbd-4126-aef2-f16f926331eb'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fhot.gif?alt=media&token=ed5d7170-0923-4332-8563-dcb5a468dc29'
                     }}>
                     </Image>
-                    <Text>Start with your fingers touching either side of your chest, with your elbows up. Then drop your elbows and shoulders</Text>
+                    <Text>taking your fingers and thumb into a claw shape. Now starting with your claw hand over your mouth, move the hand away from your mouth and rotate it so that you end the sign with your palm facing outward. Flatten out your leading hand.</Text>
                 </View>
                 
             </View>
@@ -49,7 +49,7 @@ export default function LessonTwo({navigation}){
             </View>
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('lessonTwoPageFour')}
+            onPress = {() => navigation.navigate('lessonThreePageThirteen')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}
