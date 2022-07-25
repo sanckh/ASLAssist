@@ -15,14 +15,14 @@ export default function LessonSix({navigation}){
         <Background>
             <BackButton goBack={navigation.goBack}/>
             
-            <Header style = {styles.header}>Section Two</Header>
+            <Header style = {styles.header}>Section Twelve</Header>
             {/* lesson content */}
             <View style = {{flexDirection: 'row', marginTop: 10}}>
                 <View style = {styles.imagePlacement}>
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fbattery.gif?alt=media&token=5b580274-0b9e-48cd-8f0b-e05d12ff924b'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fmoney.gif?alt=media&token=ea8c5d08-bb74-45dd-a11d-0abae075f4ab'
                     }}>
                     </Image>
                     <Text>text</Text>
@@ -35,7 +35,7 @@ export default function LessonSix({navigation}){
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fcall.gif?alt=media&token=73170954-f451-42de-9046-d2de06c28450'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fmonthly.gif?alt=media&token=d50d469e-96d8-43fc-9e09-5f3f77e39b99'
                     }}>
                     </Image>
                     <Text>text</Text>
@@ -47,7 +47,7 @@ export default function LessonSix({navigation}){
             </View>
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('lessonFourPageThree')}
+            onPress = {() => navigation.navigate('lessonFourPageThirteen')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}

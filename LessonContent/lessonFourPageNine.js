@@ -15,14 +15,14 @@ export default function LessonSix({navigation}){
         <Background>
             <BackButton goBack={navigation.goBack}/>
             
-            <Header style = {styles.header}>Section Two</Header>
+            <Header style = {styles.header}>Section Nine</Header>
             {/* lesson content */}
             <View style = {{flexDirection: 'row', marginTop: 10}}>
                 <View style = {styles.imagePlacement}>
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fbattery.gif?alt=media&token=5b580274-0b9e-48cd-8f0b-e05d12ff924b'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fjuly.gif?alt=media&token=9597482a-7070-4655-bf8e-49d7e168b2e7'
                     }}>
                     </Image>
                     <Text>text</Text>
@@ -35,7 +35,7 @@ export default function LessonSix({navigation}){
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fcall.gif?alt=media&token=73170954-f451-42de-9046-d2de06c28450'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Flantern.gif?alt=media&token=1c1bd129-4b83-4d1c-b49e-67ecae489b1d'
                     }}>
                     </Image>
                     <Text>text</Text>
@@ -47,7 +47,7 @@ export default function LessonSix({navigation}){
             </View>
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('lessonFourPageThree')}
+            onPress = {() => navigation.navigate('lessonFourPageTen')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}

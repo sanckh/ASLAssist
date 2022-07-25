@@ -15,14 +15,14 @@ export default function LessonSix({navigation}){
         <Background>
             <BackButton goBack={navigation.goBack}/>
             
-            <Header style = {styles.header}>Section Two</Header>
+            <Header style = {styles.header}>Section Seven</Header>
             {/* lesson content */}
             <View style = {{flexDirection: 'row', marginTop: 10}}>
                 <View style = {styles.imagePlacement}>
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fbattery.gif?alt=media&token=5b580274-0b9e-48cd-8f0b-e05d12ff924b'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fflashlight.gif?alt=media&token=3f4037c6-06a9-4e69-9292-9cb7ccdd03c6'
                     }}>
                     </Image>
                     <Text>text</Text>
@@ -35,7 +35,7 @@ export default function LessonSix({navigation}){
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fcall.gif?alt=media&token=73170954-f451-42de-9046-d2de06c28450'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fgenerator.gif?alt=media&token=a229e600-a87e-49a3-8230-beb4cacbba79'
                     }}>
                     </Image>
                     <Text>text</Text>
@@ -47,7 +47,7 @@ export default function LessonSix({navigation}){
             </View>
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('lessonFourPageThree')}
+            onPress = {() => navigation.navigate('lessonFourPageEight')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}

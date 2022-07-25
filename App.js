@@ -106,6 +106,20 @@ import lessonThreePageSixteen from './LessonContent/lessonThreePageSixteen'
 import lessonFourPageTwo from './LessonContent/lessonFourPageTwo'
 import lessonFourPageThree from './LessonContent/lessonFourPageThree'
 import lessonFourPageFour from './LessonContent/lessonFourPageFour'
+import lessonFourPageFive from './LessonContent/lessonFourPageFive'
+import lessonFourPageSix from './LessonContent/lessonFourPageSix'
+import lessonFourPageSeven from './LessonContent/lessonFourPageSeven'
+import lessonFourPageEight from './LessonContent/lessonFourPageEight'
+import lessonFourPageNine from './LessonContent/lessonFourPageNine'
+import lessonFourPageTen from './LessonContent/lessonFourPageTen'
+import lessonFourPageEleven from './LessonContent/lessonFourPageEleven'
+import lessonFourPageTwelve from './LessonContent/lessonFourPageTwelve'
+import lessonFourPageThirteen from './LessonContent/lessonFourPageThirteen'
+import lessonFourPageFourteen from './LessonContent/lessonFourPageFourteen'
+import lessonFourPageFifteen from './LessonContent/lessonFourPageFifteen'
+import lessonFourPageSixteen from './LessonContent/lessonFourPageSixteen'
+import lessonFourPageSeventeen from './LessonContent/lessonFourPageSeventeen'
+
 import lessonFivePageTwo from './LessonContent/lessonFivePageTwo'
 import lessonFivePageThree from './LessonContent/lessonFivePageThree'
 import lessonFivePageFour from './LessonContent/lessonFivePageFour'
@@ -125,17 +139,17 @@ import lessonTenPageTwo from './LessonContent/lessonTenPageTwo'
 import lessonTenPageThree from './LessonContent/lessonTenPageThree'
 import lessonTenPageFour from './LessonContent/lessonTenPageFour'
 
-import lessonOnePageFive from './LessonContent/lessonOnePageFive'
-import lessonOnePageSix from './LessonContent/lessonOnePageSix'
-import lessonOnePageSeven from './LessonContent/lessonOnePageSeven'
-import lessonOnePageEight from './LessonContent/lessonOnePageEight'
-import lessonOnePageNine from './LessonContent/lessonOnePageNine'
-import lessonOnePageTen from './LessonContent/lessonOnePageTen'
-import lessonOnePageEleven from './LessonContent/lessonOnePageEleven'
-import lessonOnePageTwelve from './LessonContent/lessonOnePageTwelve'
-import lessonOnePageThirteen from './LessonContent/lessonOnePageThirteen'
-import lessonOnePageFourteen from './LessonContent/lessonOnePageFourteen'
-import lessonOnePageFiftheen from './LessonContent/lessonOnePageFiftheen'
+// import lessonOnePageFive from './LessonContent/lessonOnePageFive'
+// import lessonOnePageSix from './LessonContent/lessonOnePageSix'
+// import lessonOnePageSeven from './LessonContent/lessonOnePageSeven'
+// import lessonOnePageEight from './LessonContent/lessonOnePageEight'
+// import lessonOnePageNine from './LessonContent/lessonOnePageNine'
+// import lessonOnePageTen from './LessonContent/lessonOnePageTen'
+// import lessonOnePageEleven from './LessonContent/lessonOnePageEleven'
+// import lessonOnePageTwelve from './LessonContent/lessonOnePageTwelve'
+// import lessonOnePageThirteen from './LessonContent/lessonOnePageThirteen'
+// import lessonOnePageFourteen from './LessonContent/lessonOnePageFourteen'
+// import lessonOnePageFiftheen from './LessonContent/lessonOnePageFiftheen'
 
 //practice quizzes
 import PracticeQuizOne from './navigation/practiceQuizOne';
@@ -344,6 +358,22 @@ export default function App() {
           <Stack.Screen name = "lessonFourPageTwo" component = {lessonFourPageTwo}/>
           <Stack.Screen name = "lessonFourPageThree" component = {lessonFourPageThree}/>
           <Stack.Screen name = "lessonFourPageFour" component = {lessonFourPageFour}/>
+          <Stack.Screen name = "lessonFourPageTwo" component = {lessonFourPageTwo}/>
+          <Stack.Screen name = "lessonFourPageThree" component = {lessonFourPageThree}/>
+          <Stack.Screen name = "lessonFourPageFour" component = {lessonFourPageFour}/>
+          <Stack.Screen name = "lessonFourPageFive" component = {lessonFourPageFive}/>
+          <Stack.Screen name = "lessonFourPageSix" component = {lessonFourPageSix}/>
+          <Stack.Screen name = "lessonFourPageSeven" component = {lessonFourPageSeven}/>
+          <Stack.Screen name = "lessonFourPageEight" component = {lessonFourPageEight}/>
+          <Stack.Screen name = "lessonFourPageNine" component = {lessonFourPageNine}/>
+          <Stack.Screen name = "lessonFourPageTen" component = {lessonFourPageTen}/>
+          <Stack.Screen name = "lessonFourPageEleven" component = {lessonFourPageEleven}/>
+          <Stack.Screen name = "lessonFourPageTwelve" component = {lessonFourPageTwelve}/>
+          <Stack.Screen name = "lessonFourPageThirteen" component = {lessonFourPageThirteen}/>
+          <Stack.Screen name = "lessonFourPageFourteen" component = {lessonFourPageFourteen}/>
+          <Stack.Screen name = "lessonFourPageFifteen" component = {lessonFourPageFifteen}/>
+          <Stack.Screen name = "lessonFourPageSixteen" component = {lessonFourPageSixteen}/>
+          <Stack.Screen name = "lessonFourPageSeventeen" component = {lessonFourPageSeventeen}/>
 
           <Stack.Screen name = "lessonFivePageTwo" component = {lessonFivePageTwo}/>
           <Stack.Screen name = "lessonFivePageThree" component = {lessonFivePageThree}/>

@@ -13,12 +13,35 @@ export default function LessonSix({navigation}){
 
     return(
         <Background>
-            <TouchableOpacity  onPress = { () => navigation.replace('lessonFourPageTwo')} style={styles.iconContainer}>
-                <List.Icon icon="arrow-left" />
-            </TouchableOpacity>
+            <BackButton goBack={navigation.goBack}/>
             
             <Header style = {styles.header}>Section Three</Header>
             {/* lesson content */}
+            <View style = {{flexDirection: 'row', marginTop: 10}}>
+                <View style = {styles.imagePlacement}>
+                    <Image
+                    style = {styles.image}
+                    source = {{
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fcandle.gif?alt=media&token=6e16a4cb-c60c-44ff-b147-295b560a0793'
+                    }}>
+                    </Image>
+                    <Text>text</Text>
+                </View>
+                
+            </View>
+
+            <View style = {{flexDirection: 'row', marginTop: 10}}>
+                <View style = {styles.imagePlacement}>
+                    <Image
+                    style = {styles.image}
+                    source = {{
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fcompass.gif?alt=media&token=663fb69c-f193-4608-9d89-48e00d30e79a'
+                    }}>
+                    </Image>
+                    <Text>text</Text>
+                </View>
+                
+            </View>
             <View>
                 <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.66} color={"lightgreen"} />
             </View>
@@ -50,8 +73,8 @@ const styles = StyleSheet.create({
         fontSize: 25,
     },
     image: {
-        width: 115,
-        height: 115,
+        width: 200,
+        height: 100,
         resizeMode: 'contain',
         borderRadius: 30,
         margin: 10,

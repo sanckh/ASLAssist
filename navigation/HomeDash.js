@@ -88,11 +88,11 @@ export default function HomeDash({navigation}) {
                 <Text color={theme.colors.text} textAlign='center'>Lesson 3</Text>
             </TouchableOpacity>
 
-            {/* <TouchableOpacity
+            <TouchableOpacity
             onPress={() => navigation.navigate('LessonFour')}
             style={styles.rectangleButton}>
                 <Text color={theme.colors.text} textAlign='center'>Lesson 4</Text>
-            </TouchableOpacity> */}
+            </TouchableOpacity>
 
             </View>
 
