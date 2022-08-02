@@ -12,7 +12,7 @@ export default function Button({ mode, style, ...props }) {
         style,
       ]}
       labelStyle={styles.text}
-      mode={mode}
+      mode={mode} 
       {...props}
     />
   )

@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native';
+import { Text, View, Pressable, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
@@ -8,6 +8,8 @@ import Background from '../components/Background';
 import { getStatusBarHeight } from 'react-native-status-bar-height'
 import Button from '../components/Button';
 import { theme } from '../core/theme';
+import React, { Component } from 'react';
+import Ripple from 'react-native-material-ripple';
 
 export default function PracticeOne({navigation}){
     const {colors} = useTheme();
@@ -38,7 +40,15 @@ export default function PracticeOne({navigation}){
                 marginLeft: 10}}>
                 <Text color={theme.colors.text} textAlign='center'>Pain</Text>
             </Button>
-
+            <View style={styles.body}>
+                <Ripple style={styles.button} 
+                        rippleColor='white' 
+                        rippleOpacity={0.9} 
+                        rippleDuration={2000} 
+                        rippleSize= {500}>
+                    <Text style= {styles.text}>Press Me </Text>
+                </Ripple>
+            </View>
             <Button
             mode = "contained"
             style = {{backgroundColor: '#daeaf6', 
@@ -128,8 +138,11 @@ const styles = StyleSheet.create({
         borderRadius: 30
     },
     text: {
-        // marginTop: 15,
+        fontWeight: 'bold',
         fontSize: 25,
+        lineHeight: 26,
+        
+
     },
     imagePlacement: {
         flexDirection: 'column', 
@@ -140,5 +153,23 @@ const styles = StyleSheet.create({
         position: 'absolute',
         top: 10 + getStatusBarHeight(),
         left: 4,
+      },
+
+    body: {
+        flex: 1,
+        backgroundColor: 'black',
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: 50,
+        width: 300,
+
+
+      },
+
+    button: {
+        width:300,
+        height: 50,
+        marginVertical: 10,
+        paddingVertical: 2
       },
 })
