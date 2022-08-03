@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native';
+import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image, Alert } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
@@ -12,6 +12,10 @@ import { theme } from '../core/theme';
 export default function PracticeOne({navigation}){
     const {colors} = useTheme();
 
+    const wrongAnswer = () => {
+        Alert.alert('This answer is incorrect. \nPlease try again');
+    };
+
     return(
         <Background>
             <BackButton goBack = {navigation.goBack} />
@@ -24,9 +28,13 @@ export default function PracticeOne({navigation}){
                     uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Emergency%2Fasthma.gif?alt=media&token=96305886-e903-4dc5-80f2-26dd59454955'
                 }}>
                 </Image>
+                <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
+                </View>
                 <Text style={styles.text}>What sign is this?</Text>
                 <View style={styles.screen}>
             <Button
+            onPress={()=> wrongAnswer()}
             mode = "contained"
             style = {{backgroundColor: '#daeaf6', 
                 width: 150,
@@ -40,6 +48,7 @@ export default function PracticeOne({navigation}){
             </Button>
 
             <Button
+            onPress = {() => navigation.navigate('pqOnePageTwo')}
             mode = "contained"
             style = {{backgroundColor: '#daeaf6', 
                 width: 150,
@@ -53,6 +62,7 @@ export default function PracticeOne({navigation}){
             </View>
             <View style={styles.screen}>
             <Button
+            onPress={()=> wrongAnswer()}
             mode = "contained"
             style = {{backgroundColor: '#daeaf6', 
                 width: 150,
@@ -66,6 +76,7 @@ export default function PracticeOne({navigation}){
             </Button>
 
             <Button
+            onPress={()=> wrongAnswer()}
             mode = "contained"
             style = {{backgroundColor: '#daeaf6', 
                 width: 150,
@@ -79,10 +90,10 @@ export default function PracticeOne({navigation}){
 
             </View>
 
-            <View>
+            {/* <View>
                 <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
-            </View>
-            <Button
+            </View> */}
+            {/* <Button
             mode = "contained"
             onPress = {() => navigation.navigate('pqOnePageTwo')}
             style = {{backgroundColor: '#ecddfc', 
@@ -90,7 +101,7 @@ export default function PracticeOne({navigation}){
                 height: 50,}}
             >
                 Next Section
-            </Button>
+            </Button> */}
         </Background>
         
         
@@ -107,7 +118,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         flexDirection: 'row',
         marginTop: 24,
-        
+        marginBottom: 24
     },
     header: {
         position: 'absolute',

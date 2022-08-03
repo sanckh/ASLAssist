@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
+import { Text, View, ScrollView, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
@@ -13,12 +13,33 @@ export default function LessonOnePageThree({navigation}){
 
     return(
         <Background>
-            <TouchableOpacity  onPress = { () => 
-                navigation.replace('lessonOnePageTwo')} style={styles.iconContainer}>
-                <List.Icon icon="arrow-left" />
-            </TouchableOpacity>
+            <BackButton goBack = {navigation.goBack} />
             <Header style = {styles.header}>Section Three</Header>
-            {/* lesson content */}
+            <View style = {{flexDirection: 'row', marginTop: 10}}>
+                <View style = {styles.imagePlacement}>
+                    <Image
+                    style = {styles.image}
+                    source = {{
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Ffish.gif?alt=media&token=ec7417fd-16e3-48e1-b770-c4f326334d65'
+                    }}>
+                    </Image>
+                    <Text>take your dominant hand, and extend you hand with your thumb up and fingers together. Hold the hand out with fingers facing forward, and then shimmy your hand as you move it forward</Text>
+                </View>
+                
+            </View>
+
+            <View style = {{flexDirection: 'row', marginTop: 10}}>
+                <View style = {styles.imagePlacement}>
+                    <Image
+                    style = {styles.image}
+                    source = {{
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Ffly.gif?alt=media&token=782db5cf-b857-4024-8831-87ba222b8a3e'
+                    }}>
+                    </Image>
+                    <Text>Because the word "fly" is so short (three letters) this concept is often just spelled out. </Text>
+                </View>
+                
+            </View>
             <View>
                 <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.66}
                 color={"lightgreen"} alignItems={"center"} />
@@ -51,8 +72,8 @@ const styles = StyleSheet.create({
         fontSize: 25,
     },
     image: {
-        width: 115,
-        height: 115,
+        width: 200,
+        height: 100,
         resizeMode: 'contain',
         borderRadius: 30,
         margin: 10,

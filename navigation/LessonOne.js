@@ -14,9 +14,7 @@ export default function LessonTwo({navigation}){
 
     return(
         <Background>
-            <TouchableOpacity  onPress = { () => navigation.replace('Home')} style={styles.iconContainer}>
-                <List.Icon icon="arrow-left" />
-            </TouchableOpacity>
+            <BackButton goBack = {navigation.goBack} />
              <Header style = {styles.header}>Lesson One</Header>
             
             <View style = {{flexDirection: 'row', marginTop: 10}}>
@@ -24,58 +22,25 @@ export default function LessonTwo({navigation}){
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/a.png?alt=media&token=86dc2271-6d76-49be-860c-1f016f0b4e3b'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Fbull.gif?alt=media&token=b7c2562c-7ec0-4726-b999-dee032262076'
                     }}>
                     </Image>
-                    <Text>A</Text>
+                    <Text>take your dominant hand, form the letter Y sign, and hold it up to your forehead, palm facing out</Text>
                 </View>
-                <View style = {styles.imagePlacement}>
-                    <Image
-                    style = {styles.image}
-                    source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/b.png?alt=media&token=4e42d531-dbcb-4a04-b209-da5f51b18015'
-                    }}>
-                    </Image>
-                    <Text>B</Text>
-                </View>
-                <View style = {styles.imagePlacement}>
-                    <Image
-                    style = {styles.image}
-                    source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/c.png?alt=media&token=3605cb26-7e7b-4fd8-8f62-2703f88b0819'
-                    }}>
-                    </Image>
-                    <Text>C</Text>
-                </View>
+                
             </View>
-            <View style = {{flexDirection: 'row'}}>
+
+            <View style = {{flexDirection: 'row', marginTop: 10}}>
                 <View style = {styles.imagePlacement}>
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/a.png?alt=media&token=86dc2271-6d76-49be-860c-1f016f0b4e3b'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Fdeer.gif?alt=media&token=ead8fabe-6a34-4f93-a57d-cf3bcb5edced'
                     }}>
                     </Image>
-                    <Text>A</Text>
+                    <Text>Bring both hands up to the sides of your head, palms flat and facing out, fingers just slightly separated. Tap your thumbs to the sides of your head a couple of times. </Text>
                 </View>
-                <View style = {styles.imagePlacement}>
-                    <Image
-                    style = {styles.image}
-                    source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/b.png?alt=media&token=4e42d531-dbcb-4a04-b209-da5f51b18015'
-                    }}>
-                    </Image>
-                    <Text>B</Text>
-                </View>
-                <View style = {styles.imagePlacement}>
-                    <Image
-                    style = {styles.image}
-                    source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/c.png?alt=media&token=3605cb26-7e7b-4fd8-8f62-2703f88b0819'
-                    }}>
-                    </Image>
-                    <Text>C</Text>
-                </View>
+                
             </View>
             <View>
                 <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
@@ -89,6 +54,8 @@ export default function LessonTwo({navigation}){
             >
                 Next Section
             </Button>
+
+            
         </Background>
     )
 }
@@ -106,8 +73,8 @@ const styles = StyleSheet.create({
         fontSize: 25,
     },
     image: {
-        width: 115,
-        height: 115,
+        width: 200,
+        height: 100,
         resizeMode: 'contain',
         borderRadius: 30,
         margin: 10,

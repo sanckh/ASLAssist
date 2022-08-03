@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity, } from 'react-native';
+import { Text, View, ScrollView, Image, StyleSheet, TouchableOpacity, } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
@@ -13,11 +13,33 @@ export default function LessonOnePageTwo({navigation}){
 
     return(
         <Background>
-            <TouchableOpacity  onPress = { () => navigation.replace('LessonOne')} style={styles.iconContainer}>
-                <List.Icon icon="arrow-left" />
-            </TouchableOpacity>
+            <BackButton goBack = {navigation.goBack} />
             <Header style = {styles.header}>Section Two</Header>
-            {/* lesson content */}
+            <View style = {{flexDirection: 'row', marginTop: 10}}>
+                <View style = {styles.imagePlacement} marginTop={0}>
+                    <Image
+                    style = {styles.image}
+                    source = {{
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Fduck.gif?alt=media&token=6f05ab56-2819-4fc3-95d4-3863ecc0f8a9'
+                    }}>
+                    </Image>
+                    <Text>taking your index and middle fingers together and touching them to and separating them from your thumb, holding them in front of your mouth</Text>
+                </View>
+                
+            </View>
+
+            <View style = {{flexDirection: 'row', marginTop: 10}}>
+                <View style = {styles.imagePlacement}>
+                    <Image
+                    style = {styles.image}
+                    source = {{
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Felephant.gif?alt=media&token=7a6dd1e4-7c8f-4e47-ad94-fd72c482ec89'
+                    }}>
+                    </Image>
+                    <Text>uses a flat hand to show the trunk. Start near your nose and then move downward and outward</Text>
+                </View>
+                
+            </View>
             <View>
                 <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.34}
                 color={"lightgreen"} alignItems={"center"} />
@@ -48,13 +70,15 @@ const styles = StyleSheet.create({
         fontSize: 25,
     },
     image: {
-        width: 115,
-        height: 115,
+        width: 200,
+        height: 100,
         resizeMode: 'contain',
         borderRadius: 30,
         margin: 10,
 
     },
+
+
     text: {
         marginTop: 15,
         fontSize: 15,
