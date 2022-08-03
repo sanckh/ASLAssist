@@ -15,17 +15,17 @@ export default function LessonSix({navigation}){
         <Background>
             <BackButton goBack={navigation.goBack}/>
             
-            <Header style = {styles.header}>Section Three</Header>
+            <Header style = {styles.header}>Section Eleven</Header>
             {/* lesson content */}
             <View style = {{flexDirection: 'row', marginTop: 10}}>
                 <View style = {styles.imagePlacement}>
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fcandle.gif?alt=media&token=6e16a4cb-c60c-44ff-b147-295b560a0793'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fmarch.gif?alt=media&token=b412c47e-aa46-49ab-92df-e4f0bf073d6c'
                     }}>
                     </Image>
-                    <Text>Hold up your dominant hand vertically with fingers pointing toward the sky. Point your index finger from your non-dominant hand to the base of the palm of your dominant hand. Then wiggle the fingers of your dominant hand.</Text>
+                    <Text>Fingerspell M-A-R-C-H</Text>
                 </View>
                 
             </View>
@@ -35,19 +35,19 @@ export default function LessonSix({navigation}){
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fcompass.gif?alt=media&token=663fb69c-f193-4608-9d89-48e00d30e79a'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fmatches.gif?alt=media&token=18fdace2-4e9d-440d-ad62-7f47ba6d9bd0'
                     }}>
                     </Image>
-                    <Text>Hold your right index finger out and place your hand on top of the other. Turn your right hand from left to the front.</Text>
+                    <Text>The fingers of my left hand are either pointing up or forward and the palm is pointing to the right.</Text>
                 </View>
                 
             </View>
             <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.66} color={"lightgreen"} />
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.34} color={"lightgreen"} />
             </View>
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('lessonFourPageFour')}
+            onPress = {() => navigation.navigate('lessonFourPageTwelve')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}

@@ -15,17 +15,17 @@ export default function LessonSix({navigation}){
         <Background>
             <BackButton goBack={navigation.goBack}/>
             
-            <Header style = {styles.header}>Section Three</Header>
+            <Header style = {styles.header}>Section Thirteen</Header>
             {/* lesson content */}
             <View style = {{flexDirection: 'row', marginTop: 10}}>
                 <View style = {styles.imagePlacement}>
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fcandle.gif?alt=media&token=6e16a4cb-c60c-44ff-b147-295b560a0793'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fnextday.gif?alt=media&token=6304e6e7-c905-48a7-9d64-88848fe85bba'
                     }}>
                     </Image>
-                    <Text>Hold up your dominant hand vertically with fingers pointing toward the sky. Point your index finger from your non-dominant hand to the base of the palm of your dominant hand. Then wiggle the fingers of your dominant hand.</Text>
+                    <Text>Hold both hands in front of you and move your right hand in front. Then take your right hand and, with your index finger extended, hold your arm up and then move it down against your left arm.</Text>
                 </View>
                 
             </View>
@@ -35,19 +35,19 @@ export default function LessonSix({navigation}){
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fcompass.gif?alt=media&token=663fb69c-f193-4608-9d89-48e00d30e79a'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fnextweek.gif?alt=media&token=3114ce24-8299-4743-b76f-ac12bfbb68cb'
                     }}>
                     </Image>
-                    <Text>Hold your right index finger out and place your hand on top of the other. Turn your right hand from left to the front.</Text>
+                    <Text>"index-finger" hand forward and off of the base hand, then curves sharply to the left</Text>
                 </View>
                 
             </View>
             <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.66} color={"lightgreen"} />
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.34} color={"lightgreen"} />
             </View>
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('lessonFourPageFour')}
+            onPress = {() => navigation.navigate('lessonFourPageFourteen')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}
