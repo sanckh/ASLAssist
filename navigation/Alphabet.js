@@ -1,12 +1,11 @@
 import { Text, View, ScrollView, StyleSheet, Image, StatusBar, Button } from 'react-native';
 import Header from '../components/Header';
-import { useNavigation, useTheme } from '@react-navigation/native';
+import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
-import React, { useState } from 'react';
+import React from 'react';
 import Background from '../components/Background';
 import { getStatusBarHeight } from 'react-native-status-bar-height'
-import ReactCardFlip from 'react-card-flip';
-import Paragraph from '../components/Paragraph';
+
 import GestureFlipView from 'react-native-gesture-flip-card';
 
 export default function Alphabet({ navigation }) {
@@ -20,8 +19,6 @@ export default function Alphabet({ navigation }) {
             <Header style={styles.header}>Alphabet</Header>
             <View style={styles.container}>
                 <ScrollView style={styles.scrollview}>
-                    <View>
-                    </View>
                     <View style={{ flexDirection: 'row', marginTop: 10 }}>
                         <GestureFlipView width={125} height={125}>
                             <View>
@@ -247,83 +244,83 @@ export default function Alphabet({ navigation }) {
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
-                                <Image
-                                style={styles.image}
-                                source={{
-                                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2Fn.png?alt=media&token=fc974e46-9f0a-4bd8-8116-a1d9d46e4632'
-                                }}>
-                            </Image>
+                                    <Image
+                                        style={styles.image}
+                                        source={{
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2Fn.png?alt=media&token=fc974e46-9f0a-4bd8-8116-a1d9d46e4632'
+                                        }}>
+                                    </Image>
                                 </View>
                             </View>
                             <View style={styles.backCardStyle}>
-                            <Text style={[styles.text, { color: colors.text }]}>The letter N is signed by holding up your dominant hand, palm facing out, with all your fingers curled into your palm. Then tuck your thumb between your middle and ring fingers. This sign looks like the small letter 'n', with the 2 fingers' bumps reminding us of the letter written in cursive.</Text>
+                                <Text style={[styles.text, { color: colors.text }]}>The letter N is signed by holding up your dominant hand, palm facing out, with all your fingers curled into your palm. Then tuck your thumb between your middle and ring fingers. This sign looks like the small letter 'n', with the 2 fingers' bumps reminding us of the letter written in cursive.</Text>
                             </View>
                         </GestureFlipView>
 
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
-                                <Image
-                                style={styles.image}
-                                source={{
-                                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2Fo.png?alt=media&token=21565247-8183-4698-a0a8-709da9034901'
-                                }}>
-                            </Image>
+                                    <Image
+                                        style={styles.image}
+                                        source={{
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2Fo.png?alt=media&token=21565247-8183-4698-a0a8-709da9034901'
+                                        }}>
+                                    </Image>
                                 </View>
                             </View>
                             <View style={styles.backCardStyle}>
-                            <Text style={[styles.text, { color: colors.text }]}>The letter O is signed by curving all your fingers and touching them to your thumb, making the shape of the letter 'O' with your entire hand.</Text>
+                                <Text style={[styles.text, { color: colors.text }]}>The letter O is signed by curving all your fingers and touching them to your thumb, making the shape of the letter 'O' with your entire hand.</Text>
                             </View>
                         </GestureFlipView>
                     </View>
 
                     <View style={{ flexDirection: 'row', marginTop: 10 }}>
 
-                    <GestureFlipView width={125} height={125}>
+                        <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
-                                <Image
-                            style = {styles.image}
-                            source = {{
-                                uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2Fp.png?alt=media&token=55422cca-5903-4920-b689-b53f30422dd0'
-                            }}>
-                            </Image>
+                                    <Image
+                                        style={styles.image}
+                                        source={{
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2Fp.png?alt=media&token=55422cca-5903-4920-b689-b53f30422dd0'
+                                        }}>
+                                    </Image>
                                 </View>
                             </View>
                             <View style={styles.backCardStyle}>
-                            <Text style={[styles.text, { color: colors.text }]}>The letter P is signed like K, but the former is held upside down. Hold down your dominant hand, palm facing in, with your index and middle fingers sticking out like an inverted letter 'V', while your thumb is tucked in between the two extended fingers. Your two remaining fingers are curled in, touching your palm.</Text>
+                                <Text style={[styles.text, { color: colors.text }]}>The letter P is signed like K, but the former is held upside down. Hold down your dominant hand, palm facing in, with your index and middle fingers sticking out like an inverted letter 'V', while your thumb is tucked in between the two extended fingers. Your two remaining fingers are curled in, touching your palm.</Text>
                             </View>
                         </GestureFlipView>
 
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
-                                <Image
-                                style={styles.image}
-                                source={{
-                                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2Fq.png?alt=media&token=1a8c7d14-cef6-4458-bbec-8c242097553a'
-                                }}>
-                            </Image>
+                                    <Image
+                                        style={styles.image}
+                                        source={{
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2Fq.png?alt=media&token=1a8c7d14-cef6-4458-bbec-8c242097553a'
+                                        }}>
+                                    </Image>
                                 </View>
                             </View>
                             <View style={styles.backCardStyle}>
-                            <Text style={[styles.text, { color: colors.text }]}>The letter Q is signed by holding down your dominant hand, palm facing in, with your with knuckles lined up horizontally. Keep your middle, ring, and pinkie fingers curled in, while your index finger and thumb stick out parallel to each other, like two legs of a person standing up.</Text>
+                                <Text style={[styles.text, { color: colors.text }]}>The letter Q is signed by holding down your dominant hand, palm facing in, with your with knuckles lined up horizontally. Keep your middle, ring, and pinkie fingers curled in, while your index finger and thumb stick out parallel to each other, like two legs of a person standing up.</Text>
                             </View>
                         </GestureFlipView>
 
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
-                                <Image
-                                style={styles.image}
-                                source={{
-                                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2Fr.png?alt=media&token=7458feb8-5436-4a0e-92a2-04a03eb4b600'
-                                }}>
-                            </Image>
+                                    <Image
+                                        style={styles.image}
+                                        source={{
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2Fr.png?alt=media&token=7458feb8-5436-4a0e-92a2-04a03eb4b600'
+                                        }}>
+                                    </Image>
                                 </View>
                             </View>
                             <View style={styles.backCardStyle}>
-                            <Text style={[styles.text, { color: colors.text }]}>The letter R is signed by holding up your dominant hand, palm facing out, with your index and middle fingers intertwined like vines. The rest of your fingers and thumb are curled in. This looks just like the small letter 'r'.</Text>
+                                <Text style={[styles.text, { color: colors.text }]}>The letter R is signed by holding up your dominant hand, palm facing out, with your index and middle fingers intertwined like vines. The rest of your fingers and thumb are curled in. This looks just like the small letter 'r'.</Text>
                             </View>
                         </GestureFlipView>
 
@@ -331,137 +328,136 @@ export default function Alphabet({ navigation }) {
 
                     <View style={{ flexDirection: 'row', marginTop: 10 }}>
 
-                    <GestureFlipView width={125} height={125}>
+                        <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
-                                <Image
-                                style={styles.image}
-                                source={{
-                                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2Fs.png?alt=media&token=bd3d59bd-2ef8-4086-b26d-46b1d760a7fd'
-                                }}>
-                            </Image>
+                                    <Image
+                                        style={styles.image}
+                                        source={{
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2Fs.png?alt=media&token=bd3d59bd-2ef8-4086-b26d-46b1d760a7fd'
+                                        }}>
+                                    </Image>
                                 </View>
                             </View>
                             <View style={styles.backCardStyle}>
-                            <Text style={[styles.text, { color: colors.text }]}>The letter S is signed by holding up your dominant hand into a fist, palm facing out. Make sure your thumb is tucked in front of your fingers. Otherwise, you might sign the letter A by mistake.</Text>
+                                <Text style={[styles.text, { color: colors.text }]}>The letter S is signed by holding up your dominant hand into a fist, palm facing out. Make sure your thumb is tucked in front of your fingers. Otherwise, you might sign the letter A by mistake.</Text>
                             </View>
                         </GestureFlipView>
 
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
-                                <Image
-                                style={styles.image}
-                                source={{
-                                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2Ft.png?alt=media&token=e18f2370-26f3-424b-b155-741b7b4f6f27'
-                                }}>
-                            </Image>
+                                    <Image
+                                        style={styles.image}
+                                        source={{
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2Ft.png?alt=media&token=e18f2370-26f3-424b-b155-741b7b4f6f27'
+                                        }}>
+                                    </Image>
                                 </View>
                             </View>
                             <View style={styles.backCardStyle}>
-                            <Text style={[styles.text, { color: colors.text }]}>The letter T is signed by holding up your dominant hand into a fist, palm facing out, and your thumb tucked in between your index and middle fingers.</Text>
+                                <Text style={[styles.text, { color: colors.text }]}>The letter T is signed by holding up your dominant hand into a fist, palm facing out, and your thumb tucked in between your index and middle fingers.</Text>
                             </View>
                         </GestureFlipView>
 
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
-                                <Image
-                                style={styles.image}
-                                source={{
-                                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2Fu.png?alt=media&token=5e469b3f-5765-4cca-aad0-72941faa20b6'
-                                }}>
-                            </Image>
+                                    <Image
+                                        style={styles.image}
+                                        source={{
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2Fu.png?alt=media&token=5e469b3f-5765-4cca-aad0-72941faa20b6'
+                                        }}>
+                                    </Image>
                                 </View>
                             </View>
                             <View style={styles.backCardStyle}>
-                            <Text style={[styles.text, { color: colors.text }]}>The letter U is signed by holding up your dominant hand in a fist, facing outward, with the index and middle fingers sticking up while held together.</Text>
+                                <Text style={[styles.text, { color: colors.text }]}>The letter U is signed by holding up your dominant hand in a fist, facing outward, with the index and middle fingers sticking up while held together.</Text>
                             </View>
                         </GestureFlipView>
                     </View>
 
                     <View style={{ flexDirection: 'row', marginTop: 10 }}>
-
-                    <GestureFlipView width={125} height={125}>
+                        <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
-                                <Image
-                                style={styles.image}
-                                source={{
-                                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2Fv.png?alt=media&token=431c0a51-1f96-446e-8f44-cb5cc4782e88'
-                                }}>
-                            </Image>
+                                    <Image
+                                        style={styles.image}
+                                        source={{
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2Fv.png?alt=media&token=431c0a51-1f96-446e-8f44-cb5cc4782e88'
+                                        }}>
+                                    </Image>
                                 </View>
                             </View>
                             <View style={styles.backCardStyle}>
-                            <Text style={[styles.text, { color: colors.text }]}>The letter V is signed by holding up your dominant hand in a fist, facing outward, with the index and middle fingers sticking out and spread apart. It looks just like the letter 'V'.</Text>
+                                <Text style={[styles.text, { color: colors.text }]}>The letter V is signed by holding up your dominant hand in a fist, facing outward, with the index and middle fingers sticking out and spread apart. It looks just like the letter 'V'.</Text>
                             </View>
                         </GestureFlipView>
 
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
-                                <Image
-                                style={styles.image}
-                                source={{
-                                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2Fw.png?alt=media&token=51a7747c-a628-45f2-b53e-f88e84346d57'
-                                }}>
-                            </Image>
+                                    <Image
+                                        style={styles.image}
+                                        source={{
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2Fw.png?alt=media&token=51a7747c-a628-45f2-b53e-f88e84346d57'
+                                        }}>
+                                    </Image>
                                 </View>
                             </View>
                             <View style={styles.backCardStyle}>
-                            <Text style={[styles.text, { color: colors.text }]}>The letter W is signed by holding up your dominant hand in a fist, palm facing out, with your index, middle, and ring fingers sticking out. This looks just like the letter 'W'</Text>
+                                <Text style={[styles.text, { color: colors.text }]}>The letter W is signed by holding up your dominant hand in a fist, palm facing out, with your index, middle, and ring fingers sticking out. This looks just like the letter 'W'</Text>
                             </View>
                         </GestureFlipView>
 
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
-                                <Image
-                                style={styles.image}
-                                source={{
-                                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2Fx.png?alt=media&token=29977d31-7e97-47fe-85f0-6d5ffae334d8'
-                                }}>
-                            </Image>
+                                    <Image
+                                        style={styles.image}
+                                        source={{
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2Fx.png?alt=media&token=29977d31-7e97-47fe-85f0-6d5ffae334d8'
+                                        }}>
+                                    </Image>
                                 </View>
                             </View>
                             <View style={styles.backCardStyle}>
-                            <Text style={[styles.text, { color: colors.text }]}>The letter X is signed by holding up your dominant hand in a fist, palm facing out. Then stick out your index finger and bend it into a hook.</Text>
+                                <Text style={[styles.text, { color: colors.text }]}>The letter X is signed by holding up your dominant hand in a fist, palm facing out. Then stick out your index finger and bend it into a hook.</Text>
                             </View>
                         </GestureFlipView>
                     </View>
 
                     <View style={{ flexDirection: 'row', marginTop: 10, marginBottom: 15 }}>
 
-                    <GestureFlipView width={125} height={125}>
+                        <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
-                                <Image
-                                style={styles.image}
-                                source={{
-                                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2Fy.png?alt=media&token=09ed6ae7-08cc-4c42-b2da-b27cad4a846f'
-                                }}>
-                            </Image>
+                                    <Image
+                                        style={styles.image}
+                                        source={{
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2Fy.png?alt=media&token=09ed6ae7-08cc-4c42-b2da-b27cad4a846f'
+                                        }}>
+                                    </Image>
                                 </View>
                             </View>
                             <View style={styles.backCardStyle}>
-                            <Text style={[styles.text, { color: colors.text }]}>The letter Y is signed by holding up your dominant hand, palm facing out, with your thumb and pinkie finger sticking out and the rest of your fingers curled in.</Text>
+                                <Text style={[styles.text, { color: colors.text }]}>The letter Y is signed by holding up your dominant hand, palm facing out, with your thumb and pinkie finger sticking out and the rest of your fingers curled in.</Text>
                             </View>
                         </GestureFlipView>
 
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
-                                <Image
-                                style={styles.image}
-                                source={{
-                                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2Fz.png?alt=media&token=5f9eac76-197f-48fe-9010-5294426568f2'
-                                }}>
-                            </Image>
+                                    <Image
+                                        style={styles.image}
+                                        source={{
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2Fz.png?alt=media&token=5f9eac76-197f-48fe-9010-5294426568f2'
+                                        }}>
+                                    </Image>
                                 </View>
                             </View>
                             <View style={styles.backCardStyle}>
-                            <Text style={[styles.text, { color: colors.text }]}>The letter Z is signed by holding up the index finger of your dominant hand, palm facing out with the rest of the fingers drawn into a fist, and tracing the letter 'Z' with your index in the air.</Text>
+                                <Text style={[styles.text, { color: colors.text }]}>The letter Z is signed by holding up the index finger of your dominant hand, palm facing out with the rest of the fingers drawn into a fist, and tracing the letter 'Z' with your index in the air.</Text>
                             </View>
                         </GestureFlipView>
                     </View>
