@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
+import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fannually.gif?alt=media&token=0282e5cf-665f-479e-a6ec-70a95a08b176'
                     }}>
                     </Image>
-                    <Text>text</Text>
+                    <Text>The right hand changes from a fist to an index as it moves down to strike the left fist.</Text>
                 </View>
                 
             </View>
@@ -38,7 +38,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fapril.gif?alt=media&token=5ca5789a-0a15-4836-baf6-7856816d98b1'
                     }}>
                     </Image>
-                    <Text>text</Text>
+                    <Text>Fingerspelling A-P-R-I-L</Text>
                 </View>
                 
             </View>

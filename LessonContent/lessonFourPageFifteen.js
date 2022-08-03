@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
+import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fsecond.gif?alt=media&token=16f6202b-2c46-494e-a435-5714add693f8'
                     }}>
                     </Image>
-                    <Text>text</Text>
+                    <Text>Do a very quick twitch of the right hand in an "index finger" handshape.</Text>
                 </View>
                 
             </View>
@@ -38,7 +38,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fsleepingbag.gif?alt=media&token=15380baf-9cb5-47bc-beb0-68c63bb1f835'
                     }}>
                     </Image>
-                    <Text>text</Text>
+                    <Text>Clamp your right hand in front of your eyes and then pretend to pull a blanket over yourself.</Text>
                 </View>
                 
             </View>

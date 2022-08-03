@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
+import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Ffireextinguisher.gif?alt=media&token=c6101904-92a4-4105-ac57-a4b85f434bec'
                     }}>
                     </Image>
-                    <Text>text</Text>
+                    <Text>First take both hands and move them up to simulate flames. Then pretend you are hold a hose with your right hand and swipe to both sides.</Text>
                 </View>
                 
             </View>
@@ -38,7 +38,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Ffirstaidkit.gif?alt=media&token=f3eb8426-dddb-4c81-8820-3f152a13eb41'
                     }}>
                     </Image>
-                    <Text>text</Text>
+                    <Text>Hold your right index finger up, then make a box shape with your hands and pretend to open it.</Text>
                 </View>
                 
             </View>

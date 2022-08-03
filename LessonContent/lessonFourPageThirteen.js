@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
+import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fnextday.gif?alt=media&token=6304e6e7-c905-48a7-9d64-88848fe85bba'
                     }}>
                     </Image>
-                    <Text>text</Text>
+                    <Text>Hold both hands in front of you and move your right hand in front. Then take your right hand and, with your index finger extended, hold your arm up and then move it down against your left arm.</Text>
                 </View>
                 
             </View>
@@ -38,7 +38,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fnextweek.gif?alt=media&token=3114ce24-8299-4743-b76f-ac12bfbb68cb'
                     }}>
                     </Image>
-                    <Text>text</Text>
+                    <Text>"index-finger" hand forward and off of the base hand, then curves sharply to the left</Text>
                 </View>
                 
             </View>

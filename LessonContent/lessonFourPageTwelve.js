@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
+import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fmoney.gif?alt=media&token=ea8c5d08-bb74-45dd-a11d-0abae075f4ab'
                     }}>
                     </Image>
-                    <Text>text</Text>
+                    <Text>A flattened "O" (as if holding onto some money) and smacks it (lightly) twice onto the palm of the base hand.</Text>
                 </View>
                 
             </View>
@@ -38,7 +38,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fmonthly.gif?alt=media&token=d50d469e-96d8-43fc-9e09-5f3f77e39b99'
                     }}>
                     </Image>
-                    <Text>text</Text>
+                    <Text>Trace the right index finger from the top to the bottom of the left index finger.</Text>
                 </View>
                 
             </View>

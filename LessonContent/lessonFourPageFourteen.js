@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
+import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fnextyear.gif?alt=media&token=69896588-8888-4012-8324-f83cc5c70a2b'
                     }}>
                     </Image>
-                    <Text>text</Text>
+                    <Text>Take your right fist and hit the top of your left fist then point with your index finger to your left.</Text>
                 </View>
                 
             </View>
@@ -38,7 +38,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fradio.gif?alt=media&token=eeec18f2-c9a9-416b-8a59-22bd2d93f2df'
                     }}>
                     </Image>
-                    <Text>text</Text>
+                    <Text>Take your dominant hand and form it into a claw, then bring it near your ear and twist it back and forth.</Text>
                 </View>
                 
             </View>

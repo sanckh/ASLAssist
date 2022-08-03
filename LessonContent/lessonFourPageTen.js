@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
+import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Flate.gif?alt=media&token=72d515c8-65e5-4cc5-90ba-61688b067169'
                     }}>
                     </Image>
-                    <Text>text</Text>
+                    <Text>Negative headshake and covers the lower teeth with the tongue.</Text>
                 </View>
                 
             </View>
@@ -38,7 +38,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Flifevest.gif?alt=media&token=2d54021d-fa32-4f26-80a8-207106bac2f3'
                     }}>
                     </Image>
-                    <Text>text</Text>
+                    <Text>Take both thumbs and swipe then up your torso then hold your hands as if you are holding a vest and swipe your hands down.</Text>
                 </View>
                 
             </View>

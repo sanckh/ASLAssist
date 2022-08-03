@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
+import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Ftomorrow.gif?alt=media&token=1fa26076-0fb5-4eb6-89bd-2cded4e7babc'
                     }}>
                     </Image>
-                    <Text>text</Text>
+                    <Text>Your thumb sticking out more prominently from the rest of the fist. Touch your thumb to your chin, then move it forward, away from your face about a foot or two.</Text>
                 </View>
                 
             </View>

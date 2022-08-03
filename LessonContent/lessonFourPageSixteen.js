@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
+import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Ftent.gif?alt=media&token=2c56ef52-b434-49a7-bb7d-4fe986b4d59f'
                     }}>
                     </Image>
-                    <Text>text</Text>
+                    <Text>Use our pinkie and index fingers on both hands, have them meet at the center, and pull them apart on a downward slant.</Text>
                 </View>
                 
             </View>
@@ -38,7 +38,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Ftoday.gif?alt=media&token=86b470a5-58de-406f-a939-36ce6ac57996'
                     }}>
                     </Image>
-                    <Text>text</Text>
+                    <Text>Form both hands into the ASL letter Y sign, with your thumb and pinkie fingers extended and your three middle fingers curled in on each hand.</Text>
                 </View>
                 
             </View>

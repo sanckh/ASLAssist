@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
+import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fjuly.gif?alt=media&token=9597482a-7070-4655-bf8e-49d7e168b2e7'
                     }}>
                     </Image>
-                    <Text>text</Text>
+                    <Text>Fingerspelled J-U-L-Y</Text>
                 </View>
                 
             </View>
@@ -38,7 +38,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Flantern.gif?alt=media&token=1c1bd129-4b83-4d1c-b49e-67ecae489b1d'
                     }}>
                     </Image>
-                    <Text>text</Text>
+                    <Text>Hold your left hand like you are holding a lantern handle and with your right hand make a flame motion beneath.</Text>
                 </View>
                 
             </View>

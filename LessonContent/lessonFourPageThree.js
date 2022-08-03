@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
+import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fcandle.gif?alt=media&token=6e16a4cb-c60c-44ff-b147-295b560a0793'
                     }}>
                     </Image>
-                    <Text>text</Text>
+                    <Text>Hold up your dominant hand vertically with fingers pointing toward the sky. Point your index finger from your non-dominant hand to the base of the palm of your dominant hand. Then wiggle the fingers of your dominant hand.</Text>
                 </View>
                 
             </View>
@@ -38,7 +38,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fcompass.gif?alt=media&token=663fb69c-f193-4608-9d89-48e00d30e79a'
                     }}>
                     </Image>
-                    <Text>text</Text>
+                    <Text>Hold your right index finger out and place your hand on top of the other. Turn your right hand from left to the front.</Text>
                 </View>
                 
             </View>

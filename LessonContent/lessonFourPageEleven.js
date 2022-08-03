@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
+import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fmarch.gif?alt=media&token=b412c47e-aa46-49ab-92df-e4f0bf073d6c'
                     }}>
                     </Image>
-                    <Text>text</Text>
+                    <Text>Fingerspell M-A-R-C-H</Text>
                 </View>
                 
             </View>
@@ -38,7 +38,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fmatches.gif?alt=media&token=18fdace2-4e9d-440d-ad62-7f47ba6d9bd0'
                     }}>
                     </Image>
-                    <Text>text</Text>
+                    <Text>The fingers of my left hand are either pointing up or forward and the palm is pointing to the right.</Text>
                 </View>
                 
             </View>

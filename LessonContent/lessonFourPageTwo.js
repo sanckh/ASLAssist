@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
+import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fbattery.gif?alt=media&token=5b580274-0b9e-48cd-8f0b-e05d12ff924b'
                     }}>
                     </Image>
-                    <Text>text</Text>
+                    <Text>Taking both hands and extending your bent index finger from the fist. Bump the extended index fingers from each hand against each other.</Text>
                 </View>
                 
             </View>
@@ -38,7 +38,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fcall.gif?alt=media&token=73170954-f451-42de-9046-d2de06c28450'
                     }}>
                     </Image>
-                    <Text>text</Text>
+                    <Text>Make the letter Y sign with your dominant hand, and hold your pinkie finger against your chin.</Text>
                 </View>
                 
             </View>

@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
+import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fflashlight.gif?alt=media&token=3f4037c6-06a9-4e69-9292-9cb7ccdd03c6'
                     }}>
                     </Image>
-                    <Text>text</Text>
+                    <Text>Your non-dominant hand is the 'holding' arm: you touch your index finger to your thumb to make a circle</Text>
                 </View>
                 
             </View>
@@ -38,7 +38,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fgenerator.gif?alt=media&token=a229e600-a87e-49a3-8230-beb4cacbba79'
                     }}>
                     </Image>
-                    <Text>text</Text>
+                    <Text>With your palms facing in, link your knuckles together and move your hands up and down.</Text>
                 </View>
                 
             </View>

@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
+import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fhour.gif?alt=media&token=a3121d0d-2551-41c8-8e81-24fa07f4aa22'
                     }}>
                     </Image>
-                    <Text>text</Text>
+                    <Text>Represents the movement of the "minute hand" of a clock going around one-time.</Text>
                 </View>
                 
             </View>
@@ -38,7 +38,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fjanuary.gif?alt=media&token=7ec24beb-f02b-4caa-824e-f2daa0c56f48'
                     }}>
                     </Image>
-                    <Text>text</Text>
+                    <Text>Fingerspell J-A-N</Text>
                 </View>
                 
             </View>

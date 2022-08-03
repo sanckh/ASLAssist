@@ -358,9 +358,6 @@ export default function App() {
           <Stack.Screen name = "lessonFourPageTwo" component = {lessonFourPageTwo}/>
           <Stack.Screen name = "lessonFourPageThree" component = {lessonFourPageThree}/>
           <Stack.Screen name = "lessonFourPageFour" component = {lessonFourPageFour}/>
-          <Stack.Screen name = "lessonFourPageTwo" component = {lessonFourPageTwo}/>
-          <Stack.Screen name = "lessonFourPageThree" component = {lessonFourPageThree}/>
-          <Stack.Screen name = "lessonFourPageFour" component = {lessonFourPageFour}/>
           <Stack.Screen name = "lessonFourPageFive" component = {lessonFourPageFive}/>
           <Stack.Screen name = "lessonFourPageSix" component = {lessonFourPageSix}/>
           <Stack.Screen name = "lessonFourPageSeven" component = {lessonFourPageSeven}/>
