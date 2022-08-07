@@ -25,7 +25,7 @@ export default function PracticeOne({navigation}){
             <Image
                 style = {styles.image}
                 source = {{
-                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Emergency%2Fasthma.gif?alt=media&token=96305886-e903-4dc5-80f2-26dd59454955'
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/PracticeQuizOneBlurredImages%2Favocadoquiz.gif?alt=media&token=6fc59c4f-64ef-4e95-b625-05b6921c9593'
                 }}>
                 </Image>
                 <View>
@@ -44,7 +44,7 @@ export default function PracticeOne({navigation}){
                 borderColor: '#0a2941',
                 marginRight: 40,
                 marginLeft: 10}}>
-                <Text color={theme.colors.text} textAlign='center'>Pain</Text>
+                <Text color={theme.colors.text} textAlign='center'>Belt</Text>
             </Button>
 
             <Button
@@ -57,7 +57,7 @@ export default function PracticeOne({navigation}){
                 borderRadius: 15,
                 borderColor: '#0a2941',
                 marginRight: 10,}}>
-                <Text color={theme.colors.text} textAlign='center'>Asthma</Text>
+                <Text color={theme.colors.text} textAlign='center'>Avocado</Text>
             </Button>
             </View>
             <View style={styles.screen}>
@@ -72,7 +72,7 @@ export default function PracticeOne({navigation}){
                 borderColor: '#0a2941',
                 marginRight: 40,
                 marginLeft: 10}}>
-                <Text color={theme.colors.text} textAlign='center'>Sick</Text>
+                <Text color={theme.colors.text} textAlign='center'>Cake</Text>
             </Button>
 
             <Button
@@ -85,23 +85,11 @@ export default function PracticeOne({navigation}){
                 borderRadius: 15,
                 borderColor: '#0a2941',
                 marginRight: 10,}}>
-                <Text color={theme.colors.text} textAlign='center'>Nurse</Text>
+                <Text color={theme.colors.text} textAlign='center'>Sorry</Text>
             </Button>
 
             </View>
 
-            {/* <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
-            </View> */}
-            {/* <Button
-            mode = "contained"
-            onPress = {() => navigation.navigate('pqOnePageTwo')}
-            style = {{backgroundColor: '#ecddfc', 
-                width: 250,
-                height: 50,}}
-            >
-                Next Section
-            </Button> */}
         </Background>
         
         

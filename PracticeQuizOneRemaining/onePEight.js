@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
             <Image
                 style = {styles.image}
                 source = {{
-                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/PracticeQuizOneBlurredImages%2Fbaconquiz.gif?alt=media&token=1646b5c1-f2c5-4fc8-9045-623ce6eba9ff'
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/PracticeQuizOneBlurredImages%2Fbathquiz.gif?alt=media&token=413de824-87c8-4d41-8783-8926b542bfb3'
                 }}>
                 </Image>
                 <View>
@@ -57,7 +57,7 @@ export default function LessonSix({navigation}){
                 borderRadius: 15,
                 borderColor: '#0a2941',
                 marginRight: 10,}}>
-                <Text color={theme.colors.text} textAlign='center'>Rectangle</Text>
+                <Text color={theme.colors.text} textAlign='center'>Angry</Text>
             </Button>
             </View>
             <View style={styles.screen}>
@@ -72,11 +72,11 @@ export default function LessonSix({navigation}){
                 borderColor: '#0a2941',
                 marginRight: 40,
                 marginLeft: 10}}>
-                <Text color={theme.colors.text} textAlign='center'>Meat</Text>
+                <Text color={theme.colors.text} textAlign='center'>Tantrum</Text>
             </Button>
 
             <Button
-            onPress = {() => navigation.navigate('pqOnePageFour')}
+            onPress = {() => navigation.navigate('onePNine')}
             mode = "contained"
             style = {{backgroundColor: '#daeaf6', 
                 width: 150,
@@ -85,7 +85,7 @@ export default function LessonSix({navigation}){
                 borderRadius: 15,
                 borderColor: '#0a2941',
                 marginRight: 10,}}>
-                <Text color={theme.colors.text} textAlign='center'>Bacon</Text>
+                <Text color={theme.colors.text} textAlign='center'>Bath</Text>
             </Button>
 
             </View>
