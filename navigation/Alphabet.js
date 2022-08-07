@@ -487,7 +487,8 @@ const styles = StyleSheet.create({
     text: {
         flex: 1,
         width: 110,
-        textAlign: 'center',
+        textAlign: 'left',
+        paddingLeft: 5
     },
     scrollview: {
         flex: 1,
