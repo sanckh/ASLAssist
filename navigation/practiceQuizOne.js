@@ -28,27 +28,17 @@ export default function PracticeOne({navigation}){
                 </Image>
                 <Text style={styles.text}>What sign is this?</Text>
                 <View style={styles.screen}>
-            <Button
-            mode = "contained"
-            style = {{backgroundColor: '#daeaf6', 
-                width: 150,
-                height: 60,
-                borderWidth: 5,
-                borderRadius: 15,
-                borderColor: '#0a2941',
-                marginRight: 40,
-                marginLeft: 10}}>
-                <Text color={theme.colors.text} textAlign='center'>Pain</Text>
-            </Button>
+           
             <View style={styles.body}>
                 <Ripple style={styles.button} 
                         rippleColor='white' 
                         rippleOpacity={0.9} 
                         rippleDuration={2000} 
                         rippleSize= {500}>
-                    <Text style= {styles.text}>Press Me </Text>
+                    <Text style= {styles.text} textAlign='center'>Press Me </Text>
                 </Ripple>
             </View>
+            
             <Button
             mode = "contained"
             style = {{backgroundColor: '#daeaf6', 
@@ -141,6 +131,8 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 25,
         lineHeight: 26,
+        alignItems: 'center',
+        justifyContent: 'center',
         
 
     },
@@ -157,11 +149,13 @@ const styles = StyleSheet.create({
 
     body: {
         flex: 1,
-        backgroundColor: 'black',
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: 50,
-        width: 300,
+        backgroundColor: '#daeaf6',
+        width: 150,
+        height: 60,
+        borderWidth: 5,
+        borderRadius: 15,
+        borderColor: '#0a2941',
+        marginRight: 10
 
 
       },
