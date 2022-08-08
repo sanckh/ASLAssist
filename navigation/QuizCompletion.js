@@ -25,7 +25,8 @@ export default function PracticeOne({navigation}){
             <Text color={theme.colors.text}
                 style = {styles.text}>Congratulations</Text>
                 <Paragraph>You have completed the quiz</Paragraph>
-            
+            <Text color={theme.colors.text}
+            style = {{fontSize: 20}}>EXP   15+</Text>
             {/* <View>
                 <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
             </View> */}
