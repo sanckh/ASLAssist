@@ -11,9 +11,15 @@ import Paragraph from '../components/Paragraph';
 import Icon from 'react-native-vector-icons/FontAwesome5'
 import Ionicon from 'react-native-vector-icons/Ionicons'
 import { theme, CustomDefaultTheme, CustomDarkTheme } from '../core/theme';
+import React, {useState, useEffect} from 'react';
 
 export default function PracticeOne({navigation}){
     const {colors} = useTheme();
+
+    const[counter, setCounter]= useState(0)
+    useEffect(()=>{
+        console.log(counter)
+    })
 
     return(
         <Background>
@@ -32,7 +38,7 @@ export default function PracticeOne({navigation}){
             </View> */}
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('HomeDash')}
+            onPress = {() => setCounter(counter+15)}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}
