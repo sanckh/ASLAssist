@@ -26,6 +26,10 @@ export default function Settings({navigation}) {
     })
     .catch(error => alert(error.message))
   }
+
+  const handleNotifications = () => {
+    
+  }
         return (
           <View>
               <View style = {styles.header}>
@@ -61,6 +65,15 @@ export default function Settings({navigation}) {
                 description = "" 
                 />
                 </TouchableRipple>
+
+                <TouchableRipple onPress={() => {handleNotifications()}}>
+                <List.Item title = "Notifications" 
+                left = {() => <List.Icon icon="moon-waning-crescent" />}
+                right = {() => <Switch value = {paperTheme.dark}/>}
+                description = "Turn Notifications on or off" 
+                />
+                </TouchableRipple>
+
                 <TouchableRipple
                 onPress = {handleSignOut}
                 >
