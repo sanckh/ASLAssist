@@ -22,6 +22,9 @@ import Ionicons from 'react-native-vector-icons/Ionicons'
 //components
 import {theme, CustomDarkTheme, CustomDefaultTheme} from './core/theme'
 import { AuthContext } from './components/context';
+import registerForPushNotificationsAsync from './components/notifications';
+import OneSignal from 'react-native-onesignal';
+import Constants from "expo-constants";
 
 //screens go here
 import StartScreen from './navigation/StartScreen';
@@ -171,6 +174,7 @@ import pqThreePageFour from './QuizContent/pqThreePageFour'
 const Tab = createMaterialBottomTabNavigator();
 
 
+
 function Home() {
   return (
       <Tab.Navigator
@@ -242,6 +246,9 @@ function Home() {
 const Stack = createStackNavigator();
 
 export default function App() {
+  registerForPushNotificationsAsync()
+  //OneSignal.setAppId(Constants.manifest.extra.oneSignalAppId);
+  OneSignal.setAppId("566f7f24-eca7-4c7e-bf1d-c3b96da22eac");
 
   const [isDarkTheme, setIsDarkTheme] = React.useState(false);
 
