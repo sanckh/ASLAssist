@@ -32,6 +32,18 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+    	[
+    		"onesignal-expo-plugin",
+    		{
+          "mode": "development"
+          
+        }
+    	]
+    ],
+    "extra": {
+      "oneSignalAppId" : "566f7f24-eca7-4c7e-bf1d-c3b96da22eac"
     }
   }
 }
