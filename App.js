@@ -14,7 +14,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import 'react-native-gesture-handler';
 import merge from 'deepmerge'
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 import Ionicons from 'react-native-vector-icons/Ionicons'
 
@@ -22,9 +22,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons'
 //components
 import {theme, CustomDarkTheme, CustomDefaultTheme} from './core/theme'
 import { AuthContext } from './components/context';
-import registerForPushNotificationsAsync from './components/notifications';
-import OneSignal from 'react-native-onesignal';
-import Constants from "expo-constants";
+import registerForPushNotificationsAsync from './components/notifications'
 
 //screens go here
 import StartScreen from './navigation/StartScreen';
@@ -171,29 +169,9 @@ import pqThreePageTwo from './QuizContent/pqThreePageTwo'
 import pqThreePageThree from './QuizContent/pqThreePageThree'
 import pqThreePageFour from './QuizContent/pqThreePageFour'
 
+
+
 const Tab = createMaterialBottomTabNavigator();
-
-  OneSignal.setAppId(Constants.manifest.extra.oneSignalAppId);
-
-  // promptForPushNotificationsWithUserResponse will show the native iOS or Android notification permission prompt.
-  // We recommend removing the following code and instead using an In-App Message to prompt for notification permission (See step 7)
-  OneSignal.promptForPushNotificationsWithUserResponse();
-
-  //Method for handling notifications received while app in foreground
-OneSignal.setNotificationWillShowInForegroundHandler(notificationReceivedEvent => {
-  console.log("OneSignal: notification will show in foreground:", notificationReceivedEvent);
-  let notification = notificationReceivedEvent.getNotification();
-  console.log("notification: ", notification);
-  const data = notification.additionalData
-  console.log("additionalData: ", data);
-  // Complete with null means don't show a notification.
-  notificationReceivedEvent.complete(notification);
-});
-
-//Method for handling notifications opened
-OneSignal.setNotificationOpenedHandler(notification => {
-  console.log("OneSignal: notification opened:", notification);
-});
 
 
 function Home() {
@@ -267,7 +245,11 @@ function Home() {
 const Stack = createStackNavigator();
 
 export default function App() {
-  registerForPushNotificationsAsync()
+  //cannot use this function on an emulator.
+  // useEffect(() => {
+  //   registerForPushNotificationsAsync().then(token => console.log(token)).
+  //   catch(err => console.log(err))
+  // }, [])
 
   const [isDarkTheme, setIsDarkTheme] = React.useState(false);
 
