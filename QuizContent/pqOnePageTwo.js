@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
             <Image
                 style = {styles.image}
                 source = {{
-                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Emergency%2Fweakness.gif?alt=media&token=64e61ff3-a454-4ad2-88fe-9907c701c139'
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/PracticeQuizOneBlurredImages%2Fbabyquiz.gif?alt=media&token=11c748f8-ebc9-4280-ab7d-e25649500dc5'
                 }}>
                 </Image>
                 <View>
@@ -44,7 +44,7 @@ export default function LessonSix({navigation}){
                 borderColor: '#0a2941',
                 marginRight: 40,
                 marginLeft: 10}}>
-                <Text color={theme.colors.text} textAlign='center'>Weakness</Text>
+                <Text color={theme.colors.text} textAlign='center'>Baby</Text>
             </Button>
 
             <Button
@@ -57,7 +57,7 @@ export default function LessonSix({navigation}){
                 borderRadius: 15,
                 borderColor: '#0a2941',
                 marginRight: 10,}}>
-                <Text color={theme.colors.text} textAlign='center'>Nurse</Text>
+                <Text color={theme.colors.text} textAlign='center'>Craddle</Text>
             </Button>
             </View>
             <View style={styles.screen}>
@@ -72,7 +72,7 @@ export default function LessonSix({navigation}){
                 borderColor: '#0a2941',
                 marginRight: 40,
                 marginLeft: 10}}>
-                <Text color={theme.colors.text} textAlign='center'>Allergic</Text>
+                <Text color={theme.colors.text} textAlign='center'>Coddle</Text>
             </Button>
 
             <Button
@@ -85,7 +85,7 @@ export default function LessonSix({navigation}){
                 borderRadius: 15,
                 borderColor: '#0a2941',
                 marginRight: 10,}}>
-                <Text color={theme.colors.text} textAlign='center'>Sick</Text>
+                <Text color={theme.colors.text} textAlign='center'>Rocking</Text>
             </Button>
 
             </View>

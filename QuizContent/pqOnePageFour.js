@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
             <Image
                 style = {styles.image}
                 source = {{
-                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/a.png?alt=media&token=86dc2271-6d76-49be-860c-1f016f0b4e3b'
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/PracticeQuizOneBlurredImages%2Fbakequiz.gif?alt=media&token=1e93659e-85c1-4850-85f1-a0260b19bfee'
                 }}>
                 </Image>
                 <View>
@@ -44,11 +44,11 @@ export default function LessonSix({navigation}){
                 borderColor: '#0a2941',
                 marginRight: 40,
                 marginLeft: 10}}>
-                <Text color={theme.colors.text} textAlign='center'>J</Text>
+                <Text color={theme.colors.text} textAlign='center'>Oven</Text>
             </Button>
 
             <Button
-            onPress = {() => navigation.navigate('QuizCompletion')}
+            onPress = {() => navigation.navigate('onePFive')}
             mode = "contained"
             style = {{backgroundColor: '#daeaf6', 
                 width: 150,
@@ -57,7 +57,7 @@ export default function LessonSix({navigation}){
                 borderRadius: 15,
                 borderColor: '#0a2941',
                 marginRight: 10,}}>
-                <Text color={theme.colors.text} textAlign='center'>A</Text>
+                <Text color={theme.colors.text} textAlign='center'>Bake</Text>
             </Button>
             </View>
             <View style={styles.screen}>
@@ -72,7 +72,7 @@ export default function LessonSix({navigation}){
                 borderColor: '#0a2941',
                 marginRight: 40,
                 marginLeft: 10}}>
-                <Text color={theme.colors.text} textAlign='center'>Z</Text>
+                <Text color={theme.colors.text} textAlign='center'>Stove</Text>
             </Button>
 
             <Button
@@ -85,22 +85,10 @@ export default function LessonSix({navigation}){
                 borderRadius: 15,
                 borderColor: '#0a2941',
                 marginRight: 10,}}>
-                <Text color={theme.colors.text} textAlign='center'>C</Text>
+                <Text color={theme.colors.text} textAlign='center'>Cook</Text>
             </Button>
 
             </View>
-            {/* <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={1.00} color={"lightgreen"} />
-            </View> */}
-            {/* <Button
-            mode = "contained"
-            onPress = {() => navigation.navigate('QuizCompletion')}
-            style = {{backgroundColor: '#ecddfc', 
-                width: 250,
-                height: 50,}}
-            >
-                Next Section
-            </Button> */}
         </Background>
         
         

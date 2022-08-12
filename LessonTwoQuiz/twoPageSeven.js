@@ -9,7 +9,7 @@ import { getStatusBarHeight } from 'react-native-status-bar-height'
 import Button from '../components/Button';
 import { theme } from '../core/theme';
 
-export default function LessonSix({navigation}){
+export default function PracticeOne({navigation}){
     const {colors} = useTheme();
 
     const wrongAnswer = () => {
@@ -20,93 +20,54 @@ export default function LessonSix({navigation}){
         <Background>
             <BackButton goBack = {navigation.goBack} />
             
-            <Header style = {styles.header}>Practice Quiz</Header>
+            <Header style = {styles.header}>Pratice Quiz</Header>
             {/* lesson content */}
             <Image
                 style = {styles.image}
                 source = {{
-                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/PracticeQuizOneBlurredImages%2Fbaconquiz.gif?alt=media&token=1646b5c1-f2c5-4fc8-9045-623ce6eba9ff'
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwoQuizBlurredImages%2Fnewyearsday-blurred.gif?alt=media&token=9c5aede9-4582-4063-83d3-aea3ecd10f23'
                 }}>
                 </Image>
                 <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.66} color={"lightgreen"} />
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
                 </View>
                 <Text style={styles.text}>What sign is this?</Text>
                 <View style={styles.screen}>
             <Button
-            onPress={()=>wrongAnswer()}
+            onPress={()=> navigation.navigate('twoPageEight')}
             mode = "contained"
             style = {{backgroundColor: '#daeaf6', 
-                width: 150,
+                width: 250,
                 height: 60,
                 borderWidth: 5,
                 borderRadius: 15,
                 borderColor: '#0a2941',
                 marginRight: 40,
                 marginLeft: 10}}>
-                <Text color={theme.colors.text} textAlign='center'>Line</Text>
-            </Button>
-
-            <Button
-            onPress={()=>wrongAnswer()}
-            mode = "contained"
-            style = {{backgroundColor: '#daeaf6', 
-                width: 150,
-                height: 60,
-                borderWidth: 5,
-                borderRadius: 15,
-                borderColor: '#0a2941',
-                marginRight: 10,}}>
-                <Text color={theme.colors.text} textAlign='center'>Rectangle</Text>
+                <Text color={theme.colors.text} textAlign='center'>New Year's Day</Text>
             </Button>
             </View>
             <View style={styles.screen}>
             <Button
-            onPress={()=>wrongAnswer()}
+            onPress={()=> wrongAnswer()}
             mode = "contained"
             style = {{backgroundColor: '#daeaf6', 
-                width: 150,
-                height: 60,
-                borderWidth: 5,
-                borderRadius: 15,
-                borderColor: '#0a2941',
-                marginRight: 40,
-                marginLeft: 10}}>
-                <Text color={theme.colors.text} textAlign='center'>Meat</Text>
-            </Button>
-
-            <Button
-            onPress = {() => navigation.navigate('pqOnePageFour')}
-            mode = "contained"
-            style = {{backgroundColor: '#daeaf6', 
-                width: 150,
+                width: 250,
                 height: 60,
                 borderWidth: 5,
                 borderRadius: 15,
                 borderColor: '#0a2941',
                 marginRight: 10,}}>
-                <Text color={theme.colors.text} textAlign='center'>Bacon</Text>
+                <Text color={theme.colors.text} textAlign='center'>Valentine's</Text>
             </Button>
 
             </View>
-            {/* <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.66} color={"lightgreen"} />
-            </View> */}
-            {/* <Button
-            mode = "contained"
-            onPress = {() => navigation.navigate('pqOnePageFour')}
-            style = {{backgroundColor: '#ecddfc', 
-                width: 250,
-                height: 50,}}
-            >
-                Next Section
-            </Button> */}
+
         </Background>
         
         
     )
 }
-
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -128,13 +89,15 @@ const styles = StyleSheet.create({
         fontSize: 25,
     },
     image: {
-        marginTop: 100,
-        width: 115,
-        height: 115,
+        width: 300,
+        height: 300,
+        marginTop: 10,
+        marginLeft: 50,
+        marginRight: 50,
+        alignItems: 'center',
+        padding: 20,
         resizeMode: 'contain',
-        borderRadius: 30,
-        margin: 10,
-
+        borderRadius: 30
     },
     text: {
         // marginTop: 15,

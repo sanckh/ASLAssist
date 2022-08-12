@@ -140,6 +140,7 @@ import lessonTenPageTwo from './LessonContent/lessonTenPageTwo'
 import lessonTenPageThree from './LessonContent/lessonTenPageThree'
 import lessonTenPageFour from './LessonContent/lessonTenPageFour'
 
+
 // import lessonOnePageFive from './LessonContent/lessonOnePageFive'
 // import lessonOnePageSix from './LessonContent/lessonOnePageSix'
 // import lessonOnePageSeven from './LessonContent/lessonOnePageSeven'
@@ -152,6 +153,7 @@ import lessonTenPageFour from './LessonContent/lessonTenPageFour'
 // import lessonOnePageFourteen from './LessonContent/lessonOnePageFourteen'
 // import lessonOnePageFiftheen from './LessonContent/lessonOnePageFiftheen'
 
+
 //practice quizzes
 import PracticeQuizOne from './navigation/practiceQuizOne';
 import PracticeQuizTwo from './navigation/practiceQuizTwo';
@@ -162,6 +164,39 @@ import QuizCompletion from './navigation/QuizCompletion'
 import pqOnePageTwo from './QuizContent/pqOnePageTwo'
 import pqOnePageThree from './QuizContent/pqOnePageThree'
 import pqOnePageFour from './QuizContent/pqOnePageFour'
+import onePFive from './PracticeQuizOneRemaining/onePFive'
+import onePSix from './PracticeQuizOneRemaining/onePSix'
+import onePSeven from './PracticeQuizOneRemaining/onePSeven'
+import onePEight from './PracticeQuizOneRemaining/onePEight'
+import onePNine from './PracticeQuizOneRemaining/onePNine'
+import onePTen from './PracticeQuizOneRemaining/onePTen'
+import onePEleven from './PracticeQuizOneRemaining/onePEleven'
+import onePTwelve from './PracticeQuizOneRemaining/onePTwelve'
+import onePThirteen from './PracticeQuizOneRemaining/onePThirteen'
+import onePFourteen from './PracticeQuizOneRemaining/onePFourteen'
+import onePFifteen from './PracticeQuizOneRemaining/onePFifteen'
+import onePSixteen from './PracticeQuizOneRemaining/onePSixteen'
+import onePSeventeen from './PracticeQuizOneRemaining/onePSeventeen'
+import onePEighteen from './PracticeQuizOneRemaining/onePEighteen'
+import onePNineteen from './PracticeQuizOneRemaining/onePNineteen'
+import onePTwenty from './PracticeQuizOneRemaining/onePTwenty'
+import onePTwentyO from './PracticeQuizOneRemaining/onePTwentyO'
+import onePTwentyTw from './PracticeQuizOneRemaining/onePTwentyTw'
+import onePTwentyTh from './PracticeQuizOneRemaining/onePTwentyTh'
+import onePTwentyFo from './PracticeQuizOneRemaining/onePTwentyFo'
+import onePTwentyFi from './PracticeQuizOneRemaining/onePTwentyFi'
+import onePTwentySi from './PracticeQuizOneRemaining/onePTwentySi'
+import onePTwentySe from './PracticeQuizOneRemaining/onePTwentySe'
+import onePTwentyE from './PracticeQuizOneRemaining/onePTwentyE'
+import onePTwentyN from './PracticeQuizOneRemaining/onePTwentyN'
+import onePThirty from './PracticeQuizOneRemaining/onePThirty'
+import onePThirtyO from './PracticeQuizOneRemaining/onePThirtyO'
+import onePThirtyTw from './PracticeQuizOneRemaining/onePThirtyTw'
+import onePThirtyTh from './PracticeQuizOneRemaining/onePThirtyTh'
+import onePThirtyFo from './PracticeQuizOneRemaining/onePThirtyFo'
+import onePThirtyFi from './PracticeQuizOneRemaining/onePThirtyFi'
+import onePThirtySi from './PracticeQuizOneRemaining/onePThirtySi'
+
 import pqTwoPageTwo from './QuizContent/pqTwoPageTwo'
 import pqTwoPageThree from './QuizContent/pqTwoPageThree'
 import pqTwoPageFour from './QuizContent/pqTwoPageFour'
@@ -169,6 +204,47 @@ import pqThreePageTwo from './QuizContent/pqThreePageTwo'
 import pqThreePageThree from './QuizContent/pqThreePageThree'
 import pqThreePageFour from './QuizContent/pqThreePageFour'
 
+
+
+//lesson quizzes
+import onePageOne from './LessonOneQuiz/onePageOne'
+import onePageTwo from './LessonOneQuiz/onePageTwo'
+import onePageThree from './LessonOneQuiz/onePageThree'
+import onePageFour from './LessonOneQuiz/onePageFour'
+import onePageFive from './LessonOneQuiz/onePageFive'
+import onePageSix from './LessonOneQuiz/onePageSix'
+import onePageSeven from './LessonOneQuiz/onePageSeven'
+import onePageEight from './LessonOneQuiz/onePageEight'
+import onePageNine from './LessonOneQuiz/onePageNine'
+import onePageTen from './LessonOneQuiz/onePageTen'
+import onePageEleven from './LessonOneQuiz/onePageEleven'
+import onePageTwelve from './LessonOneQuiz/onePageTwelve'
+
+import twoPageOne from './LessonTwoQuiz/twoPageOne'
+import twoPageTwo from './LessonTwoQuiz/twoPageTwo'
+import twoPageThree from './LessonTwoQuiz/twoPageThree'
+import twoPageFour from './LessonTwoQuiz/twoPageFour'
+import twoPageFive from './LessonTwoQuiz/twoPageFive'
+import twoPageSix from './LessonTwoQuiz/twoPageSix'
+import twoPageSeven from './LessonTwoQuiz/twoPageSeven'
+import twoPageEight from './LessonTwoQuiz/twoPageEight'
+import twoPageNine from './LessonTwoQuiz/twoPageNine'
+import twoPageTen from './LessonTwoQuiz/twoPageTen'
+import twoPageEleven from './LessonTwoQuiz/twoPageEleven'
+import twoPageTwelve from './LessonTwoQuiz/twoPageTwelve'
+
+import one from './LessonThreeQuiz/one'
+import two from './LessonThreeQuiz/two'
+import three from './LessonThreeQuiz/three'
+import four from './LessonThreeQuiz/four'
+import five from './LessonThreeQuiz/five'
+import six from './LessonThreeQuiz/six'
+import seven from './LessonThreeQuiz/seven'
+import eight from './LessonThreeQuiz/eight'
+import nine from './LessonThreeQuiz/nine'
+import ten from './LessonThreeQuiz/ten'
+import eleven from './LessonThreeQuiz/eleven'
+import twelve from './LessonThreeQuiz/twelve'
 
 
 const Tab = createMaterialBottomTabNavigator();
@@ -303,6 +379,38 @@ export default function App() {
           <Stack.Screen name = "pqOnePageTwo" component = {pqOnePageTwo}/>
           <Stack.Screen name = "pqOnePageThree" component = {pqOnePageThree}/>
           <Stack.Screen name = "pqOnePageFour" component = {pqOnePageFour}/>
+          <Stack.Screen name = "onePFive" component = {onePFive}/>
+          <Stack.Screen name = "onePSix" component = {onePSix}/>
+          <Stack.Screen name = "onePSeven" component = {onePSeven}/>
+          <Stack.Screen name = "onePEight" component = {onePEight}/>
+          <Stack.Screen name = "onePNine" component = {onePNine}/>
+          <Stack.Screen name = "onePTen" component = {onePTen}/>
+          <Stack.Screen name = "onePEleven" component = {onePEleven}/>
+          <Stack.Screen name = "onePTwelve" component = {onePTwelve}/>
+          <Stack.Screen name = "onePThirteen" component = {onePThirteen}/>
+          <Stack.Screen name = "onePFourteen" component = {onePFourteen}/>
+          <Stack.Screen name = "onePFifteen" component = {onePFifteen}/>
+          <Stack.Screen name = "onePSixteen" component = {onePSixteen}/>
+          <Stack.Screen name = "onePSeventeen" component = {onePSeventeen}/>
+          <Stack.Screen name = "onePEighteen" component = {onePEighteen}/>
+          <Stack.Screen name = "onePNineteen" component = {onePNineteen}/>
+          <Stack.Screen name = "onePTwenty" component = {onePTwenty}/>
+          <Stack.Screen name = "onePTwentyO" component = {onePTwentyO}/>
+          <Stack.Screen name = "onePTwentyTw" component = {onePTwentyTw}/>
+          <Stack.Screen name = "onePTwentyTh" component = {onePTwentyTh}/>
+          <Stack.Screen name = "onePTwentyFo" component = {onePTwentyFo}/>
+          <Stack.Screen name = "onePTwentyFi" component = {onePTwentyFi}/>
+          <Stack.Screen name = "onePTwentySi" component = {onePTwentySi}/>
+          <Stack.Screen name = "onePTwentySe" component = {onePTwentySe}/>
+          <Stack.Screen name = "onePTwentyE" component = {onePTwentyE}/>
+          <Stack.Screen name = "onePTwentyN" component = {onePTwentyN}/>
+          <Stack.Screen name = "onePThirty" component = {onePThirty}/>
+          <Stack.Screen name = "onePThirtyO" component = {onePThirtyO}/>
+          <Stack.Screen name = "onePThirtyTw" component = {onePThirtyTw}/>
+          <Stack.Screen name = "onePThirtTh" component = {onePThirtyTh}/>
+          <Stack.Screen name = "onePThirtyFo" component = {onePThirtyFo}/>
+          <Stack.Screen name = "onePThirtyFi" component = {onePThirtyFi}/>
+          <Stack.Screen name = "onePThirtySi" component = {onePThirtySi}/>
 
           <Stack.Screen name = "pqTwoPageTwo" component = {pqTwoPageTwo}/>
           <Stack.Screen name = "pqTwoPageThree" component = {pqTwoPageThree}/>
@@ -311,6 +419,45 @@ export default function App() {
           <Stack.Screen name = "pqThreePageTwo" component = {pqThreePageTwo}/>
           <Stack.Screen name = "pqThreePageThree" component = {pqThreePageThree}/>
           <Stack.Screen name = "pqThreePageFour" component = {pqThreePageFour}/>
+
+          <Stack.Screen name = "onePageOne" component = {onePageOne}/>
+          <Stack.Screen name = "onePageTwo" component = {onePageTwo}/>
+          <Stack.Screen name = "onePageThree" component = {onePageThree}/>
+          <Stack.Screen name = "onePageFour" component = {onePageFour}/>
+          <Stack.Screen name = "onePageFive" component = {onePageFive}/>
+          <Stack.Screen name = "onePageSix" component = {onePageSix}/>
+          <Stack.Screen name = "onePageSeven" component = {onePageSeven}/>
+          <Stack.Screen name = "onePageEight" component = {onePageEight}/>
+          <Stack.Screen name = "onePageNine" component = {onePageNine}/>
+          <Stack.Screen name = "onePageTen" component = {onePageTen}/>
+          <Stack.Screen name = "onePageEleven" component = {onePageEleven}/>
+          <Stack.Screen name = "onePageTwelve" component = {onePageTwelve}/>
+
+          <Stack.Screen name = "twoPageOne" component = {twoPageOne}/>
+          <Stack.Screen name = "twoPageTwo" component = {twoPageTwo}/>
+          <Stack.Screen name = "twoPageThree" component = {twoPageThree}/>
+          <Stack.Screen name = "twoPageFour" component = {twoPageFour}/>
+          <Stack.Screen name = "twoPageFive" component = {twoPageFive}/>
+          <Stack.Screen name = "twoPageSix" component = {twoPageSix}/>
+          <Stack.Screen name = "twoPageSeven" component = {twoPageSeven}/>
+          <Stack.Screen name = "twoPageEight" component = {twoPageEight}/>
+          <Stack.Screen name = "twoPageNine" component = {twoPageNine}/>
+          <Stack.Screen name = "twoPageTen" component = {twoPageTen}/>
+          <Stack.Screen name = "twoPageEleven" component = {twoPageEleven}/>
+          <Stack.Screen name = "twoPageTwelve" component = {twoPageTwelve}/>
+
+          <Stack.Screen name = "one" component = {one}/>
+          <Stack.Screen name = "two" component = {two}/>
+          <Stack.Screen name = "three" component = {three}/>
+          <Stack.Screen name = "four" component = {four}/>
+          <Stack.Screen name = "five" component = {five}/>
+          <Stack.Screen name = "six" component = {six}/>
+          <Stack.Screen name = "seven" component = {seven}/>
+          <Stack.Screen name = "eight" component = {eight}/>
+          <Stack.Screen name = "nine" component = {nine}/>
+          <Stack.Screen name = "ten" component = {ten}/>
+          <Stack.Screen name = "eleven" component = {eleven}/>
+          <Stack.Screen name = "twelve" component = {twelve}/>
 
           <Stack.Screen name = "Achievements" component = {Achievement}/>
 
