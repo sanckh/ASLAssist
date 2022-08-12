@@ -11,9 +11,15 @@ import Paragraph from '../components/Paragraph';
 import Icon from 'react-native-vector-icons/FontAwesome5'
 import Ionicon from 'react-native-vector-icons/Ionicons'
 import { theme, CustomDefaultTheme, CustomDarkTheme } from '../core/theme';
+import React, {useState, useEffect} from 'react';
 
 export default function PracticeOne({navigation}){
     const {colors} = useTheme();
+
+    const[counter, setCounter]= useState(0)
+    useEffect(()=>{
+        console.log(counter)
+    })
 
     return(
         <Background>
@@ -25,12 +31,14 @@ export default function PracticeOne({navigation}){
             <Text color={theme.colors.text}
                 style = {styles.text}>Congratulations</Text>
                 <Paragraph>You have completed the quiz</Paragraph>
+            <Text color={theme.colors.text}
+            style = {{fontSize: 20}}>EXP   15+</Text>
             {/* <View>
                 <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
             </View> */}
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('HomeDash')}
+            onPress = {() => setCounter(counter+15)}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}

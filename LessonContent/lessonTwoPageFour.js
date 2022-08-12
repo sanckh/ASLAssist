@@ -14,9 +14,7 @@ export default function LessonTwo({navigation}){
 
     return(
         <Background>
-            <TouchableOpacity  onPress = { () => navigation.replace('Home')} style={styles.iconContainer}>
-                <List.Icon icon="arrow-left" />
-            </TouchableOpacity>
+            <BackButton goBack={navigation.goBack}/>
 
              <Header style = {styles.header}>Section Three</Header>
 
@@ -83,8 +81,8 @@ const styles = StyleSheet.create({
         fontSize: 25,
     },
     image: {
-        width: 250,
-        height: 150,
+        width: 200,
+        height: 100,
         resizeMode: 'contain',
         borderRadius: 30,
         margin: 10,

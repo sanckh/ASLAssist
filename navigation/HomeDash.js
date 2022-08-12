@@ -15,18 +15,7 @@ export default function HomeDash({navigation}) {
     //for dark mode
     const {colors} = useTheme();
 
-    //FOR TESTING PURPOSES
-    // const buttonClickedHandler = () => {
-    //     console.log('Button has been clicked');
-    //     // this is placeholder insert code to take user to the selected lesson
-    // };
-    // const buttonClickedAlert = () => {
-    //     Alert.alert('Button has been clicked');
-    // };
-    // const onPress = () => {
-    //     buttonClickedHandler();
-    //     buttonClickedAlert();
-    // };
+    
 
     return (
         <ScrollView>
@@ -88,11 +77,11 @@ export default function HomeDash({navigation}) {
                 <Text color={theme.colors.text} textAlign='center'>Lesson 3</Text>
             </TouchableOpacity>
 
-            {/* <TouchableOpacity
+            <TouchableOpacity
             onPress={() => navigation.navigate('LessonFour')}
             style={styles.rectangleButton}>
                 <Text color={theme.colors.text} textAlign='center'>Lesson 4</Text>
-            </TouchableOpacity> */}
+            </TouchableOpacity>
 
             </View>
 
