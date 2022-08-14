@@ -15,17 +15,17 @@ export default function LessonSix({navigation}){
         <Background>
             <BackButton goBack={navigation.goBack}/>
             
-            <Header style = {styles.header}>Section One</Header>
+            <Header style = {styles.header}>Section Six</Header>
             {/* lesson content */}
             <View style = {{flexDirection: 'row', marginTop: 10}}>
                 <View style = {styles.imagePlacement}>
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFive%2Fbury.gif?alt=media&token=1a890a8e-5980-46a8-baaa-69dfc51cb77a'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFive%2Fseparated.gif?alt=media&token=aacec402-61d9-413b-b8a3-bccf7299115b'
                     }}>
                     </Image>
-                    <Text>Two fingers, in a downward motion, other hand sideways.</Text>
+                    <Text>Hands together pulled apart hands</Text>
                 </View>
                 
             </View>
@@ -35,10 +35,10 @@ export default function LessonSix({navigation}){
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFive%2Fdivorce.gif?alt=media&token=d2299466-e6e0-409c-82f5-6329f63a7a49'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFive%2Fsick.gif?alt=media&token=4b84191d-6b5f-4e62-b873-b2cdb3dbe0d3'
                     }}>
                     </Image>
-                    <Text>Hold both hands together with the palms facing each other. </Text>
+                    <Text>Point to your forehead with your hand and to your tummy</Text>
                 </View>
                 
             </View>
@@ -47,7 +47,7 @@ export default function LessonSix({navigation}){
             </View>
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('lessonFivePageThree')}
+            onPress = {() => navigation.navigate('lessonFivePageEight')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}

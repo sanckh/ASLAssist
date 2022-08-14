@@ -15,17 +15,17 @@ export default function LessonSix({navigation}){
         <Background>
             <BackButton goBack={navigation.goBack}/>
             
-            <Header style = {styles.header}>Section One</Header>
+            <Header style = {styles.header}> Travel Terms</Header>
             {/* lesson content */}
             <View style = {{flexDirection: 'row', marginTop: 10}}>
                 <View style = {styles.imagePlacement}>
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFive%2Fbury.gif?alt=media&token=1a890a8e-5980-46a8-baaa-69dfc51cb77a'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFive%2Farewethereyet.gif?alt=media&token=5334fafd-cdf8-4b80-b00f-eb0dfd5cb5a4'
                     }}>
                     </Image>
-                    <Text>Two fingers, in a downward motion, other hand sideways.</Text>
+                   
                 </View>
                 
             </View>
@@ -35,10 +35,10 @@ export default function LessonSix({navigation}){
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFive%2Fdivorce.gif?alt=media&token=d2299466-e6e0-409c-82f5-6329f63a7a49'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFive%2Fhowmuchdoesitcost.gif?alt=media&token=6a0f3537-d074-4bad-b3e5-83b4b64b078d'
                     }}>
                     </Image>
-                    <Text>Hold both hands together with the palms facing each other. </Text>
+                    
                 </View>
                 
             </View>
@@ -47,7 +47,7 @@ export default function LessonSix({navigation}){
             </View>
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('lessonFivePageThree')}
+            onPress = {() => navigation.navigate('lessonFivePageNine')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}
