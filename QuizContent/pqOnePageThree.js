@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
             <Image
                 style = {styles.image}
                 source = {{
-                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/c.png?alt=media&token=3605cb26-7e7b-4fd8-8f62-2703f88b0819'
+                    uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/PracticeQuizOneBlurredImages%2Fbaconquiz.gif?alt=media&token=1646b5c1-f2c5-4fc8-9045-623ce6eba9ff'
                 }}>
                 </Image>
                 <View>
@@ -44,7 +44,7 @@ export default function LessonSix({navigation}){
                 borderColor: '#0a2941',
                 marginRight: 40,
                 marginLeft: 10}}>
-                <Text color={theme.colors.text} textAlign='center'>J</Text>
+                <Text color={theme.colors.text} textAlign='center'>Line</Text>
             </Button>
 
             <Button
@@ -57,7 +57,7 @@ export default function LessonSix({navigation}){
                 borderRadius: 15,
                 borderColor: '#0a2941',
                 marginRight: 10,}}>
-                <Text color={theme.colors.text} textAlign='center'>M</Text>
+                <Text color={theme.colors.text} textAlign='center'>Rectangle</Text>
             </Button>
             </View>
             <View style={styles.screen}>
@@ -72,7 +72,7 @@ export default function LessonSix({navigation}){
                 borderColor: '#0a2941',
                 marginRight: 40,
                 marginLeft: 10}}>
-                <Text color={theme.colors.text} textAlign='center'>Z</Text>
+                <Text color={theme.colors.text} textAlign='center'>Meat</Text>
             </Button>
 
             <Button
@@ -85,7 +85,7 @@ export default function LessonSix({navigation}){
                 borderRadius: 15,
                 borderColor: '#0a2941',
                 marginRight: 10,}}>
-                <Text color={theme.colors.text} textAlign='center'>C</Text>
+                <Text color={theme.colors.text} textAlign='center'>Bacon</Text>
             </Button>
 
             </View>

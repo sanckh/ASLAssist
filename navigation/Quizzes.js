@@ -44,8 +44,22 @@ export default function Quizzes({navigation}){
                 </TouchableOpacity>
 
                 <Text color={theme.colors.text}
-                style = {styles.text}>Previous Tests</Text>
-                <Paragraph>This is where the quizzes that the user has already completed will be displayed.</Paragraph>
+                style = {styles.text}>Lesson Quizzes</Text>
+
+                <TouchableOpacity
+                onPress = {() => navigation.navigate('onePageOne')} style={styles.rectangleButton}>
+                    <Text color={theme.colors.text}>Lesson 1 Quiz</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity
+                onPress = {() => navigation.navigate('twoPageOne')} style={styles.rectangleButton}>
+                    <Text color={theme.colors.text}>Lesson 2 Quiz</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity
+                onPress = {() => navigation.navigate('one')} style={styles.rectangleButton}>
+                    <Text color={theme.colors.text}>Lesson 3 Quiz</Text>
+                </TouchableOpacity>
             </View>
         </SafeAreaView>
         </ScrollView>
@@ -64,7 +78,9 @@ const styles = StyleSheet.create({
     },
     text:{
         fontSize: 26,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        marginBottom: 20,
+
     },
     rectangleButton:{
         width: 150,

@@ -42,6 +42,11 @@ export default function LoginScreen({ navigation }) {
       })
   }
 
+  const giveEXP = () => {
+    
+
+  }
+
   return (
     <Background>
     <TouchableOpacity  onPress = { () => navigation.replace('StartScreen')} style={styles.iconContainer}>

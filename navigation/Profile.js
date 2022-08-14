@@ -21,12 +21,23 @@ export default function Profile({navigation}){
     const {toggleTheme} = React.useContext(AuthContext);
     const paperTheme = useTheme();
 
+    const[counter, setCounter]= React.useState(0)
+
     return (
         <View>
             <View style = {styles.header}>
             <Header>Profile</Header>
             </View>
           <View>
+            <Text style={{fontSize: 24, marginBottom: 20}}>{counter}</Text>
+            <Button onPress={()=>{setCounter(counter+15)}} 
+            style={{backgroundColor: '#ddedea',
+                    width: 150,
+                    height: 60,
+                    borderColor: '#093f35',
+                    borderWidth: 5,
+            }}
+            title="Increase EX">EX Points</Button>
             <List.Section
               borderColor= 'black'
             >

@@ -11,11 +11,17 @@ import { NavigationContainer } from '@react-navigation/native';
 import { auth } from '../firebase';
 import { signOut } from 'firebase/auth';
 
+import * as Device from 'expo-device';
+import * as Notifications from 'expo-notifications';
+
 
 export default function Settings({navigation}) {
 
   const {toggleTheme} = React.useContext(AuthContext);
   const paperTheme = useTheme();
+
+  const [isSwitchOn, setIsSwitchOn] = React.useState(false);
+  const onToggleSwitch = () => setIsSwitchOn(!isSwitchOn);
 
   const handleSignOut = () => {
     auth
@@ -25,6 +31,32 @@ export default function Settings({navigation}) {
       navigation.navigate("LoginScreen")
     })
     .catch(error => alert(error.message))
+  }
+
+  const handleNotifications = () => {
+    if(isSwitchOn){
+      Notifications.setNotificationHandler({
+        handleNotification: async () => ({
+          shouldShowAlert: false,
+          shouldPlaySound: false,
+          shouldSetBadge: false,
+        }),
+        
+      });
+      console.log('notifications are off')
+    }
+    else {
+      Notifications.setNotificationHandler({
+        handleNotification: async () => ({
+          shouldShowAlert: true,
+          shouldPlaySound: false,
+          shouldSetBadge: true,
+        }),
+        
+      });
+
+      console.log('notifications are on')
+    }
   }
         return (
           <View>
@@ -61,6 +93,15 @@ export default function Settings({navigation}) {
                 description = "" 
                 />
                 </TouchableRipple>
+
+                <TouchableRipple onPress={() => {handleNotifications()}}>
+                <List.Item title = "Notifications" 
+                left = {() => <List.Icon icon="book" />}
+                right = {() => <Switch  value = {isSwitchOn} onValueChange = {onToggleSwitch}/>}
+                description = "Turn Notifications on or off" 
+                />
+                </TouchableRipple>
+
                 <TouchableRipple
                 onPress = {handleSignOut}
                 >
