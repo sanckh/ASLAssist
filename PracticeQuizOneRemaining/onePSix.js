@@ -18,7 +18,9 @@ export default function PracticeOne({navigation}){
 
     return(
         <Background>
-            <BackButton goBack = {navigation.goBack} />
+            <TouchableOpacity  onPress = { () => navigation.replace('HomeDash')} style={styles.iconContainer}>
+                <List.Icon icon="Home" />
+            </TouchableOpacity>
             
             <Header style = {styles.header}>Pratice Quiz</Header>
             {/* lesson content */}

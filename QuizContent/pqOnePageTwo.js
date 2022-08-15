@@ -18,7 +18,9 @@ export default function LessonSix({navigation}){
     };
     return(
         <Background>
-            <BackButton goBack = {navigation.goBack} />
+            <TouchableOpacity  onPress = { () => navigation.replace('HomeDash')} style={styles.iconContainer}>
+                <List.Icon icon="Home" />
+            </TouchableOpacity>
             
             <Header style = {styles.header}>Practice Quiz</Header>
             {/* lesson content */}
