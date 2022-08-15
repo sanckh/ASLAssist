@@ -15,17 +15,17 @@ export default function LessonSix({navigation}){
         <Background>
             <BackButton goBack={navigation.goBack}/>
             
-            <Header style = {styles.header}>Section Three</Header>
+            <Header style = {styles.header}>Lesson Six</Header>
             {/* lesson content */}
             <View style = {{flexDirection: 'row', marginTop: 10}}>
                 <View style = {styles.imagePlacement}>
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonSix%2Fkid.gif?alt=media&token=1740132d-4c03-453c-a2f2-860e8543812e'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonSix%2Fweddingreception.gif?alt=media&token=6d0b71f6-d295-4ad9-a357-517a580e9311'
                     }}>
                     </Image>
-                    <Text>Close your dominant hand into a fist, with only the index and pinkie fingers sticking out.</Text>
+                    
                 </View>
                 
             </View>
@@ -35,10 +35,10 @@ export default function LessonSix({navigation}){
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonSix%2Fkj.gif?alt=media&token=98642ad8-4190-485d-bdc4-b714e2187d15'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonSix%2Fwine.gif?alt=media&token=964e35f9-bb0c-4fae-ab00-d634cb83e8e3'
                     }}>
                     </Image>
-                    <Text>Fingerspelling 9-1-1</Text>
+                    
                 </View>
                 
             </View>
@@ -47,12 +47,12 @@ export default function LessonSix({navigation}){
             </View>
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('lessonSixPageFive')}
+            onPress = {() => navigation.navigate('HomeDash')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}
             >
-                Next Section
+                Home Page
             </Button>
         </Background>
         

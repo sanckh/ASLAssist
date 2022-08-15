@@ -15,17 +15,17 @@ export default function LessonSix({navigation}){
         <Background>
             <BackButton goBack={navigation.goBack}/>
             
-            <Header style = {styles.header}>Section Three</Header>
+            <Header style = {styles.header}>Section Five</Header>
             {/* lesson content */}
             <View style = {{flexDirection: 'row', marginTop: 10}}>
                 <View style = {styles.imagePlacement}>
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonSix%2Fkid.gif?alt=media&token=1740132d-4c03-453c-a2f2-860e8543812e'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonSix%2Fdrunk.gif?alt=media&token=161c1691-1b24-4b2d-98b9-c95be4c4e74b'
                     }}>
                     </Image>
-                    <Text>Close your dominant hand into a fist, with only the index and pinkie fingers sticking out.</Text>
+                    
                 </View>
                 
             </View>
@@ -35,10 +35,10 @@ export default function LessonSix({navigation}){
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonSix%2Fkj.gif?alt=media&token=98642ad8-4190-485d-bdc4-b714e2187d15'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonSix%2Ffun.gif?alt=media&token=67492760-c978-4bb5-b0a2-43f53348408f'
                     }}>
                     </Image>
-                    <Text>Fingerspelling 9-1-1</Text>
+                    
                 </View>
                 
             </View>
@@ -47,7 +47,7 @@ export default function LessonSix({navigation}){
             </View>
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('lessonSixPageFive')}
+            onPress = {() => navigation.navigate('lessonSixPageFiftheen')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}
