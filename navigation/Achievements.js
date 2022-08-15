@@ -15,195 +15,7 @@ import {db} from '../firebase'
 
 export default function Achievement({navigation}){
 
-    // Storing User Data
-    const [userDoc, setUserDoc] = useState(null)
-    const [userCon, setCon] = useState(null)
-    const [userStart, setStart] = useState(null)
-    const [userSteps, setSteps] = useState(null)
-    const [userScholar, setScholar] = useState(null)
-    const [userGenius, setGenius] = useState(null)
 
-//READ 
-      const Practice = () => {
-        const colRef = doc(db, 'Achievements', 'GNJ4nawtVzv8uT7pIJLH')
-
-        getDoc(colRef)
-          // Handling Promises
-          .then((snapshot) => {
-            // MARK: Success
-            if (snapshot.exists) {
-              setUserDoc(snapshot.data())
-              let achieve = []
-              // snapshot.docs.forEach((doc) => {
-              //   achieve.push({...docs.data(), id: doc.id})
-              // })
-            }
-            else {
-              alert("No Doc Found")
-            }
-          })
-          .catch((error) => {
-            // MARK: Failure
-            alert(error.message)
-          })
-
-      }
-      const Consistency = () => {
-        const colRef = doc(db, 'Achievements', 'wbkc520AlzDjgo9O8fVb')
-
-        getDoc(colRef)
-          // Handling Promises
-          .then((snapshot) => {
-            // MARK: Success
-            if (snapshot.exists) {
-              setCon(snapshot.data())
-              let achieve = []
-            }
-            else {
-              alert("No Doc Found")
-            }
-          })
-          .catch((error) => {
-            // MARK: Failure
-            alert(error.message)
-          })
-
-      }
-      const GettingStarted = () => {
-        const colRef = doc(db, 'Achievements', 'AT8209EgNPmecgIRB0RP')
-
-        getDoc(colRef)
-          // Handling Promises
-          .then((snapshot) => {
-            // MARK: Success
-            if (snapshot.exists) {
-              setStart(snapshot.data())
-              let achieve = []
-              // snapshot.docs.forEach((doc) => {
-              //   achieve.push({...docs.data(), id: doc.id})
-              // })
-            }
-            else {
-              alert("No Doc Found")
-            }
-          })
-          .catch((error) => {
-            // MARK: Failure
-            alert(error.message)
-          })
-
-      }
-      const BabySteps = () => {
-        const colRef = doc(db, 'Achievements', 'ukd0vvvhXbVpS9tBnCCo')
-
-        getDoc(colRef)
-          // Handling Promises
-          .then((snapshot) => {
-            // MARK: Success
-            if (snapshot.exists) {
-              setSteps(snapshot.data())
-              let achieve = []
-              // snapshot.docs.forEach((doc) => {
-              //   achieve.push({...docs.data(), id: doc.id})
-              // })
-            }
-            else {
-              alert("No Doc Found")
-            }
-          })
-          .catch((error) => {
-            // MARK: Failure
-            alert(error.message)
-          })
-
-      }
-      const Scholar = () => {
-        const colRef = doc(db, 'Achievements', 'h10u6WysxLYAmCjFsRCG')
-
-        getDoc(colRef)
-          // Handling Promises
-          .then((snapshot) => {
-            // MARK: Success
-            if (snapshot.exists) {
-              setScholar(snapshot.data())
-              let achieve = []
-              // snapshot.docs.forEach((doc) => {
-              //   achieve.push({...docs.data(), id: doc.id})
-              // })
-            }
-            else {
-              alert("No Doc Found")
-            }
-          })
-          .catch((error) => {
-            // MARK: Failure
-            alert(error.message)
-          })
-
-      }
-      const Genius = () => {
-        const colRef = doc(db, 'Achievements', 'w8CmP5HTpIoeTHHvhsSp')
-
-        getDoc(colRef)
-          // Handling Promises
-          .then((snapshot) => {
-            // MARK: Success
-            if (snapshot.exists) {
-              setGenius(snapshot.data())
-              let achieve = []
-              // snapshot.docs.forEach((doc) => {
-              //   achieve.push({...docs.data(), id: doc.id})
-              // })
-            }
-            else {
-              alert("No Doc Found")
-            }
-          })
-          .catch((error) => {
-            // MARK: Failure
-            alert(error.message)
-          })
-
-      }
-
-      // const [loading, setLoading]=useState(true)
-      // const [ach, setAch] = useState([])
-      // const ReadAll=()=>{
-        
-      //   useEffect(()=>{
-      //     const getAch = []
-      //     const sub = db.collection("Achievements")
-      //     .onSnapshot((querySnapshot)=>{
-      //       querySnapshot.docs().forEach((doc)=>{
-      //         getAch.push({
-      //           ...doc.data(),
-      //           key: doc.id,
-      //         })
-      //       })
-      //       setAch(getAch)
-      //       setLoading(false)
-      //     })
-      //     return()=>sub()
-      //   }, [])
-      //   if(loading){
-      //     return <Text>Loading...</Text>
-      //   }
-      // }
-      const [allDocs, setAllDocs]=useState([])
-      function Fetch(e){
-        e.preventDefault()
-        db.collection("Achievements")
-        .get().then((snapshot)=>{
-          if(snapshot.docs.length>0){
-            snapshot.docs.forEach((doc)=>{
-              setAllDocs((prev)=>{
-                return[...prev, doc.data()]
-              })
-            })
-          }
-        })
-        console.log(allDocs)
-      }
   return(
     <ScrollView>
       <SafeAreaView style={styles.container}>
@@ -212,63 +24,39 @@ export default function Achievement({navigation}){
           <View style = {styles.header}>
               <Header>Achievements</Header>
               </View>
+          <View>
+          <List.Section
+            borderColor= 'black'
+          >
+            <List.Subheader>All Achievements</List.Subheader>
+            
+            <List.Item title = "Consistency"
+            left = {() => <List.Icon icon="trophy" />}
+            description = "Logged in 7 days in a row"
+            />
+            <List.Item title = "Getting Started"
+            left = {() => <List.Icon icon="trophy" />}
+            description = "Completed Lesson One"
+            />
+            <List.Item title = "Baby Steps"
+            left = {() => <List.Icon icon="trophy" />}
+            description = "Completed three lessons"
+            />
+            <List.Item title = "Scholar"
+            left = {() => <List.Icon icon="trophy" />}
+            description = "Completed Lesson One Quiz"
+            />
+            <List.Item title = "Genius"
+            left = {() => <List.Icon icon="trophy" />}
+            description = "Completed three quizzes"
+            />
+            <List.Item title = "Practice Makes Perfect"
+            left = {() => <List.Icon icon="trophy" />}
+            description = "Completed one Practice Quiz"
+            />
 
-              <Divider>
-                <Button title='Read' onPress={Fetch}
-                style={styles.buttons}> All Acievements</Button>
-                {
-                  allDocs.map((doc)=>{
-                    return(
-                      <Divider>
-                      <Text>{doc.title}</Text>
-                      <Text>{doc.description}</Text>
-                      </Divider>
-                    )
-                  })
-                }
-              </Divider>
-          {/* <Button title='Read Doc' onPress={Consistency} style={styles.buttons}>Achievements</Button>
-          {
-            userCon != null &&
-            <List.Item title= {userCon.title}
-            left= {()=><List.Icon icon="trophy"/>}
-            description= {userCon.description}/>
-          }
-          <Button title='Read Doc' onPress={GettingStarted} style={styles.buttons}>Achievements</Button>
-          {
-            userStart != null &&
-            <List.Item title= {userStart.title}
-            left= {()=><List.Icon icon="trophy"/>}
-            description= {userStart.description}/>
-          }
-          <Button title='Read Doc' onPress={BabySteps} style={styles.buttons}>Achievements</Button>
-          {
-            userSteps != null &&
-            <List.Item title= {userSteps.title}
-            left= {()=><List.Icon icon="trophy"/>}
-            description= {userSteps.description}/>
-          }
-          <Button title='Read Doc' onPress={Scholar} style={styles.buttons}>Achievements</Button>
-          {
-            userScholar != null &&
-            <List.Item title= {userScholar.title}
-            left= {()=><List.Icon icon="trophy"/>}
-            description= {userScholar.description}/>
-          }
-          <Button title='Read Doc' onPress={Genius} style={styles.buttons}>Achievements</Button>
-          {
-            userGenius != null &&
-            <List.Item title= {userGenius.title}
-            left= {()=><List.Icon icon="trophy"/>}
-            description= {userGenius.description}/>
-          }
-          <Button title='Read Doc' onPress={Practice} style={styles.buttons}>Achievements</Button>
-          {
-            userDoc != null &&
-            <List.Item title= {userDoc.title}
-            left= {()=><List.Icon icon="trophy"/>}
-            description= {userDoc.description}/>
-          } */}
+          </List.Section>
+          </View>
         </View>
       </SafeAreaView>
     </ScrollView>
