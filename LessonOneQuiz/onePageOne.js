@@ -10,91 +10,104 @@ import Button from '../components/Button';
 import { theme } from '../core/theme';
 import HomeButton from '../components/HomeButton'
 
-export default function PracticeOne({navigation}){
-    const {colors} = useTheme();
+export default function PracticeOne({ navigation }) {
+    const { colors } = useTheme();
 
     const wrongAnswer = () => {
         Alert.alert('This answer is incorrect. \nPlease try again');
     };
 
-    return(
+    return (
         <Background>
-            <BackButton goBack = {navigation.goBack} />
-            <HomeButton goBack = {navigation.goBack}/>
-            
-            <Header style = {styles.header}>Pratice Quiz</Header>
+            <BackButton goBack={navigation.goBack} />
+            <HomeButton onPress={() => navigation.navigate('Home')} />
+
+            <Header style={styles.header}>Pratice Quiz</Header>
             {/* lesson content */}
+            <View style = {styles.imagePlacement}>
             <Image
-                style = {styles.image}
-                source = {{
+                style={styles.image}
+                source={{
                     uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOneQuizBlurredImages%2Frainbow-blurred.gif?alt=media&token=90c26ce5-9f41-455c-a9ee-b1e3c09e6a8b'
                 }}>
-                </Image>
-                <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
-                </View>
-                <Text style={styles.text}>What sign is this?</Text>
-                <View style={styles.screen}>
-            <Button
-            onPress={()=> wrongAnswer()}
-            mode = "contained"
-            style = {{backgroundColor: '#daeaf6', 
-                width: 150,
-                height: 60,
-                borderWidth: 5,
-                borderRadius: 15,
-                borderColor: '#0a2941',
-                marginRight: 40,
-                marginLeft: 10}}>
-                <Text color={theme.colors.text} textAlign='center'>Shark</Text>
-            </Button>
-
-            <Button
-            onPress = {() => navigation.navigate('onePageTwo')}
-            mode = "contained"
-            style = {{backgroundColor: '#daeaf6', 
-                width: 150,
-                height: 60,
-                borderWidth: 5,
-                borderRadius: 15,
-                borderColor: '#0a2941',
-                marginRight: 10,}}>
-                <Text color={theme.colors.text} textAlign='center'>Rainbow</Text>
-            </Button>
+            </Image>
             </View>
+            
+            <Text style={styles.text}>What sign is this?</Text>
             <View style={styles.screen}>
-            <Button
-            onPress={()=> wrongAnswer()}
-            mode = "contained"
-            style = {{backgroundColor: '#daeaf6', 
-                width: 150,
-                height: 60,
-                borderWidth: 5,
-                borderRadius: 15,
-                borderColor: '#0a2941',
-                marginRight: 40,
-                marginLeft: 10}}>
-                <Text color={theme.colors.text} textAlign='center'>Owl</Text>
-            </Button>
+                <Button
+                    onPress={() => wrongAnswer()}
+                    mode="contained"
+                    style={{
+                        backgroundColor: '#daeaf6',
+                        width: 150,
+                        height: 60,
+                        borderWidth: 5,
+                        borderRadius: 15,
+                        borderColor: '#0a2941',
+                        marginRight: 40,
+                        marginLeft: 10
+                    }}>
+                    <Text color={theme.colors.text} textAlign='center'>Shark</Text>
+                </Button>
 
-            <Button
-            onPress={()=> wrongAnswer()}
-            mode = "contained"
-            style = {{backgroundColor: '#daeaf6', 
-                width: 150,
-                height: 60,
-                borderWidth: 5,
-                borderRadius: 15,
-                borderColor: '#0a2941',
-                marginRight: 10,}}>
-                <Text color={theme.colors.text} textAlign='center'>Blue</Text>
-            </Button>
+                <Button
+                    onPress={() => navigation.navigate('onePageTwo')}
+                    mode="contained"
+                    style={{
+                        backgroundColor: '#daeaf6',
+                        width: 150,
+                        height: 60,
+                        borderWidth: 5,
+                        borderRadius: 15,
+                        borderColor: '#0a2941',
+                        marginRight: 10,
+                    }}>
+                    <Text color={theme.colors.text} textAlign='center'>Rainbow</Text>
+                </Button>
+            </View>
+            
+            <View style={styles.screen}>
+                <Button
+                    onPress={() => wrongAnswer()}
+                    mode="contained"
+                    style={{
+                        backgroundColor: '#daeaf6',
+                        width: 150,
+                        height: 60,
+                        borderWidth: 5,
+                        borderRadius: 15,
+                        borderColor: '#0a2941',
+                        marginRight: 40,
+                        marginLeft: 10
+                    }}>
+                    <Text color={theme.colors.text} textAlign='center'>Owl</Text>
+                </Button>
+
+                <Button
+                    onPress={() => wrongAnswer()}
+                    mode="contained"
+                    style={{
+                        backgroundColor: '#daeaf6',
+                        width: 150,
+                        height: 60,
+                        borderWidth: 5,
+                        borderRadius: 15,
+                        borderColor: '#0a2941',
+                        marginRight: 10,
+                    }}>
+                    <Text color={theme.colors.text} textAlign='center'>Blue</Text>
+                </Button>
 
             </View>
+            <View>
+                <ProgressBar style={{ width: 200, marginTop: 25 }} progress={0.0} color={"lightgreen"} />
+            </View>
+            
 
         </Background>
-        
-        
+
+
     )
 }
 const styles = StyleSheet.create({
@@ -102,13 +115,11 @@ const styles = StyleSheet.create({
         flex: 1,
 
     },
-    screen:{
-        flex: 1,
-        justifyContent: 'space-around',
+    screen: {
+        //flex: 1,
+        //justifyContent: 'space-around',
         alignItems: 'center',
         flexDirection: 'row',
-        marginTop: 24,
-        marginBottom: 24
     },
     header: {
         position: 'absolute',
@@ -120,26 +131,17 @@ const styles = StyleSheet.create({
     image: {
         width: 300,
         height: 300,
-        marginTop: 10,
-        marginLeft: 50,
-        marginRight: 50,
+        marginTop: 0,
+        marginBottom: 50,
         alignItems: 'center',
-        padding: 20,
+       // padding: 20,
         resizeMode: 'contain',
-        borderRadius: 30
     },
     text: {
         // marginTop: 15,
         fontSize: 25,
     },
     imagePlacement: {
-        flexDirection: 'column', 
-        justifyContent: 'center',
-        alignItems: 'center'
+        top: 0
     },
-    iconContainer: {
-        position: 'absolute',
-        top: 10 + getStatusBarHeight(),
-        left: 4,
-      },
 })

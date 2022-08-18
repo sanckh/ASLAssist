@@ -8,6 +8,7 @@ import Background from '../components/Background';
 import { getStatusBarHeight } from 'react-native-status-bar-height'
 import Button from '../components/Button';
 import { theme } from '../core/theme';
+import HomeButton from '../components/HomeButton'
 
 export default function PracticeOne({navigation}){
     const {colors} = useTheme();
@@ -19,6 +20,8 @@ export default function PracticeOne({navigation}){
     return(
         <Background>
             <BackButton goBack = {navigation.goBack} />
+            <HomeButton onPress = {() => navigation.navigate('Home')}/>
+
             
             <Header style = {styles.header}>Pratice Quiz</Header>
             {/* lesson content */}

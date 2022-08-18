@@ -1,17 +1,11 @@
 import React from 'react';
-import { SafeAreaView, View, StyleSheet, Component, Text, Image} from 'react-native';
+import {View, StyleSheet} from 'react-native';
 import Header from '../components/Header';
-import { theme } from '../core/theme';
 import { TouchableRipple, Switch, useTheme, Divider } from 'react-native-paper';
 import {AuthContext} from '../components/context'
-
 import {List} from 'react-native-paper'
-import Button from '../components/Button';
-import { NavigationContainer } from '@react-navigation/native';
 import { auth } from '../firebase';
 import { signOut } from 'firebase/auth';
-
-import * as Device from 'expo-device';
 import * as Notifications from 'expo-notifications';
 
 
@@ -76,7 +70,7 @@ export default function Settings({navigation}) {
                 />
                 </TouchableRipple>
                 <TouchableRipple
-                  onPress = { () => navigation.replace('AboutScreen')}>
+                  onPress = { () => navigation.navigate('AboutScreen')}>
                 <List.Item title = "About" 
                 left = {() => <List.Icon icon="information" />} 
                 />

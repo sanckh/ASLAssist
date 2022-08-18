@@ -1,14 +1,18 @@
 import React from 'react'
 import { TouchableOpacity, Image, StyleSheet } from 'react-native'
 import { getStatusBarHeight } from 'react-native-status-bar-height'
-import { List } from 'react-native-paper'
+import { List, TouchableRipple } from 'react-native-paper'
+import { useNavigation } from '@react-navigation/native';
 
 
-export default function HomeButton({ navigation }) {
+export default function HomeButton() {
+  const navigation = useNavigation(); 
+
   return (
-    <TouchableOpacity onPress = {() => navigation.navigate('Home')}style={styles.container}>
+    <TouchableRipple onPress = {() => navigation.navigate('Home')}
+                      style={styles.container}>
       <List.Icon icon="home" />
-    </TouchableOpacity>
+    </TouchableRipple>
   )
 }
 
