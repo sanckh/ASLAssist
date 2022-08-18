@@ -47,7 +47,7 @@ export default function LessonTwo({navigation}){
             </View>
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('HomeDash')}
+            onPress = {() => navigation.navigate('onePageOne')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}

@@ -560,7 +560,7 @@ export default function App() {
           <Stack.Screen name = "lessonSixPageTwelve" component = {lessonSixPageTwelve}/>
           <Stack.Screen name = "lessonSixPageThirteen" component = {lessonSixPageThirteen}/>
           <Stack.Screen name = "lessonSixPageFourteen" component = {lessonSixPageFourteen}/>
-          <Stack.Screen name = "lessonSixPageFiftheen" component = {lessonSixPageFifhteen}/>
+          <Stack.Screen name = "lessonSixPageFiftheen" component = {lessonSixPageFiftheen}/>
           <Stack.Screen name = "lessonSixPageSixteen" component = {lessonSixPageSixteen}/>
           <Stack.Screen name = "lessonSixPageSeventeen" component = {lessonSixPageSeventeen}/>
           <Stack.Screen name = "lessonSixPageEighteen" component = {lessonSixPageEighteen}/>
