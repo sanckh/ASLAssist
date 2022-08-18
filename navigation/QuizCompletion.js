@@ -20,6 +20,13 @@ export default function PracticeOne({navigation}){
     useEffect(()=>{
         console.log(counter)
     })
+    function settingCount(){
+        setCounter(counter+15)
+    }
+    function goHome(){
+        navigation.navigate('HomeDash')
+        settingCount()
+    }
 
     return(
         <Background>
@@ -33,12 +40,9 @@ export default function PracticeOne({navigation}){
                 <Paragraph>You have completed the quiz</Paragraph>
             <Text color={theme.colors.text}
             style = {{fontSize: 20}}>EXP   15+</Text>
-            {/* <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
-            </View> */}
             <Button
             mode = "contained"
-            onPress = {() => setCounter(counter+15)}
+            onPress = {() => goHome()}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}
