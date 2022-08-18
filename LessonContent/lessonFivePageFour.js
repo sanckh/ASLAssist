@@ -13,16 +13,47 @@ export default function LessonSix({navigation}){
 
     return(
         <Background>
-            <TouchableOpacity  onPress = { () =>
-                navigation.replace('lessonFivePageThree')} style={styles.iconContainer}>
-                <List.Icon icon="arrow-left" />
-            </TouchableOpacity>
+            <BackButton goBack={navigation.goBack}/>
             
-            <Header style = {styles.header}>Section Four</Header>
+            <Header style = {styles.header}>Section Three</Header>
             {/* lesson content */}
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={1.00} color={"lightgreen"} />
+            <View style = {{flexDirection: 'row', marginTop: 10}}>
+                <View style = {styles.imagePlacement}>
+                    <Image
+                    style = {styles.image}
+                    source = {{
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFive%2Fhealth.gif?alt=media&token=b34fc097-2135-451a-b84d-e6f2e4a70116'
+                    }}>
+                    </Image>
+                    <Text>Pull hands from chest area into fists.</Text>
+                </View>
+                
             </View>
+
+            <View style = {{flexDirection: 'row', marginTop: 10}}>
+                <View style = {styles.imagePlacement}>
+                    <Image
+                    style = {styles.image}
+                    source = {{
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFive%2Flife.gif?alt=media&token=f4ac47ee-a9d2-41b4-9cf9-9bd8a4def824'
+                    }}>
+                    </Image>
+                    <Text>Thumbs up in an upward motion to the chest area</Text>
+                </View>
+                
+            </View>
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
+            </View>
+            <Button
+            mode = "contained"
+            onPress = {() => navigation.navigate('lessonFivePageFive')}
+            style = {{backgroundColor: '#ecddfc', 
+                width: 250,
+                height: 50,}}
+            >
+                Next Section
+            </Button>
         </Background>
         
         
@@ -42,8 +73,8 @@ const styles = StyleSheet.create({
         fontSize: 25,
     },
     image: {
-        width: 115,
-        height: 115,
+        width: 200,
+        height: 100,
         resizeMode: 'contain',
         borderRadius: 30,
         margin: 10,

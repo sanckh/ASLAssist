@@ -22,10 +22,10 @@ export default function LessonSix({navigation}){
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFive%2Fbury.gif?alt=media&token=1a890a8e-5980-46a8-baaa-69dfc51cb77a'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFive%2Fihaveareservation.gif?alt=media&token=0bcc12bf-d976-4897-8e3b-03ea8b445651'
                     }}>
                     </Image>
-                    <Text>Two fingers, in a downward motion, other hand sideways.</Text>
+                    
                 </View>
                 
             </View>
@@ -35,10 +35,10 @@ export default function LessonSix({navigation}){
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFive%2Fdivorce.gif?alt=media&token=d2299466-e6e0-409c-82f5-6329f63a7a49'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFive%2Fimamerican.gif?alt=media&token=27d82c57-aa3a-4acf-ad79-0044d1c72594'
                     }}>
                     </Image>
-                    <Text>Hold both hands together with the palms facing each other. </Text>
+                    
                 </View>
                 
             </View>
@@ -47,7 +47,7 @@ export default function LessonSix({navigation}){
             </View>
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('lessonFivePageThree')}
+            onPress = {() => navigation.navigate('lessonFivePageTen')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}

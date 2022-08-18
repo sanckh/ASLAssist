@@ -13,15 +13,37 @@ export default function LessonSix({navigation}){
 
     return(
         <Background>
-            <TouchableOpacity  onPress = { () =>
-                navigation.replace('lessonFivePageTwo')} style={styles.iconContainer}>
-                <List.Icon icon="arrow-left" />
-            </TouchableOpacity>
+            <BackButton goBack={navigation.goBack}/>
             
-            <Header style = {styles.header}>Section Three</Header>
+            <Header style = {styles.header}>Section Two</Header>
             {/* lesson content */}
+            <View style = {{flexDirection: 'row', marginTop: 10}}>
+                <View style = {styles.imagePlacement}>
+                    <Image
+                    style = {styles.image}
+                    source = {{
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFive%2Fengaged.gif?alt=media&token=33991b66-b679-4e6f-bd9f-e0bbae598caa'
+                    }}>
+                    </Image>
+                    <Text>Hand closed into half fist and hitting other hand</Text>
+                </View>
+                
+            </View>
+
+            <View style = {{flexDirection: 'row', marginTop: 10}}>
+                <View style = {styles.imagePlacement}>
+                    <Image
+                    style = {styles.image}
+                    source = {{
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFive%2Ffuneral.gif?alt=media&token=888c09b6-23b7-4c12-9b08-4d42ba02ff86'
+                    }}>
+                    </Image>
+                    <Text> Dominant upright "V" handshape in front of the passive upright "V" handshape in space in front of the signer</Text>
+                </View>
+                
+            </View>
             <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.66} color={"lightgreen"} />
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
             </View>
             <Button
             mode = "contained"
@@ -51,8 +73,8 @@ const styles = StyleSheet.create({
         fontSize: 25,
     },
     image: {
-        width: 115,
-        height: 115,
+        width: 200,
+        height: 100,
         resizeMode: 'contain',
         borderRadius: 30,
         margin: 10,

@@ -55,7 +55,6 @@ import LessonTen from './navigation/LessonTen';
 import lessonOnePageTwo from './LessonContent/lessonOnePageTwo'
 import lessonOnePageThree from './LessonContent/lessonOnePageThree'
 import lessonOnePageFour from './LessonContent/lessonOnePageFour'
-
 import lessonOnePageFive from './LessonContent/lessonOnePageFive'
 import lessonOnePageSix from './LessonContent/lessonOnePageSix'
 import lessonOnePageSeven from './LessonContent/lessonOnePageSeven'
@@ -124,6 +123,20 @@ import lessonFourPageSeventeen from './LessonContent/lessonFourPageSeventeen'
 import lessonFivePageTwo from './LessonContent/lessonFivePageTwo'
 import lessonFivePageThree from './LessonContent/lessonFivePageThree'
 import lessonFivePageFour from './LessonContent/lessonFivePageFour'
+
+import lessonFivePageFive from './LessonContent/lessonFivePageFive'
+import lessonFivePageSix from './LessonContent/lessonFivePageSix'
+import lessonFivePageSeven from './LessonContent/lessonFivePageSeven'
+import lessonFivePageEight from './LessonContent/lessonFivePageEight'
+import lessonFivePageNine from './LessonContent/lessonFivePageNine'
+import lessonFivePageTen from './LessonContent/lessonFivePageTen'
+import lessonFivePageEleven from './LessonContent/lessonFivePageEleven'
+import lessonFivePageTwelve from './LessonContent/lessonFivePageTwelve'
+import lessonFivePageThirteen from './LessonContent/lessonFivePageThirteen'
+import lessonFivePageFourteen from './LessonContent/lessonFivePageFourteen'
+import lessonFivePageFiftheen from './LessonContent/lessonFivePageFiftheen'
+
+
 
 import lessonSixPageTwo from './LessonContent/lessonSixPageTwo'
 import lessonSixPageThree from './LessonContent/lessonSixPageThree'
@@ -546,6 +559,17 @@ export default function App() {
           <Stack.Screen name = "lessonFivePageTwo" component = {lessonFivePageTwo}/>
           <Stack.Screen name = "lessonFivePageThree" component = {lessonFivePageThree}/>
           <Stack.Screen name = "lessonFivePageFour" component = {lessonFivePageFour}/>
+          <Stack.Screen name = "lessonFivePageFive" component= {lessonFivePageFive}/>
+          <Stack.Screen name = "lessonFivePageSix" component= {lessonFivePageSix}/>
+          <Stack.Screen name = "lessonFivePageSeven" component= {lessonFivePageSeven}/>
+          <Stack.Screen name = "lessonFivePageEight" component= {lessonFivePageEight}/>
+          <Stack.Screen name = "lessonFivePageNine" component= {lessonFivePageNine}/>
+          <Stack.Screen name = "lessonFivePageTen" component= {lessonFivePageTen}/>
+          <Stack.Screen name = "lessonFivePageEleven" component= {lessonFivePageEleven}/>
+          <Stack.Screen name = "lessonFivePageTwelve" component= {lessonFivePageTwelve}/>
+          <Stack.Screen name = "lessonFivePageThirteen" component= {lessonFivePageThirteen}/>
+          <Stack.Screen name = "lessonFivePageFourteen" component= {lessonFivePageFourteen}/>
+          <Stack.Screen name = "lessonFivePageFiftheen" component= {lessonFivePageFiftheen}/>
 
           <Stack.Screen name = "lessonSixPageTwo" component = {lessonSixPageTwo}/>
           <Stack.Screen name = "lessonSixPageThree" component = {lessonSixPageThree}/>
