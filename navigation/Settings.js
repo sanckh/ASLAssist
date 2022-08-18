@@ -37,25 +37,25 @@ export default function Settings({navigation}) {
     if(isSwitchOn){
       Notifications.setNotificationHandler({
         handleNotification: async () => ({
-          shouldShowAlert: false,
+          shouldShowAlert: true,
           shouldPlaySound: false,
           shouldSetBadge: false,
         }),
         
       });
-      console.log('notifications are off')
+      console.log('notifications are on')
     }
     else {
       Notifications.setNotificationHandler({
         handleNotification: async () => ({
-          shouldShowAlert: true,
+          shouldShowAlert: false,
           shouldPlaySound: false,
           shouldSetBadge: true,
         }),
         
       });
 
-      console.log('notifications are on')
+      console.log('notifications are off')
     }
   }
         return (
