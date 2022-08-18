@@ -1,3 +1,4 @@
+
 import { Text, View, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
@@ -16,6 +17,7 @@ export default function LessonThree({navigation}){
         <Background>
             <BackButton goBack = {navigation.goBack} />
              <Header style = {styles.header}>Lesson Three</Header>
+
             
             <View style = {{flexDirection: 'row', marginTop: 10}}>
                 <View style = {styles.imagePlacement}>
