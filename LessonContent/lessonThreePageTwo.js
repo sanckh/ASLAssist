@@ -8,33 +8,57 @@ import Button from '../components/Button';
 import Background from '../components/Background';
 import { getStatusBarHeight } from 'react-native-status-bar-height'
 
-export default function LessonSix({navigation}){
+export default function LessonTwo({navigation}){
     const {colors} = useTheme();
 
     return(
         <Background>
-            <TouchableOpacity  onPress = { () => navigation.replace('LessonTwo')} style={styles.iconContainer}>
-                <List.Icon icon="arrow-left" />
-            </TouchableOpacity>
-            <Header style = {styles.header}>Section Two</Header>
-            {/* lesson content */}
+            <BackButton goBack={navigation.goBack}/>
+             <Header style = {styles.header}>Section One</Header>
+            
+            <View style = {{flexDirection: 'row', marginTop: 10}}>
+                <View style = {styles.imagePlacement}>
+                    <Image
+                    style = {styles.image}
+                    source = {{
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fblood.gif?alt=media&token=5e0b7148-7d49-4cd8-9e18-3ff11c607bf6'
+                    }}>
+                    </Image>
+                    <Text>Just hold your non-dominant hand while you do RED with your dominant-hand index finger and smoothly transition into a "trickle down" movement over the non-dominant hand</Text>
+                </View>
+                
+            </View>
+
+            <View style = {{flexDirection: 'row', marginTop: 10}}>
+                <View style = {styles.imagePlacement}>
+                    <Image
+                    style = {styles.image}
+                    source = {{
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fbloodynose.gif?alt=media&token=f1257716-37ec-4238-8f96-109c4d8e7db3'
+                    }}>
+                    </Image>
+                    <Text>Four fingers up, flicking your nose repeatedly. </Text>
+                </View>
+                
+            </View>
             <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.34}
-                color={"darkgreen"} alignItems={"center"} />
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
             </View>
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('lessonTwoPageThree')}
+            onPress = {() => navigation.navigate('lessonThreePageThree')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}
             >
                 Next Section
             </Button>
+
+            
         </Background>
-        
     )
 }
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -48,8 +72,8 @@ const styles = StyleSheet.create({
         fontSize: 25,
     },
     image: {
-        width: 115,
-        height: 115,
+        width: 200,
+        height: 100,
         resizeMode: 'contain',
         borderRadius: 30,
         margin: 10,

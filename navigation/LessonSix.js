@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
+import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
@@ -13,14 +13,37 @@ export default function LessonSix({navigation}){
 
     return(
         <Background>
-            <TouchableOpacity  onPress = { () => navigation.replace('Home')} style={styles.iconContainer}>
-                <List.Icon icon="arrow-left" />
-            </TouchableOpacity>
+            <BackButton goBack={navigation.goBack}/>
             
             <Header style = {styles.header}>Lesson Six</Header>
             {/* lesson content */}
+            <View style = {{flexDirection: 'row', marginTop: 10}}>
+                <View style = {styles.imagePlacement}>
+                    <Image
+                    style = {styles.image}
+                    source = {{
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonSix%2Fambulance.gif?alt=media&token=f58aba06-ed1e-4e2c-9908-a60dcc26f8bb'
+                    }}>
+                    </Image>
+                    <Text>Taking a half-open 'C'-shaped dominant hand and rotating it above your head</Text>
+                </View>
+                
+            </View>
+
+            <View style = {{flexDirection: 'row', marginTop: 10}}>
+                <View style = {styles.imagePlacement}>
+                    <Image
+                    style = {styles.image}
+                    source = {{
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonSix%2Fcdc.gif?alt=media&token=359916c1-a1d3-47d1-8a8c-90f961d59bed'
+                    }}>
+                    </Image>
+                    <Text>Fingerspelling C-D-C</Text>
+                </View>
+                
+            </View>
             <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"darkgreen"} />
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
             </View>
             <Button
             mode = "contained"
@@ -50,8 +73,8 @@ const styles = StyleSheet.create({
         fontSize: 25,
     },
     image: {
-        width: 115,
-        height: 115,
+        width: 200,
+        height: 100,
         resizeMode: 'contain',
         borderRadius: 30,
         margin: 10,

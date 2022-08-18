@@ -18,21 +18,11 @@ import { auth } from '../firebase'
 
 export default function LoginScreen({ navigation }) {
 
-  const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
-  // useEffect(()=> {
-  //   const unsubscribe = auth.onAuthStateChanged(user => {
-  //     if(user) {
-  //       navigation.reset("Home")
-  //     }
-  //   })
-  //   return unsubscribe
-  // }, [])
-
   const handleLogin = () => {
-    const emailError = emailValidator(email)
+    const emailError = emailValidator(email) 
     const passwordError = passwordValidator(password)
     if (emailError || passwordError) {
       setEmail({ ...email, error: emailError })
@@ -42,14 +32,19 @@ export default function LoginScreen({ navigation }) {
       signInWithEmailAndPassword(auth, email, password)
       .then((userCredentials) => {
         //status message here
-        console.log(email)
-      console.log(password)
         const user = userCredentials.user;
-        navigation.navigate("Home")
+        navigation.replace("Home")
+        console.log(email, '\n', password)
+        console.log('User is Logged In')
       })
       .catch((error) => {
         console.log(error.message)
       })
+  }
+
+  const giveEXP = () => {
+    
+
   }
 
   return (

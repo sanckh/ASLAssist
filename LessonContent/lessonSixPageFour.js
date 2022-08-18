@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
+import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
@@ -13,15 +13,47 @@ export default function LessonSix({navigation}){
 
     return(
         <Background>
-            <TouchableOpacity  onPress = { () => navigation.replace('lessonSixPageThree')} style={styles.iconContainer}>
-                <List.Icon icon="arrow-left" />
-            </TouchableOpacity>
+            <BackButton goBack={navigation.goBack}/>
             
-            <Header style = {styles.header}>Section Four</Header>
+            <Header style = {styles.header}>Section Three</Header>
             {/* lesson content */}
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={1.00} color={"darkgreen"} />
+            <View style = {{flexDirection: 'row', marginTop: 10}}>
+                <View style = {styles.imagePlacement}>
+                    <Image
+                    style = {styles.image}
+                    source = {{
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonSix%2Fkid.gif?alt=media&token=1740132d-4c03-453c-a2f2-860e8543812e'
+                    }}>
+                    </Image>
+                    <Text>Close your dominant hand into a fist, with only the index and pinkie fingers sticking out.</Text>
+                </View>
+                
             </View>
+
+            <View style = {{flexDirection: 'row', marginTop: 10}}>
+                <View style = {styles.imagePlacement}>
+                    <Image
+                    style = {styles.image}
+                    source = {{
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonSix%2Fkj.gif?alt=media&token=98642ad8-4190-485d-bdc4-b714e2187d15'
+                    }}>
+                    </Image>
+                    <Text>Fingerspelling 9-1-1</Text>
+                </View>
+                
+            </View>
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
+            </View>
+            <Button
+            mode = "contained"
+            onPress = {() => navigation.navigate('lessonSixPageFive')}
+            style = {{backgroundColor: '#ecddfc', 
+                width: 250,
+                height: 50,}}
+            >
+                Next Section
+            </Button>
         </Background>
         
         
@@ -41,8 +73,8 @@ const styles = StyleSheet.create({
         fontSize: 25,
     },
     image: {
-        width: 115,
-        height: 115,
+        width: 200,
+        height: 100,
         resizeMode: 'contain',
         borderRadius: 30,
         margin: 10,

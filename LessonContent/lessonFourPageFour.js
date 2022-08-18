@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
+import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
@@ -13,15 +13,47 @@ export default function LessonSix({navigation}){
 
     return(
         <Background>
-            <TouchableOpacity  onPress = { () => navigation.replace('lessonFourPageThree')} style={styles.iconContainer}>
-                <List.Icon icon="arrow-left" />
-            </TouchableOpacity>
+            <BackButton goBack={navigation.goBack}/>
             
             <Header style = {styles.header}>Section Four</Header>
             {/* lesson content */}
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={1.00} color={"darkgreen"} />
+            <View style = {{flexDirection: 'row', marginTop: 10}}>
+                <View style = {styles.imagePlacement}>
+                    <Image
+                    style = {styles.image}
+                    source = {{
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fdaily.gif?alt=media&token=6c840fe3-a3f6-402d-a021-8a9b5faefffa'
+                    }}>
+                    </Image>
+                    <Text>Form your dominant hand into the ASL letter A sign, then brush it against your cheek, starting from your ear all the way past your face a couple of times.</Text>
+                </View>
+                
             </View>
+
+            <View style = {{flexDirection: 'row', marginTop: 10}}>
+                <View style = {styles.imagePlacement}>
+                    <Image
+                    style = {styles.image}
+                    source = {{
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fday.gif?alt=media&token=1babf071-5638-46d8-83b9-c4bd4a4fd3ab'
+                    }}>
+                    </Image>
+                    <Text>Holding your non-dominant arm (the left arm for most people) in front of you, palm down, pointing right.</Text>
+                </View>
+                
+            </View>
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={1.00} color={"lightgreen"} />
+            </View>
+            <Button
+            mode = "contained"
+            onPress = {() => navigation.navigate('lessonFourPageFive')}
+            style = {{backgroundColor: '#ecddfc', 
+                width: 250,
+                height: 50,}}
+            >
+                Next Section
+            </Button>
         </Background>
         
         
@@ -41,8 +73,8 @@ const styles = StyleSheet.create({
         fontSize: 25,
     },
     image: {
-        width: 115,
-        height: 115,
+        width: 200,
+        height: 100,
         resizeMode: 'contain',
         borderRadius: 30,
         margin: 10,

@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
+import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
@@ -13,14 +13,37 @@ export default function LessonSix({navigation}){
 
     return(
         <Background>
-            <TouchableOpacity  onPress = { () => navigation.replace('LessonSix')} style={styles.iconContainer}>
-                <List.Icon icon="arrow-left" />
-            </TouchableOpacity>
+            <BackButton goBack={navigation.goBack}/>
             
-            <Header style = {styles.header}>Section Two</Header>
+            <Header style = {styles.header}>Section One</Header>
             {/* lesson content */}
+            <View style = {{flexDirection: 'row', marginTop: 10}}>
+                <View style = {styles.imagePlacement}>
+                    <Image
+                    style = {styles.image}
+                    source = {{
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonSix%2Fdrowning.gif?alt=media&token=99686920-c097-4463-9db6-6725c41f0b04'
+                    }}>
+                    </Image>
+                    <Text>Thumbs up, with other hand flat out and wiggle down the thumbs up</Text>
+                </View>
+                
+            </View>
+
+            <View style = {{flexDirection: 'row', marginTop: 10}}>
+                <View style = {styles.imagePlacement}>
+                    <Image
+                    style = {styles.image}
+                    source = {{
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonSix%2Fevacuate.gif?alt=media&token=8ed4ca0b-9f75-48e9-a3c7-de75ee3f84f7'
+                    }}>
+                    </Image>
+                    <Text>Hand out and with other hand use finger to slide against hand</Text>
+                </View>
+                
+            </View>
             <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.34} color={"darkgreen"} />
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
             </View>
             <Button
             mode = "contained"
@@ -50,8 +73,8 @@ const styles = StyleSheet.create({
         fontSize: 25,
     },
     image: {
-        width: 115,
-        height: 115,
+        width: 200,
+        height: 100,
         resizeMode: 'contain',
         borderRadius: 30,
         margin: 10,
