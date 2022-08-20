@@ -8,6 +8,7 @@ import Background from '../components/Background';
 import { getStatusBarHeight } from 'react-native-status-bar-height'
 import Button from '../components/Button';
 import { theme } from '../core/theme';
+import HomeButton from '../components/HomeButton'
 
 export default function PracticeOne({navigation}){
     const {colors} = useTheme();
@@ -18,9 +19,9 @@ export default function PracticeOne({navigation}){
 
     return(
         <Background>
-            <TouchableOpacity  onPress = { () => navigation.replace('Home')} style={styles.iconContainer}>
-                <List.Icon icon="home-outline" />
-            </TouchableOpacity>
+            <BackButton goBack = {navigation.goBack} />
+            <HomeButton onPress = {() => navigation.navigate('Home')}/>
+
             
             <Header style = {styles.header}>Pratice Quiz</Header>
             {/* lesson content */}
@@ -34,7 +35,7 @@ export default function PracticeOne({navigation}){
                 <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
                 </View>
                 <Text style={styles.text}>What sign is this?</Text>
-                <View style={styles.screen}>
+        <View style={styles.screen}>
             <Button
             onPress={()=> wrongAnswer()}
             mode = "contained"
@@ -61,7 +62,8 @@ export default function PracticeOne({navigation}){
                 marginRight: 10,}}>
                 <Text color={theme.colors.text} textAlign='center'>Penguin</Text>
             </Button>
-            </View>
+        </View>
+
             <View style={styles.screen}>
             <Button
             onPress={()=> navigation.navigate('onePageNine')}
