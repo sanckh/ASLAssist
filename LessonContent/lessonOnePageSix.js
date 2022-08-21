@@ -8,6 +8,7 @@ import { ProgressBar, List } from 'react-native-paper';
 import Button from '../components/Button';
 import Background from '../components/Background';
 import { getStatusBarHeight } from 'react-native-status-bar-height'
+import HomeButton from '../components/HomeButton';
 
 export default function LessonSix({navigation}){
     const {colors} = useTheme();
@@ -15,6 +16,7 @@ export default function LessonSix({navigation}){
     return(
         <Background>
             <BackButton goBack = {navigation.goBack} />
+            <HomeButton onPress = {() => navigation.navigate('Home')}/>
             <Header style = {styles.header}>Section Six</Header>
             <View style = {{flexDirection: 'row', marginTop: 10}}>
                 <View style = {styles.imagePlacement}>
