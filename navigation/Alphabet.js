@@ -480,8 +480,8 @@ const styles = StyleSheet.create({
         fontSize: 25,
     },
     image: {
-        width: 115,
-        height: 115,
+        width: 125,
+        height: 125,
         resizeMode: 'contain',
     },
     text: {
