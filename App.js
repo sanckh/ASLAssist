@@ -23,6 +23,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons'
 import {theme, CustomDarkTheme, CustomDefaultTheme} from './core/theme'
 import { AuthContext } from './components/context';
 import registerForPushNotificationsAsync from './components/notifications'
+import blink from './components/Blink';
 
 //screens go here
 import StartScreen from './navigation/StartScreen';
@@ -35,6 +36,8 @@ import Profile from './navigation/Profile';
 import ResetPasswordScreen from './navigation/ResetPasswordScreen';
 import AboutScreen from './navigation/AboutScreen';
 import Achievement from './navigation/Achievements';
+import BlinkingEffect from './navigation/BlinkingEffect';
+
 
 //lessons
 import Emergency from './navigation/Emergency';
@@ -358,7 +361,7 @@ export default function App() {
       <AuthContext.Provider value={authContext}>
       <NavigationContainer theme={theme}>
         <Stack.Navigator 
-        initialRouteName='Home'
+        initialRouteName='BlinkingEffect'
         screenOptions={{
           headerShown: false,
         }}
@@ -385,6 +388,8 @@ export default function App() {
           <Stack.Screen name = "LessonEight" component = {LessonEight}/>
           <Stack.Screen name = "LessonNine" component = {LessonNine}/>
           <Stack.Screen name = "LessonTen" component = {LessonTen}/>
+          <Stack.Screen name = "BlinkingEffect" component = {BlinkingEffect}/>
+          
 
           <Stack.Screen name = "PracticeQuizOne" component = {PracticeQuizOne}/>
           <Stack.Screen name = "PracticeQuizTwo" component = {PracticeQuizTwo}/>
@@ -560,7 +565,7 @@ export default function App() {
           <Stack.Screen name = "lessonSixPageTwelve" component = {lessonSixPageTwelve}/>
           <Stack.Screen name = "lessonSixPageThirteen" component = {lessonSixPageThirteen}/>
           <Stack.Screen name = "lessonSixPageFourteen" component = {lessonSixPageFourteen}/>
-          <Stack.Screen name = "lessonSixPageFiftheen" component = {lessonSixPageFifhteen}/>
+          <Stack.Screen name = "lessonSixPageFiftheen" component = {lessonSixPageFiftheen}/>
           <Stack.Screen name = "lessonSixPageSixteen" component = {lessonSixPageSixteen}/>
           <Stack.Screen name = "lessonSixPageSeventeen" component = {lessonSixPageSeventeen}/>
           <Stack.Screen name = "lessonSixPageEighteen" component = {lessonSixPageEighteen}/>
