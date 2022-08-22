@@ -1,12 +1,12 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native';
-import Header from '../components/Header';
+import { Text, View, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
+import Header from '../../components/Header';
 import { useTheme } from '@react-navigation/native';
-import BackButton from '../components/BackButton';
+import BackButton from '../../components/BackButton';
 import { NavigationContainer } from '@react-navigation/native';
 import { ProgressBar, List } from 'react-native-paper';
-import Background from '../components/Background';
+import Background from '../../components/Background';
 import { getStatusBarHeight } from 'react-native-status-bar-height'
-import Button from '../components/Button';
+import Button from '../../components/Button';
 
 export default function LessonSix({navigation}){
     const {colors} = useTheme();
@@ -15,17 +15,17 @@ export default function LessonSix({navigation}){
         <Background>
             <BackButton goBack={navigation.goBack}/>
             
-            <Header style = {styles.header}>Section Seven</Header>
+            <Header style = {styles.header}> Travel Terms</Header>
             {/* lesson content */}
             <View style = {{flexDirection: 'row', marginTop: 10}}>
                 <View style = {styles.imagePlacement}>
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonSix%2Fserviceanimal.gif?alt=media&token=8e5465a6-cc18-4058-a9e1-e124b1c2f622'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFive%2Farewethereyet.gif?alt=media&token=5334fafd-cdf8-4b80-b00f-eb0dfd5cb5a4'
                     }}>
                     </Image>
-                    <Text>Hands palm up shaking and then fold both hand inwards</Text>
+                   
                 </View>
                 
             </View>
@@ -35,7 +35,7 @@ export default function LessonSix({navigation}){
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonSix%2Fsupervisor.gif?alt=media&token=6a18cfa9-5c7d-4a87-99e6-bcae19097152'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFive%2Fhowmuchdoesitcost.gif?alt=media&token=6a0f3537-d074-4bad-b3e5-83b4b64b078d'
                     }}>
                     </Image>
                     
@@ -47,7 +47,7 @@ export default function LessonSix({navigation}){
             </View>
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('lessonSixPageNine')}
+            onPress = {() => navigation.navigate('lessonFivePageNine')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}

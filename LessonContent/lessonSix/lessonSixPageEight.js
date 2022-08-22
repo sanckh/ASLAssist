@@ -1,12 +1,12 @@
 import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native';
-import Header from '../components/Header';
+import Header from '../../components/Header';
 import { useTheme } from '@react-navigation/native';
-import BackButton from '../components/BackButton';
+import BackButton from '../../components/BackButton';
 import { NavigationContainer } from '@react-navigation/native';
 import { ProgressBar, List } from 'react-native-paper';
-import Background from '../components/Background';
+import Background from '../../components/Background';
 import { getStatusBarHeight } from 'react-native-status-bar-height'
-import Button from '../components/Button';
+import Button from '../../components/Button';
 
 export default function LessonSix({navigation}){
     const {colors} = useTheme();
@@ -15,17 +15,17 @@ export default function LessonSix({navigation}){
         <Background>
             <BackButton goBack={navigation.goBack}/>
             
-            <Header style = {styles.header}>Section Eight</Header>
+            <Header style = {styles.header}>Section Seven</Header>
             {/* lesson content */}
             <View style = {{flexDirection: 'row', marginTop: 10}}>
                 <View style = {styles.imagePlacement}>
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fhour.gif?alt=media&token=a3121d0d-2551-41c8-8e81-24fa07f4aa22'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonSix%2Fserviceanimal.gif?alt=media&token=8e5465a6-cc18-4058-a9e1-e124b1c2f622'
                     }}>
                     </Image>
-                    <Text>Represents the movement of the "minute hand" of a clock going around one-time.</Text>
+                    <Text>Hands palm up shaking and then fold both hand inwards</Text>
                 </View>
                 
             </View>
@@ -35,19 +35,19 @@ export default function LessonSix({navigation}){
                     <Image
                     style = {styles.image}
                     source = {{
-                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fjanuary.gif?alt=media&token=7ec24beb-f02b-4caa-824e-f2daa0c56f48'
+                        uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonSix%2Fsupervisor.gif?alt=media&token=6a18cfa9-5c7d-4a87-99e6-bcae19097152'
                     }}>
                     </Image>
-                    <Text>Fingerspell J-A-N</Text>
+                    
                 </View>
                 
             </View>
             <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.34} color={"lightgreen"} />
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
             </View>
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('lessonFourPageNine')}
+            onPress = {() => navigation.navigate('lessonSixPageNine')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}
