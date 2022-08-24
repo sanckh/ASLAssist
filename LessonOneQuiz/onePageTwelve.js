@@ -32,10 +32,8 @@ export default function PracticeOne({navigation}){
                     uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOneQuizBlurredImages%2Fshark-blurred.gif?alt=media&token=4c90b863-e073-48a8-acd7-88a03d4f6203'
                 }}>
                 </Image>
-                <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
-                </View>
-                <Text style={styles.text}>What sign is this?</Text>
+               
+                <Text style={styles.textSpacing}>What sign is this?</Text>
                 <View style={styles.screen}>
             <Button
             onPress={()=> wrongAnswer()}
@@ -93,6 +91,9 @@ export default function PracticeOne({navigation}){
             </Button>
 
             </View>
+            <View>
+                <ProgressBar style={{ width: 200, marginTop: 50 }} progress={0.0} color={"lightgreen"} />
+            </View>
 
         </Background>
         
@@ -104,13 +105,11 @@ const styles = StyleSheet.create({
         flex: 1,
 
     },
-    screen:{
-        flex: 1,
-        justifyContent: 'space-around',
+    screen: {
+        //flex: 1,
+        //justifyContent: 'space-around',
         alignItems: 'center',
         flexDirection: 'row',
-        marginTop: 24,
-        marginBottom: 24
     },
     header: {
         position: 'absolute',
@@ -121,27 +120,23 @@ const styles = StyleSheet.create({
     },
     image: {
         width: 300,
-        height: 300,
-        marginTop: 10,
-        marginLeft: 50,
-        marginRight: 50,
+        height: 150,
+        marginTop: 0,
+        marginBottom: 50,
         alignItems: 'center',
-        padding: 20,
+       // padding: 20,
         resizeMode: 'contain',
-        borderRadius: 30
     },
     text: {
         // marginTop: 15,
         fontSize: 25,
     },
     imagePlacement: {
-        flexDirection: 'column', 
-        justifyContent: 'center',
-        alignItems: 'center'
+        top: 0
     },
-    iconContainer: {
-        position: 'absolute',
-        top: 10 + getStatusBarHeight(),
-        left: 4,
-      },
+    textSpacing: {
+        fontSize: 25,
+        marginBottom: 20
+        //add more props here
+    }
 })

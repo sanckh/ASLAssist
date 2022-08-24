@@ -44,8 +44,10 @@ import React, { useState, useEffect, useRef } from 'react';
       };
   
     // sendNotificationsHandler1 = () => {
-  
+        //Every 24 hours, send notification to do a lesson
     // }
+
+    
 
     export { notificationsHandler, registerForPushNotificationsAsync }
 
