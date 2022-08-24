@@ -33,7 +33,7 @@ export default function PracticeOne({ navigation }) {
             </Image>
             </View>
             
-            <Text style={styles.text}>What sign is this?</Text>
+            <Text style={styles.textSpacing}>What sign is this?</Text> 
             <View style={styles.screen}>
                 <Button
                     onPress={() => wrongAnswer()}
@@ -101,7 +101,7 @@ export default function PracticeOne({ navigation }) {
 
             </View>
             <View>
-                <ProgressBar style={{ width: 200, marginTop: 25 }} progress={0.0} color={"lightgreen"} />
+                <ProgressBar style={{ width: 200, marginTop: 50 }} progress={0.0} color={"lightgreen"} />
             </View>
             
 
@@ -130,7 +130,7 @@ const styles = StyleSheet.create({
     },
     image: {
         width: 300,
-        height: 300,
+        height: 150,
         marginTop: 0,
         marginBottom: 50,
         alignItems: 'center',
@@ -144,4 +144,9 @@ const styles = StyleSheet.create({
     imagePlacement: {
         top: 0
     },
+    textSpacing: {
+        fontSize: 25,
+        marginBottom: 20
+        //add more props here
+    }
 })
