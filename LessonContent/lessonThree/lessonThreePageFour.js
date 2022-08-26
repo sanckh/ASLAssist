@@ -1,11 +1,11 @@
 import { Text, View, ScrollView, StyleSheet, TouchableOpacity, } from 'react-native';
-import Header from '../components/Header';
+import Header from '../../components/Header';
 import { useTheme } from '@react-navigation/native';
-import BackButton from '../components/BackButton';
+import BackButton from '../../components/BackButton';
 import { NavigationContainer } from '@react-navigation/native';
 import { ProgressBar, List } from 'react-native-paper';
-import Button from '../components/Button';
-import Background from '../components/Background';
+import Button from '../../components/Button';
+import Background from '../../components/Background';
 import { getStatusBarHeight } from 'react-native-status-bar-height'
 
 export default function LessonSix({navigation}){
