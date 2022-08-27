@@ -14,113 +14,53 @@ import {db} from '../firebase'
 import IonIcon from 'react-native-vector-icons/Ionicons'
 import {getAch} from './getAchievements'
 
-class AchList extends Component{
-  state = {
-    achList: [],
-    currentItem: null
-  }
-  onRecieved = (achList)=>{
-      console.log(achList);
-      this.setState(prevState => ({
-        achList: prevState.achList = achList
-      }));
-  }
-  componentDidMount(){
-    getAch(this.onRecieved);
-  }
-
-  render() {
-    return(
+export default function Achievement({navigation}){
+  return(
     <ScrollView>
       <SafeAreaView style={styles.container}>
-        <View>
+      <View>
           <BackButton goBack = {navigation.goBack} />
           <View style = {styles.header}>
               <Header>Achievements</Header>
               </View>
-          <View>
-            <FlatList
-              data={this.state.achList}
-              ItemSeparatorComponent={()=><Divider style={{backgroundColor: 'black'}}/>}
-              keyExtractor={(item, index)=> index.toString}
-              renderItem={({item})=>{
-                console.log(item);
-                return(
-                  <List.Item
-                  title={item.title}
-                  subtitle={item.description}
-                  onPress={()=>{ }}
-                  />
-                );
-              }}
+            <View>
+          <List.Section
+            borderColor= 'black'
+          >
+            <List.Subheader>All Achievements</List.Subheader>
+
+            <List.Item title = "Consistency"
+            left = {() => <List.Icon icon="trophy" />}
+            description = "Logged in 7 days in a row"
             />
+            <List.Item title = "Getting Started"
+            left = {() => <List.Icon icon="trophy" />}
+            description = "Completed Lesson One"
+            />
+            <List.Item title = "Baby Steps"
+            left = {() => <List.Icon icon="trophy" />}
+            description = "Completed three lessons"
+            />
+            <List.Item title = "Scholar"
+            left = {() => <List.Icon icon="trophy" />}
+            description = "Completed Lesson One Quiz"
+            />
+            <List.Item title = "Genius"
+            left = {() => <List.Icon icon="trophy" />}
+            description = "Completed three quizzes"
+            />
+            <List.Item title = "Practice Makes Perfect"
+            left = {() => <List.Icon icon="trophy" />}
+            description = "Completed one Practice Quiz"
+            />
+
+          </List.Section>
           </View>
         </View>
       </SafeAreaView>
     </ScrollView>
-  )}
+  )
 }
-
-// export default function Achievement({navigation}){
-
-//   const [ach, setAch] = useState([]);
-//   const ref = db.collection('Achievements');
-
-//   //read data
-
-//   // useEffect(()=>{
-//   //   ref.onSnapshot(
-//   //     querySnapshot=>{
-//   //       const ach = []
-//   //       querySnapshot.forEach((doc)=>{
-//   //         const {heading} = doc.data()
-//   //         ach.push({
-//   //           id: doc.id,
-//   //           heading,
-//   //         })
-//   //       })
-//   //       setAch(ach)
-//   //     }
-//   //   )
-//   // }, [])
-
-//   // render() {
-//   //   return(
-//   //   <ScrollView>
-//   //     <SafeAreaView style={styles.container}>
-//   //       <View>
-//   //         <BackButton goBack = {navigation.goBack} />
-//   //         <View style = {styles.header}>
-//   //             <Header>Achievements</Header>
-//   //             </View>
-//   //         <View>
-//   //           {/* <FlatList
-//   //             data={ach}
-//   //             numColumns={1}
-//   //             renderItem={({item})=>(
-//   //               <View>
-//   //                 <Pressable style={styles.container}>
-//   //                   <IonIcon
-//   //                   name='trophy'
-//   //                   color='purple'
-//   //                   style={styles.icon}
-//   //                   />
-//   //                   <View style={styles.innerContainer}>
-//   //                     <Text style={styles.itemHeading}>
-//   //                       {item.heading[0].toUpperCase()+item.heading.slice(1)}
-//   //                     </Text>
-//   //                   </View>
-//   //                 </Pressable>
-//   //               </View>
-//   //             )}
-//   //           /> */}
-//   //         </View>
-//   //       </View>
-//   //     </SafeAreaView>
-//   //   </ScrollView>
-//   // )}
-// }
-
 const styles = StyleSheet.create({
     imageStyle:{
       marginLeft:15,
