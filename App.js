@@ -331,7 +331,7 @@ function Home() {
         }}
         />
         {/**This is a tab for the login screen for testing purposes */}
-        <Tab.Screen 
+        {/* <Tab.Screen 
         name = 'Login' 
         component = {StartScreen}
         options={{
@@ -341,7 +341,7 @@ function Home() {
             <Ionicons name = 'list' color = {color} size = {26} /> 
           ),
         }}
-        />
+        /> */}
       </Tab.Navigator>
   )
 }
@@ -370,7 +370,7 @@ export default function App() {
       <AuthContext.Provider value={authContext}>
       <NavigationContainer theme={theme}>
         <Stack.Navigator 
-        initialRouteName='Home'
+        initialRouteName='LoginScreen'
         screenOptions={{
           headerShown: false,
         }}

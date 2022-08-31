@@ -7,7 +7,7 @@ import { ProgressBar, List } from 'react-native-paper';
 import Button from '../../components/Button';
 import Background from '../../components/Background';
 import { getStatusBarHeight } from 'react-native-status-bar-height'
-import HomeButton from '../components/HomeButton';
+import HomeButton from '../../components/HomeButton';
 
 export default function LessonSix({navigation}){
     const {colors} = useTheme();
