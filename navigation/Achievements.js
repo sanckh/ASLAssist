@@ -1,5 +1,5 @@
-import { Text, View, SafeAreaView, ScrollView, StyleSheet, Alert, Linking,} from 'react-native';
-import React, {useCallback, useEffect, useState} from 'react';
+import { Text, Pressable, FlatList, View, SafeAreaView, ScrollView, StyleSheet, Alert, Linking,} from 'react-native';
+import React, {Component, useCallback, useEffect, useState} from 'react';
 import { List, Divider, TouchableRipple } from 'react-native-paper';
 import Header from '../components/Header';
 import BackButton from '../components/BackButton';
@@ -9,27 +9,26 @@ import Paragraph from '../components/Paragraph';
 import Button from '../components/Button';
 import { NavigationContainer } from '@react-navigation/native';
 import { getAdditionalUserInfo } from 'firebase/auth';
-import { deleteDoc, doc, getDoc, setDoc, docs, collection, getDocs } from 'firebase/firestore';
-//import { getAch } from './getAchievements';
+import { deleteDoc, doc, getDoc, setDoc, docs, collection, getDocs, QuerySnapshot } from 'firebase/firestore';
 import {db} from '../firebase'
+import IonIcon from 'react-native-vector-icons/Ionicons'
+import {getAch} from './getAchievements'
 
 export default function Achievement({navigation}){
-
-
   return(
     <ScrollView>
       <SafeAreaView style={styles.container}>
-        <View>
+      <View>
           <BackButton goBack = {navigation.goBack} />
           <View style = {styles.header}>
               <Header>Achievements</Header>
               </View>
-          <View>
+            <View>
           <List.Section
             borderColor= 'black'
           >
             <List.Subheader>All Achievements</List.Subheader>
-            
+
             <List.Item title = "Consistency"
             left = {() => <List.Icon icon="trophy" />}
             description = "Logged in 7 days in a row"
@@ -62,7 +61,6 @@ export default function Achievement({navigation}){
     </ScrollView>
   )
 }
-
 const styles = StyleSheet.create({
     imageStyle:{
       marginLeft:15,
@@ -97,6 +95,21 @@ const styles = StyleSheet.create({
     container:{
       flex: 1,
       marginBottom: 40
+    },
+    innerContainer:{
+      alignItems: 'center',
+      flexDirection: 'column',
+      marginLeft: 45
+    },
+    itemHeading:{
+      fontWeight: 'bold',
+      fontSize: 24,
+      marginRight: 22
+    },
+    icon:{
+      marginTop: 5,
+      fontSize: 20,
+      marginLeft: 14
     }
   });
 
