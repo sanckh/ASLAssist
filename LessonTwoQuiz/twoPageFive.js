@@ -8,6 +8,7 @@ import Background from '../components/Background';
 import { getStatusBarHeight } from 'react-native-status-bar-height'
 import Button from '../components/Button';
 import { theme } from '../core/theme';
+import HomeButton from '../components/HomeButton'
 
 export default function PracticeOne({navigation}){
     const {colors} = useTheme();
@@ -18,10 +19,9 @@ export default function PracticeOne({navigation}){
 
     return(
         <Background>
-            <TouchableOpacity  onPress = { () => navigation.replace('Home')} style={styles.iconContainer}>
-                <List.Icon icon="home-outline" />
-            </TouchableOpacity>
-            
+           <BackButton goBack = {navigation.goBack} />
+            <HomeButton onPress = {() => navigation.navigate('Home')}/>
+
             <Header style = {styles.header}>Pratice Quiz</Header>
             {/* lesson content */}
             <Image
@@ -30,9 +30,7 @@ export default function PracticeOne({navigation}){
                     uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwoQuizBlurredImages%2Fpain-blurred.gif?alt=media&token=4b12d113-fd6f-479b-88b9-0385308402be'
                 }}>
                 </Image>
-                <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
-                </View>
+                
                 <Text style={styles.text}>What sign is this?</Text>
                 <View style={styles.screen}>
             <Button
@@ -91,6 +89,9 @@ export default function PracticeOne({navigation}){
             </Button>
 
             </View>
+            <View>
+                <ProgressBar style={{ width: 200, marginTop: 50 }} progress={0.0} color={"lightgreen"} />
+            </View>
 
         </Background>
         
@@ -103,8 +104,7 @@ const styles = StyleSheet.create({
 
     },
     screen:{
-        flex: 1,
-        justifyContent: 'space-around',
+       
         alignItems: 'center',
         flexDirection: 'row',
         marginTop: 24,
@@ -120,26 +120,23 @@ const styles = StyleSheet.create({
     image: {
         width: 300,
         height: 300,
-        marginTop: 10,
-        marginLeft: 50,
-        marginRight: 50,
+        marginTop: 0,
+        marginBottom: 50,
         alignItems: 'center',
-        padding: 20,
+        //padding: 20,
         resizeMode: 'contain',
-        borderRadius: 30
+        
     },
     text: {
         // marginTop: 15,
         fontSize: 25,
     },
     imagePlacement: {
-        flexDirection: 'column', 
-        justifyContent: 'center',
-        alignItems: 'center'
+        top:0
     },
-    iconContainer: {
-        position: 'absolute',
-        top: 10 + getStatusBarHeight(),
-        left: 4,
-      },
+    textSpacing: {
+        fontSize: 25,
+        marginBottom: 20
+        //add more props here
+    }
 })
