@@ -25,7 +25,7 @@ export default function LessonOnePageTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Fduck.gif?alt=media&token=6f05ab56-2819-4fc3-95d4-3863ecc0f8a9'
                     }}>
                     </Image>
-                    <Text>taking your index and middle fingers together and touching them to and separating them from your thumb, holding them in front of your mouth</Text>
+                    <Text>Taking your index and middle fingers together and touching them to and separating them from your thumb, holding them in front of your mouth.</Text>
                 </View>
                 
             </View>
@@ -38,7 +38,7 @@ export default function LessonOnePageTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Felephant.gif?alt=media&token=7a6dd1e4-7c8f-4e47-ad94-fd72c482ec89'
                     }}>
                     </Image>
-                    <Text>uses a flat hand to show the trunk. Start near your nose and then move downward and outward</Text>
+                    <Text>Uses a flat hand to show the trunk. Start near your nose and then move downward and outward.</Text>
                 </View>
                 
             </View>

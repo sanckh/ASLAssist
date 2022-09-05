@@ -27,7 +27,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fsnow.gif?alt=media&token=60bf06ab-2661-4109-bfb1-b56f9f42fd71'
                     }}>
                     </Image>
-                    <Text>your fingers flutter down as if they were snow flakes drifting down from the sky. </Text>
+                    <Text>Your fingers flutter down as if they were snow flakes drifting down from the sky. </Text>
                 </View>
                 
             </View>
@@ -40,7 +40,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fstorm.gif?alt=media&token=ea41e4a4-8b92-4fca-aeb0-2ebec10ca97d'
                     }}>
                     </Image>
-                    <Text> I point to the ear then I use a firm converse double movement with two hands using "handshape: S" on each hand.</Text>
+                    <Text>I point to the ear then I use a firm converse double movement with two hands using "handshape: S" on each hand.</Text>
                 </View>
                 
             </View>

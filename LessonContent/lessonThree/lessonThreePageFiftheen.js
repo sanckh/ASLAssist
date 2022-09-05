@@ -27,7 +27,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Fbull.gif?alt=media&token=b7c2562c-7ec0-4726-b999-dee032262076'
                     }}>
                     </Image>
-                    <Text>Pointing with the index finger of our dominant hand to our ear, then closing both fists and shaking them back and forth</Text>
+                    <Text>Pointing with the index finger of our dominant hand to our ear, then closing both fists and shaking them back and forth.</Text>
                 </View>
                 
             </View>
@@ -40,7 +40,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Ftornado.gif?alt=media&token=e9c2458f-c1bd-4381-95a8-9ef0a846cebb'
                     }}>
                     </Image>
-                    <Text>the fingers bend inward hurricane the cheeks can puff out to show wind.</Text>
+                    <Text>The fingers bend inward hurricane the cheeks can puff out to show wind.</Text>
                 </View>
                 
             </View>

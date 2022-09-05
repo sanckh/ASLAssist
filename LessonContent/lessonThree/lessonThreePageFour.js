@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity, } from 'react-native';
+import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import Header from '../../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../../components/BackButton';

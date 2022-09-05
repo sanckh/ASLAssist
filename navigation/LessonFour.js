@@ -40,7 +40,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fapril.gif?alt=media&token=5ca5789a-0a15-4836-baf6-7856816d98b1'
                     }}>
                     </Image>
-                    <Text>Fingerspelling A-P-R-I-L</Text>
+                    <Text>Fingerspelling A-P-R-I-L.</Text>
                 </View>
                 
             </View>

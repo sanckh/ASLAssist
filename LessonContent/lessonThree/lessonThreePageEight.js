@@ -27,7 +27,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fnauseous.gif?alt=media&token=a00d906d-717c-4411-8936-730c82e1168e'
                     }}>
                     </Image>
-                    <Text>open your dominant hand with all fingers separated, then point the thumb toward the mouth and pull the hand down 90 degrees</Text>
+                    <Text>Open your dominant hand with all fingers separated, then point the thumb toward the mouth and pull the hand down 90 degrees.</Text>
                 </View>
                 
             </View>
@@ -40,7 +40,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fpoison.gif?alt=media&token=09411b60-bb24-4f15-9daf-d12fb41566df'
                     }}>
                     </Image>
-                    <Text>you either rock it back and forth or rub it on the palm of your non-dominant</Text>
+                    <Text>You either rock it back and forth or rub it on the palm of your non-dominant.</Text>
                 </View>
                 
             </View>

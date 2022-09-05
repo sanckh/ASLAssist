@@ -27,7 +27,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Fblack.gif?alt=media&token=5a896643-38d1-4815-a542-f28c54a30164'
                     }}>
                     </Image>
-                    <Text>taking your index finger and drawing it across your brow once, while the rest of your hand is drawn into a loose fist</Text>
+                    <Text>Taking your index finger and drawing it across your brow once, while the rest of your hand is drawn into a loose fist.</Text>
                 </View>
                 
             </View>

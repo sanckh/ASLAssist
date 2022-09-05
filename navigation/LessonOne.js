@@ -27,7 +27,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Fbull.gif?alt=media&token=b7c2562c-7ec0-4726-b999-dee032262076'
                     }}>
                     </Image>
-                    <Text>take your dominant hand, form the letter Y sign, and hold it up to your forehead, palm facing out</Text>
+                    <Text>Take your dominant hand, form the letter Y sign, and hold it up to your forehead, palm facing out.</Text>
                 </View>
                 
             </View>

@@ -27,7 +27,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Favalanche.gif?alt=media&token=1318a553-339d-4582-bda1-5ec09395dd79'
                     }}>
                     </Image>
-                    <Text>Sign for Snow and moving diagonally downwards</Text>
+                    <Text>Sign for Snow and moving diagonally downwards.</Text>
                 </View>
                 
             </View>
@@ -40,7 +40,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fcloudy.gif?alt=media&token=91f48f3a-85be-43d5-b453-e79dd338fa73'
                     }}>
                     </Image>
-                    <Text>take your two open 'C' hands, facing each other, and twisting them away from each other, as if to trace the shape of a cloud. Twist your hands while moving them along. </Text>
+                    <Text>Take your two open 'C' hands, facing each other, and twisting them away from each other, as if to trace the shape of a cloud. Twist your hands while moving them along. </Text>
                 </View>
                 
             </View>

@@ -38,6 +38,8 @@ import Achievement from './navigation/Achievements';
 
 //lessons
 import Emergency from './navigation/Emergency';
+import Emergency2 from './navigation/Emergency2';
+import Emergency3 from './navigation/Emergency3';
 import Alphabet from './navigation/Alphabet';
 import Numbers from './navigation/Numbers';
 import LessonOne from './navigation/LessonOne';
@@ -370,7 +372,7 @@ export default function App() {
       <AuthContext.Provider value={authContext}>
       <NavigationContainer theme={theme}>
         <Stack.Navigator 
-        initialRouteName='LoginScreen'
+        initialRouteName='Home'
         screenOptions={{
           headerShown: false,
         }}
@@ -385,6 +387,8 @@ export default function App() {
           <Stack.Screen name = "Profile" component = {Profile}/>
           <Stack.Screen name = "Settings" component = {Settings}/>
           <Stack.Screen name = "Emergency" component = {Emergency}/>
+          <Stack.Screen name = "Emergency2" component = {Emergency2}/>
+          <Stack.Screen name = "Emergency3" component = {Emergency3}/>
           <Stack.Screen name = "Alphabet" component = {Alphabet}/>
           <Stack.Screen name = "Numbers" component = {Numbers}/>
           <Stack.Screen name = "LessonOne" component = {LessonOne}/>

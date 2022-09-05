@@ -27,7 +27,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Fcalm.gif?alt=media&token=83561b06-8d9f-479a-b8e0-f4d5c0610ad2'
                     }}>
                     </Image>
-                    <Text> Both "5" hands, palms facing down in space, slowly move downward a bit once</Text>
+                    <Text>Both "5" hands, palms facing down in space, slowly move downward a bit once.</Text>
                 </View>
                 
             </View>
@@ -40,7 +40,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Fembrassed.gif?alt=media&token=ad2cdf69-5f4e-4c5d-8e13-49fcd190e098'
                     }}>
                     </Image>
-                    <Text>alternate moving your hands upward alongside your head as if showing the blood rushing up into your face</Text>
+                    <Text>Alternate moving your hands upward alongside your head as if showing the blood rushing up into your face.</Text>
                 </View>
                 
             </View>

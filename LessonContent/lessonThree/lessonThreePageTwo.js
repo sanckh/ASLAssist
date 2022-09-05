@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity, } from 'react-native';
+import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import Header from '../../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../../components/BackButton';
@@ -26,7 +26,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fblood.gif?alt=media&token=5e0b7148-7d49-4cd8-9e18-3ff11c607bf6'
                     }}>
                     </Image>
-                    <Text>Just hold your non-dominant hand while you do RED with your dominant-hand index finger and smoothly transition into a "trickle down" movement over the non-dominant hand</Text>
+                    <Text>Just hold your non-dominant hand while you do RED with your dominant-hand index finger and smoothly transition into a "trickle down" movement over the non-dominant hand.</Text>
                 </View>
                 
             </View>

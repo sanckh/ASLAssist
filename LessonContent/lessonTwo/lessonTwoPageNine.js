@@ -27,7 +27,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Fveterans.gif?alt=media&token=dcf50a72-d9f0-4658-9bed-2a0d1daf04b5'
                     }}>
                     </Image>
-                    <Text>Veteran's Day</Text>
+                    <Text>Veteran's Day.</Text>
                 </View>
                 
             </View>
@@ -40,7 +40,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Fwomensequalityday.gif?alt=media&token=21a4dd02-5c04-4cd7-886b-feab0244a91b'
                     }}>
                     </Image>
-                    <Text>Women's Equality Day</Text>
+                    <Text>Women's Equality Day.</Text>
                 </View>
                 
             </View>

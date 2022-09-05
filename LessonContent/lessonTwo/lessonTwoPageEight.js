@@ -27,7 +27,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Fscary.gif?alt=media&token=f2edb510-662a-48e6-ad33-a29dc31e84a1'
                     }}>
                     </Image>
-                    <Text>Scared starts with your open hands (or closed fists) by your sides,Then you bring your hands inward, in front of your body</Text>
+                    <Text>Scared starts with your open hands (or closed fists) by your sides,Then you bring your hands inward, in front of your body.</Text>
                 </View>
                 
             </View>
@@ -40,7 +40,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Fshy.gif?alt=media&token=48d69af9-099b-47d9-a553-bd0bef40d573'
                     }}>
                     </Image>
-                    <Text>your dominant hand slides - with fingers bent together and palm facing outward - from the ear to the mouth</Text>
+                    <Text>Your dominant hand slides - with fingers bent together and palm facing outward - from the ear to the mouth.</Text>
                 </View>
                 
             </View>

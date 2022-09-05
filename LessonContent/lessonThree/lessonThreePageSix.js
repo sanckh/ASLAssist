@@ -27,7 +27,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fdead.gif?alt=media&token=80db24c3-9b09-4d51-97a9-0fb21b0f1628'
                     }}>
                     </Image>
-                    <Text>One hand facing upward and one hand facing downward, simultaneously flipping both hands</Text>
+                    <Text>One hand facing upward and one hand facing downward, simultaneously flipping both hands.</Text>
                 </View>
                 
             </View>
@@ -40,7 +40,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fhealth.gif?alt=media&token=5a663028-1208-4e55-8d4b-d456c274d58e'
                     }}>
                     </Image>
-                    <Text> Both open hands start on chest. Both hands move forward while closing with thumbs extended.</Text>
+                    <Text>Both open hands start on chest. Both hands move forward while closing with thumbs extended.</Text>
                 </View>
                 
             </View>
