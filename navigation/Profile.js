@@ -4,10 +4,11 @@ import Header from '../components/Header';
 import { theme } from '../core/theme';
 import { TouchableRipple, Switch, useTheme, Divider } from 'react-native-paper';
 import {AuthContext} from '../components/context'
-
+import { auth } from '../firebase';
 import {List} from 'react-native-paper'
 import Button from '../components/Button';
 import { NavigationContainer } from '@react-navigation/native';
+import Icon from 'react-native-vector-icons/FontAwesome5'
 
 // const Profile = (props) => {
 //     return (
@@ -29,28 +30,14 @@ export default function Profile({navigation}){
             <Header>Profile</Header>
             </View>
           <View>
-            <Text style={{fontSize: 24, marginBottom: 20}}>{counter}</Text>
-            <Button onPress={()=>{setCounter(counter+15)}} 
-            style={{backgroundColor: '#ddedea',
-                    width: 150,
-                    height: 60,
-                    borderColor: '#093f35',
-                    borderWidth: 5,
-            }}
-            title="Increase EX">EX Points</Button>
-            <List.Section
-              borderColor= 'black'
-            >
-              <List.Subheader>Recent Achievements</List.Subheader>
-              <List.Item title = "Achievement placeholder"
-              //make aa check mark for completed
-              left = {() => <List.Icon icon="check-decagram" />}
-              />
-
-            </List.Section>
+          <Icon name="user-astronaut" size={150} color={'navy'} style={styles.iconStyle}/>
+          <View>
+                <Text style={{fontSize: 24, padding: 20}}>Hello {auth.currentUser?.email}</Text>
+            </View>
+            
             <Divider/>
             <List.Section>
-              <List.Subheader>Upcoming Achievements</List.Subheader>
+              <List.Subheader>Achievements</List.Subheader>
               <TouchableRipple
                 onPress={() => navigation.navigate('Achievements')}
                 >
