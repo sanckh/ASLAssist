@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity, } from 'react-native';
+import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image} from 'react-native';
 import Header from '../../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../../components/BackButton';
@@ -18,19 +18,19 @@ export default function LessonSix({navigation}){
             <HomeButton onPress = {() => navigation.navigate('Home')}/>
             <Header style = {styles.header}>Section Four</Header>
             {/* lesson content */}
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={1.00}
-                color={"lightgreen"} alignItems={"center"} />
-            </View>
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('lessonTwoPageThree')}
+            onPress = {() => navigation.navigate('lessonThreePageFive')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}
             >
                 Next Section
             </Button>
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.24} color={"lightgreen"}/>
+                    <Text style={{alignSelf:"center",position:"absolute"}}>24%</Text>
+            </View>
         </Background>
         
     )
