@@ -19,6 +19,9 @@ export default function Alphabet({ navigation }) {
             <Header style={styles.header}>Alphabet</Header>
             <View style={styles.container}>
                 <ScrollView style={styles.scrollview}>
+                    <View>
+                        <Text style = {styles.topText}>Swipe the cards to view the sign's description!</Text>
+                    </View>
                     <View style={{ flexDirection: 'row', marginTop: 10 }}>
                         <GestureFlipView width={125} height={125}>
                             <View>
@@ -509,6 +512,9 @@ const styles = StyleSheet.create({
         backgroundColor: 'rgba(180, 180, 180, 0.5)',
         borderWidth: 1,
         //borderColor: 'rgba(180, 180, 180, 1)'
+    },
+    topText: {
+        textAlign: 'center'
     }
 
 })

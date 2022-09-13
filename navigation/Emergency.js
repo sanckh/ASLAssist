@@ -22,6 +22,9 @@ export default function LessonOne({ navigation }) {
             <Header style={styles.header}>Emergency</Header>
             <View style={styles.container}>
                 <ScrollView style={styles.scrollview}>
+                <View>
+                        <Text style = {styles.topText}>Swipe the cards to view the sign's description!</Text>
+                    </View>
                     <View style={{ flexDirection: 'row', marginTop: 10 }}>
                         <GestureFlipView width={180} height={90}>
                             <View>
@@ -400,5 +403,8 @@ const styles = StyleSheet.create({
     gestureView: {
         marginLeft: 10,
         marginRight: 10
+    },
+    topText: {
+        textAlign: 'center'
     }
 })
