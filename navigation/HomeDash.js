@@ -20,9 +20,8 @@ export default function HomeDash({navigation}) {
     return (
         <ScrollView>
         <SafeAreaView style={styles.container}>
-            <View style = {styles.header}>
-                <Header justifyContent='center'
-                 alignItems='center'>Home</Header>
+        <View style = {styles.header}>
+                <Header>Home</Header>
             </View>
             <View>
                 <Text>Hello {auth.currentUser?.email}</Text>
@@ -178,11 +177,10 @@ const styles = StyleSheet.create({
         marginRight: 20,
     },
     header: {
-        paddingTop: 10,
+        padding: 20,
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
-
     },
     // test: {
     //     backgroundColor:'#fce1e4',
