@@ -54,7 +54,8 @@ export default function Alphabet({ navigation }) {
                                 <Text style={[styles.text, { color: colors.text }]}>Hold your hand open and tuck your thumb.</Text>
                             </View>
                         </GestureFlipView>
-
+                    </View>
+                    <View style={{ flexDirection: 'row', marginTop: 10 }}>
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
@@ -70,9 +71,6 @@ export default function Alphabet({ navigation }) {
                                 <Text style={[styles.text, { color: colors.text }]}>Curve your hand like the letter 'C'.</Text>
                             </View>
                         </GestureFlipView>
-                    </View>
-
-                    <View style={{ flexDirection: 'row', marginTop: 10 }}>
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
@@ -88,7 +86,9 @@ export default function Alphabet({ navigation }) {
                                 <Text style={[styles.text, { color: colors.text }]}>Hold up your dominant hand, pointing your index finger.</Text>
                             </View>
                         </GestureFlipView>
-
+                    </View>
+                        
+                    <View style={{ flexDirection: 'row', marginTop: 10 }}>
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
@@ -104,7 +104,6 @@ export default function Alphabet({ navigation }) {
                                 <Text style={[styles.text, { color: colors.text }]}>Make a fist while tucking your thumb under your fingers.</Text>
                             </View>
                         </GestureFlipView>
-
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
@@ -122,8 +121,8 @@ export default function Alphabet({ navigation }) {
                         </GestureFlipView>
                     </View>
 
-                    <View style={{ flexDirection: 'row', marginTop: 10 }}>
 
+                    <View style={{ flexDirection: 'row', marginTop: 10 }}>
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
@@ -139,7 +138,6 @@ export default function Alphabet({ navigation }) {
                                 <Text style={[styles.text, { color: colors.text }]}>The letter G is signed by holding out your dominant hand in a fist, with knuckles lined up vertically. Keep your middle, ring, and pinkie fingers curled in, while your index finger and thumb stick out parallel to each other.</Text>
                             </View>
                         </GestureFlipView>
-
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
@@ -155,7 +153,8 @@ export default function Alphabet({ navigation }) {
                                 <Text style={[styles.text, { color: colors.text }]}>The letter H is signed by holding out your dominant hand horizontally, palm facing in, with your index and middle fingers held out together, straight and stacked horizontally, index at the top. The rest of the fingers and thumb are curled in.</Text>
                             </View>
                         </GestureFlipView>
-
+                    </View>
+                    <View style={{ flexDirection: 'row', marginTop: 10 }}>
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
@@ -171,11 +170,6 @@ export default function Alphabet({ navigation }) {
                                 <Text style={[styles.text, { color: colors.text }]}>The letter I is signed by holding up your dominant hand in a fist, palm facing out, with only your pinkie finger sticking up straight.</Text>
                             </View>
                         </GestureFlipView>
-
-                    </View>
-
-                    <View style={{ flexDirection: 'row', marginTop: 10 }}>
-
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
@@ -191,7 +185,8 @@ export default function Alphabet({ navigation }) {
                                 <Text style={[styles.text, { color: colors.text }]}>The letter J is signed by holding up your dominant hand, palm facing out, with your fingers curled into a fist except your pinkie sticking out. Then make a 'J' in the air with your pinkie finger, starting from the top of the 'J' stem down and curving up again to form the bottom part of the letter.</Text>
                             </View>
                         </GestureFlipView>
-
+                    </View>
+                    <View style={{ flexDirection: 'row', marginTop: 10 }}>
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
@@ -207,7 +202,6 @@ export default function Alphabet({ navigation }) {
                                 <Text style={[styles.text, { color: colors.text }]}>The letter K is signed by holding up your dominant hand, palm facing out, with your index and middle fingers sticking up like the letter 'V' (or like the common "peace" sign), while your thumb is tucked at the base of the two extended fingers. Your two remaining fingers are curled in, touching your palm.</Text>
                             </View>
                         </GestureFlipView>
-
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
@@ -227,7 +221,6 @@ export default function Alphabet({ navigation }) {
                     </View>
 
                     <View style={{ flexDirection: 'row', marginTop: 10 }}>
-
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
@@ -243,7 +236,6 @@ export default function Alphabet({ navigation }) {
                                 <Text style={[styles.text, { color: colors.text }]}>The letter M is signed by holding up your dominant hand, palm facing out, with all your fingers curled into your palm. Then tuck your thumb between your ring and pinkie fingers. This sign looks like the small letter 'm', with the 3 fingers' bumps reminding us of the letter written in cursive.</Text>
                             </View>
                         </GestureFlipView>
-
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
@@ -259,7 +251,9 @@ export default function Alphabet({ navigation }) {
                                 <Text style={[styles.text, { color: colors.text }]}>The letter N is signed by holding up your dominant hand, palm facing out, with all your fingers curled into your palm. Then tuck your thumb between your middle and ring fingers. This sign looks like the small letter 'n', with the 2 fingers' bumps reminding us of the letter written in cursive.</Text>
                             </View>
                         </GestureFlipView>
+                    </View>
 
+                    <View style={{ flexDirection: 'row', marginTop: 10 }}>
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
@@ -275,10 +269,6 @@ export default function Alphabet({ navigation }) {
                                 <Text style={[styles.text, { color: colors.text }]}>The letter O is signed by curving all your fingers and touching them to your thumb, making the shape of the letter 'O' with your entire hand.</Text>
                             </View>
                         </GestureFlipView>
-                    </View>
-
-                    <View style={{ flexDirection: 'row', marginTop: 10 }}>
-
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
@@ -294,7 +284,9 @@ export default function Alphabet({ navigation }) {
                                 <Text style={[styles.text, { color: colors.text }]}>The letter P is signed like K, but the former is held upside down. Hold down your dominant hand, palm facing in, with your index and middle fingers sticking out like an inverted letter 'V', while your thumb is tucked in between the two extended fingers. Your two remaining fingers are curled in, touching your palm.</Text>
                             </View>
                         </GestureFlipView>
+                    </View>
 
+                    <View style={{ flexDirection: 'row', marginTop: 10 }}>
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
@@ -310,7 +302,6 @@ export default function Alphabet({ navigation }) {
                                 <Text style={[styles.text, { color: colors.text }]}>The letter Q is signed by holding down your dominant hand, palm facing in, with your with knuckles lined up horizontally. Keep your middle, ring, and pinkie fingers curled in, while your index finger and thumb stick out parallel to each other, like two legs of a person standing up.</Text>
                             </View>
                         </GestureFlipView>
-
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
@@ -326,11 +317,9 @@ export default function Alphabet({ navigation }) {
                                 <Text style={[styles.text, { color: colors.text }]}>The letter R is signed by holding up your dominant hand, palm facing out, with your index and middle fingers intertwined like vines. The rest of your fingers and thumb are curled in. This looks just like the small letter 'r'.</Text>
                             </View>
                         </GestureFlipView>
-
                     </View>
 
                     <View style={{ flexDirection: 'row', marginTop: 10 }}>
-
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
@@ -346,7 +335,6 @@ export default function Alphabet({ navigation }) {
                                 <Text style={[styles.text, { color: colors.text }]}>The letter S is signed by holding up your dominant hand into a fist, palm facing out. Make sure your thumb is tucked in front of your fingers. Otherwise, you might sign the letter A by mistake.</Text>
                             </View>
                         </GestureFlipView>
-
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
@@ -362,7 +350,9 @@ export default function Alphabet({ navigation }) {
                                 <Text style={[styles.text, { color: colors.text }]}>The letter T is signed by holding up your dominant hand into a fist, palm facing out, and your thumb tucked in between your index and middle fingers.</Text>
                             </View>
                         </GestureFlipView>
+                    </View>
 
+                    <View style={{ flexDirection: 'row', marginTop: 10 }}>
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
@@ -378,9 +368,6 @@ export default function Alphabet({ navigation }) {
                                 <Text style={[styles.text, { color: colors.text }]}>The letter U is signed by holding up your dominant hand in a fist, facing outward, with the index and middle fingers sticking up while held together.</Text>
                             </View>
                         </GestureFlipView>
-                    </View>
-
-                    <View style={{ flexDirection: 'row', marginTop: 10 }}>
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
@@ -396,7 +383,9 @@ export default function Alphabet({ navigation }) {
                                 <Text style={[styles.text, { color: colors.text }]}>The letter V is signed by holding up your dominant hand in a fist, facing outward, with the index and middle fingers sticking out and spread apart. It looks just like the letter 'V'.</Text>
                             </View>
                         </GestureFlipView>
+                    </View>
 
+                    <View style={{ flexDirection: 'row', marginTop: 10 }}>
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
@@ -412,7 +401,6 @@ export default function Alphabet({ navigation }) {
                                 <Text style={[styles.text, { color: colors.text }]}>The letter W is signed by holding up your dominant hand in a fist, palm facing out, with your index, middle, and ring fingers sticking out. This looks just like the letter 'W'</Text>
                             </View>
                         </GestureFlipView>
-
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
@@ -431,7 +419,6 @@ export default function Alphabet({ navigation }) {
                     </View>
 
                     <View style={{ flexDirection: 'row', marginTop: 10, marginBottom: 15 }}>
-
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
@@ -447,7 +434,6 @@ export default function Alphabet({ navigation }) {
                                 <Text style={[styles.text, { color: colors.text }]}>The letter Y is signed by holding up your dominant hand, palm facing out, with your thumb and pinkie finger sticking out and the rest of your fingers curled in.</Text>
                             </View>
                         </GestureFlipView>
-
                         <GestureFlipView width={125} height={125}>
                             <View>
                                 <View style={styles.imagePlacement}>
@@ -473,7 +459,8 @@ export default function Alphabet({ navigation }) {
 
 const styles = StyleSheet.create({
     container: {
-        paddingTop: 70
+        paddingTop: 70,
+        flex: 1
     },
     header: {
         position: 'absolute',

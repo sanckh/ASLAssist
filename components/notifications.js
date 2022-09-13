@@ -42,6 +42,7 @@ import React, { useState, useEffect, useRef } from 'react';
         });
       }
       };
+      //note future self, add cross platform 
   
     // sendNotificationsHandler1 = () => {
         //Every 24 hours, send notification to do a lesson
