@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFive%2Fmarriage.gif?alt=media&token=a8186731-429a-47f2-89ba-29a9aa032496'
                     }}>
                     </Image>
-                    <Text>Clasping both hands comfortably together. </Text>
+                    <Text>Put both hands togther, clasping them comfortably together. </Text>
                 </View>
                 
             </View>
@@ -38,7 +38,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFive%2Fbirthl.gif?alt=media&token=bd3136b8-0b1a-49cd-8e03-ba43b14edb19'
                     }}>
                     </Image>
-                    <Text>ASL letter 'N' on your dominant hand,  bringing your fingers touching your cheek at the side of your mouth</Text>
+                    <Text>Make the letter 'N' on your dominant hand, while bringing your fingers in touching your cheek at the side of your mouth.</Text>
                 </View>
                 
             </View>
