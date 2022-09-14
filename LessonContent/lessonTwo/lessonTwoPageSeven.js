@@ -40,12 +40,9 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Frelieved.gif?alt=media&token=df3c1bc3-2bc5-4cce-bb14-9f948aa214ab'
                     }}>
                     </Image>
-                    <Text>palm-down flat hands one above the other held to your torso and then moved downward</Text>
+                    <Text>Palm-down flat hands one above the other held to your torso and then moved downward.</Text>
                 </View>
                 
-            </View>
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
             </View>
             <Button
             mode = "contained"
@@ -56,7 +53,10 @@ export default function LessonTwo({navigation}){
             >
                 Next Section
             </Button>
-
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.35} color={"lightgreen"}/>
+                    <Text style={{alignSelf:"center",position:"absolute"}}>35%</Text>
+            </View>
             
         </Background>
     )

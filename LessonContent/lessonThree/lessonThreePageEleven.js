@@ -27,7 +27,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fcold.gif?alt=media&token=631563b6-a162-44ca-9e77-f71b81f88845'
                     }}>
                     </Image>
-                    <Text>take both hands and make them into fists with thumbs up. Pull your upper arms into your sides, stiffen your forearms, and shake your fists back and forth</Text>
+                    <Text>Take both hands and make them into fists with thumbs up. Pull your upper arms into your sides, stiffen your forearms, and shake your fists back and forth.</Text>
                 </View>
                 
             </View>
@@ -40,12 +40,9 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fearthquake.gif?alt=media&token=9ba6e141-fa87-4ac2-af65-72a6100fcd3d'
                     }}>
                     </Image>
-                    <Text>To sign earthquake, first sign Earth, then sign shake: close both fists and shake them back and forth</Text>
+                    <Text>To sign earthquake, first sign Earth, then sign shake: close both fists and shake them back and forth.</Text>
                 </View>
                 
-            </View>
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
             </View>
             <Button
             mode = "contained"
@@ -56,7 +53,10 @@ export default function LessonTwo({navigation}){
             >
                 Next Section
             </Button>
-
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.7} color={"lightgreen"}/>
+                    <Text style={{alignSelf:"center",position:"absolute"}}>70%</Text>
+            </View>
             
         </Background>
     )

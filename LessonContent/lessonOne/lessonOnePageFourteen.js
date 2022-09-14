@@ -27,7 +27,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Frainbow.gif?alt=media&token=70e5f359-20d8-4050-a69d-4af6d0059020'
                     }}>
                     </Image>
-                    <Text>: To sign rainbow, take your dominant hand with the four fingers extended and your thumb tucked in. Start with the dominant hand's four fingers touching the four fingers of your non-dominant hand as the latter remains stationary on its side of your body, hand held upright with palm facing you.</Text>
+                    <Text>To sign rainbow, take your dominant hand with the four fingers extended and your thumb tucked in. Start with the dominant hand's four fingers touching the four fingers of your non-dominant hand as the latter remains stationary on its side of your body, hand held upright with palm facing you.</Text>
                 </View>
                 
             </View>
@@ -40,12 +40,9 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Fred.gif?alt=media&token=e61df43b-dce7-47fc-b55a-0b47e44cf840'
                     }}>
                     </Image>
-                    <Text>The sign for "red" is made by making a movement that looks like you are stroking your lips (one time) with the tip of your index finger</Text>
+                    <Text>The sign for "red" is made by making a movement that looks like you are stroking your lips (one time) with the tip of your index finger.</Text>
                 </View>
                 
-            </View>
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
             </View>
             <Button
             mode = "contained"
@@ -56,7 +53,10 @@ export default function LessonTwo({navigation}){
             >
                 Next Section
             </Button>
-
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.96} color={"lightgreen"}/>
+                    <Text style={{alignSelf:"center",position:"absolute"}}>96%</Text>
+            </View>
             
         </Background>
     )

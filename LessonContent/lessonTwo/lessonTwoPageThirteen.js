@@ -27,7 +27,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Flaborday.gif?alt=media&token=e623be6c-ed2c-4fb0-8d89-e37ff3830839'
                     }}>
                     </Image>
-                    <Text>Labor Day</Text>
+                    <Text>Labor Day.</Text>
                 </View>
                 
             </View>
@@ -40,12 +40,9 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Fmemorialday.gif?alt=media&token=85adc8b1-77b7-4efc-90ec-a70d00b352a9'
                     }}>
                     </Image>
-                    <Text>Memorial Day</Text>
+                    <Text>Memorial Day.</Text>
                 </View>
                 
-            </View>
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
             </View>
             <Button
             mode = "contained"
@@ -56,7 +53,10 @@ export default function LessonTwo({navigation}){
             >
                 Next Section
             </Button>
-
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.7} color={"lightgreen"}/>
+                    <Text style={{alignSelf:"center",position:"absolute"}}>70%</Text>
+            </View>
             
         </Background>
     )

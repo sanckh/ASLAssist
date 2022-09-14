@@ -27,7 +27,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Fbrown.gif?alt=media&token=4be72f9c-a62b-4c21-a3c1-bccdd15372d7'
                     }}>
                     </Image>
-                    <Text>: To sign brown, you make the ASL sign for 'B' (extend your fingers, and tuck your thumb under) and run your index finger down the side of your face</Text>
+                    <Text>To sign brown, you make the ASL sign for 'B' (extend your fingers, and tuck your thumb under) and run your index finger down the side of your face.</Text>
                 </View>
                 
             </View>
@@ -44,9 +44,6 @@ export default function LessonTwo({navigation}){
                 </View>
                 
             </View>
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
-            </View>
             <Button
             mode = "contained"
             onPress = {() => navigation.navigate('lessonOnePageEleven')}
@@ -56,7 +53,10 @@ export default function LessonTwo({navigation}){
             >
                 Next Section
             </Button>
-
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.70} color={"lightgreen"}/>
+                    <Text style={{alignSelf:"center",position:"absolute"}}>70%</Text>
+            </View>
             
         </Background>
     )

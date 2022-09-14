@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Ffox.gif?alt=media&token=e3025f37-9459-48a4-9f79-fecef4159bbe'
                     }}>
                     </Image>
-                    <Text>making a circle with your thumb and index finger, leaving your other fingers outstretched</Text>
+                    <Text>Making a circle with your thumb and index finger, leaving your other fingers outstretched.</Text>
                 </View>
                 
             </View>
@@ -38,13 +38,9 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Fgiraffe.gif?alt=media&token=e01ca14c-af55-4157-bf96-3c74a67f61f8'
                     }}>
                     </Image>
-                    <Text>outlining the long neck of a giraffe. Make your dominant hand a 'U' shape, with the palm of your hand facing toward you. Start down a little below your neck and extend the hand up and outward, ending up above your head</Text>
+                    <Text>Outlining the long neck of a giraffe. Make your dominant hand a 'U' shape, with the palm of your hand facing toward you. Start down a little below your neck and extend the hand up and outward, ending up above your head.</Text>
                 </View>
                 
-            </View>
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.66}
-                color={"lightgreen"} alignItems={"center"} />
             </View>
             <Button
             mode = "contained"
@@ -55,6 +51,10 @@ export default function LessonSix({navigation}){
             >
                 Next Section
             </Button>
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.30} color={"lightgreen"}/>
+                    <Text style={{alignSelf:"center",position:"absolute"}}>30%</Text>
+            </View>
         </Background>
         
         

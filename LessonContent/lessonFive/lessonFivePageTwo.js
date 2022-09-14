@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFive%2Fbury.gif?alt=media&token=1a890a8e-5980-46a8-baaa-69dfc51cb77a'
                     }}>
                     </Image>
-                    <Text>Two fingers, in a downward motion, other hand sideways.</Text>
+                    <Text>Index and Middle finger in a downward motion, while your other hand  is sideways.</Text>
                 </View>
                 
             </View>

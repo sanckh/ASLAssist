@@ -40,12 +40,9 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Fbored.gif?alt=media&token=13390f2a-070c-4098-8b3c-8ffed98337e6'
                     }}>
                     </Image>
-                    <Text>Bored is signed by touching your dominant hand's pointer finger to the side of your nose, then as you move your pointer or index away from your face </Text>
+                    <Text>Bored is signed by touching your dominant hand's pointer finger to the side of your nose, then as you move your pointer or index away from your face. </Text>
                 </View>
                 
-            </View>
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
             </View>
             <Button
             mode = "contained"
@@ -56,7 +53,10 @@ export default function LessonTwo({navigation}){
             >
                 Next Section
             </Button>
-
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.05} color={"lightgreen"}/>
+                    <Text style={{alignSelf:"center",position:"absolute"}}>5%</Text>
+            </View>
             
         </Background>
     )

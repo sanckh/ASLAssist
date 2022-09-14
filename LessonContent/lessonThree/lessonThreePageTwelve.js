@@ -27,7 +27,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fflood.gif?alt=media&token=c6d9075b-79ea-41b9-8a26-fe4d4c8349db'
                     }}>
                     </Image>
-                    <Text>Hands face down while moving upward showing water rising</Text>
+                    <Text>Hands face down while moving upward showing water rising.</Text>
                 </View>
                 
             </View>
@@ -40,12 +40,9 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fhot.gif?alt=media&token=ed5d7170-0923-4332-8563-dcb5a468dc29'
                     }}>
                     </Image>
-                    <Text>taking your fingers and thumb into a claw shape. Now starting with your claw hand over your mouth, move the hand away from your mouth and rotate it so that you end the sign with your palm facing outward. Flatten out your leading hand.</Text>
+                    <Text>Taking your fingers and thumb into a claw shape. Now starting with your claw hand over your mouth, move the hand away from your mouth and rotate it so that you end the sign with your palm facing outward. Flatten out your leading hand.</Text>
                 </View>
                 
-            </View>
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
             </View>
             <Button
             mode = "contained"
@@ -56,7 +53,10 @@ export default function LessonTwo({navigation}){
             >
                 Next Section
             </Button>
-
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.76} color={"lightgreen"}/>
+                    <Text style={{alignSelf:"center",position:"absolute"}}>76%</Text>
+            </View>
             
         </Background>
     )

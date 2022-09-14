@@ -25,7 +25,7 @@ export default function LessonOnePageThree({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Ffish.gif?alt=media&token=ec7417fd-16e3-48e1-b770-c4f326334d65'
                     }}>
                     </Image>
-                    <Text>take your dominant hand, and extend you hand with your thumb up and fingers together. Hold the hand out with fingers facing forward, and then shimmy your hand as you move it forward</Text>
+                    <Text>Take your dominant hand, and extend you hand with your thumb up and fingers together. Hold the hand out with fingers facing forward, and then shimmy your hand as you move it forward.</Text>
                 </View>
                 
             </View>
@@ -42,10 +42,6 @@ export default function LessonOnePageThree({navigation}){
                 </View>
                 
             </View>
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.66}
-                color={"lightgreen"} alignItems={"center"} />
-            </View>
             <Button
             mode = "contained"
             onPress = {() => navigation.navigate('lessonOnePageFour')}
@@ -55,6 +51,10 @@ export default function LessonOnePageThree({navigation}){
             >
                 Next Section
             </Button>
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.23} color={"lightgreen"}/>
+                    <Text style={{alignSelf:"center",position:"absolute"}}>23%</Text>
+            </View>
         </Background>
         
         

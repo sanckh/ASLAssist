@@ -27,7 +27,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fcough.gif?alt=media&token=9997e3e5-0233-43bd-9dfa-8b0dc7a7e5df'
                     }}>
                     </Image>
-                    <Text>A fist hitting your chest, repeatedly</Text>
+                    <Text>A fist hitting your chest, repeatedly.</Text>
                 </View>
                 
             </View>
@@ -40,12 +40,9 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fcpr.gif?alt=media&token=1c619a24-8ca6-43ab-8c88-9c8881b0230e'
                     }}>
                     </Image>
-                    <Text>CPR is usually spelled out but you can use pumping air with both hands too</Text>
+                    <Text>CPR is usually spelled out but you can use pumping air with both hands too.</Text>
                 </View>
                 
-            </View>
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
             </View>
             <Button
             mode = "contained"
@@ -56,7 +53,10 @@ export default function LessonTwo({navigation}){
             >
                 Next Section
             </Button>
-
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.30} color={"lightgreen"}/>
+                    <Text style={{alignSelf:"center",position:"absolute"}}>30%</Text>
+            </View>
             
         </Background>
     )

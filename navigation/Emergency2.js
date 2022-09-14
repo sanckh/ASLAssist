@@ -9,9 +9,8 @@ import { theme } from '../core/theme';
 import { getStatusBarHeight } from 'react-native-status-bar-height'
 import Background from '../components/Background';
 import GestureFlipView from 'react-native-gesture-flip-card';
-import Button from '../components/Button'
+import Button from '../components/Button';
 import HomeButton from '../components/HomeButton'
-
 
 export default function LessonOne({ navigation }) {
 
@@ -24,27 +23,8 @@ export default function LessonOne({ navigation }) {
             <HomeButton onPress = {() => navigation.navigate('Home')}/>
             <Header style={styles.header}>Emergency</Header>
             <View style={styles.container}>
-
-                <ScrollView style={styles.scrollview}>
-                <View>
-                        <Text style = {styles.topText}>Swipe the cards to view the sign's description!</Text>
-                    </View>
                     <View style={{ flexDirection: 'row', marginTop: 10 }}>
-                        <GestureFlipView width={180} height={90}>
-                            <View>
-                                <View style={styles.imagePlacement}>
-                                    <Image
-                                        style={styles.image}
-                                        source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Emergency%2Fallergic.gif?alt=media&token=6723bda9-594a-42da-be85-5dcabef23689'
-                                        }}>
-                                    </Image>
-                                </View>
-                            </View>
-                            <View style={styles.backCardStyle}>
-                                <Text style={[styles.text, { color: colors.text }]}>Touch your nose and then sign "OPPOSITE." Do most of the movement with your dominant hand.</Text>
-                            </View>
-                        </GestureFlipView>
+                        
 
                         <GestureFlipView width={180} height={90}>
                             <View>
@@ -52,50 +32,32 @@ export default function LessonOne({ navigation }) {
                                     <Image
                                         style={styles.image}
                                         source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Emergency%2Fblind.gif?alt=media&token=9e352d1b-9133-437b-afba-facdae156841'
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Emergency%2Femergency.gif?alt=media&token=a4815808-9bab-408a-a98c-b6693c482753'
                                         }}>
                                     </Image>
                                 </View>
                             </View>
                             <View style={styles.backCardStyle}>
-                                <Text style={[styles.text, { color: colors.text }]}>Fingers of dominant claw-2 handshape tap once or twice on the inner cheeks with the nose between the fingers.</Text>
+                                <Text style={[styles.text, { color: colors.text }]}> Take your dominant hand, form it into the ASL letter E sign, and shake it from side to side. </Text>
+                            </View>
+                        </GestureFlipView>
+                        <GestureFlipView width={180} height={90}>
+                            <View>
+                                <View style={styles.imagePlacement}>
+                                    <Image
+                                        style={styles.image}
+                                        source={{
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Emergency%2Ffever.gif?alt=media&token=046f04d4-5be7-4431-b176-26b8b10387a3'
+                                        }}>
+                                    </Image>
+                                </View>
+                            </View>
+                            <View style={styles.backCardStyle}>
+                                <Text style={[styles.text, { color: colors.text }]}>Slide the right index finger up and down the side of the left index finger. The dominant hand is in a palm-down "index finger" handshape.</Text>
                             </View>
                         </GestureFlipView>
                     </View>
 
-                    <View style={{ flexDirection: 'row', marginTop: 10 }}>
-                        <GestureFlipView width={180} height={90}>
-                            <View>
-                                <View style={styles.imagePlacement}>
-                                    <Image
-                                        style={styles.image}
-                                        source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Emergency%2Fburn.gif?alt=media&token=d2506a0a-52c3-436e-b586-166f815ca88a'
-                                        }}>
-                                    </Image>
-                                </View>
-                            </View>
-                            <View style={styles.backCardStyle}>
-                                <Text style={[styles.text, { color: colors.text }]}>Stretch out and wiggle your fingers like the flickering flames of a fire. Form ASL number 5 sign, with your fingers wiggling back and forth.</Text>
-                            </View>
-                        </GestureFlipView>
-
-                        <GestureFlipView width={180} height={90}>
-                            <View>
-                                <View style={styles.imagePlacement}>
-                                    <Image
-                                        style={styles.image}
-                                        source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Emergency%2Fcontagious.gif?alt=media&token=35e5730d-5488-4a4b-b880-9c879e562827'
-                                        }}>
-                                    </Image>
-                                </View>
-                            </View>
-                            <View style={styles.backCardStyle}>
-                                <Text style={[styles.text, { color: colors.text }]}> Holding up an "I" hand and moving it side to side a couple of inches while using a somewhat disgusted facial expression.</Text>
-                            </View>
-                        </GestureFlipView>
-                    </View>
 
                     <View style={{ flexDirection: 'row', marginTop: 10 }}>
 
@@ -105,33 +67,31 @@ export default function LessonOne({ navigation }) {
                                     <Image
                                         style={styles.image}
                                         source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Emergency%2Fcough.gif?alt=media&token=e6788617-d491-401e-be88-2ced2169e3f8'
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Emergency%2Fheadache.gif?alt=media&token=189109bd-e99d-4847-afd9-aaf7b1d346e2'
                                         }}>
                                     </Image>
                                 </View>
                             </View>
                             <View style={styles.backCardStyle}>
-                                <Text style={[styles.text, { color: colors.text }]}> Hit your chest with the thumb-side of your fist a couple times.</Text>
+                                <Text style={[styles.text, { color: colors.text }]}>A hurt sign near your forehead. </Text>
                             </View>
                         </GestureFlipView>
-
                         <GestureFlipView width={180} height={90}>
                             <View>
                                 <View style={styles.imagePlacement}>
                                     <Image
                                         style={styles.image}
                                         source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Emergency%2Fdeaf.gif?alt=media&token=69595c68-a261-4c38-b8a0-ea1c81734b83'
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Emergency%2Fheartattack.gif?alt=media&token=b82584ec-43ba-4710-a15c-560c3baf7586'
                                         }}>
                                     </Image>
                                 </View>
                             </View>
                             <View style={styles.backCardStyle}>
-                                <Text style={[styles.text, { color: colors.text }]}>Touch your finger on your cheek near your ear, then move your finger in a small arch and touch it near the mouth.</Text>
+                                <Text style={[styles.text, { color: colors.text }]}>Touches heart with the middle finger and then forms a fist and strike the palm of non-dominant loose-hand.</Text>
                             </View>
                         </GestureFlipView>
                     </View>
-
                     <View style={{ flexDirection: 'row', marginTop: 10 }}>
                         <GestureFlipView width={180} height={90}>
                             <View>
@@ -139,20 +99,52 @@ export default function LessonOne({ navigation }) {
                                     <Image
                                         style={styles.image}
                                         source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Emergency%2Fdoctor.gif?alt=media&token=be182104-f713-4b1f-81dd-b4a85f256166'
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Emergency%2Fhospital.gif?alt=media&token=1cfbb7d9-d18a-4214-80bd-bd21d76451fe'
                                         }}>
                                     </Image>
                                 </View>
                             </View>
                             <View style={styles.backCardStyle}>
-                                <Text style={[styles.text, { color: colors.text }]}>Take your hand, curve it, and touch it to the inner wrist of your non-dominant hand, like you are taking a pulse.</Text>
+                                <Text style={[styles.text, { color: colors.text }]}> Form the ASL 'H' sign, then you'll make the sign of a cross on your opposite arm, starting vertically, up down.</Text>
+                            </View>
+                        </GestureFlipView>
+                        <GestureFlipView width={180} height={90}>
+                            <View>
+                                <View style={styles.imagePlacement}>
+                                    <Image
+                                        style={styles.image}
+                                        source={{
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Emergency%2Fhurry.gif?alt=media&token=74593331-c378-4899-959b-0e81f8d585d2'
+                                        }}>
+                                    </Image>
+                                </View>
+                            </View>
+                            <View style={styles.backCardStyle}>
+                                <Text style={[styles.text, { color: colors.text }]}> Holding both 'H' hands in front of your body, pivot them up and down.</Text>
                             </View>
                         </GestureFlipView>
                     </View>
+                    <View style={{ flexDirection: 'row', marginTop: 10 }}>
+                        <GestureFlipView width={180} height={90}>
+                            <View>
+                                <View style={styles.imagePlacement}>
+                                    <Image
+                                        style={styles.image}
+                                        source={{
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Emergency%2Fmedicine.gif?alt=media&token=c704865d-6a62-40c6-a0a4-4bc7b291cdae'
+                                        }}>
+                                    </Image>
+                                </View>
+                            </View>
+                            <View style={styles.backCardStyle}>
+                                <Text style={[styles.text, { color: colors.text }]}>Hold your hand with palm facing up, middle finger of your dominant hand in the center of your palm, and make a twisting motion</Text>
+                            </View>
+                        </GestureFlipView>
+                        </View>
             </View>
             <Button
             mode = "contained"
-            onPress = {() => navigation.navigate('Emergency2')}
+            onPress = {() => navigation.navigate('Emergency3')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}
@@ -209,8 +201,11 @@ const styles = StyleSheet.create({
     gestureView: {
         marginLeft: 10,
         marginRight: 10
-    },
-    topText: {
-        textAlign: 'center'
     }
 })
+
+
+
+
+
+

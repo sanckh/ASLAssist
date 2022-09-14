@@ -27,7 +27,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fflashlight.gif?alt=media&token=3f4037c6-06a9-4e69-9292-9cb7ccdd03c6'
                     }}>
                     </Image>
-                    <Text>Your non-dominant hand is the 'holding' arm: you touch your index finger to your thumb to make a circle</Text>
+                    <Text>Your non-dominant hand is the 'holding' arm: you touch your index finger to your thumb to make a circle.</Text>
                 </View>
                 
             </View>
@@ -44,9 +44,6 @@ export default function LessonSix({navigation}){
                 </View>
                 
             </View>
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.34} color={"lightgreen"} />
-            </View>
             <Button
             mode = "contained"
             onPress = {() => navigation.navigate('lessonFourPageEight')}
@@ -56,6 +53,10 @@ export default function LessonSix({navigation}){
             >
                 Next Section
             </Button>
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.4} color={"lightgreen"}/>
+                    <Text style={{alignSelf:"center",position:"absolute"}}>40%</Text>
+            </View>
         </Background>
         
         

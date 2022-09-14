@@ -27,7 +27,7 @@ export default function LessonThree({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fweather.gif?alt=media&token=bf5a1d97-4306-442a-bfc3-a62afa0a5200'
                     }}>
                     </Image>
-                    <Text>form both hands into the ASL letter W sign as you make them face each other in front of you and shimmy them down a few inches in alternating directions.</Text>
+                    <Text>Form both hands into the ASL letter W sign as you make them face each other in front of you and shimmy them down a few inches in alternating directions.</Text>
                 </View>
                 
             </View>
@@ -40,12 +40,9 @@ export default function LessonThree({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fwindy.gif?alt=media&token=f604b430-36ba-4bac-80a6-718886886dab'
                     }}>
                     </Image>
-                    <Text>ld out both your open, flat hands in front of you, one hand slightly higher than the other, then sway them in tandem back and forth</Text>
+                    <Text>Hold out both your open, flat hands in front of you, one hand slightly higher than the other, then sway them in tandem back and forth.</Text>
                 </View>
                 
-            </View>
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
             </View>
             <Button
             mode = "contained"
@@ -56,7 +53,10 @@ export default function LessonThree({navigation}){
             >
                 Quiz Three!
             </Button>
-
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={1.00} color={"lightgreen"}/>
+                    <Text style={{alignSelf:"center",position:"absolute"}}>100%</Text>
+            </View>
             
         </Background>
     )

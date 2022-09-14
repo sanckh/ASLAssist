@@ -27,7 +27,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Fblackhistorymonth.gif?alt=media&token=78d9a0f2-b298-451d-9344-b5c33743f691'
                     }}>
                     </Image>
-                    <Text>Black History Month</Text>
+                    <Text>Black History Month.</Text>
                 </View>
                 
             </View>
@@ -40,12 +40,9 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Fchinesenewyear.gif?alt=media&token=cdd921d2-bca8-451f-81ff-574e31f9cee1'
                     }}>
                     </Image>
-                    <Text>Chinese New Year</Text>
+                    <Text>Chinese New Year.</Text>
                 </View>
                 
-            </View>
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
             </View>
             <Button
             mode = "contained"
@@ -56,7 +53,10 @@ export default function LessonTwo({navigation}){
             >
                 Lesson 2 Quiz
             </Button>
-
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={1.00} color={"lightgreen"}/>
+                    <Text style={{alignSelf:"center",position:"absolute"}}>100%</Text>
+            </View>
             
         </Background>
     )

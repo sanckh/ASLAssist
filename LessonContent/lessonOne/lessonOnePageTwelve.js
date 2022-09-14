@@ -27,7 +27,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Fgreen.gif?alt=media&token=7b432c84-a4ac-4ee9-b74d-e7bef496f460'
                     }}>
                     </Image>
-                    <Text>To sign green, make your hand into a fist with your index finger and thumb extended. With your fingers at shoulder level, twist your hand back and forth</Text>
+                    <Text>To sign green, make your hand into a fist with your index finger and thumb extended. With your fingers at shoulder level, twist your hand back and forth.</Text>
                 </View>
                 
             </View>
@@ -40,12 +40,9 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Flightpurple.gif?alt=media&token=7ef9b4f0-4848-48c8-9a32-ce3e2e04a432'
                     }}>
                     </Image>
-                    <Text>make the ASL letter 'P' sign (a fist, extending the thumb and the middle finger, with the index finger extended and bent down ninety degrees). Take your 'P' sign and shake it around in front and to the side of your body.</Text>
+                    <Text>Make the ASL letter 'P' sign (a fist, extending the thumb and the middle finger, with the index finger extended and bent down ninety degrees). Take your 'P' sign and shake it around in front and to the side of your body.</Text>
                 </View>
                 
-            </View>
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
             </View>
             <Button
             mode = "contained"
@@ -56,7 +53,10 @@ export default function LessonTwo({navigation}){
             >
                 Next Section
             </Button>
-
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.84} color={"lightgreen"}/>
+                    <Text style={{alignSelf:"center",position:"absolute"}}>84%</Text>
+            </View>
             
         </Background>
     )

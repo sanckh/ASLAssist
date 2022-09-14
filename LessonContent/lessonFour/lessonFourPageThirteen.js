@@ -40,12 +40,9 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fnextweek.gif?alt=media&token=3114ce24-8299-4743-b76f-ac12bfbb68cb'
                     }}>
                     </Image>
-                    <Text>"index-finger" hand forward and off of the base hand, then curves sharply to the left</Text>
+                    <Text>"Index-finger" hand forward and off of the base hand, then curves sharply to the left.</Text>
                 </View>
                 
-            </View>
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.34} color={"lightgreen"} />
             </View>
             <Button
             mode = "contained"
@@ -56,6 +53,10 @@ export default function LessonSix({navigation}){
             >
                 Next Section
             </Button>
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.76} color={"lightgreen"}/>
+                    <Text style={{alignSelf:"center",position:"absolute"}}>76%</Text>
+            </View>
         </Background>
         
         

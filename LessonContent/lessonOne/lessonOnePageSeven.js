@@ -38,13 +38,9 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Ftiger.gif?alt=media&token=470f1e34-74f1-4429-acae-5659a972d18c'
                     }}>
                     </Image>
-                    <Text>start with both hands with fingers and thumb extended, and spread them out as if they were tiger claws. Start with your hands in front of your face, then pull them apart.</Text>
+                    <Text>Start with both hands with fingers and thumb extended, and spread them out as if they were tiger claws. Start with your hands in front of your face, then pull them apart.</Text>
                 </View>
                 
-            </View>
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.66}
-                color={"lightgreen"} alignItems={"center"} />
             </View>
             <Button
             mode = "contained"
@@ -55,6 +51,10 @@ export default function LessonSix({navigation}){
             >
                 Next Section
             </Button>
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.51} color={"lightgreen"}/>
+                    <Text style={{alignSelf:"center",position:"absolute"}}>51%</Text>
+            </View>
         </Background>
         
         

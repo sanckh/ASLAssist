@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity, } from 'react-native';
+import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import Header from '../../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../../components/BackButton';
@@ -26,7 +26,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fbone.gif?alt=media&token=4636ca68-21fb-48bf-87c4-36eaa99bf2f3'
                     }}>
                     </Image>
-                    <Text>bend your dominant hand's index and middle fingers (like a bent V hand) and brush them up against one side of your jaw.</Text>
+                    <Text>Bend your dominant hand's index and middle fingers (like a bent V hand) and brush them up against one side of your jaw.</Text>
                 </View>
                 
             </View>
@@ -39,12 +39,9 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fbreathing.gif?alt=media&token=b441d7d9-4b7f-40d1-97b3-7cc24c3d4f97'
                     }}>
                     </Image>
-                    <Text>Both hands use "5"-hands. The hands move forward away from the chest, and then back to the chest</Text>
+                    <Text>Both hands use "5"-hands. The hands move forward away from the chest, and then back to the chest.</Text>
                 </View>
                 
-            </View>
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
             </View>
             <Button
             mode = "contained"
@@ -55,7 +52,10 @@ export default function LessonTwo({navigation}){
             >
                 Next Section
             </Button>
-
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.18} color={"lightgreen"}/>
+                    <Text style={{alignSelf:"center",position:"absolute"}}>18%</Text>
+            </View>
             
         </Background>
     )

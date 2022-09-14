@@ -30,7 +30,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fburn.gif?alt=media&token=9ab3c725-ed44-4af5-9d79-495474ba175a'
                     }}>
                     </Image>
-                    <Text>All fingers together touching, while moving in a upward motion open palm up to body</Text>
+                    <Text>All fingers together touching, while moving in a upward motion open palm up to body.</Text>
 
                 </View>
                 
@@ -50,13 +50,10 @@ export default function LessonTwo({navigation}){
                 </View>
                 
             </View>
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
-            </View>
             <Button
             mode = "contained"
 
-            onPress = {() => navigation.navigate('lessonThreePageFive')}
+            onPress = {() => navigation.navigate('lessonTwoPageFive')}
 
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
@@ -64,7 +61,10 @@ export default function LessonTwo({navigation}){
             >
                 Next Section
             </Button>
-
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.2} color={"lightgreen"}/>
+                    <Text style={{alignSelf:"center",position:"absolute"}}>20%</Text>
+            </View>
             
         </Background>
     )

@@ -29,7 +29,7 @@ export default function LessonThree({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Falive.gif?alt=media&token=d930d2be-2c2b-4d14-9c40-88d2a8b03e68'
                     }}>
                     </Image>
-                    <Text>Both thumbs up while moving up on chest area</Text>
+                    <Text>Both thumbs up while moving up on chest area.</Text>
                 </View>
                 
             </View>
@@ -42,12 +42,9 @@ export default function LessonThree({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fbandage.gif?alt=media&token=60b47842-dea2-4c22-8183-0f54ba4191d9'
                     }}>
                     </Image>
-                    <Text>taking your forefinger and middle finger on your dominant hand extended, and sliding them over the back of your non-dominant hand </Text>
+                    <Text>Taking your forefinger and middle finger on your dominant hand extended, and sliding them over the back of your non-dominant hand. </Text>
                 </View>
                 
-            </View>
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
             </View>
             <Button
             mode = "contained"
@@ -58,7 +55,10 @@ export default function LessonThree({navigation}){
             >
                 Next Section
             </Button>
-
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.06} color={"lightgreen"}/>
+                    <Text style={{alignSelf:"center",position:"absolute"}}>6%</Text>
+            </View>
             
         </Background>
     )

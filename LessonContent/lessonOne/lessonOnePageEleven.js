@@ -27,7 +27,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Fgold.gif?alt=media&token=0e607b28-0fc9-4a70-921f-b9ca0a96c2b8'
                     }}>
                     </Image>
-                    <Text>To do the sign for "gold" point your index finger at your ear lobe and then move your hand away from your ear as you change the handshape into the letter "y." End with a very small shake</Text>
+                    <Text>To do the sign for "gold" point your index finger at your ear lobe and then move your hand away from your ear as you change the handshape into the letter "y." End with a very small shake.</Text>
                 </View>
                 
             </View>
@@ -44,9 +44,6 @@ export default function LessonTwo({navigation}){
                 </View>
                 
             </View>
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
-            </View>
             <Button
             mode = "contained"
             onPress = {() => navigation.navigate('lessonOnePageTwelve')}
@@ -56,7 +53,10 @@ export default function LessonTwo({navigation}){
             >
                 Next Section
             </Button>
-
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.77} color={"lightgreen"}/>
+                    <Text style={{alignSelf:"center",position:"absolute"}}>77%</Text>
+            </View>
             
         </Background>
     )

@@ -27,7 +27,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Fbull.gif?alt=media&token=b7c2562c-7ec0-4726-b999-dee032262076'
                     }}>
                     </Image>
-                    <Text>take your dominant hand, form the letter Y sign, and hold it up to your forehead, palm facing out</Text>
+                    <Text>Take your dominant hand, form the letter Y sign, and hold it up to your forehead, palm facing out.</Text>
                 </View>
                 
             </View>
@@ -44,9 +44,6 @@ export default function LessonTwo({navigation}){
                 </View>
                 
             </View>
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
-            </View>
             <Button
             mode = "contained"
             onPress = {() => navigation.navigate('lessonOnePageTwo')}
@@ -56,7 +53,10 @@ export default function LessonTwo({navigation}){
             >
                 Next Section
             </Button>
-
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.09} color={"lightgreen"}/>
+                    <Text style={{alignSelf:"center",position:"absolute"}}>9%</Text>
+            </View>
             
         </Background>
     )

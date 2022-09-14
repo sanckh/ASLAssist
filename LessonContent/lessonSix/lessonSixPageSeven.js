@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonSix%2Fprescription.gif?alt=media&token=53a5c192-c857-4b7f-9591-8166d70f962c'
                     }}>
                     </Image>
-                    <Text>Looks like a pill bottle shaking</Text>
+                    <Text>Make a pill bottle shaking like motion.</Text>
                 </View>
                 
             </View>
@@ -38,7 +38,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonSix%2Fredcross.gif?alt=media&token=e7b7396b-f34b-452a-be35-ff4df8cedc7c'
                     }}>
                     </Image>
-                    <Text>Combine words "red" and "cross"</Text>
+                    <Text>Combine words "red" and "cross" together.</Text>
                 </View>
                 
             </View>

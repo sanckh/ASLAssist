@@ -26,7 +26,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Fpenguin.gif?alt=media&token=11cce3a8-3689-4931-be49-ea8c6584bb2a'
                     }}>
                     </Image>
-                    <Text>: To sign penguin, position your flat, open hands on either side of your hips, with palms facing down and angled relative to the wrists and the forearms. Move both hands up and down while still flat and facing the ground, as if you are waddling like a penguin</Text>
+                    <Text>To sign penguin, position your flat, open hands on either side of your hips, with palms facing down and angled relative to the wrists and the forearms. Move both hands up and down while still flat and facing the ground, as if you are waddling like a penguin.</Text>
                 </View>
                 
             </View>
@@ -43,10 +43,6 @@ export default function LessonSix({navigation}){
                 </View>
                 
             </View>
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.66}
-                color={"lightgreen"} alignItems={"center"} />
-            </View>
             <Button
             mode = "contained"
             onPress = {() => navigation.navigate('lessonOnePageSeven')}
@@ -56,6 +52,10 @@ export default function LessonSix({navigation}){
             >
                 Next Section
             </Button>
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.44} color={"lightgreen"}/>
+                    <Text style={{alignSelf:"center",position:"absolute"}}>44%</Text>
+            </View>
         </Background>
         
         

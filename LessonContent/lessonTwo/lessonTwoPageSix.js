@@ -27,7 +27,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Fpain.gif?alt=media&token=331515f4-0631-4030-91f1-b9e46c3c97f4'
                     }}>
                     </Image>
-                    <Text>take your two hands and make each into a fist with your index finger extended. Point the index fingers of each hand at one another</Text>
+                    <Text>Take your two hands and make each into a fist with your index finger extended. Point the index fingers of each hand at one another.</Text>
                 </View>
                 
             </View>
@@ -40,12 +40,9 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Fpanicked.gif?alt=media&token=3d4ccb8c-c7b0-4e4b-bbfe-bc3d65e4e3c3'
                     }}>
                     </Image>
-                    <Text>Aggressively tap middle finger on chest repeatedly</Text>
+                    <Text>Aggressively tap middle finger on chest repeatedly.</Text>
                 </View>
                 
-            </View>
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
             </View>
             <Button
             mode = "contained"
@@ -56,7 +53,10 @@ export default function LessonTwo({navigation}){
             >
                 Next Section
             </Button>
-
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.3} color={"lightgreen"}/>
+                    <Text style={{alignSelf:"center",position:"absolute"}}>30%</Text>
+            </View>
             
         </Background>
     )

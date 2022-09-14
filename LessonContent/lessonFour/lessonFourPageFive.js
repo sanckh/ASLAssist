@@ -40,12 +40,9 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Ffebruary.gif?alt=media&token=f1af592f-6762-4930-8761-a8c70c462256'
                     }}>
                     </Image>
-                    <Text>Fingerspell F-E-B</Text>
+                    <Text>Fingerspell F-E-B.</Text>
                 </View>
                 
-            </View>
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.34} color={"lightgreen"} />
             </View>
             <Button
             mode = "contained"
@@ -56,6 +53,10 @@ export default function LessonSix({navigation}){
             >
                 Next Section
             </Button>
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.28} color={"lightgreen"}/>
+                    <Text style={{alignSelf:"center",position:"absolute"}}>28%</Text>
+            </View>
         </Background>
         
         
