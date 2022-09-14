@@ -30,7 +30,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fburn.gif?alt=media&token=9ab3c725-ed44-4af5-9d79-495474ba175a'
                     }}>
                     </Image>
-                    <Text>All fingers together touching, while moving in a upward motion open palm up to body</Text>
+                    <Text>All fingers together touching, while moving in a upward motion open palm up to body.</Text>
 
                 </View>
                 

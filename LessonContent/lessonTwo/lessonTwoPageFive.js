@@ -27,7 +27,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Fhurt.gif?alt=media&token=00d8db5d-dd3d-42eb-92b9-7fee25ee9973'
                     }}>
                     </Image>
-                    <Text> take your two hands and make each into a fist with your index finger extended.</Text>
+                    <Text>Take your two hands and make each into a fist with your index finger extended.</Text>
                 </View>
                 
             </View>
@@ -40,7 +40,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Flove.gif?alt=media&token=fe69dd2e-fadf-40ea-b78a-e75ff04ab8ae'
                     }}>
                     </Image>
-                    <Text> make your hands into fists and cross your arms across your chest, as if giving your self a big squeeze.</Text>
+                    <Text>Make your hands into fists and cross your arms across your chest, as if giving your self a big squeeze.</Text>
                 </View>
                 
             </View>

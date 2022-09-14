@@ -27,7 +27,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fhurricane.gif?alt=media&token=97be4fc2-5d5c-4fd0-ab58-5395bcd8e9da'
                     }}>
                     </Image>
-                    <Text> the index fingers circle and bend in one place</Text>
+                    <Text>The index fingers circle and bend in one place.</Text>
                 </View>
                 
             </View>
@@ -40,7 +40,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Flightening.gif?alt=media&token=be2b16eb-a2fb-401a-b2ed-e39d406691e2'
                     }}>
                     </Image>
-                    <Text>Index finger is a swift wiggly moment downwards. </Text>
+                    <Text>Index finger is a swift wiggly moment downwards.</Text>
                 </View>
                 
             </View>

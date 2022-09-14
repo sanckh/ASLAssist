@@ -40,7 +40,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fxray.gif?alt=media&token=eb34acf9-3ce0-4f04-9598-7eb1d55cefc9'
                     }}>
                     </Image>
-                    <Text>make the ASL sign for the letter 'X' with your dominant hand at your opposite shoulder, then bring it to your chest a short diagonal distance down. </Text>
+                    <Text>Make the ASL sign for the letter 'X' with your dominant hand at your opposite shoulder, then bring it to your chest a short diagonal distance down. </Text>
                 </View>
                 
             </View>

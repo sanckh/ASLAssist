@@ -27,7 +27,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Fthanksgiving.gif?alt=media&token=5d2f77e7-5e68-407a-b59e-cd7dbd9cbf1f'
                     }}>
                     </Image>
-                    <Text>Thanksgiving Day</Text>
+                    <Text>Thanksgiving Day.</Text>
                 </View>
                 
             </View>
@@ -40,7 +40,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Fvalentineday.gif?alt=media&token=8e011868-672a-4fd2-ac50-6f469b3404e8'
                     }}>
                     </Image>
-                    <Text>Valentine's Day</Text>
+                    <Text>Valentine's Day.</Text>
                 </View>
                 
             </View>

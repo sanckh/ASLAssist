@@ -27,7 +27,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Ffourthofjuly.gif?alt=media&token=63f73d38-f282-4c46-89a8-526bd1542ef9'
                     }}>
                     </Image>
-                    <Text>Fourth Of July</Text>
+                    <Text>Fourth Of July.</Text>
                 </View>
                 
             </View>
@@ -40,7 +40,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Fgroundhogday.gif?alt=media&token=ba2ae1d4-d8a9-4336-b067-b9a2307217e9'
                     }}>
                     </Image>
-                    <Text>GroundHog Day</Text>
+                    <Text>GroundHog Day.</Text>
                 </View>
                 
             </View>

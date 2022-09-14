@@ -27,7 +27,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fcough.gif?alt=media&token=9997e3e5-0233-43bd-9dfa-8b0dc7a7e5df'
                     }}>
                     </Image>
-                    <Text>A fist hitting your chest, repeatedly</Text>
+                    <Text>A fist hitting your chest, repeatedly.</Text>
                 </View>
                 
             </View>
@@ -40,7 +40,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonThree%2Fcpr.gif?alt=media&token=1c619a24-8ca6-43ab-8c88-9c8881b0230e'
                     }}>
                     </Image>
-                    <Text>CPR is usually spelled out but you can use pumping air with both hands too</Text>
+                    <Text>CPR is usually spelled out but you can use pumping air with both hands too.</Text>
                 </View>
                 
             </View>

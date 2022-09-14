@@ -27,7 +27,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Fnewyearseve.gif?alt=media&token=4d4161d3-d40a-4e76-a006-f613b48eb339'
                     }}>
                     </Image>
-                    <Text>New Years Eve</Text>
+                    <Text>New Years Eve.</Text>
                 </View>
                 
             </View>
@@ -40,7 +40,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonTwo%2Fpresidentsday.gif?alt=media&token=869cdcc6-448d-429d-a8c2-c0cbb0aece30'
                     }}>
                     </Image>
-                    <Text>Presidents Day</Text>
+                    <Text>Presidents Day.</Text>
                 </View>
                 
             </View>

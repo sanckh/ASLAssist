@@ -38,7 +38,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Ftiger.gif?alt=media&token=470f1e34-74f1-4429-acae-5659a972d18c'
                     }}>
                     </Image>
-                    <Text>start with both hands with fingers and thumb extended, and spread them out as if they were tiger claws. Start with your hands in front of your face, then pull them apart.</Text>
+                    <Text>Start with both hands with fingers and thumb extended, and spread them out as if they were tiger claws. Start with your hands in front of your face, then pull them apart.</Text>
                 </View>
                 
             </View>

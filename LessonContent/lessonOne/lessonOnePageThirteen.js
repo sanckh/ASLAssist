@@ -40,7 +40,7 @@ export default function LessonTwo({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOne%2Fpink.gif?alt=media&token=1e380fee-b8f2-4743-b8fc-bb8e10699d35'
                     }}>
                     </Image>
-                    <Text>To sign pink, form the letter 'P' in ASL, then touch your middle finger to your lips a couple times</Text>
+                    <Text>To sign pink, form the letter 'P' in ASL, then touch your middle finger to your lips a couple times.</Text>
                 </View>
                 
             </View>

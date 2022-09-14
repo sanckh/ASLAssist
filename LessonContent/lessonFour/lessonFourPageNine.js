@@ -27,7 +27,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fjuly.gif?alt=media&token=9597482a-7070-4655-bf8e-49d7e168b2e7'
                     }}>
                     </Image>
-                    <Text>Fingerspelled J-U-L-Y</Text>
+                    <Text>Fingerspelled J-U-L-Y.</Text>
                 </View>
                 
             </View>

@@ -27,7 +27,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fflashlight.gif?alt=media&token=3f4037c6-06a9-4e69-9292-9cb7ccdd03c6'
                     }}>
                     </Image>
-                    <Text>Your non-dominant hand is the 'holding' arm: you touch your index finger to your thumb to make a circle</Text>
+                    <Text>Your non-dominant hand is the 'holding' arm: you touch your index finger to your thumb to make a circle.</Text>
                 </View>
                 
             </View>
