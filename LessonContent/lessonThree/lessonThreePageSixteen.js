@@ -44,9 +44,6 @@ export default function LessonThree({navigation}){
                 </View>
                 
             </View>
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
-            </View>
             <Button
             mode = "contained"
             onPress = {() => navigation.navigate('HomeDash')}
@@ -56,7 +53,10 @@ export default function LessonThree({navigation}){
             >
                 Quiz Three!
             </Button>
-
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={1.00} color={"lightgreen"}/>
+                    <Text style={{alignSelf:"center",position:"absolute"}}>100%</Text>
+            </View>
             
         </Background>
     )
