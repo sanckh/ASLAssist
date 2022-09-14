@@ -38,7 +38,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonSix%2Fparent.gif?alt=media&token=6589409f-83f1-4621-9742-78381cebcea7'
                     }}>
                     </Image>
-                    <Text>: Combine the signs "mom" and "dad" quickly</Text>
+                    <Text>: Combine the signs "mom" and "dad" quickly.</Text>
                 </View>
                 
             </View>
