@@ -1,4 +1,5 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image, Alert } from 'react-native';
+import React from 'react';
+import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image, Alert, TouchableHighlight } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
@@ -12,9 +13,24 @@ import { theme } from '../core/theme';
 export default function PracticeOne({navigation}){
     const {colors} = useTheme();
 
-    const wrongAnswer = () => {
-        Alert.alert('This answer is incorrect. \nPlease try again');
-    };
+    var [isPress, setIsPress] = React.useState(false);
+    const [chosenId, setChosenId] = React.useState('');
+
+    const onPressAnswer = (id) => setChosenId(id);
+
+    // const wrongAnswer = () => {
+    //     setIsPress(current => !current)
+    //     if(isPress){
+    //         console.log("isPress = true")
+    //     }
+    //     else{
+    //         console.log("isPress = false")
+    //     }
+    // }
+
+    // const wrongAnswer = () => {
+    //     Alert.alert('This answer is incorrect. \nPlease try again');
+    // };
 
     return(
         <Background>
@@ -35,23 +51,26 @@ export default function PracticeOne({navigation}){
                 </View>
                 <Text style={styles.text}>What sign is this?</Text>
                 <View style={styles.screen}>
+            
+            
             <Button
-            onPress={()=> wrongAnswer()}
-            mode = "contained"
-            style = {{backgroundColor: '#daeaf6', 
+            onPress={() => onPressAnswer('answer1')}
+            style = {{
+                backgroundColor: chosenId === 'answer1' ? 'red' : '#daeaf6',
                 width: 150,
                 height: 60,
                 borderWidth: 5,
                 borderRadius: 15,
                 borderColor: '#0a2941',
                 marginRight: 40,
-                marginLeft: 10}}>
-                <Text color={theme.colors.text} textAlign='center'>Belt</Text>
+                marginLeft: 10}}
+                >
+                <Text style={{textAlign:'center'}}>Belt</Text>
+                
             </Button>
 
             <Button
             onPress = {() => navigation.navigate('pqOnePageTwo')}
-            mode = "contained"
             style = {{backgroundColor: '#daeaf6', 
                 width: 150,
                 height: 60,
@@ -62,11 +81,12 @@ export default function PracticeOne({navigation}){
                 <Text color={theme.colors.text} textAlign='center'>Avocado</Text>
             </Button>
             </View>
+
             <View style={styles.screen}>
             <Button
-            onPress={()=> wrongAnswer()}
-            mode = "contained"
-            style = {{backgroundColor: '#daeaf6', 
+            onPress={() => onPressAnswer('answer2')}
+            style = {{
+                backgroundColor: chosenId === 'answer2' ? 'red' : '#daeaf6',
                 width: 150,
                 height: 60,
                 borderWidth: 5,
@@ -74,20 +94,20 @@ export default function PracticeOne({navigation}){
                 borderColor: '#0a2941',
                 marginRight: 40,
                 marginLeft: 10}}>
-                <Text color={theme.colors.text} textAlign='center'>Cake</Text>
+                <Text style={{textAlign:'center'}}>Cake</Text>
             </Button>
 
             <Button
-            onPress={()=> wrongAnswer()}
-            mode = "contained"
-            style = {{backgroundColor: '#daeaf6', 
+           onPress={() => onPressAnswer('answer3')}
+           style = {{
+               backgroundColor: chosenId === 'answer3' ? 'red' : '#daeaf6',
                 width: 150,
                 height: 60,
                 borderWidth: 5,
                 borderRadius: 15,
                 borderColor: '#0a2941',
                 marginRight: 10,}}>
-                <Text color={theme.colors.text} textAlign='center'>Sorry</Text>
+                <Text style={{textAlign:'center'}}>Sorry</Text>
             </Button>
 
             </View>
@@ -142,4 +162,17 @@ const styles = StyleSheet.create({
         top: 10 + getStatusBarHeight(),
         left: 4,
       },
+      btnNormal: {
+        borderColor: 'blue',
+        borderWidth: 1,
+        borderRadius: 10,
+        height: 30,
+        width: 100,
+      },
+      btnPress: {
+        borderColor: 'blue',
+        borderWidth: 1,
+        height: 30,
+        width: 100,
+      }
 })

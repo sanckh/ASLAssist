@@ -370,7 +370,7 @@ export default function App() {
       <AuthContext.Provider value={authContext}>
       <NavigationContainer theme={theme}>
         <Stack.Navigator 
-        initialRouteName='LoginScreen'
+        initialRouteName='PracticeQuizOne'
         screenOptions={{
           headerShown: false,
         }}
