@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonSix%2Fdrowning.gif?alt=media&token=99686920-c097-4463-9db6-6725c41f0b04'
                     }}>
                     </Image>
-                    <Text>Thumbs up, with other hand flat out and wiggle down the thumbs up</Text>
+                    <Text>While your thumbs up, with other hand flat out and wiggle down the thumbs up.</Text>
                 </View>
                 
             </View>
@@ -38,7 +38,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonSix%2Fevacuate.gif?alt=media&token=8ed4ca0b-9f75-48e9-a3c7-de75ee3f84f7'
                     }}>
                     </Image>
-                    <Text>Hand out and with other hand use finger to slide against hand</Text>
+                    <Text>Put dominant hand out while your other hand uses finger to slide against hand.</Text>
                 </View>
                 
             </View>

@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonSix%2Fserviceanimal.gif?alt=media&token=8e5465a6-cc18-4058-a9e1-e124b1c2f622'
                     }}>
                     </Image>
-                    <Text>Hands palm up shaking and then fold both hand inwards</Text>
+                    <Text>Hands, palm up shaking and then fold both hand inwards.</Text>
                 </View>
                 
             </View>
