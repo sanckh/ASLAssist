@@ -18,6 +18,9 @@ export default function LessonThree({ navigation }) {
             <Header style={styles.header}>Numbers</Header>
             <View style={styles.container}>
                 <ScrollView style={styles.scrollview}>
+                <View>
+                        <Text style = {styles.topText}>Swipe the cards to view the sign's description!</Text>
+                    </View>
                     <View style={{ flexDirection: 'row', marginTop: 10 }}>
                         <GestureFlipView width={170} height={160}>
                             <View>
@@ -256,4 +259,7 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         //borderColor: 'rgba(180, 180, 180, 1)'
     },
+    topText: {
+        textAlign: 'center'
+    }
 })

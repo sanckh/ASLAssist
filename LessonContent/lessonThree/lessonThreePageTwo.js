@@ -1,4 +1,4 @@
-import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native';
+import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image} from 'react-native';
 import Header from '../../components/Header';
 import { useTheme } from '@react-navigation/native';
 import BackButton from '../../components/BackButton';
@@ -43,9 +43,6 @@ export default function LessonTwo({navigation}){
                 </View>
                 
             </View>
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
-            </View>
             <Button
             mode = "contained"
             onPress = {() => navigation.navigate('lessonThreePageThree')}
@@ -55,7 +52,10 @@ export default function LessonTwo({navigation}){
             >
                 Next Section
             </Button>
-
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.12} color={"lightgreen"}/>
+                    <Text style={{alignSelf:"center",position:"absolute"}}>12%</Text>
+            </View>
             
         </Background>
     )

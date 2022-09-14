@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFive%2Fengaged.gif?alt=media&token=33991b66-b679-4e6f-bd9f-e0bbae598caa'
                     }}>
                     </Image>
-                    <Text>Hand closed into half fist and hitting other hand</Text>
+                    <Text>Fingers touching top of palm in closed form while hitting the top of other hand.</Text>
                 </View>
                 
             </View>
@@ -38,7 +38,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFive%2Ffuneral.gif?alt=media&token=888c09b6-23b7-4c12-9b08-4d42ba02ff86'
                     }}>
                     </Image>
-                    <Text> Dominant upright "V" handshape in front of the passive upright "V" handshape in space in front of the signer</Text>
+                    <Text> Create a "V" handshape in front of the passive upright "V" handshape in space in front of the signer.</Text>
                 </View>
                 
             </View>

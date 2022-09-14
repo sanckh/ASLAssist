@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFive%2Fbirth.gif?alt=media&token=3a40a1d6-8a10-453d-9d0a-04674414e4ad'
                     }}>
                     </Image>
-                    <Text>Flip hand onto next hand from stomach area</Text>
+                    <Text>Flip your right hand onto left hand from the stomach area.</Text>
                 </View>
                 
             </View>

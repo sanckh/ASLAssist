@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFive%2Fpregnant.gif?alt=media&token=a9ec60ff-4058-480c-b95c-5355921540fe'
                     }}>
                     </Image>
-                    <Text>Hand showing belly</Text>
+                    <Text>Hand upside down, extending outwards showing belly.</Text>
                 </View>
                 
             </View>
@@ -38,7 +38,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFive%2Fpropose.gif?alt=media&token=bda8f4ce-3bb4-40b2-bc20-0e6de27873fb'
                     }}>
                     </Image>
-                    <Text>Both hands out as if giving a ring</Text>
+                    <Text>Both hands are extending out as if giving a ring to someone.</Text>
                 </View>
                 
             </View>

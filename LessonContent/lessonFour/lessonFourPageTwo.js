@@ -27,7 +27,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFour%2Fbattery.gif?alt=media&token=5b580274-0b9e-48cd-8f0b-e05d12ff924b'
                     }}>
                     </Image>
-                    <Text>Taking both hands and extending your bent index finger from the fist. Bump the extended index fingers from each hand against each other.</Text>
+                    <Text>Taking both hands, extend your bent index finger from the fist. Then, bump the extended index fingers from each hand against each other.</Text>
                 </View>
                 
             </View>
@@ -44,9 +44,6 @@ export default function LessonSix({navigation}){
                 </View>
                 
             </View>
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.34} color={"lightgreen"} />
-            </View>
             <Button
             mode = "contained"
             onPress = {() => navigation.navigate('lessonFourPageThree')}
@@ -56,6 +53,10 @@ export default function LessonSix({navigation}){
             >
                 Next Section
             </Button>
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.1} color={"lightgreen"}/>
+                    <Text style={{alignSelf:"center",position:"absolute"}}>10%</Text>
+            </View>
         </Background>
         
         

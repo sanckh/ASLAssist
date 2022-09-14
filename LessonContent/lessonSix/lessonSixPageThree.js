@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonSix%2Ffirefighter.gif?alt=media&token=540410dc-a7b8-48ea-babd-285db4a8cf57'
                     }}>
                     </Image>
-                    <Text>Bring one hand up to your forehead, palm out.</Text>
+                    <Text>Bringing one hand up to your forehead facing your palm out.</Text>
                 </View>
                 
             </View>
@@ -38,7 +38,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonSix%2Ffreezing.gif?alt=media&token=7f466046-dc2a-4b7b-8b54-3629ad5c71f0'
                     }}>
                     </Image>
-                    <Text>make your hands look like claws and have your palms face down</Text>
+                    <Text>Make your hands look like claws and have your palms face down.</Text>
                 </View>
                 
             </View>
