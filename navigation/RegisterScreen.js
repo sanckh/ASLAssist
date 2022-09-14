@@ -29,6 +29,26 @@ export default function RegisterScreen({ navigation }) {
   //   return unsubscribe
   // }, [])
 
+  const showAlert = () => 
+    Alert.alert(
+      "Authentication Successful",
+      "Please login to access the app!",
+      // [
+      //   {
+      //     text: "Cancel",
+      //     onPress: () => Alert.alert("Cancel Pressed"),
+      //     style: "cancel",
+      //   },
+      // ],
+      // {
+      //   cancelable: true,
+      //   onDismiss: () => 
+      //   Alert.alert(
+      //     "This alert was dismissed by tapping outside of the alert dialogue."
+      //   ),
+      // }
+    );
+
   const handleSignUp = () => {
     const emailError = emailValidator(email)
     const passwordError = passwordValidator(password)
@@ -41,8 +61,11 @@ export default function RegisterScreen({ navigation }) {
       //status message here
       .then((userCredentials) => {
         const user = userCredentials.user;
+        showAlert();
       })
-      navigation.navigate('Home')
+      .finally((userCredentials) => {
+        navigation.navigate('LoginScreen')
+      })
   }
 
   return (

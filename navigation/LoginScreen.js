@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { TouchableOpacity, StyleSheet, View } from 'react-native'
+import { TouchableOpacity, StyleSheet, View, Alert } from 'react-native'
 import { Text } from 'react-native-paper'
 import Background from '../components/Background'
 import Logo from '../components/Logo'
@@ -12,14 +12,46 @@ import { passwordValidator } from '../helpers/passwordValidator'
 import { getStatusBarHeight } from 'react-native-status-bar-height'
 import { List } from 'react-native-paper'
 
-import {  signInWithEmailAndPassword } from "firebase/auth";
+import {  onAuthStateChanged, signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from '../firebase'
+import app from '../firebase'
 
 
 export default function LoginScreen({ navigation }) {
 
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  // const [userLogged, setUserLogged] = useState(false);
+  // const [isLoading, setIsLoading] = useState(true);
+
+
+//listen for authentication state to change
+onAuthStateChanged(auth, user => {
+  if( user != null){
+    console.log("Authenticated Successfully")
+  }
+  //error report here
+})
+
+  const showAlert = () => 
+    Alert.alert(
+      "Authentication Error",
+      "Username or password incorrect.",
+      // [
+      //   {
+      //     text: "Cancel",
+      //     onPress: () => Alert.alert("Cancel Pressed"),
+      //     style: "cancel",
+      //   },
+      // ],
+      // {
+      //   cancelable: true,
+      //   onDismiss: () => 
+      //   Alert.alert(
+      //     "This alert was dismissed by tapping outside of the alert dialogue."
+      //   ),
+      // }
+    );
 
   const handleLogin = () => {
     const emailError = emailValidator(email) 
@@ -39,6 +71,7 @@ export default function LoginScreen({ navigation }) {
       })
       .catch((error) => {
         console.log(error.message)
+        showAlert()
       })
   }
 
