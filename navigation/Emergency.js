@@ -164,6 +164,7 @@ export default function LessonOne({ navigation }) {
                             </View>
                         </GestureFlipView>
                     </View>
+                </ScrollView>
             </View>
             <Button
             mode = "contained"
@@ -226,6 +227,7 @@ const styles = StyleSheet.create({
         marginRight: 10
     },
     topText: {
-        textAlign: 'center'
+        textAlign: 'center',
+        marginTop: 36
     }
 })
