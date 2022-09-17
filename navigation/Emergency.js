@@ -143,6 +143,21 @@ export default function LessonOne({ navigation }) {
                                 <Text style={[styles.text, { color: colors.text }]}>Take your hand, curve it, and touch it to the inner wrist of your non-dominant hand, like you are taking a pulse.</Text>
                             </View>
                         </GestureFlipView>
+                        <GestureFlipView width={180} height={90}>
+                            <View>
+                                <View style={styles.imagePlacement}>
+                                    <Image
+                                        style={styles.image}
+                                        source={{
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Emergency%2Fmedicine.gif?alt=media&token=c704865d-6a62-40c6-a0a4-4bc7b291cdae'
+                                        }}>
+                                    </Image>
+                                </View>
+                            </View>
+                            <View style={styles.backCardStyle}>
+                                <Text style={[styles.text, { color: colors.text }]}>Hold your hand with palm facing up, middle finger of your dominant hand in the center of your palm, and make a twisting motion</Text>
+                            </View>
+                        </GestureFlipView>
                     </View>
             </View>
             <Button
