@@ -132,7 +132,7 @@ export default function LessonOne({ navigation }) {
                         </GestureFlipView>
                     </View>
 
-                    <View style={{ flexDirection: 'row', marginTop: 10 }}>
+                    <View style={{ flexDirection: 'row', marginTop: 10,}}>
                         <GestureFlipView width={180} height={90}>
                             <View>
                                 <View style={styles.imagePlacement}>
@@ -165,16 +165,18 @@ export default function LessonOne({ navigation }) {
                         </GestureFlipView>
                     </View>
                 </ScrollView>
-            </View>
+            
             <Button
             mode = "contained"
             onPress = {() => navigation.navigate('Emergency2')}
             style = {{backgroundColor: '#ecddfc', 
                 width: 250,
                 height: 50,}}
+                alignSelf='center'
             >
                 Next Section
             </Button>
+            </View>
         </Background>
 
 
@@ -229,5 +231,5 @@ const styles = StyleSheet.create({
     topText: {
         textAlign: 'center',
         marginTop: 36
-    }
+    },
 })
