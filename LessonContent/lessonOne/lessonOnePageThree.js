@@ -42,10 +42,6 @@ export default function LessonOnePageThree({navigation}){
                 </View>
                 
             </View>
-            <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.66}
-                color={"lightgreen"} alignItems={"center"} />
-            </View>
             <Button
             mode = "contained"
             onPress = {() => navigation.navigate('lessonOnePageFour')}
@@ -55,6 +51,10 @@ export default function LessonOnePageThree({navigation}){
             >
                 Next Section
             </Button>
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.23} color={"lightgreen"}/>
+                    <Text style={{alignSelf:"center",position:"absolute"}}>23%</Text>
+            </View>
         </Background>
         
         

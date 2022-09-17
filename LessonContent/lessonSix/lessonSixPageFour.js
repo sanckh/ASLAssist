@@ -38,7 +38,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonSix%2Fkj.gif?alt=media&token=98642ad8-4190-485d-bdc4-b714e2187d15'
                     }}>
                     </Image>
-                    <Text>Fingerspelling 9-1-1</Text>
+                    <Text>Fingerspelling 9-1-1.</Text>
                 </View>
                 
             </View>

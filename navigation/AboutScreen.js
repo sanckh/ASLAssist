@@ -11,7 +11,7 @@ import OpenURLButton from '../components/openUrlButton'
 
 export default function AboutScreen({navigation}) {
 
-    const supportedURL = 'https://google.com';
+    const supportedURL = 'https://aslassist.weebly.com/about-us.html';
 
     return(
         <Background>

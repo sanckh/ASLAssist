@@ -19,6 +19,9 @@ export default function Alphabet({ navigation }) {
             <Header style={styles.header}>Alphabet</Header>
             <View style={styles.container}>
                 <ScrollView style={styles.scrollview}>
+                    <View>
+                        <Text style = {styles.topText}>Swipe the cards to view the sign's description!</Text>
+                    </View>
                     <View style={{ flexDirection: 'row', marginTop: 10 }}>
                         <GestureFlipView width={125} height={125}>
                             <View>
@@ -26,7 +29,7 @@ export default function Alphabet({ navigation }) {
                                     <Image
                                         style={styles.image}
                                         source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/ResizedAlphabet%2Fa.png?alt=media&token=27eade2d-cb80-46e0-a910-b818cd2a1906'
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2FNEWALPHABET%2Fa.png?alt=media&token=7d566f73-4cbf-445e-b905-e8c63a89061d'
                                         }}>
                                     </Image>
                                 </View>
@@ -42,7 +45,7 @@ export default function Alphabet({ navigation }) {
                                     <Image
                                         style={styles.image}
                                         source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/ResizedAlphabet%2Fb.png?alt=media&token=aa6d3d6e-382a-41ac-b2fb-36312c24e527'
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2FNEWALPHABET%2Fb.png?alt=media&token=fecf3e14-97d6-4fbd-8422-163b2361816f'
                                         }}>
                                     </Image>
                                 </View>
@@ -59,7 +62,7 @@ export default function Alphabet({ navigation }) {
                                     <Image
                                         style={styles.image}
                                         source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/ResizedAlphabet%2Fc.png?alt=media&token=7375e29d-6d71-44b8-bf6d-b8454a960112'
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2FNEWALPHABET%2Fc.png?alt=media&token=e9205556-8f91-423d-8b57-c5ee0491319c'
                                         }}>
                                     </Image>
                                 </View>
@@ -74,7 +77,7 @@ export default function Alphabet({ navigation }) {
                                     <Image
                                         style={styles.image}
                                         source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/ResizedAlphabet%2Fd.png?alt=media&token=3d229a22-7516-4e64-8ca6-cb079a6e24ef'
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2FNEWALPHABET%2Fd.png?alt=media&token=a011336d-3fcd-417c-9003-1f10aaa3ae79'
                                         }}>
                                     </Image>
                                 </View>
@@ -92,7 +95,7 @@ export default function Alphabet({ navigation }) {
                                     <Image
                                         style={styles.image}
                                         source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/ResizedAlphabet%2Fe.png?alt=media&token=430eb2e8-8c92-424a-be41-5354265175bc'
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2FNEWALPHABET%2Fe.png?alt=media&token=0f386832-3ce7-4aef-99de-13253ebd12f5'
                                         }}>
                                     </Image>
                                 </View>
@@ -107,7 +110,7 @@ export default function Alphabet({ navigation }) {
                                     <Image
                                         style={styles.image}
                                         source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/ResizedAlphabet%2Ff.png?alt=media&token=16b21d38-c00a-44ca-b7cc-24db035e7c8b'
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2FNEWALPHABET%2Ff.png?alt=media&token=cc134f45-f07e-4f72-b44b-b4e79a7c722d'
                                         }}>
                                     </Image>
                                 </View>
@@ -126,7 +129,7 @@ export default function Alphabet({ navigation }) {
                                     <Image
                                         style={styles.image}
                                         source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/ResizedAlphabet%2Fg.png?alt=media&token=69b8fdf1-6759-44fe-8c95-dd2ad702277d'
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2FNEWALPHABET%2Fg.png?alt=media&token=a3e50c2a-9ee6-45e5-b708-cf99bac5d156'
                                         }}>
                                     </Image>
                                 </View>
@@ -141,7 +144,7 @@ export default function Alphabet({ navigation }) {
                                     <Image
                                         style={styles.image}
                                         source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/ResizedAlphabet%2Fh.png?alt=media&token=ea89dcf7-d1bf-4490-82b5-99d1cf1f8a9d'
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2FNEWALPHABET%2Fh.png?alt=media&token=c8b8999c-3577-4b2c-9976-00c6fb60f59c'
                                         }}>
                                     </Image>
                                 </View>
@@ -158,7 +161,7 @@ export default function Alphabet({ navigation }) {
                                     <Image
                                         style={styles.image}
                                         source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/ResizedAlphabet%2Fi.png?alt=media&token=086316c3-d05b-44fe-9550-f35410e2c11e'
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2FNEWALPHABET%2Fi.png?alt=media&token=02c23a8d-9220-4532-ba52-0b9853c859b2'
                                         }}>
                                     </Image>
                                 </View>
@@ -173,7 +176,7 @@ export default function Alphabet({ navigation }) {
                                     <Image
                                         style={styles.image}
                                         source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/ResizedAlphabet%2Fj.png?alt=media&token=5b68c7aa-a13d-4c14-a1ad-2f551e88dddf'
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2FNEWALPHABET%2Fj.png?alt=media&token=bda090c2-7c1a-4206-abd4-8f2deeec4b9a'
                                         }}>
                                     </Image>
                                 </View>
@@ -190,7 +193,7 @@ export default function Alphabet({ navigation }) {
                                     <Image
                                         style={styles.image}
                                         source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/ResizedAlphabet%2Fk.png?alt=media&token=f71128b0-7669-4ec0-8e6b-baf8ba96ac72'
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2FNEWALPHABET%2Fk.png?alt=media&token=5d65b684-64ea-478d-94e5-3e2c6bb7fd46'
                                         }}>
                                     </Image>
                                 </View>
@@ -205,7 +208,7 @@ export default function Alphabet({ navigation }) {
                                     <Image
                                         style={styles.image}
                                         source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/ResizedAlphabet%2Fl.png?alt=media&token=15859a30-c78c-481b-bfd6-89df3176b30d'
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2FNEWALPHABET%2Fl.png?alt=media&token=1f8a29bd-e407-4984-ab3f-18248ed79ab1'
                                         }}>
                                     </Image>
                                 </View>
@@ -224,7 +227,7 @@ export default function Alphabet({ navigation }) {
                                     <Image
                                         style={styles.image}
                                         source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/ResizedAlphabet%2Fm.png?alt=media&token=f8c1ac95-038c-4400-9c79-7ff789c7c3ac'
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2FNEWALPHABET%2Fm.png?alt=media&token=743c6c35-11bf-4187-a81f-41c859ec28b8'
                                         }}>
                                     </Image>
                                 </View>
@@ -239,7 +242,7 @@ export default function Alphabet({ navigation }) {
                                     <Image
                                         style={styles.image}
                                         source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/ResizedAlphabet%2Fn.png?alt=media&token=a7f52984-c2bc-4067-8972-efcdbd9083f2'
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2FNEWALPHABET%2Fn.png?alt=media&token=db9e86f7-0931-4185-b646-49719ab3cf9a'
                                         }}>
                                     </Image>
                                 </View>
@@ -257,7 +260,7 @@ export default function Alphabet({ navigation }) {
                                     <Image
                                         style={styles.image}
                                         source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/ResizedAlphabet%2Fo.png?alt=media&token=0af6b6fe-2d9b-4024-ba89-8c465ef5ce2b'
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2FNEWALPHABET%2Fo.png?alt=media&token=042406f2-4bb6-40de-9ebe-28277b163413'
                                         }}>
                                     </Image>
                                 </View>
@@ -272,7 +275,7 @@ export default function Alphabet({ navigation }) {
                                     <Image
                                         style={styles.image}
                                         source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/ResizedAlphabet%2Fp.png?alt=media&token=2f1fa1eb-e322-4d19-b6de-bff18c70daa4'
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2FNEWALPHABET%2Fp.png?alt=media&token=867de42b-f3a3-4015-9fd5-62e6cd4646c6'
                                         }}>
                                     </Image>
                                 </View>
@@ -290,7 +293,7 @@ export default function Alphabet({ navigation }) {
                                     <Image
                                         style={styles.image}
                                         source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/ResizedAlphabet%2Fq.png?alt=media&token=e14e12b1-7c20-4f19-a12e-ce6c37fb71fb'
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2FNEWALPHABET%2Fq.png?alt=media&token=e2c64b14-7230-4735-8de9-76a53101590a'
                                         }}>
                                     </Image>
                                 </View>
@@ -305,7 +308,7 @@ export default function Alphabet({ navigation }) {
                                     <Image
                                         style={styles.image}
                                         source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/ResizedAlphabet%2Fr.png?alt=media&token=ada743ba-5724-4128-8372-74f4d4c27e36'
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2FNEWALPHABET%2Fr.png?alt=media&token=a9443c4d-a93d-4fcb-a515-3dbc604d678b'
                                         }}>
                                     </Image>
                                 </View>
@@ -323,7 +326,7 @@ export default function Alphabet({ navigation }) {
                                     <Image
                                         style={styles.image}
                                         source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/ResizedAlphabet%2Fs.png?alt=media&token=15762dd6-d167-40c0-b663-ae99d8bee0b4'
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2FNEWALPHABET%2Fs.png?alt=media&token=9fac9d43-6576-46f0-9b2f-e8c2b3e67a94'
                                         }}>
                                     </Image>
                                 </View>
@@ -338,7 +341,7 @@ export default function Alphabet({ navigation }) {
                                     <Image
                                         style={styles.image}
                                         source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/ResizedAlphabet%2Ft.png?alt=media&token=4f6fca60-9b81-4747-99ff-504c927a7fc0'
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2FNEWALPHABET%2Ft.png?alt=media&token=31834b68-d5b8-4004-be79-90cfc08d0f97'
                                         }}>
                                     </Image>
                                 </View>
@@ -356,7 +359,7 @@ export default function Alphabet({ navigation }) {
                                     <Image
                                         style={styles.image}
                                         source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/ResizedAlphabet%2Fu.png?alt=media&token=94f6169c-b0d4-4212-9714-8f86df28634e'
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2FNEWALPHABET%2Fu.png?alt=media&token=ea41fee4-aa4c-4750-b5d2-1d5e8d4a4d3b'
                                         }}>
                                     </Image>
                                 </View>
@@ -371,7 +374,7 @@ export default function Alphabet({ navigation }) {
                                     <Image
                                         style={styles.image}
                                         source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/ResizedAlphabet%2Fv.png?alt=media&token=dcbd9d96-bde3-49f3-829d-96054c4781ee'
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2FNEWALPHABET%2Fv.png?alt=media&token=077c078e-f609-48be-bbb9-b01b6d040ba2'
                                         }}>
                                     </Image>
                                 </View>
@@ -389,7 +392,7 @@ export default function Alphabet({ navigation }) {
                                     <Image
                                         style={styles.image}
                                         source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/ResizedAlphabet%2Fw.png?alt=media&token=57f49684-552d-4ef3-8dfd-60764e8dfea8'
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2FNEWALPHABET%2Fw.png?alt=media&token=fe5363d1-0fd5-463c-a79a-08b5f249cba0'
                                         }}>
                                     </Image>
                                 </View>
@@ -404,7 +407,7 @@ export default function Alphabet({ navigation }) {
                                     <Image
                                         style={styles.image}
                                         source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/ResizedAlphabet%2Fx.png?alt=media&token=db845573-6c57-4398-b1da-fdcc664a5919'
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2FNEWALPHABET%2Fx.png?alt=media&token=ed289943-bb19-4f43-a373-3e3cfdd41c15'
                                         }}>
                                     </Image>
                                 </View>
@@ -422,7 +425,7 @@ export default function Alphabet({ navigation }) {
                                     <Image
                                         style={styles.image}
                                         source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/ResizedAlphabet%2Fy.png?alt=media&token=87476ca3-235c-4308-8b2c-95862d04f1f2'
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2FNEWALPHABET%2Fy.png?alt=media&token=85def17b-fdbb-4792-8944-0fc3426729df'
                                         }}>
                                     </Image>
                                 </View>
@@ -437,7 +440,7 @@ export default function Alphabet({ navigation }) {
                                     <Image
                                         style={styles.image}
                                         source={{
-                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/ResizedAlphabet%2Fz.png?alt=media&token=89424906-0217-46eb-affb-14c2af37a7e4'
+                                            uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/Alphabet%2FNEWALPHABET%2Fz.png?alt=media&token=c33ea5d6-ba4a-4c9e-bdd8-dd954589671d'
                                         }}>
                                     </Image>
                                 </View>
@@ -496,6 +499,9 @@ const styles = StyleSheet.create({
         backgroundColor: 'rgba(180, 180, 180, 0.5)',
         borderWidth: 1,
         //borderColor: 'rgba(180, 180, 180, 1)'
+    },
+    topText: {
+        textAlign: 'center'
     }
 
 })

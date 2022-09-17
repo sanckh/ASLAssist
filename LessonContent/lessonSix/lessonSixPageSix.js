@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonSix%2Fpolice.gif?alt=media&token=7aceb476-6f4c-4696-9a2c-f5be60c39cdb'
                     }}>
                     </Image>
-                    <Text>Form hand into the letter 'C' in ASL. Then touch it to your right upper chest</Text>
+                    <Text>Form hand into the letter 'C' in ASL. Then touch it to your right upper chest.</Text>
                 </View>
                 
             </View>

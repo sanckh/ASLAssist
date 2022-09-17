@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonSix%2Fambulance.gif?alt=media&token=f58aba06-ed1e-4e2c-9908-a60dcc26f8bb'
                     }}>
                     </Image>
-                    <Text>Taking a half-open 'C'-shaped dominant hand and rotating it above your head</Text>
+                    <Text>Taking a half-open 'C'-shaped with your dominant hand and rotating it above your head.</Text>
                 </View>
                 
             </View>
@@ -38,7 +38,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonSix%2Fcdc.gif?alt=media&token=359916c1-a1d3-47d1-8a8c-90f961d59bed'
                     }}>
                     </Image>
-                    <Text>Fingerspelling C-D-C</Text>
+                    <Text>Fingerspelling C-D-C.</Text>
                 </View>
                 
             </View>

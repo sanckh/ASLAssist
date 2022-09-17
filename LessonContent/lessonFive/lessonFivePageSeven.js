@@ -25,7 +25,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFive%2Fseparated.gif?alt=media&token=aacec402-61d9-413b-b8a3-bccf7299115b'
                     }}>
                     </Image>
-                    <Text>Hands together pulled apart hands</Text>
+                    <Text>Hands in thumbs up motion together and pulling apart hands.</Text>
                 </View>
                 
             </View>
@@ -38,7 +38,7 @@ export default function LessonSix({navigation}){
                         uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonFive%2Fsick.gif?alt=media&token=4b84191d-6b5f-4e62-b873-b2cdb3dbe0d3'
                     }}>
                     </Image>
-                    <Text>Point to your forehead with your hand and to your tummy</Text>
+                    <Text>Point to your forehead with your middle finger. Can also be used on your tummy.</Text>
                 </View>
                 
             </View>
