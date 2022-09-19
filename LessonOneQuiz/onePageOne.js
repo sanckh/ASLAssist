@@ -1,3 +1,4 @@
+import React from 'react';
 import { Text, View, ScrollView, StyleSheet, TouchableOpacity, Image, Alert } from 'react-native';
 import Header from '../components/Header';
 import { useTheme } from '@react-navigation/native';
@@ -13,9 +14,9 @@ import HomeButton from '../components/HomeButton'
 export default function PracticeOne({ navigation }) {
     const { colors } = useTheme();
 
-    const wrongAnswer = () => {
-        Alert.alert('This answer is incorrect. \nPlease try again');
-    };
+    const [chosenId, setChosenId] = React.useState('');
+
+    const onPressAnswer = (id) => setChosenId(id);
 
     return (
         <Background>
@@ -24,22 +25,20 @@ export default function PracticeOne({ navigation }) {
 
             <Header style={styles.header}>Pratice Quiz</Header>
             {/* lesson content */}
-            <View style = {styles.imagePlacement}>
             <Image
                 style={styles.image}
                 source={{
                     uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/LessonOneQuizBlurredImages%2Frainbow-blurred.gif?alt=media&token=90c26ce5-9f41-455c-a9ee-b1e3c09e6a8b'
                 }}>
             </Image>
-            </View>
             
-            <Text style={styles.textSpacing}>What sign is this?</Text> 
+            <Text style={styles.text}>What sign is this?</Text> 
             <View style={styles.screen}>
                 <Button
-                    onPress={() => wrongAnswer()}
+                    onPress={() => onPressAnswer('answer1')}
                     mode="contained"
                     style={{
-                        backgroundColor: '#daeaf6',
+                        backgroundColor: chosenId === 'answer1' ? 'red' : '#daeaf6',
                         width: 150,
                         height: 60,
                         borderWidth: 5,
@@ -69,10 +68,10 @@ export default function PracticeOne({ navigation }) {
             
             <View style={styles.screen}>
                 <Button
-                    onPress={() => wrongAnswer()}
+                    onPress={() => onPressAnswer('answer2')}
                     mode="contained"
                     style={{
-                        backgroundColor: '#daeaf6',
+                        backgroundColor: chosenId === 'answer2' ? 'red' : '#daeaf6',
                         width: 150,
                         height: 60,
                         borderWidth: 5,
@@ -85,10 +84,10 @@ export default function PracticeOne({ navigation }) {
                 </Button>
 
                 <Button
-                    onPress={() => wrongAnswer()}
+                    onPress={() => onPressAnswer('answer3')}
                     mode="contained"
                     style={{
-                        backgroundColor: '#daeaf6',
+                        backgroundColor: chosenId === 'answer3' ? 'red' : '#daeaf6',
                         width: 150,
                         height: 60,
                         borderWidth: 5,

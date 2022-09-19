@@ -9,34 +9,20 @@ import Background from '../components/Background';
 import { getStatusBarHeight } from 'react-native-status-bar-height'
 import Button from '../components/Button';
 import { theme } from '../core/theme';
+import HomeButton from '../components/HomeButton'
+
 
 export default function PracticeOne({navigation}){
     const {colors} = useTheme();
 
-    var [isPress, setIsPress] = React.useState(false);
     const [chosenId, setChosenId] = React.useState('');
 
     const onPressAnswer = (id) => setChosenId(id);
 
-    // const wrongAnswer = () => {
-    //     setIsPress(current => !current)
-    //     if(isPress){
-    //         console.log("isPress = true")
-    //     }
-    //     else{
-    //         console.log("isPress = false")
-    //     }
-    // }
-
-    // const wrongAnswer = () => {
-    //     Alert.alert('This answer is incorrect. \nPlease try again');
-    // };
-
     return(
         <Background>
-            <TouchableOpacity  onPress = { () => navigation.replace('Home')} style={styles.iconContainer}>
-                <List.Icon icon="home-outline" />
-            </TouchableOpacity>
+        <BackButton goBack={navigation.goBack} />
+        <HomeButton onPress={() => navigation.navigate('Home')} />
             
             <Header style = {styles.header}>Pratice Quiz</Header>
             {/* lesson content */}
@@ -45,71 +31,70 @@ export default function PracticeOne({navigation}){
                 source = {{
                     uri: 'https://firebasestorage.googleapis.com/v0/b/aslassistfinal.appspot.com/o/PracticeQuizOneBlurredImages%2Favocadoquiz.gif?alt=media&token=6fc59c4f-64ef-4e95-b625-05b6921c9593'
                 }}>
-                </Image>
-                <View>
-                <ProgressBar style = {{width: 200, marginTop: 15}} progress={0.0} color={"lightgreen"} />
-                </View>
-                <Text style={styles.text}>What sign is this?</Text>
-                <View style={styles.screen}>
-            
-            
-            <Button
-            onPress={() => onPressAnswer('answer1')}
-            style = {{
-                backgroundColor: chosenId === 'answer1' ? 'red' : '#daeaf6',
-                width: 150,
-                height: 60,
-                borderWidth: 5,
-                borderRadius: 15,
-                borderColor: '#0a2941',
-                marginRight: 40,
-                marginLeft: 10}}
-                >
-                <Text style={{textAlign:'center'}}>Belt</Text>
+            </Image>
                 
-            </Button>
-
-            <Button
-            onPress = {() => navigation.navigate('pqOnePageTwo')}
-            style = {{backgroundColor: '#daeaf6', 
-                width: 150,
-                height: 60,
-                borderWidth: 5,
-                borderRadius: 15,
-                borderColor: '#0a2941',
-                marginRight: 10,}}>
-                <Text color={theme.colors.text} textAlign='center'>Avocado</Text>
-            </Button>
-            </View>
-
+            <Text style={styles.text}>What sign is this?</Text>
             <View style={styles.screen}>
-            <Button
-            onPress={() => onPressAnswer('answer2')}
+                <Button
+                onPress={() => onPressAnswer('answer1')}
+                style = {{
+                    backgroundColor: chosenId === 'answer1' ? 'red' : '#daeaf6',
+                    width: 150,
+                    height: 60,
+                    borderWidth: 5,
+                    borderRadius: 15,
+                    borderColor: '#0a2941',
+                    marginRight: 40,
+                    marginLeft: 10}}
+                    >
+                    <Text color={theme.colors.text} textAlign='center'>Belt</Text>
+                    
+                </Button>
+
+                <Button
+                onPress = {() => navigation.navigate('pqOnePageTwo')}
+                style = {{backgroundColor: '#daeaf6', 
+                    width: 150,
+                    height: 60,
+                    borderWidth: 5,
+                    borderRadius: 15,
+                    borderColor: '#0a2941',
+                    marginRight: 10,}}>
+                    <Text color={theme.colors.text} textAlign='center'>Avocado</Text>
+                </Button>
+                </View>
+
+                <View style={styles.screen}>
+                <Button
+                onPress={() => onPressAnswer('answer2')}
+                style = {{
+                    backgroundColor: chosenId === 'answer2' ? 'red' : '#daeaf6',
+                    width: 150,
+                    height: 60,
+                    borderWidth: 5,
+                    borderRadius: 15,
+                    borderColor: '#0a2941',
+                    marginRight: 40,
+                    marginLeft: 10}}>
+                      <Text color={theme.colors.text} textAlign='center'>Cake</Text>
+                </Button>
+
+                <Button
+            onPress={() => onPressAnswer('answer3')}
             style = {{
-                backgroundColor: chosenId === 'answer2' ? 'red' : '#daeaf6',
-                width: 150,
-                height: 60,
-                borderWidth: 5,
-                borderRadius: 15,
-                borderColor: '#0a2941',
-                marginRight: 40,
-                marginLeft: 10}}>
-                <Text style={{textAlign:'center'}}>Cake</Text>
-            </Button>
+                backgroundColor: chosenId === 'answer3' ? 'red' : '#daeaf6',
+                    width: 150,
+                    height: 60,
+                    borderWidth: 5,
+                    borderRadius: 15,
+                    borderColor: '#0a2941',
+                    marginRight: 10,}}>
+                      <Text color={theme.colors.text} textAlign='center'>Sorry</Text>
+                </Button>
 
-            <Button
-           onPress={() => onPressAnswer('answer3')}
-           style = {{
-               backgroundColor: chosenId === 'answer3' ? 'red' : '#daeaf6',
-                width: 150,
-                height: 60,
-                borderWidth: 5,
-                borderRadius: 15,
-                borderColor: '#0a2941',
-                marginRight: 10,}}>
-                <Text style={{textAlign:'center'}}>Sorry</Text>
-            </Button>
-
+            </View>
+            <View>
+                <ProgressBar style = {{width: 200, marginTop: 50}} progress={0.0} color={"lightgreen"} />
             </View>
 
         </Background>
@@ -122,13 +107,11 @@ const styles = StyleSheet.create({
         flex: 1,
 
     },
-    screen:{
-        flex: 1,
-        justifyContent: 'space-around',
+    screen: {
+        //flex: 1,
+        //justifyContent: 'space-around',
         alignItems: 'center',
         flexDirection: 'row',
-        marginTop: 24,
-        marginBottom: 24
     },
     header: {
         position: 'absolute',
@@ -139,40 +122,23 @@ const styles = StyleSheet.create({
     },
     image: {
         width: 300,
-        height: 300,
-        marginTop: 10,
-        marginLeft: 50,
-        marginRight: 50,
+        height: 150,
+        marginTop: 0,
+        marginBottom: 50,
         alignItems: 'center',
-        padding: 20,
+       // padding: 20,
         resizeMode: 'contain',
-        borderRadius: 30
     },
     text: {
         // marginTop: 15,
         fontSize: 25,
     },
     imagePlacement: {
-        flexDirection: 'column', 
-        justifyContent: 'center',
-        alignItems: 'center'
+        top: 0
     },
-    iconContainer: {
-        position: 'absolute',
-        top: 10 + getStatusBarHeight(),
-        left: 4,
-      },
-      btnNormal: {
-        borderColor: 'blue',
-        borderWidth: 1,
-        borderRadius: 10,
-        height: 30,
-        width: 100,
-      },
-      btnPress: {
-        borderColor: 'blue',
-        borderWidth: 1,
-        height: 30,
-        width: 100,
-      }
+    textSpacing: {
+        fontSize: 25,
+        marginBottom: 20
+        //add more props here
+    }
 })

@@ -24,8 +24,6 @@ export default function LessonOne({ navigation }) {
             <HomeButton onPress = {() => navigation.navigate('Home')}/>
             <Header style={styles.header}>Emergency</Header>
             <View style={styles.container}>
-
-                <ScrollView style={styles.scrollview}>
                 <View>
                         <Text style = {styles.topText}>Swipe the cards to view the sign's description!</Text>
                     </View>
